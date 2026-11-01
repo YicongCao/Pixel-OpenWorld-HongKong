@@ -2,6 +2,22 @@
 
 香港 HD-2D 像素步行开放世界：像素角色＋立体街景＋街道生活。已进入 v0.1 实施：有约 179 米可走路线、白帽角色和 A1 街角早期实机样板；完整街道美术、人车活动与存档尚未完成。
 
+## 街区概念图
+
+以下为首街区的 HD-2D 风格探索，**不是实机画面，也不是已验收的游戏资产**。
+
+### 弥敦道 × 海防道：白天主街
+
+![弥敦道横向主街、尖沙咀 A1 站口与海防道纵深连接的 HD-2D 概念](assets/blocks/tst-nathan-haiphong/generated/concepts/day-v2.png)
+
+### 海防道：纵深街景
+
+![海防道商铺、树荫挡墙与连续人行道的 HD-2D 纵深概念](assets/blocks/tst-nathan-haiphong/generated/concepts/depth-v1.png)
+
+基于 Qwer132477、LN9267 的实景照片与 OSM 地图引导进行 AI 风格转译；可许可的改编图像按 CC BY-SA 4.0 提供。原始来源、署名与许可见 [参考索引](references/blocks/tst-nathan-haiphong/index.json) 和 [资产清单](assets/blocks/tst-nathan-haiphong/generated/concepts/manifest.json)，图中偏差见 [概念检查记录](docs/08-blocks/tst-nathan-haiphong/assets.md)。
+
+## 项目导航
+
 - [首批实施结果与操作说明](docs/08-blocks/tst-nathan-haiphong/implementation.md)：场景、资产、镜头参数和验证边界。
 - [Unity 开发工程](unity/README.md)／[本地环境验证](docs/04-engineering/local-development.md)：锁定版本、插件、操作方法与实际验证边界。
 - [研究总目录](docs/README.md)：八个主题的 Markdown 源文档与独立图文页。
