@@ -34,3 +34,5 @@
 - `scripts/validate_delivery.py`：主资料包完整检查，含较重的 FGDB 独立扫描；不作为每次编辑说明的必需步骤。
 
 只读使用 `../game-research`，不要在其目录修改文件或重新生成资源。新增或更新本仓库资料后记录日期、来源、许可、坐标和哈希，再按根约定提交推送。
+
+广东道快速 demo 的原始数据切片与独立压缩设计见 [tst-canton-demo](blocks/tst-canton-demo/README.md)。

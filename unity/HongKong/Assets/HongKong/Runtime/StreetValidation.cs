@@ -40,6 +40,14 @@ namespace HongKong.Walk
             walker.automaticTarget=walker.transform.position;
             yield return new WaitForSeconds(1);
             yield return Capture("start.png");
+            var pixel=walker.viewCamera.GetComponent<HongKong.Rendering.CantonPixelView>();
+            if(pixel)
+            {
+                int originalMode=pixel.mode;
+                foreach(int mode in new[]{0,1,2,3})
+                {pixel.mode=mode;yield return new WaitForSeconds(.3f);yield return Capture("pixel-mode-"+mode+".png");}
+                pixel.mode=originalMode;
+            }
             var atmosphere=FindFirstObjectByType<StreetAtmosphere>();
             if(atmosphere)
             {
@@ -71,9 +79,13 @@ namespace HongKong.Walk
                 if(failed)break;
             }
             walker.automatic=false;
+            var bus=FindFirstObjectByType<CantonBus>();
+            if(bus){float until=Time.realtimeSinceStartup+50;while(bus.cycles<3 && Time.realtimeSinceStartup<until)yield return null;
+                if(bus.cycles<3 || bus.violations>0)errors.Add("Bus did not complete three safe boarding cycles");}
             yield return Capture("returned.png");
             frameMs.Sort(); completed=true;
             var result=new Result { stage=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,
+                busCycles=bus?bus.cycles:0, boardingViolations=bus?bus.violations:0,
                 passed=!failed && errors.Count==0 && walker.fallRecoveries==0, fallRecoveries=walker.fallRecoveries,
                 unityVersion=Application.unityVersion,graphics=SystemInfo.graphicsDeviceName,
                 elapsedSeconds=Time.realtimeSinceStartup-begin, frames=frameMs.Count, waypointsReached=reached,
@@ -98,6 +110,7 @@ namespace HongKong.Walk
         {
             public string stage,unityVersion,graphics,limitations;
             public bool passed;
+            public int busCycles,boardingViolations;
             public int frames,waypointsReached,waypointsExpected,width,height,fallRecoveries;
             public float elapsedSeconds,distanceM,p95FrameMs,p99FrameMs;
             public long memoryBytes;

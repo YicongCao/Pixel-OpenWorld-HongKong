@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command",
+  "data": {
+    "command": "script eval",
+    "parameters": {
+      "code": "var w=UnityEngine.Object.FindFirstObjectByType<HongKong.Walk.StreetWalker>();var north=UnityEngine.Vector3.ProjectOnPlane(w.route[0]-w.route[12],UnityEngine.Vector3.up).normalized;w.GetInputAxes(out var right,out var inward);return new{sourceNorth=north,oldDriftDegrees=UnityEngine.Vector3.Angle(UnityEngine.Quaternion.Euler(0,-110,0)*UnityEngine.Vector3.right,north),newDriftDegrees=UnityEngine.Vector3.Angle(right,north),camera=UnityEngine.Camera.main.transform.position,rotation=UnityEngine.Camera.main.transform.eulerAngles,fov=UnityEngine.Camera.main.fieldOfView};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "{ sourceNorth = (-0.09, 0.00, 1.00), oldDriftDegrees = 14.6612, newDriftDegrees = 0.3386196, camera = (44.77, 26.27, 15.15), rotation = (25.00, 265.00, 0.00), fov = 20 }"
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "/Users/cong/Documents/Projects/pixel-open-world-rpg/unity/HongKong"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

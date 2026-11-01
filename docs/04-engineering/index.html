@@ -174,8 +174,9 @@ unity command script eval &#x27;return HongKong.EnvironmentCheck.EnvironmentBoot
 <h3 id="hd2d-camera-lighting-59">6. 合并验收与回退</h3>
 <p>角色先通过无景深的深度／受光检查，建筑先通过无景深的轮廓／像素密度检查；再合并最终光照与 DOF。出现问题时依次关 DOF、Bloom、半透明和自定义受光，定位到具体环节，不用更强模糊遮掩错误。</p>
 <p>交付 Camera／Volume 配置、角色材质与投影策略、截图机位、路线、日志及版本。性能记录必须包含实际分辨率、灯光和人数、CPU／GPU 帧时是否可获取；未测值写缺失，不填推测数字。此门槛不替代 <a href="../07-validation/index.html#doc-acceptance">首版整体验收</a>。</p></article><article id="doc-github-hd2d-reuse"><h2 id="github-hd2d-reuse-0">GitHub HD-2D Unity 项目与组件复用筛选</h2>
+<p>&gt; 后续实施更新：已局部接入像素管线及 UnityHFSM，见 <a href="../08-blocks/index.html#doc-tst-canton-demo-readme">广东道 demo 与实测</a>。下文保留采用前的筛选记录；“未安装”描述针对筛选当时，不代表当前状态。</p>
 <p>2026-11-01 · 以本工程 Unity 6000.3.27f1／URP 17.3.0、Input System、Cinemachine 3 为基线。已在线读取仓库、包清单、许可证与指定源码；<strong>未导入候选、未在本机编译它们，也未验证其性能</strong>。结论是采用前的技术筛选，不能写成已集成。</p>
-<h3 id="github-hd2d-reuse-4">结论与优先级</h3>
+<h3 id="github-hd2d-reuse-6">结论与优先级</h3>
 <p>有值得复用的项目，但此次未找到同时满足许可清楚、版本匹配、弱透视 HD-2D、真实街区及完整生活系统的现成底座。继续使用现有工程，逐个接入小组件，比整体换模板更合适。以下是项目判断，不是作者的兼容性承诺。</p>
 <ol>
 <li><strong>优先研究 bababuyyy 的像素管线</strong>：确实使用 URP 17.3.0，可借鉴像素描边、放大与像素漂移补偿。先单独比较渲染效果，不接管现有相机。</li>
@@ -184,7 +185,7 @@ unity command script eval &#x27;return HongKong.EnvironmentCheck.EnvironmentBoot
 <li><strong>景深继续复用 URP，镜头继续复用 Cinemachine</strong>：没有必要为了 HD-2D 另写一套 DOF、相机跟随或完整 RPG 框架。</li>
 <li>暂缓高版本包及强烈 PSX 风格管线；不因一个效果包升级整个项目。</li>
 </ol>
-<h3 id="github-hd2d-reuse-14">候选清单</h3>
+<h3 id="github-hd2d-reuse-16">候选清单</h3>
 <div class="table-scroll"><table>
 <tr><th>项目</th><th>实际核查版本／许可</th><th>能减少的工作</th><th>本项目决定</th></tr>
 <tr><td><a href="https://github.com/bababuyyy/unity-isometric-pixel-pipeline">unity-isometric-pixel-pipeline</a></td><td>Unity 6000.3.5f2；URP 17.3.0；MIT；检查到 2026-05-16 提交</td><td>RenderGraph 像素描边、合成／放大、镜头补偿、昼夜职责分离</td><td>第一渲染候选，拆取试验；整套相机不采用</td></tr>
@@ -199,13 +200,13 @@ unity command script eval &#x27;return HongKong.EnvironmentCheck.EnvironmentBoot
 <tr><td><a href="https://github.com/NullTale/DitherFx">DitherFx</a></td><td>仓库许可证为非商业用途并限制再分发；2025-06-09 提交</td><td>抖色外观参考</td><td>排除免费商用依赖，不纳入当前开源采用池</td></tr>
 </table></div>
 <p>日期表示检查到的分支提交或仓库推送时间，不等于作者持续维护保证。GitHub stars、名字像 HD-2D 或演示漂亮都没有被当作可用性证据。许可证判断只界定本次采用范围；实际引入时仍需保留对应版本的通知、修改说明及第三方资产条款。</p>
-<h3 id="github-hd2d-reuse-31">第一候选：像素管线，能复用什么</h3>
+<h3 id="github-hd2d-reuse-33">第一候选：像素管线，能复用什么</h3>
 <p>固定检查版本为 <a href="https://github.com/bababuyyy/unity-isometric-pixel-pipeline/tree/f08bc6bf34b81c265171972610b23a8ef7c8d019">f08bc6b</a>。版本直接核对 <a href="https://github.com/bababuyyy/unity-isometric-pixel-pipeline/blob/f08bc6bf34b81c265171972610b23a8ef7c8d019/ProjectSettings/ProjectVersion.txt">ProjectVersion</a>、<a href="https://github.com/bababuyyy/unity-isometric-pixel-pipeline/blob/f08bc6bf34b81c265171972610b23a8ef7c8d019/Packages/manifest.json">manifest</a> 与 <a href="https://github.com/bababuyyy/unity-isometric-pixel-pipeline/blob/f08bc6bf34b81c265171972610b23a8ef7c8d019/LICENSE">MIT</a>。</p>
 <p>已阅读 <a href="https://github.com/bababuyyy/unity-isometric-pixel-pipeline/blob/f08bc6bf34b81c265171972610b23a8ef7c8d019/Assets/Rendering/RenderFeatures/PixelRendererFeature.cs">PixelRendererFeature.cs</a>：使用 <code>RecordRenderGraph</code>，在 <code>AfterRenderingPostProcessing</code> 后复制全分辨率颜色，再低分辨率取样、描边、合成和放大。深度／法线是输入依赖，效果所需纹理由 RenderGraph 创建。可以少写一套渲染 pass 生命周期、采样与合成逻辑。</p>
 <p>但它先画全分辨率场景再降采样，<strong>不能据此推导出减少主场景几何或光照开销</strong>；还会增加 pass 和深度／法线需求。640×360 是作者默认值，不应变成本项目全局约定；先比较 960×540、1280×720 与原生画面，保留中文路牌和白帽的可读性。这些是本项目实验档位，尚未测量。</p>
 <p>已阅读 <a href="https://github.com/bababuyyy/unity-isometric-pixel-pipeline/blob/f08bc6bf34b81c265171972610b23a8ef7c8d019/Assets/Scripts/Systems/IsometricCameraController.cs">IsometricCameraController.cs</a>：<code>Awake</code> 会强制 <code>orthographic=true</code>，像素尺寸由 <code>orthographicSize</code> 计算，还调用旧 <code>UnityEngine.Input</code>。<strong>不能直接挂到当前相机</strong>：它会改变弱透视和景深前提，并和 Cinemachine 的变换控制竞争。只把屏幕网格对齐／UV 补偿作为待移植思路；透视下不同深度像素尺寸不同，需要另外验证，不能把正交公式照搬。</p>
 <p>作者的 toon、草与云影更接近全 3D 像素化。香港样板需要像素人物和有体积的纹理建筑，不能用全屏像素化替代立面美术。先试渲染部件；不搬地形、草、相机、输入、项目设置和所有包清单。MIT 通知在真正引入代码时随采用目录保存。</p>
-<h3 id="github-hd2d-reuse-43">旧 HD-2D 示例：哪些代码值得看、哪些应跳过</h3>
+<h3 id="github-hd2d-reuse-45">旧 HD-2D 示例：哪些代码值得看、哪些应跳过</h3>
 <p>检查 <a href="https://github.com/floatingsnowflake/Unity-simple-HD2D/tree/81459467442741f96f39e8fbecb2a1099572727c">8145946</a>，实际是 URP 12／Cinemachine 2.8.9，不是 Unity 6 模板。</p>
 <ul>
 <li><a href="https://github.com/floatingsnowflake/Unity-simple-HD2D/blob/81459467442741f96f39e8fbecb2a1099572727c/Assets/HD2DProject/Scripts/Sprites/SpriteShadow.cs">SpriteShadow.cs</a> 设置 Sprite／Tilemap Renderer 的受影和双面投影；说明这些职责可以复用 Unity Renderer 配置，不必先发明影子系统。正确帧裁切、材质 ShadowCaster 与自阴影仍要单独验证，开启标志不保证效果正确。</li>
@@ -214,16 +215,16 @@ unity command script eval &#x27;return HongKong.EnvironmentCheck.EnvironmentBoot
 <li><a href="https://github.com/floatingsnowflake/Unity-simple-HD2D/blob/81459467442741f96f39e8fbecb2a1099572727c/Assets/HD2DProject/Scripts/Characters/HD2DCharacter.cs">HD2DCharacter.cs</a> 依赖 <code>TeamMingo</code> 类型，并直接增加 Transform 位置。不是可直接替换的带 3D 碰撞通用控制器，保留当前 CharacterController／Input System。</li>
 </ul>
 <p>仅局部采用自有脚本时保留 <a href="https://github.com/floatingsnowflake/Unity-simple-HD2D/blob/81459467442741f96f39e8fbecb2a1099572727c/LICENSE">MIT</a>，素材目录另核查。不要把该仓库整套场景和外来美术搬进生产工程。</p>
-<h3 id="github-hd2d-reuse-54">行为组件与遮挡备选</h3>
+<h3 id="github-hd2d-reuse-56">行为组件与遮挡备选</h3>
 <p><a href="https://github.com/Inspiaaa/UnityHFSM">UnityHFSM</a> 提供层级状态、转换和退出时机协调；<a href="https://github.com/Inspiaaa/UnityHFSM/blob/upm/package.json">UPM package.json</a> 当前为 2.3.0，<a href="https://github.com/Inspiaaa/UnityHFSM/blob/master/LICENSE.md">许可证</a> 为 MIT。这次只核查文档／包／许可，未深入运行时实现或运行测试；实际采用须再锁定 tag 或 commit，不能长期跟踪浮动 <code>upm</code>。</p>
 <p>适合公交的 <code>Approach → Stop → DoorOpen → Alight → Board → DoorClose → Depart</code>，以及收货的准备、搬运、交付、清场。它减少状态机基础代码；<strong>不会自动提供香港车道、候车容量、上下客同步、站口寻路或存档语义</strong>。寻路继续使用已装 AI Navigation，数据配置仍由本项目负责；不因引入状态机另做一个可视化 RPG 编辑器。</p>
 <p><a href="https://github.com/Chishikii/URP-Render-Features">Chishikii</a> 的 <a href="https://github.com/Chishikii/URP-Render-Features/blob/2590abe28229110fefef58e2a0e03b6f5b53a2fb/README.md">README</a> 明确区分功能：outline 已适配 RenderGraph，但 blur 和 desaturation 尚未适配。适合研究局部受控的主角轮廓提示；本次没有逐行审查其 shader，不把全部功能称为 URP 17 可直接使用。遮挡辅助应限于短暂、必要场景；正常情况下仍遵守 3D 深度，不永久穿墙显示角色。</p>
-<h3 id="github-hd2d-reuse-62">高版本、其他风格与许可限制</h3>
+<h3 id="github-hd2d-reuse-64">高版本、其他风格与许可限制</h3>
 <p><a href="https://github.com/cannoli-cat/stylized-rendering/blob/22edcfdae269b8f06e51886be560ab39349f8798/package.json">Stylized Rendering 包清单</a> 比 README 的“Unity 6”更具体：要求 6000.5／URP 17.5.0。其 <a href="https://github.com/cannoli-cat/stylized-rendering/blob/22edcfdae269b8f06e51886be560ab39349f8798/LICENSE.md">LICENSE.md</a> 当前为 CC BY 4.0，蓝噪声另有 CC0；不能把它误记成 MIT。当前只保留调色板／抖色设计参考，不安装、不升级引擎。</p>
 <p><a href="https://github.com/Natteens/retropsx-urp/tree/7102c2558d8addec2584d22e48ee50fa2bc217bd">RetroPSX</a> 的 <a href="https://github.com/Natteens/retropsx-urp/blob/7102c2558d8addec2584d22e48ee50fa2bc217bd/package.json">package.json</a> 最低要求更接近我们。它是 PSX 工具集，配置模块化且保留普通 URP 材质；可以考察呈现／雾／UI 分离，但仿射 UV、顶点抖动和 CRT 不符合当前目标。README 的 UI 路径说明还标注了在 6000.5.7f1 验证、旧版未运行测试，不能从最低版本字段推出所有功能均已在 6000.3 验证。许可见 <a href="https://github.com/Natteens/retropsx-urp/blob/7102c2558d8addec2584d22e48ee50fa2bc217bd/LICENSE.md">MIT</a>。</p>
 <p><a href="https://github.com/Jiaquarium/unity-URP-2.5D-lit-shader">Jiaquarium</a> 的 <a href="https://github.com/Jiaquarium/unity-URP-2.5D-lit-shader/blob/f0cb34f340634e7a66a595c696e5a65dc33edbf4/README.md">README</a> 针对倾斜正交面片修改 clip-space depth，并列出非方向光阴影等限制。技术问题与我们相关，但根目录和包周边未核到明确许可证，不能把“公开可读”当成可直接分发。若日后获得授权，仍须核验颜色、DepthOnly、DepthNormals、ShadowCaster 在 URP 17 的一致性和弱透视适用性。</p>
 <p><a href="https://github.com/NullTale/DitherFx/blob/ca182e968870d9907ebbd50d5b7e61e9c520d220/LICENSE.md">DitherFx 的仓库许可</a> 明确限制商业与再分发，故不纳入免费商用依赖；这不是对 GitHub 上所有 shader 的泛化判断。其他 HD-2D 仓库的自述不能证明其资产权利或成熟度。</p>
-<h3 id="github-hd2d-reuse-72">对 v0.1 实施规划的具体调整</h3>
+<h3 id="github-hd2d-reuse-74">对 v0.1 实施规划的具体调整</h3>
 <p>先建立独立渲染实验副本，不改变地理、控制器和正式样板。比较“当前画面／只加描边与放大／加补偿”三组，保存相同路线、镜头、1080p 的独立 Player 证据；景深分别开关，并观察玻璃 A1、树冠、白帽边缘、繁中店招及前后景。效果选择必须考虑整体 HD-2D 风格，而非某张截图的像素数量。</p>
 <p>复用验收包括：不强制正交、不和 Cinemachine 竞争、不切换回旧 Input、不把 UI 全屏降采样；白帽的颜色／深度／阴影裁切一致；多相机状态不互相污染；无 RenderGraph 读写冲突、黑屏或构建 shader stripping；记录新增 pass 和真实帧时，不能宣称降分辨率天然加速。先分别测试，再决定采用代码范围和署名。</p>
 <p>行为原型优先用 UnityHFSM 做一条公交循环和一个目的地行人，再连到 AI Navigation。验证重复三轮：车门未开不能上客、队列容量有限、演员有退出点、重置不重复生成。它替代通用状态机骨架，不替代现实站位核实与生活编排。</p>

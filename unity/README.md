@@ -44,3 +44,5 @@ open .local/builds/HongKong-v01-sample.app
 生成场景已有时不要直接重跑 Create。源图集／材质来自仓库根 `assets/blocks/`，数据脚本只更新 generated 派生文件；不覆盖 authored。要验证首次生成，应在另建、不含既有生成场景／网格的隔离工程副本执行，原工程保留。后处理 Volume 组件必须持久化为子资产，不能仅在内存 `profile.Add` 后假设保存成功。
 
 操作前读根 [AGENTS.md](../AGENTS.md)，按需读项目内 `.agents/skills/unity-cli`、`unity-pipeline`、`unity-package-management`。验证结果和限制见 [开发环境记录](../docs/04-engineering/local-development.md)。
+
+当前可玩 demo：`Assets/HongKong/Generated/CantonDemo/CantonRoadDemo.unity`，本机 `.local/builds/HongKong-Canton-Demo.app`。组件、操作与真实状态见 [广东道记录](../docs/08-blocks/tst-canton-demo/README.md)。

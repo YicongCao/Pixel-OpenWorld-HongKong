@@ -9,6 +9,8 @@ namespace HongKong.Walk
     public sealed class StreetWalker : MonoBehaviour
     {
         public Camera viewCamera;
+        public bool cameraRelativeInput=true;
+        public float inputReferenceYaw=-95f;
         public float walkSpeed = 2.2f, fastSpeed = 4.0f;
         public Vector3[] route;
         public bool automatic, paused;
@@ -52,8 +54,7 @@ namespace HongKong.Walk
             else
             {
                 var input = move.ReadValue<Vector2>();
-                Vector3 right = Vector3.ProjectOnPlane(viewCamera.transform.right, Vector3.up).normalized;
-                Vector3 forward = Vector3.ProjectOnPlane(viewCamera.transform.forward, Vector3.up).normalized;
+                GetInputAxes(out var right,out var forward);
                 desired = Vector3.ClampMagnitude(right * input.x + forward * input.y, 1);
             }
             float speed = automatic || fast.IsPressed() ? fastSpeed : walkSpeed;
@@ -69,6 +70,19 @@ namespace HongKong.Walk
         public void ResetToStart()
         {
             body.enabled = false; transform.position = start; body.enabled = true; verticalSpeed=0;
+        }
+        public void GetInputAxes(out Vector3 right,out Vector3 forward)
+        {
+            if(cameraRelativeInput)
+            {
+                right=Vector3.ProjectOnPlane(viewCamera.transform.right,Vector3.up).normalized;
+                forward=Vector3.ProjectOnPlane(viewCamera.transform.forward,Vector3.up).normalized;
+            }
+            else
+            {
+                var basis=Quaternion.Euler(0,inputReferenceYaw,0);
+                right=basis*Vector3.right;forward=basis*Vector3.forward;
+            }
         }
     }
 }

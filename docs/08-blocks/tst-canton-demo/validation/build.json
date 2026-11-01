@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "buildId": "build_68e92d5e0671",
+  "result": "Succeeded",
+  "platform": "StandaloneOSX",
+  "outputPath": "/Users/cong/Documents/Projects/pixel-open-world-rpg/.local/builds/HongKong-Canton-Demo.app",
+  "totalSizeBytes": 339916885,
+  "buildTimeMs": 9212,
+  "buildStartedAt": "2026-10-31T23:56:04.0016460Z",
+  "buildEndedAt": "2026-10-31T23:56:13.2137570Z",
+  "totalWarnings": 0,
+  "totalErrors": 0,
+  "errors": [],
+  "warnings": []
+}

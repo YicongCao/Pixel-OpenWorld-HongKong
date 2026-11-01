@@ -35,3 +35,5 @@
 每个完成并验证的项目修改批次都生成 commit 并推送；目标远程及提交规则见根目录 [AGENTS.md](AGENTS.md)。
 
 首个建议街区：[弥敦道 × 海防道／A1 选段与扩展计划](docs/08-blocks/tst-nathan-haiphong/plan.md) · [三张 HD-2D 渲染参考](docs/08-blocks/tst-nathan-haiphong/assets.md)。
+
+当前可玩入口：[广东道复用 demo](docs/08-blocks/tst-canton-demo/README.md)。本机运行 `.local/builds/HongKong-Canton-Demo.app`；原弥敦道小样保留。

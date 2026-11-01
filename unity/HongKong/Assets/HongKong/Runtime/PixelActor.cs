@@ -17,6 +17,8 @@ namespace HongKong.Walk
         MaterialPropertyBlock props;
         float phase;
         int direction=0,lastFrame=-1;
+        public int CurrentDirection=>direction;
+        public int CurrentFrame=>lastFrame;
         void Awake()
         {
             if(!walker)walker=GetComponent<StreetWalker>();
@@ -27,8 +29,8 @@ namespace HongKong.Walk
         {
             if(atlas==null || atlas.frames==null)return;
             Vector3 front=Vector3.ProjectOnPlane(-viewCamera.transform.forward,Vector3.up).normalized;
-            Vector3 right=Vector3.ProjectOnPlane(viewCamera.transform.right,Vector3.up).normalized;
-            float x=Vector3.Dot(walker.Facing,right),z=Vector3.Dot(walker.Facing,front);
+            walker.GetInputAxes(out var right,out var inward);
+            float x=Vector3.Dot(walker.Facing,right),z=Vector3.Dot(walker.Facing,-inward);
             int wanted=Mathf.Abs(x)>Mathf.Abs(z)?(x>0?1:3):(z>0?0:2);
             // Avoid alternating adjacent rows at a diagonal boundary.
             if(Mathf.Abs(Mathf.Abs(x)-Mathf.Abs(z))>.08f)direction=wanted;

@@ -1,0 +1,26 @@
+{
+    "stage": "CantonRoadDemo",
+    "unityVersion": "6000.3.27f1",
+    "graphics": "Apple M5",
+    "limitations": "Automated world-space intents use the same CharacterController as keyboard input. Short traversal, not v0.1 10-minute performance or art acceptance.",
+    "passed": true,
+    "busCycles": 4,
+    "boardingViolations": 0,
+    "frames": 3403,
+    "waypointsReached": 12,
+    "waypointsExpected": 12,
+    "width": 1920,
+    "height": 1080,
+    "fallRecoveries": 0,
+    "elapsedSeconds": 57.918601989746097,
+    "distanceM": 216.6020965576172,
+    "p95FrameMs": 17.46449851989746,
+    "p99FrameMs": 17.670663833618165,
+    "memoryBytes": 121297556,
+    "finalPosition": {
+        "x": -30.933584213256837,
+        "y": 0.19499990344047547,
+        "z": 2.000002861022949
+    },
+    "errors": []
+}

@@ -26,7 +26,7 @@
 - `scripts/`：`extract_hk.py`／`extract_street_life.py` 提取数据，`build_hd2d_study.py` 生成走廊研究，`build_report.py` 按 `docs_catalog.json` 渲染章节，`validate_docs.py` 校验文档，`validate_delivery.py` 完整校验数据。研究依赖见 [requirements-research.txt](scripts/requirements-research.txt)；运行前检查读写范围，不因改文档重跑全量提取。
 - 首街区实现派生：`scripts/build_v01_layout.py` 从归档数据生成米制路线／来源校验，`scripts/prepare_v01_assets.py` 检查图集透明轮廓并复制采用资产；运行方式和边界见 [实施记录](docs/08-blocks/tst-nathan-haiphong/implementation.md)。源图集、切片与导入副本须一起校验，已有场景不因数据更新自动重建。
 - 街区制作目录：`data/blocks/<block_id>/` 存街区骨架与来源，`references/blocks/<block_id>/` 存实景索引及可保存原件，`assets/blocks/<block_id>/generated/`／`authored/` 分离生成与精修；`docs/08-blocks/<block_id>/` 存计划及实机验证。当前已建立 `tst-nathan-haiphong` 的数据、实景、概念和计划；已有约 179 米路线、灰盒与 A1 早期实机样板，尚无 authored 精修或完整 v0.1 验收，入口见 [首街区计划](docs/08-blocks/tst-nathan-haiphong/plan.md)。
-- `unity/`：唯一 Unity 工程为 `unity/HongKong/`，先读 [Unity README](unity/README.md) 和 [本地环境记录](docs/04-engineering/local-development.md)。使用锁定的 Editor／Packages；所有 CLI 编辑器操作显式传本工程 `--project-path`，不得误操作旧项目。当前街角入口为 `Assets/HongKong/Generated/Scenes/NathanArtSample.unity`，实施结果见 [批次 01](docs/08-blocks/tst-nathan-haiphong/implementation.md)。`AgentScripts/` 是版本化生成／修订入口，`Assets/HongKong/Runtime/` 是运行时适配及验证；不能把环境场景或街角样板称为完整 v0.1。
+- `unity/`：唯一 Unity 工程为 `unity/HongKong/`，先读 [Unity README](unity/README.md) 和 [本地环境记录](docs/04-engineering/local-development.md)。使用锁定的 Editor／Packages；所有 CLI 编辑器操作显式传本工程 `--project-path`，不得误操作旧项目。当前 demo 入口为 `Assets/HongKong/Generated/CantonDemo/CantonRoadDemo.unity`；原街角小样 `Assets/HongKong/Generated/Scenes/NathanArtSample.unity` 与镜头对照 `NathanHD2DStudy.unity` 保留，原实施结果见 [批次 01](docs/08-blocks/tst-nathan-haiphong/implementation.md)。`AgentScripts/` 是版本化生成／修订入口，`Assets/HongKong/Runtime/` 是运行时适配及验证；不能把环境场景或街角样板称为完整 v0.1。
 - `.agents/skills/`：按需读取 Unity 官方的 `unity-cli`、`unity-pipeline`、`unity-package-management`；它们指导工具操作，版本与项目范围以本仓库约定为准，不自动升级引擎或采购框架。
 - HD-2D 生产入口：[素材建模与拼装 SOP](docs/06-production/hd2d-production-workflow.md) 统筹资产链路；[角色制作](docs/03-hd2d/character-production.md) 负责转面与动作；[镜头／灯光／景深](docs/04-engineering/hd2d-camera-lighting.md) 负责运行时画面；[专业资料与源码核查](docs/06-production/hd2d-production-sources.md) 标明依据和未证实参数。
 - [.gitignore](.gitignore)：临时／敏感文件和引擎缓存边界；`.local/`／`.private/` 是按需使用的忽略目录。`../game-research` 是只读上游，不是本项目运行时依赖。
@@ -75,6 +75,17 @@
 8. **分层验证，截图为具体问题服务**：先做相关数据／导入／编译检查，再查看少量固定机位；构图看全景，像素／文字／透明问题看原尺寸局部，动画和闪烁看运动。未变化的截图不重复读取；缩略图不能替代像素验收。集成完成后执行独立 Player 路线与性能验证；纯文档修改只做文档检查，不重建游戏。阶段检查不能替代最终验收。
 9. **效果与香港生活均有底线**：保留清晰主角、正确转面与脚步、前中远景遮挡、立体受光和可读街道；Bloom／DOF 最后加入并做开关对照。模块复用仍需用招牌、设施、店面和有目的的活动区分街段，不能用模糊、随机行人或重复立面掩盖缺失内容。
 10. **记录成本，验证策略是否有效**：每批在街区实施记录中简记生成次数、返工轮次、主要工具调用及耗时，复用已通过的配置与失败原因。只有工具提供 Token 统计时才报告 Token 数；调用数和耗时仅为代理指标。详细提示词、参数和证据留在主题／街区档案，根入口只维护可复用规则，避免规则本身不断膨胀。
+
+## HD-2D 探索视角与制作省量
+
+- 依据 [八方旅人 II 对照研究](docs/03-hd2d/octopath2-composition-study.md)：先锁定允许的探索镜头和主街轴，左右沿街、前后深入支路；固定的是朝向，允许平移跟随。演出旋转镜头不能自动变成探索要求。
+- 逻辑根做 3D 移动与碰撞；视觉面片面向镜头，按同一街区轴选前后左右帧，停步回站姿。不靠旋转薄片表达侧身，不把探索限制成横向轨道。
+- 按全路线、全部允许机位和灯光的可见面集合安排建模，优先立面、转角回折、屋顶边缘与雨篷；不可见室内和背面延后，参与投影／反射的部分保留代理。近处转角与入口保留体积，远景才用浅模块／卡片。
+- 重复窗跨、楼层与墙材模块化，真实店招和辨识轮廓单独制作。省量是减少必须制作的面、方向和独有模块，不声称某个节约百分比或原作内部做法。
+- 概念渲染必须有弱透视、横向活动带、纵深连接和真实深度；正交、无烘焙光只适用于贴图生产。景深最后调，不能遮缺面。物理相机拉远时同步检查投影人物大小、阴影距离和景深。
+- 当前快速交互入口改为 [广东道 demo](docs/08-blocks/tst-canton-demo/README.md)：`Generated/CantonDemo/CantonRoadDemo.unity`；已有弥敦道场景保持独立。广东道是明确压缩编排的切片，不是精确地图还原；新增数据在 `data/blocks/tst-canton-demo`，参考在同名 `references/blocks`，复用代码在 Unity `ThirdParty/PixelPipeline`，构建与修订脚本在 `AgentScripts`。
+
+- 广东道当前低密度体块、纯色表面与几何 NPC 是原型欠账，不是风格目标。后续美术优先按 [精修待办](docs/08-blocks/tst-canton-demo/polish-plan.md) 做连续街面、层叠设施、真实尺度与完整立面样板；主路／支路分别核对，不能以统一挤窄地图或随机增加行人代替香港密度。
 
 ## 所有仓库改动必须提交并推送
 

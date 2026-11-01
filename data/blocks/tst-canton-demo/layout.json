@@ -1,0 +1,42 @@
+{
+  "block": "tst-canton-demo",
+  "sourceRoadId": "osm-snapshot:gis_osm_roads_free:564217668",
+  "sourceLengthM": 151.4030066379004,
+  "designLengthM": 68.131,
+  "designScale": 0.45,
+  "mapping": "Canton centerline rectified to horizontal X; north is -X, east is +Z. Cross-street, sidewalk widths, elevations, storefront placement and activities are design approximations; source geometry unchanged. Not a surveyed replica.",
+  "route": [
+    {
+      "x": -31.0655,
+      "y": 0.22,
+      "z": 2
+    },
+    {
+      "x": 0,
+      "y": 0.22,
+      "z": 2
+    },
+    {
+      "x": 26.0655,
+      "y": 0.22,
+      "z": 2
+    },
+    {
+      "x": 26.0655,
+      "y": 0.22,
+      "z": 19
+    },
+    {
+      "x": 26.0655,
+      "y": 0.22,
+      "z": 2
+    },
+    {
+      "x": 31.0655,
+      "y": 0.22,
+      "z": 2
+    }
+  ],
+  "busStopVerified": false,
+  "mtr": "A1 belongs to Nathan/Haiphong east of this slice; no invented Canton station entrance."
+}

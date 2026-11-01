@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-01",
+  "testedScene": "CantonRoadDemo",
+  "baseCommit": "a5eafc81b68b7b12420aba4271858b874eb07f36",
+  "files": {
+    "day-dof.png": "2bd361dfe6cdce5c630ee0a5ef576f3250738c0dc3f61a0013a7db7d124c0dcb",
+    "result.json": "1e38cd84884564e7d5a10c478037cd9cc8ffb6a5245b292d1cf792657ce19385",
+    "input-result.json": "292dd300e3f8d193f95c12b8788979f606a63fc9859b7db104d387f57d813462",
+    "route-3.png": "498c2ce1e989827e156bc478901c81c0aed2024d702361908cbbd8273296328b",
+    "route-5.png": "14bba930f05d6feced8c2d55d5444cf34a6889277b6de69d86fde9b98e75c3ac",
+    "README.md": "34ad027283317c08b6ba411cbf0dccb381f141eb3aff8a014825c000f6d32242",
+    "pixel-mode-3.png": "7d2d89b9dac745f12bc639c9cacaf033b1ca65dac32e485135a229b0b065b605",
+    "pixel-mode-2.png": "8ab794c6d967bb2eb9509df0338ad1331cd9f1ec70e81908061759633dff2f14",
+    "pixel-mode-0.png": "17c956956b4b7a43dcb6fdb1c9a5e29ae996ec56c34f07425c63af50cc57c859",
+    "pixel-mode-1.png": "8bc58af85d0b7e3c44c278eb916eac42492d1192a7fb1fee7d4523c7819f262a",
+    "night-dof.png": "94ee6ad711c79c28cc7ea17d1c66ef02ad5cdc73c9285f5c9c87aa29034b0a14",
+    "start.png": "743c08cc82e94a420a0cdbdfd2b373a9b0ead93113f22da4c0f0c69a6b8d5b75",
+    "build.json": "5c32bff287c0930ef2383daa1f001dd4aca1d6977e9c611b3665ffcd0617da72"
+  }
+}

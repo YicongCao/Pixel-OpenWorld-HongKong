@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/HongKong/Generated/Scenes/NathanArtSample.unity
-    guid: f904cb855fc6b4656b39565ffb3c9929
+    path: Assets/HongKong/Generated/CantonDemo/CantonRoadDemo.unity
+    guid: 61cfe1ec1643745408434b2130b8ed02
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

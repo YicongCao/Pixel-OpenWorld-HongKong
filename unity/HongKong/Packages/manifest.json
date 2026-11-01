@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.inspiaaa.unityhfsm": "https://github.com/Inspiaaa/UnityHFSM.git#f8fdc2efb862522acd26fab6cd940886c84cde37",
     "com.unity.ai.navigation": "2.0.16",
     "com.unity.cinemachine": "3.1.7",
     "com.unity.collab-proxy": "2.13.6",

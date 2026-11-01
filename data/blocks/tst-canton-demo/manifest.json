@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-01",
+  "bboxCRS84": [
+    114.1673,
+    22.2977,
+    114.17,
+    22.3007
+  ],
+  "upstream": "Read-only copies already extracted from ../game-research; original snapshots retained",
+  "sourceHashes": {
+    "data/hong-kong/osm/roads.geojson": "907d4846546debe80b8fe7463b02cd59c8f6b0d2c410e25f1bfbb912799d27c4",
+    "data/hong-kong/osm/buildings.geojson": "de47bc569e36e8eaa75f0bfd619eb758c517f893d3f59e5e688f2f620946b64e",
+    "data/hong-kong/osm/pois.geojson": "cbc9c23486940da74b65857aab6f7790e7a99159bd3db9a5927231007fa85f81",
+    "data/hong-kong/osm/transport.geojson": "99b694384c6d959fa8275c14c9f30977df8df164abd8aefce85bd860fa1f5490",
+    "data/hong-kong/transport/bus.json": "44562b700ecb8deb0b3c53674b2b1fa3b94b3c165304847720ad7fa1b9580f23",
+    "data/hong-kong/pedestrian/paths-hk1980.json": "57bbf57b31e1cda41423e6bbffbab89d87d25d3f41056652561b29ab0b46ba0b",
+    "data/hong-kong/mtr/mtr-maps-tst.pdf": "e5137cc4218925a2687f755af5574a0236722d16abe9ea9074b47a3b559e2956"
+  },
+  "counts": {
+    "pedestrian": 400,
+    "busStops": 4
+  },
+  "outputs": {
+    "roads.geojson": "c8f83a9635159d7f7a831c855439807b458cfb82d4db8cbda60f79364e6e524e",
+    "bus.json": "73ca21d20f7d378930df3181e49bbdf39ddc86028f466e90953296d0f12419d6",
+    "transport.geojson": "2a0f4b4b0ca1067c26eda1ddf687197b656bc092fbe3dbe2fa8d991e322ca36f",
+    "pedestrian.json": "18cd673efce914eebac466668badd2999cb962b6f86bdb8d130ce8c70f3c5ed3",
+    "pois.geojson": "76a599c64675139a6324bbf885aa1b8f72c0e78e4644c9ac134e0e471b2e82da",
+    "buildings.geojson": "53f3da4ed0b53c934a4206f5080e4249b731f95be434933054f89a2cea66f169",
+    "layout.json": "f0e9086da065ba2ae3ffb2fb0c1745eac3d7a57edd6bc77044da18277ead1a2b",
+    "tst-street.pdf": "e5137cc4218925a2687f755af5574a0236722d16abe9ea9074b47a3b559e2956"
+  }
+}

@@ -4,7 +4,7 @@
 <header><small>香港像素漫游 / 香港 HD-2D 研究 / 06 OF 08</small><h1>资产生产与实施</h1><p>远期 Roadmap、首版实施任务、技术样板与资产生产。</p></header>
 <div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html" aria-current="page">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">06 · 资产生产与实施</a><a href="#doc-roadmap">项目远期 Roadmap</a><a href="#doc-v0.1-implementation">v0.1 实施规划：一条会生活的香港街道</a><a href="#doc-prototype">首个 HD-2D 技术样板</a><a href="#doc-asset-pipeline">资产生产与复用</a><a href="#doc-街区还原工作流">香港 HD-2D 街区还原工作流</a><a href="#doc-hd2d-production-workflow">HD-2D 素材建模与拼装工作流</a><a href="#doc-hd2d-production-sources">HD-2D 制作：专业来源与核查记录</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
 <main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">06 · 资产生产与实施</h2>
-<p>远期 Roadmap、首版实施任务、技术样板与资产生产。当前已进入 <a href="../08-blocks/index.html#doc-implementation">v0.1 首批实施</a>，有可走路线与街角样板，尚无完整首版；游戏版本号与既有策划文档版本号分别管理。</p>
+<p>远期 Roadmap、首版实施任务、技术样板与资产生产。当前已进入 <a href="../08-blocks/index.html#doc-tst-nathan-haiphong-implementation">v0.1 首批实施</a>，有可走路线与街角样板，尚无完整首版；游戏版本号与既有策划文档版本号分别管理。</p>
 <p><a href="../README.md">研究总目录</a> · <a href="index.html">本章图文版</a></p>
 <h3 id="readme-6">本章资料</h3>
 <ul>
@@ -78,12 +78,12 @@
 <p>v1.0 之后，可以评估更精细的支路、更多公共空间、室内片段或港岛远景之外的新地区。它们属于候选方向；剧情、乘车与大范围城市模拟仍不自动加入。</p>
 <h3 id="roadmap-79">与现有研究的关系</h3>
 <p>本文件替代此前简单的 P0–P5 阶段表，新增版本范围与进入下一阶段的条件；没有宣称技术或画面已经通过。地理证据见 <a href="../02-geography/index.html#doc-readme">02 章</a>，技术候选见 <a href="../04-engineering/index.html#doc-readme">04 章</a>，生活内容见 <a href="../05-street-life/index.html#doc-readme">05 章</a>。实际制作记录进入 <a href="../08-blocks/index.html#doc-readme">08 街区档案</a>，验收证据进入对应街区的 <code>validation/</code>。</p>
-<p>2026-11-01 的具体起点与扩展顺序见 <a href="../08-blocks/index.html#doc-plan">首街区计划</a>：A1 街角 → 海防道向西 → 广东道／海港城 → 尖沙咀南部与东部 → 西九／北向九龙。</p></article><article id="doc-v0.1-implementation"><h2 id="v0.1-implementation-0">v0.1 实施规划：一条会生活的香港街道</h2>
-<p>2026-11-01 · 首个可玩版本计划 r2 · 状态：已执行 <a href="../08-blocks/index.html#doc-implementation">实施批次 01</a>，有连续路线、灰盒和 A1 实机样板；V1-03 美术待反馈，完整 v0.1 尚未完成。</p>
+<p>2026-11-01 的具体起点与扩展顺序见 <a href="../08-blocks/index.html#doc-tst-nathan-haiphong-plan">首街区计划</a>：A1 街角 → 海防道向西 → 广东道／海港城 → 尖沙咀南部与东部 → 西九／北向九龙。</p></article><article id="doc-v0.1-implementation"><h2 id="v0.1-implementation-0">v0.1 实施规划：一条会生活的香港街道</h2>
+<p>2026-11-01 · 首个可玩版本计划 r2 · 状态：已执行 <a href="../08-blocks/index.html#doc-tst-nathan-haiphong-implementation">实施批次 01</a>，有连续路线、灰盒和 A1 实机样板；V1-03 美术待反馈，完整 v0.1 尚未完成。</p>
 <p><strong>首版交付是一段可反复行走、可停留观察、有真实香港依据的 HD-2D 小街区，以及能重新构建它的资产与工程。</strong> 玩家可控制白帽小巫师横向走过主街、深入支路、观察站口和公交活动、保存退出再继续。目标是一次约 5–10 分钟的探索与观察体验；这是设计目标，不是靠放慢速度或强制等待拉长内容。</p>
 <p>它同时验证三件事：画面是否达到目标、街道是否自然可走、数据到实机的制作方式是否能复用。技术灰盒是中途检查点，不作为最终 v0.1 发布结果。远期扩展见 <a href="#doc-roadmap">Roadmap</a>。</p>
 <h3 id="v0.1-implementation-8">1. 选段与范围冻结</h3>
-<p>最新首选为 <a href="../08-blocks/index.html#doc-plan">弥敦道—海防道／A1</a>，取代早期广东道街角优先建议。以下保留候选比较依据。<strong>第一项工作是比较具体边界，而不是马上把现有概念图做成场景。</strong> 现有资料尚未证明原来的 80–150 米主街＋30–60 米支路范围能同时容纳真实巴士站、港铁口及完整通行路线。</p>
+<p>最新首选为 <a href="../08-blocks/index.html#doc-tst-nathan-haiphong-plan">弥敦道—海防道／A1</a>，取代早期广东道街角优先建议。以下保留候选比较依据。<strong>第一项工作是比较具体边界，而不是马上把现有概念图做成场景。</strong> 现有资料尚未证明原来的 80–150 米主街＋30–60 米支路范围能同时容纳真实巴士站、港铁口及完整通行路线。</p>
 <ul>
 <li>候选 A：广东道—海防道街角，以连续商业立面和横向主街为重点。</li>
 <li>候选 B：海防道另一端与弥敦道相关街段，以站口及交通活动的可达性为核对重点；是否合适须按实际站位、过街和街景证据确认。</li>
@@ -176,7 +176,7 @@
 <p>研究基线：2026-11-01 / v0.4。按主题整理；建议与待验证项不等同于已实现功能。</p>
 <p>本文是 <a href="#doc-v0.1-implementation">v0.1 实施规划</a> 中 V1-02／03 的技术验证依据，不是完整首版的交付范围。旧样板尺寸只作候选，最终街段由 V1-01 核实站口、站位与真实通行后确定。</p>
 <h3 id="prototype-6">锁定方案前必须通过的小样</h3>
-<p>最新选段建议见 <a href="../08-blocks/index.html#doc-plan">弥敦道—海防道／A1 档案</a>，取代早期广东道街角优先方案。先做 20—30 米小样，再扩主街与支路，最终边界随人行连通性确定。无需一开始做完整海防道或把 Apple、站口、雪糕车强行放在一起。另设不计入真实地图的阶梯／天桥测试件。</p>
+<p>最新选段建议见 <a href="../08-blocks/index.html#doc-tst-nathan-haiphong-plan">弥敦道—海防道／A1 档案</a>，取代早期广东道街角优先方案。先做 20—30 米小样，再扩主街与支路，最终边界随人行连通性确定。无需一开始做完整海防道或把 Apple、站口、雪糕车强行放在一起。另设不计入真实地图的阶梯／天桥测试件。</p>
 <p>生产顺序与交接物按 <a href="#doc-hd2d-production-workflow">HD-2D 制作 SOP</a> 执行。当前 URP 17.3 源码核查发现正交景深风险，因此先验证弱透视＋原生 DOF；正交比较需另列深度／景深验证，不作为等成本替换。详见 <a href="../04-engineering/index.html#doc-hd2d-camera-lighting">镜头与渲染实施</a>。</p>
 <div class="table-scroll"><table>
 <tr><th>验证项</th><th>通过条件</th><th>失败时如何处理</th></tr>

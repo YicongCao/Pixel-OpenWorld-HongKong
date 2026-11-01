@@ -5,6 +5,7 @@ namespace HongKong.Walk
     public sealed class StreetHud : MonoBehaviour
     {
         public StreetWalker walker;
+        public string location = "Nathan Road  ×  Haiphong Road  ·  Tsim Sha Tsui";
         public string stage = "V1-02 / spatial prototype";
         GUIStyle title, detail;
         void OnGUI()
@@ -18,7 +19,7 @@ namespace HongKong.Walk
             GUI.DrawTexture(new Rect(22,20,440,98),Texture2D.whiteTexture);
             GUI.color = new Color(.96f,.92f,.8f);
             GUI.Label(new Rect(38,30,420,30),"HONG KONG / PIXEL RAMBLE", title);
-            GUI.Label(new Rect(38,65,420,26),"Nathan Road  ×  Haiphong Road  ·  Tsim Sha Tsui",detail);
+            GUI.Label(new Rect(38,65,420,26),location,detail);
             GUI.Label(new Rect(38,88,420,24),stage,detail);
             GUI.color = Color.white;
             GUI.Label(new Rect(25,Screen.height-38,950,28),"WASD / Arrows   Walk     Shift   Fast walk     Esc   Pause     N   Day / Night     F   Depth of field",detail);
