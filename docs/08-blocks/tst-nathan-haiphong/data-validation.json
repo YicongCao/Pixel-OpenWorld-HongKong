@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-01",
+  "scope": "Hashes, bbox selection, IDs and references only; no walkability, levels, traffic, screenshot authenticity or performance certification",
+  "passed": true,
+  "checks": {
+    "source_hashes": 11,
+    "output_hashes": 12,
+    "spatial_feature_counts": {
+      "roads.geojson": 70,
+      "buildings.geojson": 55,
+      "pois.geojson": 50,
+      "rail-entrance-candidates.geojson": 5,
+      "street-nodes.geojson": 36,
+      "pedestrian_paths": 234,
+      "bus": {
+        "stops": 3,
+        "route_stop_rows": 92
+      },
+      "gmb": {
+        "stops": 2,
+        "route_stop_rows": 4
+      },
+      "kmb_stops": 9
+    },
+    "photo_originals_and_previews": 6,
+    "selected_concepts": 3,
+    "superseded_concepts": 1,
+    "gameplay_tested": false
+  },
+  "errors": []
+}

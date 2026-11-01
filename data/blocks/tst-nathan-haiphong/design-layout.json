@@ -1,0 +1,37 @@
+{
+  "status": "design_proposal_not_navigation",
+  "origin_crs84": [
+    114.17205,
+    22.29825
+  ],
+  "unity_axes": "X east, Z north, Y height; no compression applied to source data",
+  "camera_main": {
+    "look": "west",
+    "screen_right": "north",
+    "pitch_degrees": 30,
+    "projection": "weak perspective",
+    "horizontal_main": "Nathan Road",
+    "depth_branch": "Haiphong Road westward; mosque on right/north side, shops on left/south side"
+  },
+  "walking_corridor_crs84": [
+    [
+      114.1719,
+      22.29886
+    ],
+    [
+      114.1719,
+      22.29832
+    ],
+    [
+      114.17177,
+      22.29822
+    ],
+    [
+      114.1708,
+      22.29822
+    ]
+  ],
+  "route_is_unverified": true,
+  "height": "No invented hill; only verified kerbs, entrance stairs and park terraces.",
+  "commercial_policy": "Keep photo-era storefront candidates; do not insert distant Apple/K11/Harbour City into this block"
+}

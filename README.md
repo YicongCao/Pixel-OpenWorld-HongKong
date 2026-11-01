@@ -11,8 +11,10 @@
 - [资产目录与指引](assets/Readme.md)／[数据目录与指引](data/Readme.md)：现有内容、来源、操作规则与待建结构。
 - [香港选区资料包](data/hong-kong/README.md)：只读复用相邻 game-research 的公开资料快照，源数据与设计分别保存。
 
-五张概念图是探索图，不是实机画面。新旧概念与偏差归入 [空间与美术](docs/03-hd2d/README.md)；技术选择与兼容性归入 [引擎与运行架构](docs/04-engineering/README.md)。
+五张早期概念图和首街区三张新参考图均为探索图，不是实机画面。新旧概念与偏差归入 [空间与美术](docs/03-hd2d/README.md)；技术选择与兼容性归入 [引擎与运行架构](docs/04-engineering/README.md)。
 
 复现文档：`../game-research/.venv-hk-data/bin/python scripts/build_report.py`。结构／引用检查：`python3 scripts/validate_docs.py`。数据提取与完整检查命令见资料包 README，历史结果及本次迁移记录见 [验证与证据](docs/07-validation/README.md)。
 
 每个完成并验证的项目修改批次都生成 commit 并推送；目标远程及提交规则见根目录 [AGENTS.md](AGENTS.md)。
+
+首个建议街区：[弥敦道 × 海防道／A1 选段与扩展计划](docs/08-blocks/tst-nathan-haiphong/plan.md) · [三张 HD-2D 渲染参考](docs/08-blocks/tst-nathan-haiphong/assets.md)。

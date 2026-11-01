@@ -1,0 +1,96 @@
+{
+  "references": [
+    {
+      "id": "a1-2024",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Tsim_Sha_Tsui_Station_Exit_A1_2024_08_part1.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Tsim_Sha_Tsui_Station_Exit_A1_2024_08_part1.jpg",
+      "author": "Qwer132477",
+      "photographed": "2024-08-12",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "file": "a1-2024.jpg",
+      "sha256": "32d52f1a0e2b5fb2df739e4403d69d181a88597a992b1cf4f6e6e2d9daf264e9",
+      "changes": "Unmodified original download",
+      "retrieved": "2026-11-01",
+      "input_preview": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Tsim_Sha_Tsui_Station_Exit_A1_2024_08_part1.jpg/1280px-Tsim_Sha_Tsui_Station_Exit_A1_2024_08_part1.jpg",
+        "file": "a1-2024-1280.jpg",
+        "sha256": "d7d828b7ff919b0601d697f26d24f18cf53c6e206e0245453eb5b215c31f0903",
+        "changes": "Wikimedia-generated 1280px thumbnail, unmodified download"
+      },
+      "direction": "A1 west-facing frontage; direction inferred from map, not surveyed",
+      "camera_crs84": null,
+      "exif_heading_degrees": null,
+      "observed": "Glass canopy, descent and adjacent upward stairs; dated shops on south side",
+      "actually_viewed": true,
+      "used_input": "a1-2024-1280.jpg",
+      "temporal_limit": "Dated observation, not proof of every current shop or operating condition"
+    },
+    {
+      "id": "haiphong-west-2024",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Haiphong_Road_13-04-2024.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Haiphong_Road_13-04-2024.jpg",
+      "author": "LN9267",
+      "photographed": "2024-04-13",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "file": "haiphong-west-2024.jpg",
+      "sha256": "dffae2b2fcbc17cb4ac33536ca8fb3b332475d47071a0775383c3a2de49693ca",
+      "changes": "Unmodified original download",
+      "retrieved": "2026-11-01",
+      "input_preview": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Haiphong_Road_13-04-2024.jpg/1280px-Haiphong_Road_13-04-2024.jpg",
+        "file": "haiphong-west-2024-1280.jpg",
+        "sha256": "4cce546f7e854b13abc23ba56160d3923f7e2529518b84f3d1a06c1bcd0e8fd2",
+        "changes": "Wikimedia-generated 1280px thumbnail, unmodified download"
+      },
+      "direction": "Westward Haiphong Road",
+      "camera_crs84": [
+        114.171067,
+        22.298069
+      ],
+      "exif_heading_degrees": 277.6389,
+      "observed": "South shops, north stone retaining wall and pink-tiled utility building; separate asphalt carriageway",
+      "actually_viewed": true,
+      "used_input": "haiphong-west-2024-1280.jpg",
+      "temporal_limit": "Dated observation, not proof of every current shop or operating condition"
+    },
+    {
+      "id": "mosque-2026",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Kowloon_Masjid_and_Islamic_Centre_21-07-2026.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Kowloon_Masjid_and_Islamic_Centre_21-07-2026.jpg",
+      "author": "LN9267",
+      "photographed": "2026-07-21",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "file": "mosque-2026.jpg",
+      "sha256": "cadeff7a52a55818f2c66b899ac327ec45a2f885f4d8fe6f55f20eaa872bfd2f",
+      "changes": "Unmodified original download",
+      "retrieved": "2026-11-01",
+      "input_preview": {
+        "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Kowloon_Masjid_and_Islamic_Centre_21-07-2026.jpg/1280px-Kowloon_Masjid_and_Islamic_Centre_21-07-2026.jpg",
+        "file": "mosque-2026-1280.jpg",
+        "sha256": "ce41a2b8e06074bfb27aad4257ca069a04a6f1b068a1221f9fcd0af1564da0a4",
+        "changes": "Wikimedia-generated 1280px thumbnail, unmodified download"
+      },
+      "direction": "Mosque across Nathan Road",
+      "camera_crs84": [
+        114.172189,
+        22.298722
+      ],
+      "exif_heading_degrees": 293.3108,
+      "observed": "White arched facade, palms, green bus shelters and multiple red stop poles",
+      "actually_viewed": true,
+      "used_input": "mosque-2026-1280.jpg",
+      "temporal_limit": "Dated observation, not proof of every current shop or operating condition"
+    }
+  ],
+  "block_id": "tst-nathan-haiphong",
+  "inspected": "2026-11-01",
+  "license_note": "Originals and Commons thumbnails retain individual licenses; AI adaptations documented separately",
+  "gaps": [
+    "Nathan east-side facade not covered",
+    "No verified nighttime light survey",
+    "No observed loading schedule or fixed ice-cream van location"
+  ]
+}

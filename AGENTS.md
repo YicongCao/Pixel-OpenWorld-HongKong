@@ -24,7 +24,7 @@
 - `data/`：地图／城建／交通来源与派生资料。涉及数据先读 [Readme.md](data/Readme.md)、[Agent.md](data/Agent.md)，再查 `hong-kong/` 对应包的 README／manifest；道路建筑在 osm，三维行人路径在 pedestrian，公交在 transport，港铁图在 mtr，设施补充在 street-life，走廊研究在 hd2d-study。
 - `assets/`：概念与未来生产资产。涉及资产先读 [Readme.md](assets/Readme.md)、[Agent.md](assets/Agent.md)；当前 `concepts/` 是探索图，含 `hd2d/` 子集，不能当成已验收游戏资源。
 - `scripts/`：`extract_hk.py`／`extract_street_life.py` 提取数据，`build_hd2d_study.py` 生成走廊研究，`build_report.py` 按 `docs_catalog.json` 渲染章节，`validate_docs.py` 校验文档，`validate_delivery.py` 完整校验数据。研究依赖见 [requirements-research.txt](scripts/requirements-research.txt)；运行前检查读写范围，不因改文档重跑全量提取。
-- 待实施建立：`data/blocks/<block_id>/` 存街区骨架与来源，`references/blocks/<block_id>/` 存实景索引及可保存原件，`assets/blocks/<block_id>/generated/`／`authored/` 分离生成与精修；`docs/08-blocks/<block_id>/` 存计划及实机验证。这些街区目录尚未建立，不能当成现有成果；建立后更新本导航。
+- 街区制作目录：`data/blocks/<block_id>/` 存街区骨架与来源，`references/blocks/<block_id>/` 存实景索引及可保存原件，`assets/blocks/<block_id>/generated/`／`authored/` 分离生成与精修；`docs/08-blocks/<block_id>/` 存计划及实机验证。当前已建立 `tst-nathan-haiphong` 的数据、实景、概念和计划；尚无 authored 精修或街区实机结果，入口见 [首街区计划](docs/08-blocks/tst-nathan-haiphong/plan.md)。
 - `unity/`：唯一 Unity 工程为 `unity/HongKong/`，先读 [Unity README](unity/README.md) 和 [本地环境记录](docs/04-engineering/local-development.md)。使用锁定的 Editor／Packages；所有 CLI 编辑器操作显式传本工程 `--project-path`，不得误操作旧项目。环境测试场景不代表已完成街区。
 - `.agents/skills/`：按需读取 Unity 官方的 `unity-cli`、`unity-pipeline`、`unity-package-management`；它们指导工具操作，版本与项目范围以本仓库约定为准，不自动升级引擎或采购框架。
 - [.gitignore](.gitignore)：临时／敏感文件和引擎缓存边界；`.local/`／`.private/` 是按需使用的忽略目录。`../game-research` 是只读上游，不是本项目运行时依赖。

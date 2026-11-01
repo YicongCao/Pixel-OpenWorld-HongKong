@@ -3,9 +3,9 @@
   "passed": true,
   "checks": {
     "chapters": 8,
-    "markdown_files": 38,
-    "local_links": 468,
-    "embedded_images": 6,
+    "markdown_files": 43,
+    "local_links": 531,
+    "embedded_images": 10,
     "original_data_hashes": 36,
     "migrated_files": 8,
     "external_sources_preserved": 36
@@ -14,11 +14,11 @@
   "html_sha256": {
     "docs/01-vision/index.html": "ccc5c868c2d11a9585d32da6a907ab283c18bbb2fb1877af559a90733448c561",
     "docs/02-geography/index.html": "99f4b80c9ca79920175ebfbe3aa1f57281fbe561bc87620af11ccb7ce4c62424",
-    "docs/03-hd2d/index.html": "f034fba613e04e6ca7f5a749c8efd38dfe75c454456b73e2c095cf8bb8099b53",
+    "docs/03-hd2d/index.html": "d35985623838075c70e2446babde8d5355539ce1956c6c3cc5199be1e2c2307b",
     "docs/04-engineering/index.html": "7b8e5f3f53f8479d24db48faa9e540ca1f9eba51136d6ddde24f36d68eac80a5",
     "docs/05-street-life/index.html": "147f0f4eeb6364d92c9c0f9e22c8f7360621136b71357ab0680458633ac41db5",
-    "docs/06-production/index.html": "e6509bc7cfb920212370b004b9c6a48009c88175a33345d46b86a5140f2f6bb8",
+    "docs/06-production/index.html": "5217f8c8e8dfc6e0fed98a97e6f114e0c9d7a941183434fd65eb043ea6f95174",
     "docs/07-validation/index.html": "a506cf414f7fccd9cff52ef78444d481ffff35dfb053e8d96f18d3a3324c7b07",
-    "docs/08-blocks/index.html": "dc654bf72307019c66e4a0ca5f5544823c4cda902ddacaab18e42e71e2ecf490"
+    "docs/08-blocks/index.html": "cd62f7996a4e5d66c499dd60d9724ac011e18ef38de6762d7305ac14a9425b52"
   }
 }

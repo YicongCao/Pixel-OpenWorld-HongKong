@@ -73,7 +73,7 @@ def validate_link(source, url):
     if parsed.fragment and target in pages:
         check(unquote(parsed.fragment) in pages[target].ids, f'broken HTML anchor: {source.relative_to(ROOT)} -> {url}')
 
-md_files = sorted({p for folder in ('docs', 'assets', 'data') for p in (ROOT / folder).rglob('*.md')} | {ROOT / 'README.md', ROOT / 'AGENTS.md', ROOT / 'unity/README.md'})
+md_files = sorted({p for folder in ('docs', 'assets', 'data', 'references') for p in (ROOT / folder).rglob('*.md')} | {ROOT / 'README.md', ROOT / 'AGENTS.md', ROOT / 'unity/README.md'})
 for path in md_files:
     text = re.sub(r'```.*?```', '', path.read_text(), flags=re.S)
     for url in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', text):
@@ -105,12 +105,16 @@ for item in migration['sections']:
 
 expected_images = {digest(p) for p in (ROOT / 'assets/concepts').rglob('*.png')}
 expected_images.add(digest(DOCS / '03-hd2d/figures/corridor-projection.png'))
+# Published street-block concepts are explicit; rejected iterations are not embedded.
+for manifest_path in (ROOT / 'assets/blocks').glob('*/generated/concepts/manifest.json'):
+    block_manifest = json.loads(manifest_path.read_text())
+    expected_images.update(digest(ROOT / name) for name in block_manifest['published_images'])
 actual_images = []
 for page in pages.values():
     for image in page.images:
         if image.get('src', '').startswith('data:image/png;base64,'):
             actual_images.append(hashlib.sha256(base64.b64decode(image['src'].split(',', 1)[1])).hexdigest())
-check(set(actual_images) == expected_images and len(actual_images) == len(expected_images) == 6, 'concept/diagram embedding mismatch or duplication')
+check(set(actual_images) == expected_images and len(actual_images) == len(expected_images) and len(expected_images) >= 6, 'concept/diagram embedding mismatch or duplication')
 check('docs/Agent.md' in (ROOT / 'AGENTS.md').read_text() and 'docs/Skill.md' in (ROOT / 'AGENTS.md').read_text(), 'root AGENTS must explicitly route to docs guidance')
 # Future rebuilds must not resurrect the old mixed document tree.
 for name in ('build_report.py', 'build_hd2d_study.py'):

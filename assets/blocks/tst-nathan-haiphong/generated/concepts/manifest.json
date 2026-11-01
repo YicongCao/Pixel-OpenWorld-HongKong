@@ -1,0 +1,69 @@
+{
+  "created": "2026-11-01",
+  "tool": "built-in image_gen.imagegen",
+  "scope": "three selected concepts plus one superseded iteration; no runtime assets",
+  "license": "CC BY-SA 4.0 for licensable adapted artwork; see references index and assets.md",
+  "attribution": "Based on photographs by Qwer132477 (CC BY 4.0) and LN9267 (CC BY-SA 4.0), with AI HD-2D reinterpretation, camera and lighting changes. GIS guide: OSM contributors / Geofabrik. No endorsement.",
+  "reference_index": "references/blocks/tst-nathan-haiphong/index.json",
+  "inputs": {
+    "assets/blocks/tst-nathan-haiphong/generated/concepts/day-v2.png": "5fc25b3b229c229a605bb6496703339b67d2d7d63871a34c5611cc23d38d257b",
+    "assets/blocks/tst-nathan-haiphong/generated/concepts/iterations/day-v1-rejected.png": "274931b7ee7c13853c767da28f9e3bce7722eb515c36b8381aec922b2923e832",
+    "data/blocks/tst-nathan-haiphong/layout-guide.png": "a25ec426b941f7f8550da74b2f5d1d555a5652c8e66fd61916446388e75639a5",
+    "references/blocks/tst-nathan-haiphong/a1-2024-1280.jpg": "d7d828b7ff919b0601d697f26d24f18cf53c6e206e0245453eb5b215c31f0903",
+    "references/blocks/tst-nathan-haiphong/haiphong-west-2024-1280.jpg": "4cce546f7e854b13abc23ba56160d3923f7e2529518b84f3d1a06c1bcd0e8fd2",
+    "references/blocks/tst-nathan-haiphong/mosque-2026-1280.jpg": "ce41a2b8e06074bfb27aad4257ca069a04a6f1b068a1221f9fcd0af1564da0a4"
+  },
+  "outputs": [
+    {
+      "file": "assets/blocks/tst-nathan-haiphong/generated/concepts/day-v2.png",
+      "sha256": "5fc25b3b229c229a605bb6496703339b67d2d7d63871a34c5611cc23d38d257b",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "selected_concept_not_game_asset"
+    },
+    {
+      "file": "assets/blocks/tst-nathan-haiphong/generated/concepts/depth-v1.png",
+      "sha256": "91fdaa4763272575a99ab13b8294ba78a5b2e8ecdf92d457ac80d7fe6cbfcca7",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "selected_concept_not_game_asset"
+    },
+    {
+      "file": "assets/blocks/tst-nathan-haiphong/generated/concepts/iterations/day-v1-rejected.png",
+      "sha256": "274931b7ee7c13853c767da28f9e3bce7722eb515c36b8381aec922b2923e832",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "superseded_geographic_error"
+    },
+    {
+      "file": "assets/blocks/tst-nathan-haiphong/generated/concepts/night-v1.png",
+      "sha256": "376a1eb7217620b56bfa01e51c81f62e370992f3f85aa5ba71677ea15d79bb3f",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "status": "selected_concept_not_game_asset"
+    }
+  ],
+  "published_images": [
+    "assets/blocks/tst-nathan-haiphong/generated/concepts/day-v2.png",
+    "assets/blocks/tst-nathan-haiphong/generated/concepts/depth-v1.png",
+    "assets/blocks/tst-nathan-haiphong/generated/concepts/night-v1.png",
+    "data/blocks/tst-nathan-haiphong/layout-guide.png"
+  ],
+  "known_issues": [
+    "Uncorrected lettering and invented decorative lamps",
+    "Hero still includes blue details, brim and backpack; not approved design",
+    "Repeated school-like NPC clothing",
+    "Road widths, markings, direction and distant slope are not surveyed",
+    "Depth concept has vehicle generation artifacts",
+    "No Unity street scene, gameplay or performance validation"
+  ],
+  "review_document": "docs/08-blocks/tst-nathan-haiphong/assets.md"
+}

@@ -20,6 +20,7 @@
 ## 当前实施规划
 
 - [远期 Roadmap](06-production/roadmap.md)：从单街段到九龙步行网络的版本范围和扩区门槛。
+- [首街区：弥敦道 × 海防道／A1](08-blocks/tst-nathan-haiphong/plan.md)：选段、扩展路线和真实参考；[三张 HD-2D 概念](08-blocks/tst-nathan-haiphong/assets.md)。
 - [首个可玩版本 v0.1](06-production/v0.1-implementation.md)：选段、灰盒、美术、街道生活、存档与实机交付的实施顺序。
 
 ## 给 Codex 的阅读入口
@@ -35,5 +36,5 @@
 - 修改对应主题 Markdown，不直接手改生成的 HTML；`scripts/docs_catalog.json` 是章节渲染清单。
 - 重建：`../game-research/.venv-hk-data/bin/python scripts/build_report.py`。
 - 检查：`python3 scripts/validate_docs.py`；检查结果写入第 07 章，不触碰上游数据。
-- 原始地图与许可仍位于 [data/hong-kong](../data/hong-kong/README.md)，概念源图仍位于 `assets/concepts/`，不为整理文档重复搬动原数据与生产资产。
+- 原始地图与许可仍位于 [data/hong-kong](../data/hong-kong/README.md)，概念源图位于 `assets/concepts/` 和 `assets/blocks/`，不为整理文档重复搬动原数据与生产资产。
 - 旧长页和混合文档已被本目录替代；章节去向、图件哈希与原提交见 [迁移记录](07-validation/migration-map.json)。历史校验保留原文，只代表当时的报告。

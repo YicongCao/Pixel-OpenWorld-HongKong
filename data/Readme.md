@@ -15,11 +15,11 @@
 
 当前没有已确认的地下供水／排污／电力管网包，也没有完整车道级轨迹、实时人流或现场照片。详细覆盖以各包说明为准。
 
-## 街区数据（实施时建立）
+## 街区数据
 
-`blocks/<block_id>/` 尚未创建。选段确定后存必要原件／派生数据、来源 manifest、逻辑骨架和缺口；公共快照可按源 ID 引用，不重复复制整包。地理事实与游戏布局／压缩分别保存，运行时不能依赖隔壁仓库。
+已建立 [tst-nathan-haiphong](blocks/tst-nathan-haiphong/README.md)，保存弥敦道／海防道资料。按街区存必要原件／派生数据、来源 manifest、逻辑骨架和缺口；公共快照可按源 ID 引用，不重复复制整包。地理事实与游戏布局／压缩分别保存，运行时不能依赖隔壁仓库。
 
-照片参考归 `references/blocks/<block_id>/`（待创建），视觉资源归 [assets](../assets/Readme.md)，研究结论归 [地理与交通](../docs/02-geography/README.md)，具体进度归 [街区档案](../docs/08-blocks/README.md)。
+照片参考归 `references/blocks/<block_id>/`，视觉资源归 [assets](../assets/Readme.md)，研究结论归 [地理与交通](../docs/02-geography/README.md)，具体进度归 [街区档案](../docs/08-blocks/README.md)。
 
 ## 使用与重建
 

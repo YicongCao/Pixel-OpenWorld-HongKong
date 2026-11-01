@@ -85,7 +85,10 @@
     "title": "街区档案",
     "description": "每个实际制作街区的计划、证据、资产与实机结果。",
     "documents": [
-      "README.md"
+      "README.md",
+      "tst-nathan-haiphong/plan.md",
+      "tst-nathan-haiphong/sources.md",
+      "tst-nathan-haiphong/assets.md"
     ]
   }
 ]
