@@ -7,6 +7,7 @@
 - [远期 Roadmap](docs/06-production/roadmap.md)／[首个可玩版本 v0.1 实施规划](docs/06-production/v0.1-implementation.md)：版本范围、任务依赖与验收门槛。
 - [Codex 阅读约定](docs/Agent.md)／[按任务读取研究](docs/Skill.md)。
 - [街区还原工作流](docs/06-production/街区还原工作流.md)：数据骨架 → 实景参考 → HD-2D 图生图 → 资产／建模 → Unity 街道生活 → 主角动线验证。
+- [资产目录与指引](assets/Readme.md)／[数据目录与指引](data/Readme.md)：现有内容、来源、操作规则与待建结构。
 - [香港选区资料包](data/hong-kong/README.md)：只读复用相邻 game-research 的公开资料快照，源数据与设计分别保存。
 
 五张概念图是探索图，不是实机画面。新旧概念与偏差归入 [空间与美术](docs/03-hd2d/README.md)；技术选择与兼容性归入 [引擎与运行架构](docs/04-engineering/README.md)。
