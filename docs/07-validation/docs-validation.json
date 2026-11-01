@@ -4,7 +4,7 @@
   "checks": {
     "chapters": 8,
     "markdown_files": 65,
-    "local_links": 891,
+    "local_links": 894,
     "embedded_images": 10,
     "original_data_hashes": 36,
     "migrated_files": 8,
@@ -14,10 +14,10 @@
   "html_sha256": {
     "docs/01-vision/index.html": "ccc5c868c2d11a9585d32da6a907ab283c18bbb2fb1877af559a90733448c561",
     "docs/02-geography/index.html": "99f4b80c9ca79920175ebfbe3aa1f57281fbe561bc87620af11ccb7ce4c62424",
-    "docs/03-hd2d/index.html": "16058e5f5eb9c84dff488c4f62ad4ae79ca926bb5ca620796f1b2d7a1a672516",
+    "docs/03-hd2d/index.html": "ffe451dc762ee38258d9deaa9a4c6cc927c7a6ab1a0e0027eb279a121154185a",
     "docs/04-engineering/index.html": "529a7caa46182d1fdba04e75ed21a2d46e6a4f6b6915249d564c129e1d5cc8ee",
     "docs/05-street-life/index.html": "147f0f4eeb6364d92c9c0f9e22c8f7360621136b71357ab0680458633ac41db5",
-    "docs/06-production/index.html": "803fbb75574f4ac8fd6b82b22cac2d012f1a3c949016fdf541d0c991c2d8c89f",
+    "docs/06-production/index.html": "5e9093cd2e0394c75854d2f9846241d3c3095efb31d56f84e64e720e1c1dcccc",
     "docs/07-validation/index.html": "a506cf414f7fccd9cff52ef78444d481ffff35dfb053e8d96f18d3a3324c7b07",
     "docs/08-blocks/index.html": "4e0e35f66a898d5c1e6951d436037085975f9a666eac44d47f50aef048d3ffa4"
   }
