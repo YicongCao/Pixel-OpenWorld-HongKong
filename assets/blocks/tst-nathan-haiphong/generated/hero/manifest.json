@@ -1,0 +1,24 @@
+{
+  "tool": "image_gen.imagegen",
+  "date": "2026-11-01",
+  "file": "white-hat-sheet-v1.png",
+  "sha256": "af08eb1f09f8ab6b746694ce7e41c5f520ecfe97343519d96c66d9a255c51604",
+  "size": [
+    1659,
+    948
+  ],
+  "prompt": "prompt.txt",
+  "prompt_sha256": "9fa822fbcc21e3ae8b137f383f7354b53e87414631a40a2129b925edac1feee1",
+  "inputs": [
+    {
+      "path": "assets/blocks/tst-nathan-haiphong/generated/concepts/day-v2.png",
+      "sha256": "5fc25b3b229c229a605bb6496703339b67d2d7d63871a34c5611cc23d38d257b"
+    }
+  ],
+  "status": "production_sample_not_final_art",
+  "notes": [
+    "Grid requested dimensions were not respected; metadata uses actual image dimensions and inspected alpha bounds.",
+    "No pixels edited. Runtime uses frame UV rectangles, direction-based height normalization and bottom anchors.",
+    "Row 0 idle height 177 px; side-view proportions differ. Generated rim pixels and gait need visual review."
+  ]
+}

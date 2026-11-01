@@ -1,6 +1,6 @@
 # 资产目录
 
-本目录保存视觉资产源文件与来源记录。当前有五张早期探索图和首街区三张新参考图（另保留一张弃用迭代），尚无已验收的游戏贴图、角色动画、模型或 Unity 资源包。操作前读 [Agent.md](Agent.md)，项目约定见 [AGENTS.md](../AGENTS.md)。
+本目录保存视觉资产源文件与来源记录。当前有五张早期探索图和首街区三张新参考图（另保留一张弃用迭代），新增首批角色图集、材质和 Unity 街角样板；已验证导入与行走，但尚无已验收的最终美术资产。操作前读 [Agent.md](Agent.md)，项目约定见 [AGENTS.md](../AGENTS.md)。
 
 ## 现有内容
 
@@ -21,3 +21,5 @@
 完整生产顺序见 [街区还原工作流](../docs/06-production/街区还原工作流.md)，首版范围见 [v0.1 规划](../docs/06-production/v0.1-implementation.md)。新增资产后更新对应 manifest 和本目录索引，按根约定验证、提交并推送。
 
 首批：[弥敦道 × 海防道概念与输入记录](blocks/tst-nathan-haiphong/generated/concepts/manifest.json)，用途与偏差见 [检查记录](../docs/08-blocks/tst-nathan-haiphong/assets.md)。`authored/` 尚未创建。
+
+首批生产小样：[白帽图集与哈希](blocks/tst-nathan-haiphong/generated/hero/manifest.json)、[28 帧切片](blocks/tst-nathan-haiphong/generated/hero/frames.json)、[八类材质与哈希](blocks/tst-nathan-haiphong/generated/materials/manifest.json)。采用方式、实机结果和缺口见 [实施记录](../docs/08-blocks/tst-nathan-haiphong/implementation.md)。

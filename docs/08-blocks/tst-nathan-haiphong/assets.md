@@ -44,3 +44,7 @@
 ## 许可与制作记录
 
 实景来源为 Qwer132477 的 CC BY 4.0 和 LN9267 的 CC BY-SA 4.0 照片，详见 [参考索引](../../../references/blocks/tst-nathan-haiphong/index.json)。本组概念作为这些照片的 HD-2D 转译，按 CC BY-SA 4.0 提供可许可的改编部分；保留作者／来源并注明 AI 转译和布局重组，不暗示作者认可。此标注不授予品牌或建筑额外权利，也不扩展为全仓库代码许可。
+
+## 已进入生产的小样
+
+新增 [白帽四向 28 帧图集](../../../assets/blocks/tst-nathan-haiphong/generated/hero/manifest.json) 与 [八类表面材质](../../../assets/blocks/tst-nathan-haiphong/generated/materials/manifest.json)，通过 Unity 程序化分件导入 A1 街角。它们与上方概念分别管理；模型、像素密度、字体和动画限制见 [实机实施记录](implementation.md)。当前只做一个街角，不代表整条街已精做。

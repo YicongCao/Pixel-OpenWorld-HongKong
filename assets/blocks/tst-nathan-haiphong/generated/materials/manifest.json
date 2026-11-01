@@ -1,0 +1,28 @@
+{
+  "tool": "image_gen.imagegen",
+  "date": "2026-11-01",
+  "file": "surfaces-v1.png",
+  "sha256": "54e3234ddb9a6743bd482d7458ac0556bdcd0fd46961067fa13d7ea99dc372ed",
+  "size": [
+    1774,
+    887
+  ],
+  "prompt": "prompt.txt",
+  "prompt_sha256": "4cb92b144b49b9ee8b78d4532b2378f74448adcc662faef39679efb02c2cc376",
+  "inputs": [
+    {
+      "path": "references/blocks/tst-nathan-haiphong/a1-2024-1280.jpg",
+      "sha256": "d7d828b7ff919b0601d697f26d24f18cf53c6e206e0245453eb5b215c31f0903"
+    },
+    {
+      "path": "assets/blocks/tst-nathan-haiphong/generated/concepts/day-v2.png",
+      "sha256": "5fc25b3b229c229a605bb6496703339b67d2d7d63871a34c5611cc23d38d257b"
+    }
+  ],
+  "status": "production_sample_not_final_art",
+  "notes": [
+    "8 material swatches in 4x2 grid; generated image is not a surveyed facade.",
+    "Exact border seamlessness not guaranteed; Unity extracts inner rectangles and tests repeat sampling.",
+    "Material swatch positions: paving, plaster, terracotta, asphalt / glass, stone, green metal, foliage."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "buildId": "build_1443cef75926",
+  "result": "Succeeded",
+  "platform": "StandaloneOSX",
+  "totalSizeBytes": 340572776,
+  "buildTimeMs": 74332,
+  "buildStartedAt": "2026-10-31T23:20:15.0667910Z",
+  "buildEndedAt": "2026-10-31T23:21:29.3991010Z",
+  "totalWarnings": 0,
+  "totalErrors": 0,
+  "errors": [],
+  "warnings": [],
+  "base_commit": "79e15fd1f8f6250e2f7112bd05b0ef69f0570ad5",
+  "local_output": ".local/builds/HongKong-v01-sample.app",
+  "unity": "6000.3.27f1",
+  "options": [
+    "Development",
+    "DetailedBuildReport"
+  ],
+  "scene": "Assets/HongKong/Generated/Scenes/NathanArtSample.unity",
+  "executable_sha256": "f5eef949760b5388f268dde568ef58194f4e2ecfed529984b19bc6609394892f",
+  "source_hashes": {
+    "unity/HongKong/Assets/HongKong/Runtime/WorldLabel.cs": "a5ac7de0987e730668f8fbad81e28727a3e365c11f60c8da9f002946f8551494",
+    "unity/HongKong/Assets/HongKong/Runtime/StreetInputValidation.cs": "931b26743c82d792cda23e028b7733ad67f740b61de4627344becbc2df636009",
+    "unity/HongKong/Assets/HongKong/Runtime/StreetWalker.cs": "d299240ebacec48f9697601566c5a407111845808af31f646018fd6d03fc5b93",
+    "unity/HongKong/Assets/HongKong/Runtime/PixelActor.cs": "1c08fa45d984a125c9c5dde173bb603ccbae2e33f9e41758967bf931d476c586",
+    "unity/HongKong/Assets/HongKong/Runtime/StreetValidation.cs": "19973cc6804c27c63d04e4b357ba4026b8c326cd4d10737d65579be6543fc29c",
+    "unity/HongKong/Assets/HongKong/Runtime/StreetHud.cs": "c8dad34eb660f9a6f4bdc651fb8bf5cd51b890eff971caeb10554d453d20e070",
+    "unity/HongKong/Assets/HongKong/Runtime/StreetAtmosphere.cs": "393e4ae3b4590b16f56c7424f2a692397f4e67e4edf7f4bddf2dd611a45e345d",
+    "unity/HongKong/Assets/HongKong/Generated/Scenes/NathanArtSample.unity": "b5de338b29f8fc7a677ba458deb12bee04c5e656bd562ac5b6d7138764657b69",
+    "unity/HongKong/Assets/HongKong/Generated/Scenes/NathanGraybox.unity": "172737b786e8725c5123ca1fb9a8e5a7ce19cef6c8a2e48a4ba598696d3c17ce",
+    "unity/HongKong/Packages/packages-lock.json": "18ff6ec56fafa82cfff2819bd9e3e15bd792f40f3b6da43365821535b5add96c",
+    "unity/HongKong/ProjectSettings/ProjectSettings.asset": "f819a7ec1d23a280d25b109f583a47c173fac6994889acdf0ff598be2e439ca9",
+    "unity/HongKong/ProjectSettings/QualitySettings.asset": "73e3ebe8a42608f36088a87e750c621c23669f9c9697c738e062b55f722e6f5d"
+  }
+}

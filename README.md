@@ -1,7 +1,8 @@
 # 香港像素漫游
 
-香港 HD-2D 像素步行开放世界：像素角色＋立体街景＋街道生活。当前有研究、地图资料、概念图与 Unity 环境验证工程，尚无可玩香港街区。
+香港 HD-2D 像素步行开放世界：像素角色＋立体街景＋街道生活。已进入 v0.1 实施：有约 179 米可走路线、白帽角色和 A1 街角早期实机样板；完整街道美术、人车活动与存档尚未完成。
 
+- [首批实施结果与操作说明](docs/08-blocks/tst-nathan-haiphong/implementation.md)：场景、资产、镜头参数和验证边界。
 - [Unity 开发工程](unity/README.md)／[本地环境验证](docs/04-engineering/local-development.md)：锁定版本、插件、操作方法与实际验证边界。
 - [研究总目录](docs/README.md)：八个主题的 Markdown 源文档与独立图文页。
 - [从项目总纲开始阅读图文版](docs/01-vision/index.html)：通过章节导航阅读，不再拼接全部研究成长页。

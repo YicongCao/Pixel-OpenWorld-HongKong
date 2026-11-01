@@ -6,7 +6,7 @@
 
 ## 当前状态
 
-已建立 [弥敦道 × 海防道／A1 街区计划](tst-nathan-haiphong/plan.md)、[来源](tst-nathan-haiphong/sources.md) 与 [三张 HD-2D 概念及资产检查](tst-nathan-haiphong/assets.md)。当前为地图、照片与概念阶段，尚未制作街区 Unity 场景，不能记为可玩街区。
+已建立 [弥敦道 × 海防道／A1 街区计划](tst-nathan-haiphong/plan.md)、[来源](tst-nathan-haiphong/sources.md) 与 [三张 HD-2D 概念及资产检查](tst-nathan-haiphong/assets.md)。已进入 [实施批次 01](tst-nathan-haiphong/implementation.md)：有可走路线和 A1 早期实机样板，尚无完整 v0.1 的街道生活及验收。
 
 ## 新街区的归档约定
 

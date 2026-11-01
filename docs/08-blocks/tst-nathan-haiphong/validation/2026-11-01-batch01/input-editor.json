@@ -1,0 +1,18 @@
+{
+    "passed": true,
+    "method": "Virtual keyboard through Input System; actual controller collision. Editor test, not physical keyboard or full UI acceptance.",
+    "checks": [
+        "D drives real input toward screen right: PASS",
+        "Escape pauses: PASS",
+        "Movement blocked while paused: PASS",
+        "Escape resumes: PASS",
+        "N enables night: PASS",
+        "F enables depth of field: PASS",
+        "DOF profile is present and active: PASS",
+        "N and F restore day / no DOF: PASS",
+        "Side boundary blocks road access: PASS",
+        "28 valid runtime frame rectangles: PASS",
+        "No fall recovery: PASS"
+    ],
+    "failures": []
+}

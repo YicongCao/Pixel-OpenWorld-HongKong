@@ -1,0 +1,2 @@
+Selected validation/error lines from the final Player.log; full local log stays in .local/v01/art-player-close.
+[StreetValidation] PASS reached=50 distance=427.6071

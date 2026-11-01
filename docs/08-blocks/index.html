@@ -2,17 +2,17 @@
 :root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
 </style></head><body>
 <header><small>香港像素漫游 / 香港 HD-2D 研究 / 08 OF 08</small><h1>街区档案</h1><p>每个实际制作街区的计划、证据、资产与实机结果。</p></header>
-<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html" aria-current="page">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">08 · 街区档案</a><a href="#doc-plan">第一街区：弥敦道 × 海防道</a><a href="#doc-sources">来源与实际观察</a><a href="#doc-assets">HD-2D 渲染参考与资产拆分</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
+<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html" aria-current="page">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">08 · 街区档案</a><a href="#doc-plan">第一街区：弥敦道 × 海防道</a><a href="#doc-sources">来源与实际观察</a><a href="#doc-assets">HD-2D 渲染参考与资产拆分</a><a href="#doc-implementation">v0.1 实施批次 01：可走路线与 A1 街角样板</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
 <main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">08 · 街区档案</h2>
 <p>每个实际制作街区的计划、证据、资产与实机结果。</p>
 <p><a href="../README.md">研究总目录</a> · <a href="index.html">本章图文版</a></p>
 <h3 id="readme-6">当前状态</h3>
-<p>已建立 <a href="#doc-plan">弥敦道 × 海防道／A1 街区计划</a>、<a href="#doc-sources">来源</a> 与 <a href="#doc-assets">三张 HD-2D 概念及资产检查</a>。当前为地图、照片与概念阶段，尚未制作街区 Unity 场景，不能记为可玩街区。</p>
+<p>已建立 <a href="#doc-plan">弥敦道 × 海防道／A1 街区计划</a>、<a href="#doc-sources">来源</a> 与 <a href="#doc-assets">三张 HD-2D 概念及资产检查</a>。已进入 <a href="#doc-implementation">实施批次 01</a>：有可走路线和 A1 早期实机样板，尚无完整 v0.1 的街道生活及验收。</p>
 <h3 id="readme-10">新街区的归档约定</h3>
 <p>每次按稳定 <code>block_id</code> 创建子目录。用 <code>plan.md</code> 记录范围、地图边界、镜头方向、主角路线、活动、依赖及缺口；<code>sources.md</code> 引用本仓库数据与真实街景证据；<code>assets.md</code> 记录资产清单与生产路径；<code>validation/</code> 保存真实实机记录。</p>
 <p>地理原件仍在 <code>data/blocks/&lt;block_id&gt;/</code>，实景索引在 <code>references/blocks/&lt;block_id&gt;/</code>，资产在 <code>assets/blocks/&lt;block_id&gt;/</code>；本目录只存对应研究与实施记录。源文件不因文档归档而重复复制。</p>
 <p>执行顺序见 <a href="../06-production/index.html#doc-街区还原工作流">街区还原工作流</a>，阅读路线见 <a href="../Skill.md">docs/Skill.md</a>。新增街区时更新本章 README 的列表；通用结论回写所属主题章节，避免把全部研究继续堆在街区计划里。</p></article><article id="doc-plan"><h2 id="plan-0">第一街区：弥敦道 × 海防道</h2>
-<p><strong>建议从尖沙咀 A1 出口—九龙清真寺前的弥敦道西侧人行道开始，再转入海防道。</strong> 先打磨一段能停留、转弯和观察生活的连续街景，再扩展地图。block_id：<code>tst-nathan-haiphong</code>。本轮完成选段、数据／实景核对与三张渲染概念；尚未制作街区 Unity 场景。</p>
+<p><strong>建议从尖沙咀 A1 出口—九龙清真寺前的弥敦道西侧人行道开始，再转入海防道。</strong> 先打磨一段能停留、转弯和观察生活的连续街景，再扩展地图。block_id：<code>tst-nathan-haiphong</code>。已进入实施：完成连续路线、Unity 灰盒与 A1 早期街角样板，见 <a href="#doc-implementation">实施批次 01</a>。尚非完整 v0.1。</p>
 <h3 id="plan-4">为什么从这里起步</h3>
 <p>这不是地标数量最多的选择，却能集中验证核心体验：玻璃港铁口和进出人流、巴士站位和候车队列、清真寺／树荫／商铺的体量差异、从横向主街转入纵深支路、路缘与入口台阶的遮挡。港铁街道图及 2024—2026 实景支持这些关系，详见 <a href="#doc-sources">来源与观察</a>。</p>
 <p>广东道—海防道更适合下一阶段的商场立面、橱窗反射和宽路口；一开始做海港城长立面容易把精力耗在大量独有商铺。天星码头／钟楼适合海景灯光，但对普通街道生活覆盖较少。西九龙站／戏曲中心尺度大、独有建筑多、跨层复杂，适合街道制作链路稳定后接入。上述排序是制作判断，不是客观评分。</p>
@@ -36,9 +36,9 @@
 <h3 id="plan-35">技术实施顺序与验收门槛</h3>
 <p>Unity 6.3 LTS＋URP 3D 已完成 <a href="../04-engineering/index.html#doc-local-development">环境验证</a>。下一步使用实际街网搭灰盒，固定相机与米制局部原点；输入／镜头优先使用已装 Input System 和 Cinemachine，寻路利用 AI Navigation，站口／公交活动用明确状态机。简单墙路用 Unity 几何，独特 A1 玻璃罩、清真寺局部和巴士需要时再进 Blender。</p>
 <p>先做角色、地面和一个店面受光／深度样板，然后拆地标、公交和植被。不能把整幅概念切层当可走场景。照明与景深在 URP 3D 中逐项验证；不要用全局模糊模拟 HD-2D。</p>
-<p>验收沿既定路线往返：不穿墙、不从站口楼梯跌落、支路始终可读、树冠和公交不长期遮住主角、NPC 有出口和目的地、队列不堵路；观察公交与进站活动至少两分钟。最后导出独立 Player 测帧时、内存、脚底和摄像机切换。当前这些街区检查均<strong>未执行</strong>。</p>
+<p>验收沿既定路线往返：不穿墙、不从站口楼梯跌落、支路始终可读、树冠和公交不长期遮住主角、NPC 有出口和目的地、队列不堵路；观察公交与进站活动至少两分钟。最后导出独立 Player 测帧时、内存、脚底和摄像机切换。当前路线往返、输入与碰撞、昼夜／景深样板已执行；NPC、公交、完整遮挡／性能验收仍未执行，逐项结果见实施记录。</p>
 <h3 id="plan-43">本轮验证记录</h3>
-<p><a href="tst-nathan-haiphong/data-validation.json">数据与资产检查</a> 验证来源／输出哈希、选区相交、站序关联和参考图记录；文档检查通过八章、十张内嵌图片及历史数据保全。已实际查看地图、实景输入和三张输出；新 HTML 页面仅完成结构／引用检查，本轮 file:// 浏览器预览被 URL 策略阻止，未通过其他途径绕过。尚无街区实机验收。</p></article><article id="doc-sources"><h2 id="sources-0">来源与实际观察</h2>
+<p><a href="tst-nathan-haiphong/data-validation.json">数据与资产检查</a> 验证来源／输出哈希、选区相交、站序关联和参考图记录；文档检查通过八章、十张内嵌图片及历史数据保全。已实际查看地图、实景输入和三张输出；新 HTML 页面仅完成结构／引用检查，本轮 file:// 浏览器预览被 URL 策略阻止，未通过其他途径绕过。该段是概念阶段历史记录；新增街区实机样板记录见 <a href="#doc-implementation">实施批次 01</a>。</p></article><article id="doc-sources"><h2 id="sources-0">来源与实际观察</h2>
 <p>查验日期 2026-11-01。地图身份、照片年代和设计活动分开记录。完整文件哈希与输入链见 <a href="../../data/blocks/tst-nathan-haiphong/manifest.json">数据 manifest</a> 和 <a href="../../references/blocks/tst-nathan-haiphong/index.json">照片索引</a>。</p>
 <h3 id="sources-4">地图与公共交通</h3>
 <p>只读检查了 game-research 的香港 README、catalog/downloads.json 及本项目母包 manifest。既有快照已经覆盖此次窗口，因此复用它们，不重复拷贝全港 GPKG／FGDB。子集保留 70 个道路要素、55 个建筑脚印、234 条三维行人路径，并保留入口候选、关系上下文、完整表派生公交／小巴数据及尖沙咀两张港铁 PDF。</p>
@@ -80,7 +80,61 @@
 </ul>
 <p>先完成 20—30 米实机美术小样，再扩街段。上述生产分件、Blender 模型、街区 Unity 导入、NPC 运行和主角试走尚未执行。</p>
 <h3 id="assets-43">许可与制作记录</h3>
-<p>实景来源为 Qwer132477 的 CC BY 4.0 和 LN9267 的 CC BY-SA 4.0 照片，详见 <a href="../../references/blocks/tst-nathan-haiphong/index.json">参考索引</a>。本组概念作为这些照片的 HD-2D 转译，按 CC BY-SA 4.0 提供可许可的改编部分；保留作者／来源并注明 AI 转译和布局重组，不暗示作者认可。此标注不授予品牌或建筑额外权利，也不扩展为全仓库代码许可。</p></article><nav class="pager" aria-label="章节翻页"><a href="../07-validation/index.html">上一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+<p>实景来源为 Qwer132477 的 CC BY 4.0 和 LN9267 的 CC BY-SA 4.0 照片，详见 <a href="../../references/blocks/tst-nathan-haiphong/index.json">参考索引</a>。本组概念作为这些照片的 HD-2D 转译，按 CC BY-SA 4.0 提供可许可的改编部分；保留作者／来源并注明 AI 转译和布局重组，不暗示作者认可。此标注不授予品牌或建筑额外权利，也不扩展为全仓库代码许可。</p>
+<h3 id="assets-47">已进入生产的小样</h3>
+<p>新增 <a href="../../assets/blocks/tst-nathan-haiphong/generated/hero/manifest.json">白帽四向 28 帧图集</a> 与 <a href="../../assets/blocks/tst-nathan-haiphong/generated/materials/manifest.json">八类表面材质</a>，通过 Unity 程序化分件导入 A1 街角。它们与上方概念分别管理；模型、像素密度、字体和动画限制见 <a href="#doc-implementation">实机实施记录</a>。当前只做一个街角，不代表整条街已精做。</p></article><article id="doc-implementation"><h2 id="implementation-0">v0.1 实施批次 01：可走路线与 A1 街角样板</h2>
+<p>2026-11-01 · 已开始执行近期计划。交付的是可操作的早期样板，<strong>不是完整 v0.1、也不是已获认可的最终 HD-2D 画面</strong>。</p>
+<h3 id="implementation-4">本批落地内容</h3>
+<ol>
+<li>由政府地面行人路径派生 179.34 米连续路线，保留真实方向和高程，接入 26 个来源明确的西侧建筑／雨篷体块。原示意虚线穿过 A1 的问题已修正。数据依据见 <a href="../../data/blocks/tst-nathan-haiphong/implementation/README.md">实施派生包</a>。</li>
+<li>Unity 可操作场景：弥敦道横向移动、转入海防道纵深、边界碰撞、暂停与回到起点。复用 CharacterController、Input System、Cinemachine 和 URP；项目代码只处理本街区控制适配、图集播放、照明和验证，没有采购或引入新的 RPG 框架。</li>
+<li>imagegen 生成一套白帽四向图集和八种表面材质。图集每方向一张站姿＋六张行走帧，共 28 帧；生成尺寸偏离提示，因此按实际透明轮廓制作切片和脚底数据。原 PNG 不做像素改写，采用版本及来源哈希独立保存。</li>
+<li>A1 小样按玻璃罩、钢架、台阶、标识、栏杆分件；南侧转角铺面使用旧照片中的六福珠寶识别元素；路面、空调、窗格、树冠和公交雨篷为几何小样。品牌年代见 <a href="#doc-sources">实景来源</a>，不能据旧照片声称今日店铺仍营业。</li>
+<li>白天／夜晚和 Bokeh 景深开关；角色是 alpha-clipped、受 3D 灯光与深度影响的面片，脚下有接触阴影代理。角色真实投影／阴影代理精修仍待完成。</li>
+</ol>
+<h3 id="implementation-12">工程与操作</h3>
+<p>工程入口：<a href="../../unity/README.md">Unity README</a>。默认构建场景为 <code>Assets/HongKong/Generated/Scenes/NathanArtSample.unity</code>；保留 <code>NathanGraybox.unity</code> 作为对照。源资产在根 <code>assets/blocks/tst-nathan-haiphong/generated/</code>，引擎采用副本与程序化模型在 Unity 的 <code>Assets/HongKong/Generated/</code>，没有 authored 精修内容。</p>
+<ul>
+<li>WASD／方向键：相对屏幕方向行走；Shift：快走。</li>
+<li>Esc：暂停、继续、回到起点、退出。</li>
+<li>N：白天／夜晚；F：景深开关，默认关闭以检查几何与脚底。</li>
+<li>只开放声明的人行路线；站内、公园深处和车行道不开放。可见站口前坪不等于全部有通行碰撞，后续要按真实边界扩为行走面。</li>
+</ul>
+<p>本地构建放 <code>.local/builds/HongKong-v01-sample.app</code>，可在 Finder 打开或执行 <code>open .local/builds/HongKong-v01-sample.app</code>。构建包可再生且未提交到 Git；源码、场景、资产、证据纳入版本管理。</p>
+<h3 id="implementation-23">当前镜头与资产合同：实验参数</h3>
+<p>灰盒使用 30° 俯角／朝向 Y=−90°／32° FOV／54 米距离。街角样板为观察海防道南侧立面改为 <strong>28° 俯角／Y=−110°／32° 垂直 FOV／34 米跟随距离</strong>，不自动旋转。主街仍以横向为主，屏幕右大致向北；世界 X 东、Z 北没有改变。用户看过首张 43 米距离的实机图后选择“适度拉近镜头，突出主角”，本批据此缩短距离，目标投影增大约 26%；这仅确认构图偏好，不等于完整风格验收。跟随目标高于根部 2.6 米，窗口基线 1920×1080；主角约 1.9 米、画面约 80–95 像素高，具体随姿态和投影变化。</p>
+<p>街景素材按 4×2 图集在 Unity 内裁切，Point 采样、128 最大导入尺寸＋mip 是本轮像素密度实验，不是已锁定的最终标准。角色 Point、不压缩、不启用 mip，四向独立足底与身高归一；步态按移动距离推进，停步使用站姿。侧向／背向比例、帽形与步态仍有生成误差，不能把有效切片等同于动作质量合格。</p>
+<p>简单模型由版本化 C# 生成并保存为可编辑 Unity 资源，未使用 Blender。A1、主角、商铺部件有 Prefab；保存了独立材质与网格。中文世界标识使用运行时系统字体，HUD 暂用英文避开本机 IMGUI 字体警告；未分发系统字体，跨平台打包前需换成明确许可且经过测试的字体资产。</p>
+<h3 id="implementation-31">重建与验证入口</h3>
+<p>仅在新建、隔离的工作副本中重建。已有场景时构建器会拒绝覆盖；日常改动直接编辑副本或增加明确的修订脚本，不删除现有精修场景强行重跑。</p>
+<pre><code>../game-research/.venv-hk-data/bin/python scripts/build_v01_layout.py
+../game-research/.venv-hk-data/bin/python scripts/prepare_v01_assets.py
+unity recompile --project-path &quot;$PWD/unity/HongKong&quot;
+unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file AgentScripts/BuildStreet.cs --entry BuildStreet.Create
+unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file AgentScripts/BuildArtSample.cs --entry BuildArtSample.Create
+unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file AgentScripts/RefineStreetSample.cs --entry RefineStreetSample.Apply
+unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file AgentScripts/RefineStreetSample.cs --entry RefineStreetSample.RepairProfileAndEdges
+unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file AgentScripts/RefineStreetSample.cs --entry RefineStreetSample.CloseCamera</code></pre>
+<p>Imagegen 不参与确定性重建，已采用的 PNG 和切片元数据随 Git 保存。构建器调用的 Newtonsoft.Json 目前来自锁定包依赖；移除包或清理依赖时应重新核查，不能只复制这几个脚本到空白工程。</p>
+<p>实际截图、输入结果、两种镜头的独立构建、短程帧时与限制统一归档于 <a href="tst-nathan-haiphong/validation/2026-11-01-batch01/README.md">批次 01 验证记录</a>。构建包源码可追溯，但当前没有发布正式 v0.1 标签。</p>
+<p><code>StreetValidation</code> 的 <code>-streetSmokeTest -streetOutput &lt;绝对目录&gt;</code> 启动完整往返并自动退出；正常双击应用不会自动移动。自动测试给同一个 CharacterController 提供世界方向意图，不沿路径直接传送。<code>StreetInputValidation</code> 另外通过 Input System 虚拟键盘验证真实绑定、暂停、效果开关及路边碰撞；它不是人工键盘操作验收。</p>
+<h3 id="implementation-52">当前缺口与下批优先级</h3>
+<ul>
+<li>V1-01 已有连通路线和来源链，但现地开放、精确人行道宽度／站位锚点仍待核实。</li>
+<li>V1-02 已形成灰盒、控制与镜头；独立跨层技术测试、不同窗口、转角遮挡全覆盖仍待补充，不能把平面路线通过扩写为全部跨层通过。</li>
+<li>V1-03 进入实机样板阶段。树冠球形感、灰色背景体块、道路／路缘高差、立面重复纹理、夜景与角色比例需要进一步打磨；尚未得到用户风格反馈。</li>
+<li>V1-04 未扩为完整精做街段；现在大部分背景仍是占位体块。不能把概念的细节密度描述成实机已有。</li>
+<li>V1-05 行人、进站、车流、公交靠站上下客及卸货活动尚未实现；当前站牌／雨篷只是展示几何，并无运行中的公交。</li>
+<li>V1-06 存档、开始／继续、音量和空间声景尚未实现；晴雨及工作日／休息日预设也未实现。</li>
+<li>V1-07 尚未进行包含目标人车负载的 10 分钟性能／内存验收，也没有首版发布候选。短时样板测试不替代它。</li>
+</ul>
+<p>下一批先修正这个街角的像素密度、站口尺度、道路接缝与遮挡；同时在已有灰盒上验证目的地行人、站口出入及公交状态循环。风格获得反馈后才扩大精做范围，不把全部地图先铺成空街。</p>
+<p>本轮使用 Unity CLI／Pipeline 技能，查阅本地 <code>scripts.md</code>、<code>capture.md</code>、<code>build-and-compilation.md</code>、<code>editor-lifecycle-and-observability.md</code> 与 Play Mode 验证循环。工具短暂域重载断连须等实例恢复后重试，不把断连冒称引擎失败。</p>
+<h3 id="implementation-66">实际验证结果</h3>
+<p>独立 Mac Player 在 Apple M5、1920×1080、PC 质量档／VSync 1、Development 构建下通过 50/50 检查点，约 109.8 秒、426.54 米，零运行错误、零坠落恢复。往返包含出生点先走向北端的距离，不能把它当作路线长度。P95 17.48 ms、P99 21.20 ms；短时 P95 高于完整版本目标 16.7 ms，且没有目标人车负载，<strong>不能记为性能达标</strong>。构建 74.3 秒、340,572,776 字节，构建错误／警告均为零；二进制包含 arm64／x86_64，仅在本机 Apple Silicon 执行。</p>
+<p><a href="tst-nathan-haiphong/validation/2026-11-01-batch01/art-player.json">独立程序往返 JSON</a>、<a href="tst-nathan-haiphong/validation/2026-11-01-batch01/input-editor.json">输入验证</a>、<a href="tst-nathan-haiphong/validation/2026-11-01-batch01/art-editor.json">编辑器往返</a>、<a href="tst-nathan-haiphong/validation/2026-11-01-batch01/build.json">构建与来源指纹</a>。截图：<a href="tst-nathan-haiphong/validation/2026-11-01-batch01/player-day.png">白天</a>、<a href="tst-nathan-haiphong/validation/2026-11-01-batch01/player-day-dof.png">白天景深</a>、<a href="tst-nathan-haiphong/validation/2026-11-01-batch01/player-night-dof.png">夜景</a>、<a href="tst-nathan-haiphong/validation/2026-11-01-batch01/player-haiphong.png">海防道端点</a>。</p>
+<p>11 项输入／配置检查通过，包括暂停禁止移动、恢复、侧边碰撞、图集矩形和重载后 DOF 配置存在。Bokeh 已进入保存／加载与独立程序对照，当前虚化较弱，仍待和目标画风比较。编辑器离屏截图阶段出现两条 Metal memoryless depth load/store 警告；本次 Player 日志未发现同类警告或异常。系统字体的 IMGUI 重复警告通过 HUD 暂用内置英文字体消除，世界双语标识保留。</p>
+<p>已停止本 Agent 的 Play 会话，关闭自动 tick 与临时后台覆盖，保留工程原本 runInBackground=true。未安装新包、未修改 game-research。独立构建不进入 Git，采用源资产、场景／meta 和选定证据进入 Git。</p></article><nav class="pager" aria-label="章节翻页"><a href="../07-validation/index.html">上一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
 function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
 window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));

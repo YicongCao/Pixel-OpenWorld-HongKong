@@ -1,0 +1,6 @@
+# Unity's serializer writes trailing spaces for empty YAML values; preserve engine output.
+*.meta whitespace=-blank-at-eol
+*.unity whitespace=-blank-at-eol
+*.prefab whitespace=-blank-at-eol
+*.mat whitespace=-blank-at-eol
+*.asset whitespace=-blank-at-eol

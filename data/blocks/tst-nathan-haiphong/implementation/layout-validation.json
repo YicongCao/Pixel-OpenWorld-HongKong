@@ -1,0 +1,122 @@
+{
+  "route_length_m": 179.34,
+  "points": 25,
+  "segments": [
+    "3dpn:240017881",
+    "3dpn:240018425",
+    "3dpn:240023534",
+    "3dpn:240018426",
+    "3dpn:240018427",
+    "3dpn:290038684",
+    "3dpn:240018432",
+    "3dpn:290038685",
+    "3dpn:240023532",
+    "3dpn:240018076",
+    "3dpn:240018571",
+    "3dpn:240018665",
+    "3dpn:240017648"
+  ],
+  "connection_tolerance_m": 0.02,
+  "collider_radius_m": 0.32,
+  "building_clearance": [
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:149352980",
+      "distance_m": 7.178
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:184706096",
+      "distance_m": 18.682
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480856",
+      "distance_m": 38.425
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480866",
+      "distance_m": 51.424
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480867",
+      "distance_m": 32.425
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480869",
+      "distance_m": 13.794
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480870",
+      "distance_m": 13.792
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480871",
+      "distance_m": 13.791
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480872",
+      "distance_m": 13.789
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480873",
+      "distance_m": 13.787
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480874",
+      "distance_m": 13.786
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480875",
+      "distance_m": 13.785
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693480881",
+      "distance_m": 32.443
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693487435",
+      "distance_m": 31.146
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693487436",
+      "distance_m": 26.729
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:693487438",
+      "distance_m": 22.52
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:724436709",
+      "distance_m": 13.337
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:724436710",
+      "distance_m": 19.826
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:1087128390",
+      "distance_m": 2.998
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:1170462817",
+      "distance_m": 13.959
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:1170462818",
+      "distance_m": 38.425
+    },
+    {
+      "source_id": "osm-snapshot:gis_osm_buildings_a_free:1170462823",
+      "distance_m": 32.425
+    }
+  ],
+  "source_hashes": {
+    "pedestrian.json": "277404c397d071bfa9aaa5e1522a95cfb99e791aea4b8b52890256deec8c389f",
+    "buildings.geojson": "6d5ebbf88e01a17460ec66d926d9b7420e000da8ffc42e586681d0cb4e2c34ec",
+    "design-layout.json": "5a4b1b8a4e2642ef37a86298c2457e7dac6aa594348155eb5f1ac4e4a2e84f71"
+  },
+  "output_sha256": "8ac267a6d54097e9953f633e87999d6ff52ed0a172987d9c727ea563763e5467",
+  "correction": "Replaces the illustration's unvalidated line crossing A1 with an explicitly connected surface-route chain.",
+  "limitations": [
+    "Not a pedestrian-network full graph proof or current site survey.",
+    "Corridor edges and building heights remain graybox estimates."
+  ]
+}

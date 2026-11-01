@@ -26,6 +26,7 @@ node_modules/
 # Unity generated directories (at any project depth)
 [Ll]ibrary/
 [Tt]emp/
+[Tt]emp.meta
 [Oo]bj/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/

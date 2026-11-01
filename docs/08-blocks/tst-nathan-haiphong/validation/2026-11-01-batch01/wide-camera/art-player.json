@@ -1,0 +1,24 @@
+{
+    "stage": "NathanArtSample",
+    "unityVersion": "6000.3.27f1",
+    "graphics": "Apple M5",
+    "limitations": "Automated world-space intents use the same CharacterController as keyboard input. Short traversal, not v0.1 10-minute performance or art acceptance.",
+    "passed": true,
+    "frames": 6402,
+    "waypointsReached": 50,
+    "waypointsExpected": 50,
+    "width": 1920,
+    "height": 1080,
+    "fallRecoveries": 0,
+    "elapsedSeconds": 109.80228424072266,
+    "distanceM": 426.5375061035156,
+    "p95FrameMs": 17.48029327392578,
+    "p99FrameMs": 21.204620361328126,
+    "memoryBytes": 118558055,
+    "finalPosition": {
+        "x": -11.275423049926758,
+        "y": 1.5052754878997803,
+        "z": 79.12152099609375
+    },
+    "errors": []
+}

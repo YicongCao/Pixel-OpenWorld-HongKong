@@ -1,0 +1,23 @@
+{
+    "stage": "V1-02 graybox",
+    "unityVersion": "6000.3.27f1",
+    "graphics": "Apple M5",
+    "limitations": "Automated world-space intents use the same CharacterController as keyboard input. Short graybox traversal, not v0.1 10-minute performance or art acceptance.",
+    "passed": true,
+    "frames": 63895,
+    "waypointsReached": 50,
+    "waypointsExpected": 50,
+    "width": 982,
+    "height": 540,
+    "elapsedSeconds": 107.59107971191406,
+    "distanceM": 426.2486877441406,
+    "p95FrameMs": 2.619621515274048,
+    "p99FrameMs": 3.2182042598724367,
+    "memoryBytes": 338550405,
+    "finalPosition": {
+        "x": -11.273260116577149,
+        "y": 1.5051912069320679,
+        "z": 79.08800506591797
+    },
+    "errors": []
+}
