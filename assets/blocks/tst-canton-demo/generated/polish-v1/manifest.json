@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-11-01",
+  "generator": "imagegen built-in",
+  "assets": [
+    [
+      "material-atlas.png",
+      "exec-13956b35-b4a3-4f0a-82fe-cf5c7bf03d24.png",
+      "Production texture atlas for a Unity HD-2D Hong Kong street. Use reference photo ONLY for material and facade vocabulary, not as a picture to paste into game. Create a square atlas divided into EXACTLY 2 columns and 2 rows of equal squares, no margins no borders no labels no text. Top left: seamless warm grey small rectangular pavement pavers seen straight overhead, restrained wear and two or three darker stones, no perspective. Top right: seamless aged warm cream Hong Kong mosaic wall tile, subtle vertical grime, fine square grid. Bottom left: straight-on facade module of a dark teal framed Hong Kong shop display, full cell shows glass with subdued warm interior shelves/products and slim vertical mullions, NO text, NO people, NO exterior ground, no perspective. Bottom right: straight-on upper-floor window module with four small dark blue-green panes, weathered off-white frame, external air conditioning unit and a few fine pipes, no text. Cohesive hand-authored pixel art, visibly deliberate square pixel clusters, limited 24-colour muted teal/ochre/stone palette, effective pixel resolution 256x256 total enlarged crisp nearest-neighbour, no outlines around atlas quadrants, no painterly noise, no photorealism. Flat diffuse albedo, no cast shadows or dramatic lighting, no baked AO. This atlas will be mapped to separate real 3D ground, walls and recessed window/shop modules in an HD-2D scene with a sideways main street and depth alley, weak-perspective camera pitched 25 degrees; final depth/shadows/bokeh will be done in engine, not in this atlas."
+    ],
+    [
+      "street-props.png",
+      "exec-d09b44e7-1a7b-43e7-8d9b-d831623a8566.png",
+      "Create a production game sprite sheet on fully TRANSPARENT background, exact 2x2 grid with equal square cells and ample transparent padding per cell. NO labels, no ground, no shadows. Top-left cell: single lush Hong Kong street tree crown only, broad round irregular foliage silhouette with small gaps revealing transparency, leaf clusters in muted jade and olive greens, NOT trunk. Top-right cell: a tall potted shrub in a weathered terracotta rectangular planter, full object. Bottom-left cell: an orange plastic street rubbish bin, Hong Kong style litter bin with side opening, full object. Bottom-right cell: a stack of three brown cardboard delivery boxes and one blue plastic crate, full object. All four objects drawn for HD-2D game as pixel-art sprites seen from front at 25 degrees elevation, like classic detailed JRPG environmental pixel sprites, hard square pixel clusters, deliberate limited palette, low resolution source look about 96 pixels across each object, crisp no smooth shading no photographic detail. Neutral diffuse lighting, subtle form shading only, no cast ground shadows or baked environmental lighting. These cutouts will be alpha-clipped lit upright cards placed in real 3D on a horizontal Hong Kong main street with depth alley and layered foreground/midground/background. No perspective street illustration, just four clean isolated production sprite cells."
+    ],
+    [
+      "pedestrians.png",
+      "exec-9ce786fa-3335-4db5-b0c8-a058cec204dd.png",
+      "Production PNG sprite sheet, transparent background. EXACT 4 columns and 4 rows, sixteen equal cells, no labels no lines, each sprite centered horizontally with feet at same baseline and generous transparent padding. Each ROW is same adult character facing RIGHT in four consecutive WALK cycle phases: contact left foot, passing, contact right foot, passing. Row1 Hong Kong office commuter woman teal jacket dark skirt shoulder bag. Row2 delivery worker man orange vest navy trousers. Row3 elderly man beige short sleeve shirt dark trousers. Row4 young shopper woman plum shirt grey pants. Detailed crisp hand pixel art JRPG citizens with slightly large heads, 3.5 heads tall, faces tiny simple pixels, natural walking gestures. Effective each person 40 pixels wide 64 pixels high enlarged with sharp nearest neighbor, restrained teal warm cream burgundy ochre palette, simple small pixel clusters, no blur no painterly edges. All side facing RIGHT, viewed at 25 degree elevated camera angle for HD-2D, feet visible. Character size and floor contact consistent in all frames. No cast shadow, no background, no ground, no text no objects outside character bags. Arms and legs alternate clearly. These will be alpha-clipped lit 3D billboards in a Hong Kong main street and depth-alley HD-2D Unity scene; not a concept illustration."
+    ]
+  ],
+  "reference": "references/blocks/tst-nathan-haiphong/haiphong-west-2024-1280.jpg; material vocabulary only; not exact Canton frontage",
+  "status": "Generated production samples; actual slicing/import and visual validation recorded separately",
+  "sha256": {
+    "material-atlas.png": "0c05479efc68bacf885b2abdaf3b100523af95f8e0b631d12e97cb8dab8996a6",
+    "street-props.png": "8c9ece59cce45d4d3bacf62d9715db74517455dbade18d6021f51223db859e82",
+    "pedestrians.png": "2deda191ee180330668d6b5c7c31d910fc4ecb37548e0af46f303dc49d4639a5",
+    "pedestrians-v1-rejected.png": "2c873cbb01676abf6223e79851b1418bc651e1c403fdcd7bd019b814724d2019"
+  },
+  "referenceAttribution": {
+    "author": "LN9267",
+    "source": "https://commons.wikimedia.org/wiki/File:Haiphong_Road_13-04-2024.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "inputSha256": "4cce546f7e854b13abc23ba56160d3923f7e2529518b84f3d1a06c1bcd0e8fd2",
+    "changes": "AI material/style adaptation; 2x2 atlas; Unity tile extraction and 128px import. Adapted material atlas and derived tile art released CC BY-SA 4.0."
+  },
+  "importContract": {
+    "materialTilePixels": 128,
+    "filter": "Point with mipmaps",
+    "npcDirection": "Right walk, mirror for left; not a 4-direction character sheet",
+    "alphaCutoff": 0.5,
+    "unityCuts": "unity/HongKong/Assets/HongKong/Authored/CantonPolish/citizen-cuts-v2.json",
+    "limitations": [
+      "Generated poses need manual gait cleanup; no claim of finished animation",
+      "Tile seams and pixel cluster style require further art review",
+      "Props use fixed-view cards; tree crown crossed for depth"
+    ]
+  },
+  "npcRevision": {
+    "adopted": "pedestrians.png",
+    "prompt": "pedestrians-v2-prompt.txt",
+    "source": "pedestrians-v1-rejected.png",
+    "reason": "Removed asymmetric bags and straps before mirroring; original retained only for provenance",
+    "sourceImagegenFile": "exec-26ac4f12-4078-4058-a98b-8e61a30ec941.png"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-01",
+  "baseCommit": "c1ce9531293e2d228f3988ddeaa696489e9d54ab",
+  "scene": "Assets/HongKong/Authored/CantonPolish/CantonRoadPolish.unity",
+  "playerArgs": [
+    "-streetSmokeTest",
+    "-streetObserveSeconds",
+    "120",
+    "-screen-width",
+    "1920",
+    "-screen-height",
+    "1080"
+  ],
+  "evidenceSha256": {
+    "day-dof.png": "b69676d564fdafbd27994607cd5ff988247e6171d6fae482b5c7d6b1d3597584",
+    "result.json": "026f823c3c1d5dec5b3fc949ab6eaf068a1d6ee871fa6e70e7d9184eb9ac8896",
+    "runtime-log-summary.txt": "f2e75bf0b9dc1a33ed95bc4a7481a073a088c1c0cdf7be30f7c7df1fa3dc8f6f",
+    "input-result.json": "395a5dd6138c1aae921f4656962b8b8ce39c921c130684e3148b830da56572a9",
+    "route-3.png": "1752c1c5371e6c9fa33cc191ffad170354baa8e0dab5395598105492fc958657",
+    "before-bake-first-iteration.png": "e05c814480af02becad11838cf67fd880a3fd70fd81adb51d9c489693abdeeaa",
+    "bake-audit.json": "a4fd6dc002be6936896dd159e82954ba32d7939b3503277a12e9f831deda3103",
+    "pixel-mode-2.png": "a6181c2548250f44bcd4dd2f7bc4aae55c7f5f1c7b66386c6cb68737ececaded",
+    "pixel-mode-0.png": "34e557ad39d3518d266d45ddc0ed2f819976674cb61740a9fad1df9ce193925d",
+    "observation-end.png": "4771f13b2106db6f85e71fbcada19fcec3d9202d1c32f64dc5efe098820c6c6b",
+    "start.png": "b088acdd3a00c440de5106253f81e9b9e6c7aa5971bc7d9e7acb3a574b363a54",
+    "build.json": "1232a5df0e50021d728cb9eb5b45af2a101c707106b1445a449214d6f6871d58",
+    "bake-result.json": "740b616891ddff55216473202efd2e0eadd488b7ee6f9a1e56cb1336c48f7850",
+    "observation-middle.png": "ea34e61c67826d10d3fe4ff91b5090d0f6d9b9dd103073798f66dd1e4ceae4ea"
+  },
+  "fullLocalLogSha256": "38d719d9ec7e7029e445aa998ca39fed3679136d054438218634b12c9613f9a8",
+  "scope": "30m art strip, full 68m regression route, 120s stationary observation; not 10-minute qualification"
+}

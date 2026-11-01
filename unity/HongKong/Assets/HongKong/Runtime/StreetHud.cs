@@ -7,6 +7,7 @@ namespace HongKong.Walk
         public StreetWalker walker;
         public string location = "Nathan Road  ×  Haiphong Road  ·  Tsim Sha Tsui";
         public string stage = "V1-02 / spatial prototype";
+        public bool bakedAfternoon;
         GUIStyle title, detail;
         void OnGUI()
         {
@@ -22,7 +23,7 @@ namespace HongKong.Walk
             GUI.Label(new Rect(38,65,420,26),location,detail);
             GUI.Label(new Rect(38,88,420,24),stage,detail);
             GUI.color = Color.white;
-            GUI.Label(new Rect(25,Screen.height-38,950,28),"WASD / Arrows   Walk     Shift   Fast walk     Esc   Pause     N   Day / Night     F   Depth of field",detail);
+            GUI.Label(new Rect(25,Screen.height-38,1100,28),bakedAfternoon?"WASD / Arrows   Walk     Shift   Fast walk     Esc   Pause     F   Depth of field     P   Pixel density     Baked afternoon":"WASD / Arrows   Walk     Shift   Fast walk     Esc   Pause     N   Day / Night     F   Depth of field",detail);
             if (walker.paused)
             {
                 GUI.Box(new Rect(Screen.width/2-150,Screen.height/2-85,300,170),"PAUSED");

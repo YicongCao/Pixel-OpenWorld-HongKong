@@ -1,0 +1,13 @@
+{
+  "running": false,
+  "progress": 0.0,
+  "lightmaps": 1,
+  "probes": 258,
+  "lightingData": "Assets/HongKong/Authored/CantonPolish/CantonRoadPolish/LightingData.asset",
+  "maps": [
+    {
+      "color": "Assets/HongKong/Authored/CantonPolish/CantonRoadPolish/Lightmap-0_comp_light.exr",
+      "direction": "Assets/HongKong/Authored/CantonPolish/CantonRoadPolish/Lightmap-0_comp_dir.png"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+[BakedLighting] lightmaps=1 probes=258
+[StreetValidation] PASS reached=12 distance=216.5991

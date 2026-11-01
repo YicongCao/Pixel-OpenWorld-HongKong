@@ -62,3 +62,17 @@ URP 官方文档区分：**Gaussian 只做远景虚化**，较快且半径受限
 角色先通过无景深的深度／受光检查，建筑先通过无景深的轮廓／像素密度检查；再合并最终光照与 DOF。出现问题时依次关 DOF、Bloom、半透明和自定义受光，定位到具体环节，不用更强模糊遮掩错误。
 
 交付 Camera／Volume 配置、角色材质与投影策略、截图机位、路线、日志及版本。性能记录必须包含实际分辨率、灯光和人数、CPU／GPU 帧时是否可获取；未测值写缺失，不填推测数字。此门槛不替代 [首版整体验收](../07-validation/acceptance.md)。
+
+## 7. 小场景光照烘焙与交付
+
+2026-11-01 补充。用户要求在小场景精修最后加入实际烘焙。它负责稳定的间接反弹光、固定店内灯与接触层次；动态直射阴影仍实时计算，不把“烘焙”说成取消所有灯光成本。
+
+Unity 的 Mixed 模式可以把间接光预计算，并保留实时直射；Light Probes 向移动物体提供烘焙间接光。探针应覆盖明暗过渡与人物的活动体积，不能只沿地面铺一条线。[Light Modes](https://docs.unity.com/en-us/engine/6000.3/manual/lighting-overview/lighting-light-sources/components/configuring/light-modes/choose) · [Light Probes](https://docs.unity.com/en-us/engine/6000.3/manual/lighting-overview/direct-and-indirect-lighting/light-probes/light-probes)
+
+本机是 Apple Silicon：Unity 6000.3 官方说明该编辑器不支持 CPU Progressive Lightmapper，使用 Progressive GPU；这不是对其他平台的统一要求。[后端支持说明](https://docs.unity.com/en-us/engine/6000.3/manual/lighting-overview/direct-and-indirect-lighting/lightmapping/baking-before-runtime/configure/progressive-lightmapper)
+
+本次广东道小样采用：Mixed / Baked Indirect 主光，Baked 店内点光，Directional lightmap，8 texels/m 基准密度、1024 atlas、4 px padding、32 direct / 128 indirect / 64 environment samples、最多 3 次反弹。大部分静态物体 scaleInLightmap=0.55，高层远景=0.15；这些是小样成本参数，尚非最终画质标准。380 个静态渲染对象接入一组颜色／方向贴图，258 个探针覆盖主街与支路，动态角色与车体不参与静态烘焙。实际产物及独立运行验证见 [精修记录](../08-blocks/tst-canton-demo/polish-v1.md)。
+
+执行条件：静态网格需要 UV2、Contribute GI、正确的接收模式；小装饰可使用探针减轻 lightmap 成本。保存 `.lighting`、场景、LightingData、贴图和 `.meta`；不能只保存截图或 Library 缓存。`Lightmapping.BakeAsync()` 只表示启动，必须检查 `isRunning` 结束、产物数量／路径、动态对象排除与 Player 中的数据加载。[场景设置](https://docs.unity.com/en-us/engine/6000.3/manual/lighting-overview/direct-and-indirect-lighting/lightmapping/baking-before-runtime/lightmapping) · [BakeAsync API](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityeditor/lightmapping/bakeasync)
+
+最终步骤是烘焙后复验：同机位对照、无 DOF 的近处接缝／漏光检查、主角和车辆进出阴影、路径往返及帧时。第一轮低分辨率试烘不算最终交付。改灯、静态物体或影响反弹的材质后重烘；一个日景 lightmap 不能搭配夜间太阳当作已完成夜景。当前精修场景锁定午后，原 demo 的实时昼夜独立保留。

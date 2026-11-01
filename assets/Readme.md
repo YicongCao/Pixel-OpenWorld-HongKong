@@ -23,3 +23,5 @@
 首批：[弥敦道 × 海防道概念与输入记录](blocks/tst-nathan-haiphong/generated/concepts/manifest.json)，用途与偏差见 [检查记录](../docs/08-blocks/tst-nathan-haiphong/assets.md)。`authored/` 尚未创建。
 
 首批生产小样：[白帽图集与哈希](blocks/tst-nathan-haiphong/generated/hero/manifest.json)、[28 帧切片](blocks/tst-nathan-haiphong/generated/hero/frames.json)、[八类材质与哈希](blocks/tst-nathan-haiphong/generated/materials/manifest.json)。采用方式、实机结果和缺口见 [实施记录](../docs/08-blocks/tst-nathan-haiphong/implementation.md)。
+
+广东道精修：[生成源／提示词／哈希](blocks/tst-canton-demo/generated/polish-v1/manifest.json)，包含四格材质、街物与行人图集。NPC 第一稿弃用，采用去除非对称配件的第二稿；不是最终动作验收。Unity authored 场景、分件、材质和烘焙产物独立保存，见 [精修记录](../docs/08-blocks/tst-canton-demo/polish-v1.md)。

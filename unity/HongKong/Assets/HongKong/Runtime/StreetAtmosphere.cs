@@ -12,13 +12,14 @@ namespace HongKong.Walk
         public Volume volume;
         public StreetWalker walker;
         public bool night,dofEnabled;
+        public bool bakedAfternoon;
         DepthOfField dof;
         void Start(){volume.profile.TryGet(out dof);Apply();}
         void Update()
         {
             if(Keyboard.current!=null)
             {
-                if(Keyboard.current.nKey.wasPressedThisFrame){night=!night;Apply();}
+                if(Keyboard.current.nKey.wasPressedThisFrame && !bakedAfternoon){night=!night;Apply();}
                 if(Keyboard.current.fKey.wasPressedThisFrame){dofEnabled=!dofEnabled;Apply();}
             }
             if(dof!=null)
@@ -30,6 +31,14 @@ namespace HongKong.Walk
         }
         public void Apply()
         {
+            if(bakedAfternoon)
+            {
+                night=false;
+                // Lighting is authored in the scene and must match its lightmaps and probes.
+                walker.viewCamera.backgroundColor=RenderSettings.fogColor;
+                if(dof!=null)dof.active=dofEnabled;
+                return;
+            }
             sun.intensity=night?.45f:2.2f;
             sun.color=night?new Color(.48f,.61f,.9f):new Color(1,.88f,.70f);
             RenderSettings.ambientLight=night?new Color(.25f,.32f,.42f):new Color(.55f,.61f,.65f);

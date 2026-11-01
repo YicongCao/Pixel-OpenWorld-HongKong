@@ -17,3 +17,5 @@
 执行顺序见 [街区还原工作流](../06-production/街区还原工作流.md)，阅读路线见 [docs/Skill.md](../Skill.md)。新增街区时更新本章 README 的列表；通用结论回写所属主题章节，避免把全部研究继续堆在街区计划里。
 
 - [广东道复用 demo](tst-canton-demo/README.md)：本轮快速可玩切片，压缩编排与实际验证单列。
+
+- [广东道 30 米精修与烘焙](tst-canton-demo/polish-v1.md)：独立 authored 场景、生产图集、浅室内、像素人流与 GPU lightmap／探针。

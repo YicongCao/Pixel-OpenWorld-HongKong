@@ -2,6 +2,8 @@
 
 2026-11-01。用户本轮指定广东道；此前弥敦道／海防道 A1 保留为独立制作小样。当前目标是快速验证 HD-2D 组件在可走场景中的组合，不是完整 v0.1 或最终街区美术。
 
+最新进展：[30 米精修与光照烘焙](polish-v1.md)。新场景 `Authored/CantonPolish/CantonRoadPolish.unity`，本机 `.local/builds/HongKong-Canton-Polish.app`；固定午后、F 景深、P 像素密度。以下描述保留原快速 demo，避免混淆两版。
+
 ## 打开与操作
 
 Unity 场景：`Assets/HongKong/Generated/CantonDemo/CantonRoadDemo.unity`。

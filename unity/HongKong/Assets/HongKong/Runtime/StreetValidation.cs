@@ -16,10 +16,14 @@ namespace HongKong.Walk
         readonly List<float> frameMs = new();
         readonly List<string> errors = new();
         float begin;
+        float observationSeconds;
         void Start()
         {
             var args=Environment.GetCommandLineArgs();
             int index=Array.IndexOf(args,"-streetOutput");
+            int observe=Array.IndexOf(args,"-streetObserveSeconds");
+            if(observe>=0 && observe+1<args.Length && float.TryParse(args[observe+1],System.Globalization.NumberStyles.Float,System.Globalization.CultureInfo.InvariantCulture,out var seconds))
+                observationSeconds=Mathf.Clamp(seconds,0,600);
             if(Array.IndexOf(args,"-streetSmokeTest")>=0)
                 Begin(index>=0 && index+1<args.Length ? args[index+1] : Path.Combine(Application.persistentDataPath,"validation"));
         }
@@ -49,14 +53,24 @@ namespace HongKong.Walk
                 pixel.mode=originalMode;
             }
             var atmosphere=FindFirstObjectByType<StreetAtmosphere>();
+            if(atmosphere && atmosphere.bakedAfternoon)
+            {
+                int maps=LightmapSettings.lightmaps.Length;
+                int probes=LightmapSettings.lightProbes?LightmapSettings.lightProbes.count:0;
+                if(maps==0 || probes==0)errors.Add("Baked afternoon lost lightmaps or probes in Player");
+                Debug.Log("[BakedLighting] lightmaps="+maps+" probes="+probes);
+            }
             if(atmosphere)
             {
                 if(!atmosphere.volume.profile.TryGet<UnityEngine.Rendering.Universal.DepthOfField>(out var effect))
                     errors.Add("Depth of field profile missing after load");
                 atmosphere.dofEnabled=true;atmosphere.Apply();yield return new WaitForSeconds(.5f);
                 yield return Capture("day-dof.png");
-                atmosphere.night=true;atmosphere.Apply();yield return new WaitForSeconds(.5f);
-                yield return Capture("night-dof.png");
+                if(!atmosphere.bakedAfternoon)
+                {
+                    atmosphere.night=true;atmosphere.Apply();yield return new WaitForSeconds(.5f);
+                    yield return Capture("night-dof.png");
+                }
                 atmosphere.night=false;atmosphere.dofEnabled=false;atmosphere.Apply();
             }
             for(int pass=0;pass<2;pass++)
@@ -82,13 +96,32 @@ namespace HongKong.Walk
             var bus=FindFirstObjectByType<CantonBus>();
             if(bus){float until=Time.realtimeSinceStartup+50;while(bus.cycles<3 && Time.realtimeSinceStartup<until)yield return null;
                 if(bus.cycles<3 || bus.violations>0)errors.Add("Bus did not complete three safe boarding cycles");}
+            var delivery=FindFirstObjectByType<CantonDelivery>();
+            if(delivery)
+            {
+                float until=Time.realtimeSinceStartup+80;
+                while(delivery.deliveries<3 && Time.realtimeSinceStartup<until)yield return null;
+                if(delivery.deliveries<3)errors.Add("Delivery did not complete three handovers");
+            }
             yield return Capture("returned.png");
+            if(observationSeconds>0)
+            {
+                walker.ResetToStart();
+                yield return new WaitForSeconds(observationSeconds*.5f);
+                yield return Capture("observation-middle.png");
+                yield return new WaitForSeconds(observationSeconds*.5f);
+                yield return Capture("observation-end.png");
+                if(bus && bus.violations>0)errors.Add("Boarding violation during stationary observation");
+            }
             frameMs.Sort(); completed=true;
             var result=new Result { stage=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,
                 busCycles=bus?bus.cycles:0, boardingViolations=bus?bus.violations:0,
+                lightmaps=LightmapSettings.lightmaps.Length,lightProbes=LightmapSettings.lightProbes?LightmapSettings.lightProbes.count:0,
+                deliveries=delivery?delivery.deliveries:0,
                 passed=!failed && errors.Count==0 && walker.fallRecoveries==0, fallRecoveries=walker.fallRecoveries,
                 unityVersion=Application.unityVersion,graphics=SystemInfo.graphicsDeviceName,
                 elapsedSeconds=Time.realtimeSinceStartup-begin, frames=frameMs.Count, waypointsReached=reached,
+                observationSeconds=observationSeconds,
                 waypointsExpected=walker.route.Length*2, distanceM=walker.distanceWalked,
                 p95FrameMs=frameMs[(int)((frameMs.Count-1)*.95f)],p99FrameMs=frameMs[(int)((frameMs.Count-1)*.99f)],
                 width=Screen.width,height=Screen.height,memoryBytes=Profiler.GetTotalAllocatedMemoryLong(),
@@ -110,9 +143,9 @@ namespace HongKong.Walk
         {
             public string stage,unityVersion,graphics,limitations;
             public bool passed;
-            public int busCycles,boardingViolations;
+            public int busCycles,boardingViolations,lightmaps,lightProbes,deliveries;
             public int frames,waypointsReached,waypointsExpected,width,height,fallRecoveries;
-            public float elapsedSeconds,distanceM,p95FrameMs,p99FrameMs;
+            public float elapsedSeconds,distanceM,p95FrameMs,p99FrameMs,observationSeconds;
             public long memoryBytes;
             public Vector3 finalPosition;
             public string[] errors;

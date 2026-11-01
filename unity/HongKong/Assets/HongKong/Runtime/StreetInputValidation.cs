@@ -61,7 +61,7 @@ namespace HongKong.Walk
             yield return KeyFor(Key.W,.3f);
             Check("Movement blocked while paused",Vector3.Distance(initial,walker.transform.position)<.01f);
             yield return KeyFor(Key.Escape,.08f);Check("Escape resumes",!walker.paused);
-            yield return KeyFor(Key.N,.08f);Check("N enables night",atmosphere.night);
+            yield return KeyFor(Key.N,.08f);Check(atmosphere.bakedAfternoon?"N preserves baked afternoon":"N enables night",atmosphere.bakedAfternoon?!atmosphere.night:atmosphere.night);
             yield return KeyFor(Key.F,.08f);Check("F enables depth of field",atmosphere.dofEnabled);
             Check("DOF profile is present and active",atmosphere.volume.profile.TryGet<UnityEngine.Rendering.Universal.DepthOfField>(out var dof) && dof.active);
             yield return KeyFor(Key.N,.08f);yield return KeyFor(Key.F,.08f);
