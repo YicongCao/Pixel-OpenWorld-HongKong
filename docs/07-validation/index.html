@@ -56,7 +56,9 @@
 <ul>
 <li><a href="roadmap-browser-review.json">规划图文版浏览检查</a>：2026-11-01 检查第 06 章的路线图表格、首版计划与目录跳转，仅证明文档可读。</li>
 </ul>
-<p>当前仍无可玩街区、Unity Player 性能或用户主观画面验收记录。后续每个街区结果应存入 <a href="../08-blocks/index.html#doc-readme">街区档案</a> 的独立目录，不能以本页检查替代实机验证。</p></article><nav class="pager" aria-label="章节翻页"><a href="../06-production/index.html">上一章：资产生产与实施</a><a href="../08-blocks/index.html">下一章：街区档案</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+<p>当前仍无可玩街区、Unity Player 性能或用户主观画面验收记录。后续每个街区结果应存入 <a href="../08-blocks/index.html#doc-readme">街区档案</a> 的独立目录，不能以本页检查替代实机验证。</p>
+<h3 id="evidence-23">Agent 入口统一（2026-11-01）</h3>
+<p>以提交 <code>d0036f5ecc5b22c6a780e339f66ecfb1cc3532d2</code> 为迁移前基线：原根目录 <code>agent.md</code> 的制作步骤迁入 <a href="../06-production/index.html#doc-街区还原工作流">街区还原工作流</a>，原第 9 节提交／推送约定迁入根目录 <a href="../../AGENTS.md">AGENTS.md</a>。原文件删除，现行引用与渲染清单同步更新；历史校验记录保持原文。</p></article><nav class="pager" aria-label="章节翻页"><a href="../06-production/index.html">上一章：资产生产与实施</a><a href="../08-blocks/index.html">下一章：街区档案</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
 function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
 window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));

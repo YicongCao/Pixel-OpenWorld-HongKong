@@ -14,4 +14,4 @@
 
 地理原件仍在 `data/blocks/<block_id>/`，实景索引在 `references/blocks/<block_id>/`，资产在 `assets/blocks/<block_id>/`；本目录只存对应研究与实施记录。源文件不因文档归档而重复复制。
 
-执行顺序见 [根目录工作流](../../agent.md)，阅读路线见 [docs/Skill.md](../Skill.md)。新增街区时更新本章 README 的列表；通用结论回写所属主题章节，避免把全部研究继续堆在街区计划里。
+执行顺序见 [街区还原工作流](../06-production/街区还原工作流.md)，阅读路线见 [docs/Skill.md](../Skill.md)。新增街区时更新本章 README 的列表；通用结论回写所属主题章节，避免把全部研究继续堆在街区计划里。

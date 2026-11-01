@@ -11,7 +11,7 @@
 <h3 id="readme-10">新街区的归档约定</h3>
 <p>每次按稳定 <code>block_id</code> 创建子目录。用 <code>plan.md</code> 记录范围、地图边界、镜头方向、主角路线、活动、依赖及缺口；<code>sources.md</code> 引用本仓库数据与真实街景证据；<code>assets.md</code> 记录资产清单与生产路径；<code>validation/</code> 保存真实实机记录。</p>
 <p>地理原件仍在 <code>data/blocks/&lt;block_id&gt;/</code>，实景索引在 <code>references/blocks/&lt;block_id&gt;/</code>，资产在 <code>assets/blocks/&lt;block_id&gt;/</code>；本目录只存对应研究与实施记录。源文件不因文档归档而重复复制。</p>
-<p>执行顺序见 <a href="../../agent.md">根目录工作流</a>，阅读路线见 <a href="../Skill.md">docs/Skill.md</a>。新增街区时更新本章 README 的列表；通用结论回写所属主题章节，避免把全部研究继续堆在街区计划里。</p></article><nav class="pager" aria-label="章节翻页"><a href="../07-validation/index.html">上一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+<p>执行顺序见 <a href="../06-production/index.html#doc-街区还原工作流">街区还原工作流</a>，阅读路线见 <a href="../Skill.md">docs/Skill.md</a>。新增街区时更新本章 README 的列表；通用结论回写所属主题章节，避免把全部研究继续堆在街区计划里。</p></article><nav class="pager" aria-label="章节翻页"><a href="../07-validation/index.html">上一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
 function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
 window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));

@@ -4,7 +4,7 @@
   "checks": {
     "chapters": 8,
     "markdown_files": 31,
-    "local_links": 368,
+    "local_links": 381,
     "embedded_images": 6,
     "original_data_hashes": 36,
     "migrated_files": 8,
@@ -17,8 +17,8 @@
     "docs/03-hd2d/index.html": "75b28a1de1f422092517041ae1b6f5e2d4f8b8192bb277306affa5fa9b33c37a",
     "docs/04-engineering/index.html": "d115dc628cfa27ae535d9b2dc3dbbb045bfed3de82bb6b86c818f8d96c166d8e",
     "docs/05-street-life/index.html": "fabaf909805e6db0773604af51ffa1df3bb197d82128529f997482277707e88b",
-    "docs/06-production/index.html": "80db4a76eedbc4b12ec9a2fab0e57f12a91d7ccee7cf5d364257310435006535",
-    "docs/07-validation/index.html": "d88d9840a19e803084d7598f4ee1a3c4863d5810a1feff28fe8675e4bba23ad2",
-    "docs/08-blocks/index.html": "1425ac70c8a0b08fccfb09692f3eaa6de7256e1351c35d1477b0fbcd4d19ac54"
+    "docs/06-production/index.html": "9356a4f77892cd7b17dbf6f71f8ebd5a0e5a63618df935a5436413b1c2c86093",
+    "docs/07-validation/index.html": "a4432e19bef9659132b02ba17e083128c8fea01626d30f1e08dc7903b301c2b8",
+    "docs/08-blocks/index.html": "c8c86c412a3fd547639b6ad6009824cfd9e9e2bda54bcf4a37fd3a5e2ee23b19"
   }
 }
