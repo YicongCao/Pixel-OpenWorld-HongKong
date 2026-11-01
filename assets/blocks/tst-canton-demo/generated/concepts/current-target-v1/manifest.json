@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-01",
+  "asset": "concept.png",
+  "kind": "HD-2D visual target concept; NOT runtime screenshot or production texture",
+  "tool": "built-in imagegen",
+  "calls": 1,
+  "prompt": "prompt.txt",
+  "dimensions": [
+    1672,
+    941
+  ],
+  "sha256": "1ccd1905e72242e0b9c3c2e0708dc26510f004a88e105e2d8195edf39e08df6e",
+  "sourceCommit": "5b912df51a4db71cf28d6794d11ac8345536e252",
+  "inputs": [
+    {
+      "file": "docs/08-blocks/tst-canton-demo/brand-validation/start.png",
+      "role": "Layout/camera/hero scale; Player captured at source commit 5b912df",
+      "url": null,
+      "sha256": "78320a3ffc21b24dc81a08ec647c9c3f76690aef9fee24d22c4495338666d8d2",
+      "redistributed": true
+    },
+    {
+      "file": ".local/canton-polish/apple-official.jpg",
+      "role": "Apple facade/material reference",
+      "url": "https://www.apple.com/hk/en/retail/cantonroad/",
+      "sha256": "42bfd5b811b0bd81b453db2004cc088c88745504d090031c141603de53689bc5",
+      "redistributed": false
+    },
+    {
+      "file": ".local/canton-branding/sasa-canton-official.jpg",
+      "role": "Sa Sa storefront material/detail reference",
+      "url": "https://img2.cdn.91app.hk/o2o/image/593ffec4-f070-4cdf-a397-6f553f5dc974.jpg",
+      "sha256": "39b729da51c04bef53e93fa1aa5f11c7b22bb5e71dbf2af020a844bd7a01e004",
+      "redistributed": false
+    }
+  ],
+  "cameraIntent": {
+    "pitchDegrees": 25,
+    "yawDegrees": 0,
+    "verticalFovDegrees": 24,
+    "projection": "perspective",
+    "sameFramingRequested": true
+  },
+  "knownDeviations": [
+    "Generative approximation of camera; no pixel-perfect geometry registration",
+    "Glass/interior detail and Manley entry inferred, not surveyed",
+    "Sa Sa glow too strong and its facade widths drift slightly",
+    "Some environment surfaces remain smooth; target pixel clusters need art pass",
+    "Near foreground foliage enlarged and silhouette shifted",
+    "Static image does not prove animation, navigation, transparent-depth correctness or runtime performance"
+  ],
+  "usage": "Art direction and module/light breakdown only; preserve current authored scene until separately implemented",
+  "rights": "Generated interpretation references official store photography; no open-source license asserted for source photos or trademarks"
+}
