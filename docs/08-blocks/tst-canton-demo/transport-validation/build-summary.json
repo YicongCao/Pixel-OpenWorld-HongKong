@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "buildId": "build_523f88d0fd2b",
+  "result": "Succeeded",
+  "platform": "StandaloneOSX",
+  "outputPath": "/Users/cong/Documents/Projects/pixel-open-world-rpg/.local/builds/HongKong-Canton-Transport.app",
+  "totalSizeBytes": 362848842,
+  "buildTimeMs": 11112,
+  "buildStartedAt": "2026-11-01T04:07:09.2136460Z",
+  "buildEndedAt": "2026-11-01T04:07:20.3262420Z",
+  "totalWarnings": 0,
+  "totalErrors": 0,
+  "errors": [],
+  "warnings": []
+}

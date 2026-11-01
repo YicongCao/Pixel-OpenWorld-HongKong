@@ -1,0 +1,24 @@
+{
+  "retrieved_date": "2026-11-01",
+  "source": "Citybus public realtime API; cached response, not a timetable guarantee",
+  "crs": "WGS84 EPSG:4326 for stop lat/long; no geometry transformed",
+  "files": [
+    {
+      "path": "h2-inbound.json",
+      "url": "https://rt.data.gov.hk/v2/transport/citybus/route-stop/CTB/H2/inbound",
+      "sha256": "7a812a9219b6095f26c06b6d586be02f2c3f3b59d290895476732f93f582a303"
+    },
+    {
+      "path": "stop-001402.json",
+      "url": "https://rt.data.gov.hk/v2/transport/citybus/stop/001402",
+      "sha256": "0643c6a33e0a67a07eff3854fa0d28038a8dce548efb6369986af8de50df6fc3"
+    },
+    {
+      "path": "stop-001403.json",
+      "url": "https://rt.data.gov.hk/v2/transport/citybus/stop/001403",
+      "sha256": "62a133ede1844598debb06b8174949ed64ddb9a5a27471e68e97b476368b9308"
+    }
+  ],
+  "upstream_reused": "../bus.json, existing TD complete snapshot 2026-10-14; stop td:BUS:stop:13364",
+  "design": "H2 through service in compressed slice; KMB stop placement is design, not surveyed"
+}

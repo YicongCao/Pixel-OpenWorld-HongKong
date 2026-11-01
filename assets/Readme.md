@@ -31,3 +31,5 @@
 当前街段目标：[同机位 HD-2D 概念与输入记录](blocks/tst-canton-demo/generated/concepts/current-target-v1/manifest.json)。以品牌修订 Player 画面和两家店的官方照片作为输入；[对照与偏差](../docs/08-blocks/tst-canton-demo/concept-gap-v1.md)明确其为美术目标，不能当作新实机或测绘事实。
 
 Apple 橱窗样板：[四格像素材质及导入记录](blocks/tst-canton-demo/generated/apple-bay-v1/manifest.json)，用于浅木桌、石材饰面、配件展示与设备屏幕；[实机实施](../docs/08-blocks/tst-canton-demo/apple-bay-v1.md)。
+
+广东道交通：[站牌、观光巴士与三色的士资产合同](blocks/tst-canton-demo/authored/transport-v1/manifest.json)，可编辑源与 Unity 预制体路径、尺寸、地区限制及状态均在其中。

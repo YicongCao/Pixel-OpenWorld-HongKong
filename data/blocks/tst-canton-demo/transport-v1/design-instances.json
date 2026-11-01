@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "urbanTaxis": [
+    {
+      "name": "Urban taxi second",
+      "position": [
+        20,
+        0.02,
+        -6.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "Taxi-urban",
+      "source_or_design": "design"
+    },
+    {
+      "name": "Taxi urban",
+      "position": [
+        -24,
+        0.02,
+        -6.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "asset": "Taxi-urban",
+      "source_or_design": "design"
+    }
+  ],
+  "bus": {
+    "position": [
+      -12,
+      0.2,
+      -3
+    ],
+    "asset": "Sightseeing-H2",
+    "source_or_design": "design; through service"
+  },
+  "stop": {
+    "position": [
+      5,
+      0.2,
+      0.35
+    ],
+    "asset": "KMB-GatewayHotel",
+    "place_id": "td:BUS:stop:13364",
+    "source_or_design": "design placement; TD identity"
+  },
+  "laneColliderGapM": 1.55000019,
+  "prefabs": 5,
+  "excludedRegions": [
+    "nt",
+    "lantau"
+  ]
+}

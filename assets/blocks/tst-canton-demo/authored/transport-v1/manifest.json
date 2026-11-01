@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "source": "unity/HongKong/AgentScripts/TransportV1.cs",
+  "generator_guard": "Apply refuses to overwrite existing TransportV1; RefineMarkings only adjusts its labels",
+  "material": "URP Lit flat color; font uses host PingFang/Heiti, not bundled; no dedicated pixel texture atlas yet",
+  "assets": [
+    {
+      "asset_id": "Taxi-urban",
+      "path": "unity/HongKong/Assets/HongKong/Authored/TransportV1/Taxi-urban.prefab",
+      "sha256": "c447d6b9e42fb4bf96e4364fc868ddf8e701a2190fe703a10365307b391d5b79",
+      "approx_dimensions_xyz_m": [
+        4.8,
+        1.9,
+        1.9
+      ],
+      "region_or_role": "urban; Canton Road enabled",
+      "representation": "procedural editable geometry + independent depth-tested text",
+      "pivot": "ground root; +X vehicle front; +Z passenger side",
+      "collision": "simplified BoxCollider",
+      "status": "produced; player validation recorded separately; art pending"
+    },
+    {
+      "asset_id": "Taxi-nt",
+      "path": "unity/HongKong/Assets/HongKong/Authored/TransportV1/Taxi-nt.prefab",
+      "sha256": "8e75a752c2e994cec7995f3c12ae69769f57a81b17f61a72fe6576cbfcce8d7d",
+      "approx_dimensions_xyz_m": [
+        4.8,
+        1.9,
+        1.9
+      ],
+      "region_or_role": "New Territories; Canton Road excluded",
+      "representation": "procedural editable geometry + independent depth-tested text",
+      "pivot": "ground root; +X vehicle front; +Z passenger side",
+      "collision": "simplified BoxCollider",
+      "status": "produced; player validation recorded separately; art pending"
+    },
+    {
+      "asset_id": "Taxi-lantau",
+      "path": "unity/HongKong/Assets/HongKong/Authored/TransportV1/Taxi-lantau.prefab",
+      "sha256": "5b2448a911895c9af6d8998503d13af617c7be1f727dd0e5655505932a7e16ff",
+      "approx_dimensions_xyz_m": [
+        4.8,
+        1.9,
+        1.9
+      ],
+      "region_or_role": "Lantau; Canton Road excluded",
+      "representation": "procedural editable geometry + independent depth-tested text",
+      "pivot": "ground root; +X vehicle front; +Z passenger side",
+      "collision": "simplified BoxCollider",
+      "status": "produced; player validation recorded separately; art pending"
+    },
+    {
+      "asset_id": "Sightseeing-H2",
+      "path": "unity/HongKong/Assets/HongKong/Authored/TransportV1/Sightseeing-H2.prefab",
+      "sha256": "c39f272c0f3a5b35f23ea6e02175a83d038285ba142b66e5865bafefa356fbc2",
+      "approx_dimensions_xyz_m": [
+        11.6,
+        4.4,
+        2.7
+      ],
+      "region_or_role": "Canton Road through only",
+      "representation": "procedural editable geometry + independent depth-tested text",
+      "pivot": "ground root; +X vehicle front; +Z passenger side",
+      "collision": "simplified BoxCollider",
+      "status": "produced; player validation recorded separately; art pending"
+    },
+    {
+      "asset_id": "KMB-GatewayHotel",
+      "path": "unity/HongKong/Assets/HongKong/Authored/TransportV1/KMB-GatewayHotel.prefab",
+      "sha256": "d4faed1b321270bc30483d525333e1fdf2e0968f1cc1b400774f8308559be6ab",
+      "approx_dimensions_xyz_m": [
+        1.06,
+        3.6,
+        0.4
+      ],
+      "region_or_role": "TD stop13364; compressed placement",
+      "representation": "procedural editable geometry + independent depth-tested text",
+      "pivot": "ground root; +X vehicle front; +Z passenger side",
+      "collision": "simplified BoxCollider",
+      "status": "produced; player validation recorded separately; art pending"
+    }
+  ],
+  "source_sha256": "272b59e5c8a8dc500534fc14d21914e792545e1be750255e97265551c81e62b4"
+}

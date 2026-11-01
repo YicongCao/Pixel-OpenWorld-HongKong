@@ -8,11 +8,16 @@ namespace HongKong.Walk
         public static CantonBus Instance {get;private set;}
         public Transform door, passenger;
         public int cycles, boarded, violations;
-        public string StateName=>fsm==null?"Starting":fsm.ActiveStateName;
+        public bool passThrough;
+        public Transform[] wheels;
+        public float throughSpeed=5.5f;
+        public string StateName=>passThrough?"Through service":fsm==null?"Starting":fsm.ActiveStateName;
         StateMachine fsm; StreetWalker player; float entered; Vector3 doorClosed;
         void Start()
         {
-            Instance=this;player=FindFirstObjectByType<StreetWalker>();doorClosed=door.localPosition;fsm=new StateMachine();
+            Instance=this;player=FindFirstObjectByType<StreetWalker>();doorClosed=door.localPosition;
+            if(passThrough){passenger.gameObject.SetActive(false);transform.position=new Vector3(-43,.2f,-3);Debug.Log("[CantonBus] H2 through service; no boarding at Gateway Hotel");return;}
+            fsm=new StateMachine();
             fsm.AddState("Approach",onEnter:s=>{entered=0;transform.position=new Vector3(-39,.2f,-4);passenger.gameObject.SetActive(true);passenger.position=new Vector3(3,.22f,.1f);},onLogic:s=>Move(0));
             fsm.AddState("Open",onEnter:s=>{entered=0;door.localPosition=doorClosed+Vector3.right*.8f;});
             fsm.AddState("Board",onEnter:s=>entered=0,onLogic:s=>{if(door.localPosition==doorClosed)violations++;passenger.position=Vector3.MoveTowards(passenger.position,new Vector3(2,.22f,-3),Time.deltaTime*2);});
@@ -26,7 +31,19 @@ namespace HongKong.Walk
             fsm.SetStartState("Approach");fsm.Init();
         }
         void Move(float x){transform.position=Vector3.MoveTowards(transform.position,new Vector3(x,.2f,-4),Time.deltaTime*8);}
-        void Update(){if(player && player.paused)return;entered+=Time.deltaTime;fsm?.OnLogic();}
+        void Update()
+        {
+            if(player && player.paused)return;
+            if(passThrough)
+            {
+                float dx=throughSpeed*Time.deltaTime;transform.position+=Vector3.right*dx;
+                if(wheels!=null)foreach(var wheel in wheels)if(wheel)wheel.Rotate(Vector3.up,-dx/.49f*Mathf.Rad2Deg,Space.Self);
+                if(door.localPosition!=doorClosed || passenger.gameObject.activeSelf)violations++;
+                if(transform.position.x>43){transform.position=new Vector3(-43,.2f,-3);cycles++;}
+                return;
+            }
+            entered+=Time.deltaTime;fsm?.OnLogic();
+        }
         void OnDestroy(){if(Instance==this)Instance=null;}
     }
 }

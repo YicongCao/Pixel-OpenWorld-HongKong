@@ -17,12 +17,13 @@ namespace HongKong.Walk
         readonly List<string> errors = new();
         float begin;
         float observationSeconds;
-        bool inspectAppleBay, appleReflectionLoaded;
+        bool inspectAppleBay, appleReflectionLoaded, inspectTransport;
         int appleInspectionPoints;
         void Start()
         {
             var args=Environment.GetCommandLineArgs();
             inspectAppleBay=Array.IndexOf(args,"-streetAppleBay")>=0;
+            inspectTransport=Array.IndexOf(args,"-streetTransport")>=0;
             int index=Array.IndexOf(args,"-streetOutput");
             int observe=Array.IndexOf(args,"-streetObserveSeconds");
             if(observe>=0 && observe+1<args.Length && float.TryParse(args[observe+1],System.Globalization.NumberStyles.Float,System.Globalization.CultureInfo.InvariantCulture,out var seconds))
@@ -126,7 +127,7 @@ namespace HongKong.Walk
             walker.automatic=false;
             var bus=FindFirstObjectByType<CantonBus>();
             if(bus){float until=Time.realtimeSinceStartup+50;while(bus.cycles<3 && Time.realtimeSinceStartup<until)yield return null;
-                if(bus.cycles<3 || bus.violations>0)errors.Add("Bus did not complete three safe boarding cycles");}
+                if(bus.cycles<3 || bus.violations>0)errors.Add("Bus did not complete three safe service cycles");}
             var delivery=FindFirstObjectByType<CantonDelivery>();
             if(delivery)
             {
@@ -144,8 +145,18 @@ namespace HongKong.Walk
                 yield return Capture("observation-end.png");
                 if(bus && bus.violations>0)errors.Add("Boarding violation during stationary observation");
             }
+            var taxis=FindObjectsByType<CantonTrafficVehicle>(FindObjectsSortMode.None);
+            int taxiPasses=0;
+            if(inspectTransport)
+            {
+                if(taxis.Length!=2)errors.Add("Expected exactly two urban taxis");
+                foreach(var taxi in taxis){taxiPasses+=taxi.passes;if(taxi.service!="urban" || taxi.passes<3)errors.Add("Taxi region or movement failed");}
+                if(!bus || !bus.passThrough || bus.boarded!=0 || bus.violations!=0)errors.Add("H2 must pass without boarding");
+                if(!GameObject.Find("KMB Gateway Hotel | design placement"))errors.Add("Refined stop missing");
+            }
             frameMs.Sort(); completed=true;
             var result=new Result { stage=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,
+                transportInspectionRequested=inspectTransport,urbanTaxiCount=taxis.Length,taxiPasses=taxiPasses,busPassThrough=bus && bus.passThrough,
                 busCycles=bus?bus.cycles:0, boardingViolations=bus?bus.violations:0,
                 lightmaps=LightmapSettings.lightmaps.Length,lightProbes=LightmapSettings.lightProbes?LightmapSettings.lightProbes.count:0,
                 deliveries=delivery?delivery.deliveries:0,
@@ -174,7 +185,8 @@ namespace HongKong.Walk
         [Serializable] sealed class Result
         {
             public string stage,unityVersion,graphics,limitations;
-            public bool passed;
+            public bool passed,transportInspectionRequested,busPassThrough;
+            public int urbanTaxiCount,taxiPasses;
             public bool appleBayInspectionRequested,appleReflectionLoaded;
             public int appleInspectionPoints;
             public int busCycles,boardingViolations,lightmaps,lightProbes,deliveries;

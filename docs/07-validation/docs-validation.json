@@ -5,8 +5,8 @@
     "chapters": 8,
     "workflows": 9,
     "workflow_migrations": 4,
-    "markdown_files": 77,
-    "local_links": 995,
+    "markdown_files": 81,
+    "local_links": 1024,
     "embedded_images": 10,
     "original_data_hashes": 36,
     "migrated_files": 8,
@@ -21,6 +21,6 @@
     "docs/05-street-life/index.html": "988521b906115007756d663687e7290ac4d1a8b59b5af0f8380b82118493e964",
     "docs/06-production/index.html": "444c9a3ed8572d6533827373932619a945ac35791560ce0d95ae56b0aeda7709",
     "docs/07-validation/index.html": "ff64dc260304beb2de152d03542aab6c3c64f6b6abe5f92f97dd69a5473471c9",
-    "docs/08-blocks/index.html": "b227266cf822bce612c464adc95c2d6b6ef5913a2fa7f54f5a7896a65019cf62"
+    "docs/08-blocks/index.html": "0a22d7218c01b3b1aee4fa9c112eaf758b27b1ef8798f2f5fdf4cb92486f5d73"
   }
 }

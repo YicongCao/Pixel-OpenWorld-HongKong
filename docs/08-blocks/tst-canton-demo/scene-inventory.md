@@ -4,6 +4,10 @@
 
 场景：[CantonRoadPolish.unity](../../../unity/HongKong/Assets/HongKong/Authored/CantonPolish/CantonRoadPolish.unity)。制作源：[BuildCantonDemo](../../../unity/HongKong/AgentScripts/BuildCantonDemo.cs)、[PolishCanton](../../../unity/HongKong/AgentScripts/PolishCanton.cs)、[FinishCantonPolish](../../../unity/HongKong/AgentScripts/FinishCantonPolish.cs)、[BrandCanton](../../../unity/HongKong/AgentScripts/BrandCanton.cs)、[AppleBay](../../../unity/HongKong/AgentScripts/AppleBay.cs)。下述 ID 是本次盘点目录 ID，尚未逐件写入 Unity 对象元数据。
 
+## 交通增量（2026-11-01）
+
+下表保留首次盘点基线。CR-11 已替换为红圆牌／线路网格／信息柜／立柱分件，身份为港威酒店九巴站，现场精确版式与摆位仍待核实。CR-12 已替换为 H2 黄蓝半开篷三轴双层车，仅通过、不上下客；CR-15 的旧公交乘客停用。新增 CR-18：红／绿／蓝 Comfort 风格的士，广东道只投放两辆红车。预制体、材质、来源、运行验证与剩余精修见 [交通精修 v1](transport-v1.md)。
+
 ## 已存在的几何、面片与占位资产
 
 “已有”只表示当前工程有相应产物，不代表达到八方旅人 II 的精致度。表内优先级 P0 为下一小样的主要辨识／体验缺陷，P1 为随后补足；同类重复实例按资产族合并，数量只在实际读取时标明。

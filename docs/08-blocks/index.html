@@ -2,7 +2,7 @@
 :root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
 </style></head><body>
 <header><small>香港像素漫游 / 香港 HD-2D 研究 / 08 OF 08</small><h1>街区档案</h1><p>每个实际制作街区的计划、证据、资产与实机结果。</p></header>
-<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html">06 · 生产研究与实施规划</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html" aria-current="page">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">08 · 街区档案</a><a href="#doc-tst-nathan-haiphong-plan">第一街区：弥敦道 × 海防道</a><a href="#doc-tst-nathan-haiphong-sources">来源与实际观察</a><a href="#doc-tst-nathan-haiphong-assets">HD-2D 渲染参考与资产拆分</a><a href="#doc-tst-nathan-haiphong-implementation">v0.1 实施批次 01：可走路线与 A1 街角样板</a><a href="#doc-tst-canton-demo-readme">广东道 · 首个可玩复用 demo</a><a href="#doc-tst-canton-demo-polish-plan">从广东道 demo 到精致 HD-2D 小场景</a><a href="#doc-tst-canton-demo-polish-v1">广东道 30 米精修 · 第 01 批</a><a href="#doc-tst-canton-demo-brands-v1">广东道品牌店招 · 第 01 批</a><a href="#doc-tst-canton-demo-concept-gap-v1">当前广东道场景：HD-2D 目标图与实机差距</a><a href="#doc-tst-canton-demo-apple-bay-v1">Apple 5.8 米橱窗样板 · 第 01 批</a><a href="#doc-tst-canton-demo-scene-inventory">广东道 20–30 米切片：资产目录与剩余工序</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
+<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html">06 · 生产研究与实施规划</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html" aria-current="page">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">08 · 街区档案</a><a href="#doc-tst-nathan-haiphong-plan">第一街区：弥敦道 × 海防道</a><a href="#doc-tst-nathan-haiphong-sources">来源与实际观察</a><a href="#doc-tst-nathan-haiphong-assets">HD-2D 渲染参考与资产拆分</a><a href="#doc-tst-nathan-haiphong-implementation">v0.1 实施批次 01：可走路线与 A1 街角样板</a><a href="#doc-tst-canton-demo-readme">广东道 · 首个可玩复用 demo</a><a href="#doc-tst-canton-demo-polish-plan">从广东道 demo 到精致 HD-2D 小场景</a><a href="#doc-tst-canton-demo-polish-v1">广东道 30 米精修 · 第 01 批</a><a href="#doc-tst-canton-demo-brands-v1">广东道品牌店招 · 第 01 批</a><a href="#doc-tst-canton-demo-concept-gap-v1">当前广东道场景：HD-2D 目标图与实机差距</a><a href="#doc-tst-canton-demo-apple-bay-v1">Apple 5.8 米橱窗样板 · 第 01 批</a><a href="#doc-tst-canton-demo-scene-inventory">广东道 20–30 米切片：资产目录与剩余工序</a><a href="#doc-tst-canton-demo-transport-v1">广东道交通资产精修 v1</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
 <main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">08 · 街区档案</h2>
 <p>每个实际制作街区的计划、证据、资产与实机结果。</p>
 <p><a href="../README.md">研究总目录</a> · <a href="index.html">本章图文版</a></p>
@@ -173,7 +173,8 @@ unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file A
 <p>用户指出的街面拥挤度不足、建筑稀疏及未制作贴图已纳入 <a href="#doc-tst-canton-demo-polish-plan">精修工序与待办</a>。下一批先做小范围密度与一个完整立面，不扩张街区。</p>
 <ul>
 <li><a href="#doc-tst-canton-demo-scene-inventory">30 米资产目录、待补景物与剩余工序</a></li>
-</ul></article><article id="doc-tst-canton-demo-polish-plan"><h2 id="tst-canton-demo-polish-plan-0">从广东道 demo 到精致 HD-2D 小场景</h2>
+</ul>
+<p><a href="#doc-tst-canton-demo-transport-v1">交通精修 v1</a>：九巴站牌、H2 半开篷观光巴士、三色的士预制体及独立 Player 验证；当前 authored 场景采用此版本，早期 demo 停靠说明属于历史。</p></article><article id="doc-tst-canton-demo-polish-plan"><h2 id="tst-canton-demo-polish-plan-0">从广东道 demo 到精致 HD-2D 小场景</h2>
 <p>2026-11-01 · 基于本批独立 Player 截图和用户反馈。目标是一个在构图、素材、动画、光照与生活细节上可与《八方旅人 II》小场景进行认真比较的作品切片；不是再扩大街区，也不宣称安装像素 shader 后已接近该品质。</p>
 <h3 id="tst-canton-demo-polish-plan-4">最新执行批次</h3>
 <p><a href="#doc-tst-canton-demo-polish-v1">30 米精修第 01 批</a> 已补入生成贴图、浅室内、栏杆／树冠、像素行人、搬运循环与实际 GPU 烘焙。以下“当前缺口”描述本计划建立时的快速 demo；保留它作为对照，各项完整验收仍按下面门槛执行。</p>
@@ -378,7 +379,9 @@ unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file A
 <p>下一步先评审这组样板的明暗、材质与尺寸；通过后沿既有窗跨扩展到两侧，并独立完善实际可见的楼梯与玻璃转角，再精修莎莎陈列。不同模块保持少量变化，避免机械复制同一展示屏和商品图。</p></article><article id="doc-tst-canton-demo-scene-inventory"><h2 id="tst-canton-demo-scene-inventory-0">广东道 20–30 米切片：资产目录与剩余工序</h2>
 <p>盘点日期：2026-11-01；基线提交 <code>7733aa26e92654bcc28fa598590843228143fe00</code>。本次读取当前序列化场景、生成／修订脚本及既有验证记录，没有重新运行 Unity，也没有新增游戏资产。精修目标为设计坐标 X=-20…10 的约 30 米，仍处于约 68 米可走 demo 中；不是精确测绘还原。</p>
 <p>场景：<a href="../../unity/HongKong/Assets/HongKong/Authored/CantonPolish/CantonRoadPolish.unity">CantonRoadPolish.unity</a>。制作源：<a href="../../unity/HongKong/AgentScripts/BuildCantonDemo.cs">BuildCantonDemo</a>、<a href="../../unity/HongKong/AgentScripts/PolishCanton.cs">PolishCanton</a>、<a href="../../unity/HongKong/AgentScripts/FinishCantonPolish.cs">FinishCantonPolish</a>、<a href="../../unity/HongKong/AgentScripts/BrandCanton.cs">BrandCanton</a>、<a href="../../unity/HongKong/AgentScripts/AppleBay.cs">AppleBay</a>。下述 ID 是本次盘点目录 ID，尚未逐件写入 Unity 对象元数据。</p>
-<h3 id="tst-canton-demo-scene-inventory-6">已存在的几何、面片与占位资产</h3>
+<h3 id="tst-canton-demo-scene-inventory-6">交通增量（2026-11-01）</h3>
+<p>下表保留首次盘点基线。CR-11 已替换为红圆牌／线路网格／信息柜／立柱分件，身份为港威酒店九巴站，现场精确版式与摆位仍待核实。CR-12 已替换为 H2 黄蓝半开篷三轴双层车，仅通过、不上下客；CR-15 的旧公交乘客停用。新增 CR-18：红／绿／蓝 Comfort 风格的士，广东道只投放两辆红车。预制体、材质、来源、运行验证与剩余精修见 <a href="#doc-tst-canton-demo-transport-v1">交通精修 v1</a>。</p>
+<h3 id="tst-canton-demo-scene-inventory-10">已存在的几何、面片与占位资产</h3>
 <p>“已有”只表示当前工程有相应产物，不代表达到八方旅人 II 的精致度。表内优先级 P0 为下一小样的主要辨识／体验缺陷，P1 为随后补足；同类重复实例按资产族合并，数量只在实际读取时标明。</p>
 <div class="table-scroll"><table>
 <tr><th>目录 ID／资产族</th><th>当前表示形式及证据定位（对象名）</th><th>状态与缺口</th><th>后续流程／优先级</th></tr>
@@ -401,7 +404,7 @@ unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file A
 <tr><td>CR-17 纵深街道、背景与前景墙</td><td>Alley side wall/awning、Background block、Harbour City foreground low wall 为简体块</td><td>已有空间层次；支路沿街店面不应长期用空白侧墙，前景仍须全路线可见面检查</td><td>WF-BUILDING＋WF-SCENE／P0</td></tr>
 </table></div>
 <p>品牌来源与当前设计差异见 <a href="#doc-tst-canton-demo-brands-v1">brands-v1</a>；橱窗局部精修见 <a href="#doc-tst-canton-demo-apple-bay-v1">apple-bay-v1</a>。无需把表内所有面片改成全 3D：只在轮廓、视差、近处绕行、碰撞、阴影／反射或动作需求成立时升级。</p>
-<h3 id="tst-canton-demo-scene-inventory-32">应补齐的景物候选目录</h3>
+<h3 id="tst-canton-demo-scene-inventory-36">应补齐的景物候选目录</h3>
 <p>以下是取证与选材待办，不意味着它们已存在于这 30 米。先核位置和镜头可见性，再从候选升级为本批必做；不把全香港元素塞进一个街角。</p>
 <ul>
 <li><strong>优先补真：</strong>街名牌、公交站牌、店铺门牌／营业信息、真实转角门洞；独立字形／颜色／版式和可编辑排字源。先精修一个路牌与一个站牌小包，替换 DEMO 外观前先确认真实站位。</li>
@@ -412,7 +415,7 @@ unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file A
 <li><strong>交通与服务车辆：</strong>公交精模、卸货货车、出租车等按真实车道与停靠需求选择；富豪雪糕车为待核实驻点／时段候选，不是现已制作资产。</li>
 <li><strong>轨道与街区扩展：</strong>港铁标志、出口号、顶棚、栏杆、楼梯／扶梯与人流锚点在真实站口街段制作；广东道本切片没有新建港铁口，不借弥敦道 A1 资产虚构一个出口。7-Eleven、麦当劳及其他真实商户同样先核地址。</li>
 </ul>
-<h3 id="tst-canton-demo-scene-inventory-44">资产之外尚缺的工序与当前成熟度</h3>
+<h3 id="tst-canton-demo-scene-inventory-48">资产之外尚缺的工序与当前成熟度</h3>
 <p>总流程的职责是串联取证到交付；具体“把东西摆成可玩的场景”属于 <a href="../../workflows/10-hd2d/scene-assembly-validation.md">WF-SCENE</a>，烘焙由其调用 <a href="../../workflows/10-hd2d/camera-lighting.md">WF-LIGHT</a>。不能完成景物清单就宣称整个场景完成。</p>
 <ul>
 <li><strong>布局／镜头：</strong>实例位置与来源的完整清单、近景密度和留白、可见目标／抵达路径、街侧关系、支路深入与返回构图、全路线可见面及角色屏幕大小；现有布局为压缩编排。</li>
@@ -422,9 +425,48 @@ unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file A
 <li><strong>灯光／气氛：</strong>角色和环境联合受光，试烘与最终烘焙、探针／反射、景深／Bloom 开关对比。<strong>已有午后烘焙</strong>，后续修改静态场景需要重烘，不是从零才开始；夜景未配套完成。</li>
 <li><strong>产品与交付：</strong>独立 Player 的动线、两分钟观察、视觉评审、完整性能时长、实际输入检查，以及 v0.1 需要的存档／恢复等未完成能力；每次修改保留实际结果与剩余范围。</li>
 </ul>
-<h3 id="tst-canton-demo-scene-inventory-55">现有证据能证明的边界</h3>
+<h3 id="tst-canton-demo-scene-inventory-59">现有证据能证明的边界</h3>
 <p><a href="tst-canton-demo/apple-bay-validation/result.json">最新已有短跑结果</a>：约 68 秒、12/12 路线点、4 个橱窗检查点、4 次公交循环、3 次搬运，日志错误与跌落恢复为 0；P95 约 17.27 ms。它不是本次新测试，也不是完整 v0.1 十分钟性能或主观画面验收；该结果的 observationSeconds 为 0，不能据此声称完成两分钟驻足观察。</p>
-<p><a href="tst-canton-demo/apple-bay-validation/bake-audit.json">烘焙审计</a> 与短跑报告记录 1 组 lightmap、294 个探针。几何清单、画面精致度、生活完成度和烘焙存在是四种不同证据；现阶段仍须按流程逐项补齐。</p></article><nav class="pager" aria-label="章节翻页"><a href="../07-validation/index.html">上一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+<p><a href="tst-canton-demo/apple-bay-validation/bake-audit.json">烘焙审计</a> 与短跑报告记录 1 组 lightmap、294 个探针。几何清单、画面精致度、生活完成度和烘焙存在是四种不同证据；现阶段仍须按流程逐项补齐。</p></article><article id="doc-tst-canton-demo-transport-v1"><h2 id="tst-canton-demo-transport-v1-0">广东道交通资产精修 v1</h2>
+<p>本批制作与独立 Player 功能回归已完成，美术仍待评审。主流程 WF-PROPS 1.0；子流程 WF-SCENE 1.0、WF-LIGHT 2.0、WF-ITERATE 1.0；起始提交 7b055ae。仅修改交通资产与相关验证，保留店铺精修。</p>
+<h3 id="tst-canton-demo-transport-v1-4">取证与设计边界</h3>
+<ul>
+<li>运输署的士运营范围：广东道只投放红色市区的士；绿色新界、蓝色大屿山的士制作独立预制体，不加入广东道交通。来源：https://www.td.gov.hk/en/transport_in_hong_kong/public_transport/taxi/details_of_taxi_operating_areas_/</li>
+<li>城巴实时开放数据 H2 inbound：广东道站点 001403 戏曲中心、001402 北京道；本片段不伪造 H2 上下客站，观光车通过。原始 JSON 在 data/blocks/tst-canton-demo/transport-v1。</li>
+<li>城巴 2025-08-01 官方宣传照第 3 页：黄蓝半开篷、三轴、前段上层有顶、后段露天座位；按此制作风格化模型，不宣称精确复刻车厂图纸。来源：https://www.citybus.com.hk/en/uploadedPressRelease/21658_20250801_ENG.pdf</li>
+<li>本仓库运输署完整快照的 td:BUS:stop:13364 为广东道港威酒店，关联九巴 271 系列；参考该身份制作站牌，实际摆位仍为压缩设计。H2 不停此站。站牌外形依据九巴圆牌及分层线路信息架照片，现场当日支架细节尚未逐项确认。</li>
+<li>出租车参考经典 Comfort 四门轿车照片：红／银顶、绿／白顶、浅蓝／白顶，独立 TAXI 顶灯、门字、黑防擦条、后视镜和轮毂。参考照片有年代，车型并不代表现时整个车队。</li>
+</ul>
+<h3 id="tst-canton-demo-transport-v1-12">制作与验收计划</h3>
+<p>可编辑程序模型源、持久化网格／材质和四种车辆预制体；运行资产不依赖相邻仓库。改造现有巴士视觉，新增红的士车流；绿／蓝仅资产展示验证。保留旧场景可从 Git 恢复，新的生产入口不得重复覆盖精修。</p>
+<p>验收：编译、模型检查、全路线、至少两分钟驻足观察、交通循环、区域投放、门与停站逻辑、车道间距、探针受光和独立 Player 截图。静态站牌替换后检查并重新烘焙。完整 v0.1、精确车道测绘和乘车功能不属于本批。</p>
+<h3 id="tst-canton-demo-transport-v1-19">实际交付与复现入口</h3>
+<ul>
+<li><a href="../../assets/blocks/tst-canton-demo/authored/transport-v1/manifest.json">资产合同</a>：5 个预制体（站牌、H2、三色的士），持久化网格／材质／碰撞与轮子枢轴。<a href="../../references/blocks/tst-canton-demo/transport-v1/README.md">实景索引</a>；<a href="../../data/blocks/tst-canton-demo/transport-v1/design-instances.json">场景实例与区域检查</a>。</li>
+<li>可编辑生产源为 <code>unity/HongKong/AgentScripts/TransportV1.cs</code>。Unity 根目录相对入口 <code>Apply</code> 只创建一次、拒绝覆盖；<code>RefineMarkings</code> 定向修正字号与深度材质；<code>Gallery</code> 临时实例化资产、渲染后销毁，不把绿色／蓝色车加入街景；<code>Audit</code> 检查区域投放与车道净距。需要新一轮造型精修时写显式修订，不删除目录强行重建。</li>
+<li>规则轮廓采用程序网格，车窗、轮、灯、座椅、牌面独立分件；本批无需 Blender 或 imagegen，未重复制作整街概念。延续已锁定镜头、人物及原有店铺；复用本仓库上游切片，无需改动或重跑 game-research。</li>
+<li>公交牌包含红圆牌、271 系列线路格、繁英站名、信息柜、雨帽、螺钉、杆与底座。班次／票价未取证，信息柜仅列线路，不伪造时刻。</li>
+<li>的士保留经典 Comfort 的引擎盖／行李厢轮廓、斜玻璃、双色顶、顶灯、门字、防擦条、把手、镜、轮毂、前白后黄车牌底；不生成真实牌照号码。</li>
+<li>H2 改为黄蓝半开篷三轴车，前部上层遮顶、后部可见座椅和安全栏杆。当前不是厂商精确模型；车门在 +Z 乘客侧，镜头常见另一侧。</li>
+<li>运行沿既有压缩坐标：公交 Z=-3、的士 Z=-6.8，朝 +X；公交与的士碰撞盒横向净距 1.55m。两辆的士初始纵向相隔 44m、同速循环。本站不服务 H2，旧上客乘客停用；旧 demo 场景的 HFSM 停靠逻辑保留。</li>
+<li>本批材质为 URP 色块／玻璃色与可控排字；未制作最终手绘像素材质图集。TextMesh 字号已缩放并采用独立深度测试 Shader，避免背面字透过车体。中文依赖本机 PingFang／Heiti；跨平台嵌入字体仍待办。</li>
+</ul>
+<h3 id="tst-canton-demo-transport-v1-30">验证结果</h3>
+<p>独立 macOS Development Player，Unity 6000.3.27f1／Apple M5／1920×1080，构建 0 警告、0 错误。原始 <a href="tst-canton-demo/transport-validation/player/result.json">result.json</a>、<a href="tst-canton-demo/transport-validation/build-summary.json">构建摘要</a> 和 <a href="tst-canton-demo/transport-validation/asset-gallery.png">资产检查图</a> 已归档。</p>
+<ul>
+<li>188.87 秒，包含 120 秒驻足观察；12/12 往返检查点、4 个 Apple 近景点抵达，约 242.3m，0 掉落恢复。</li>
+<li>H2 11 轮通过、0 上下客违规；仅 2 辆红色市区的士，合计 25 轮循环；卸货 8 次。区域／车道检查通过。当前规则车流没有智能避让或真实路口调度，不能据此宣称全交通仿真。</li>
+<li>P95 17.28ms、P99 17.63ms；Unity 已分配内存约 151MiB（非进程总内存），短回归不等于十分钟性能验收。</li>
+<li>光照重新烘焙后 Player 加载 1 张 Lightmap、294 探针，Apple 烘焙反射仍可用。无夜景修改；保持原午后效果。</li>
+<li>主路线、纵深支路、默认像素档位、DOF 开关、三色资产展示已检查。重启独立窗口并实测 D/A 与 Esc 暂停／恢复，窗口保留可试玩。无存档系统，因此未测存档。</li>
+<li>运行期测试收集到 0 Error／Exception；退出日志存在 Unity Development Player 线程提前结束／清理期 MemoryLeaks 输出，尚未归因，不据此宣称长时间零泄漏。</li>
+</ul>
+<p>本地试玩程序：<code>.local/builds/HongKong-Canton-Transport.app</code>（构建输出不纳入 Git）。WASD／方向键行走，Shift 快走，Esc 暂停，F 景深，P 像素密度。重跑时从仓库根启动：</p>
+<pre><code>&quot;.local/builds/HongKong-Canton-Transport.app/Contents/MacOS/香港像素漫游&quot; -screen-fullscreen 0 -screen-width 1920 -screen-height 1080 -streetSmokeTest -streetAppleBay -streetTransport -streetObserveSeconds 120 -streetOutput &quot;$PWD/.local/transport-retest&quot;</code></pre>
+<h3 id="tst-canton-demo-transport-v1-46">工作流闭环与剩余精修</h3>
+<p>本批执行 WF-PROPS 1.0 的取证、灰模接口、建模、材质、实机检查和交接，WF-SCENE 1.0 的摆放／活动／回归，WF-LIGHT 2.0 的重烘与加载核对，WF-ITERATE 1.0 的局部范围控制。无需重跑完整地理提取、整街概念、角色生产或夜景。</p>
+<p>发现背面文字穿透／字号过大后修正材质和字号，并通过资产图与 Player 复验。WF-PROPS 升至 1.1：增加深度文字、线路与站牌关系、地区投放门槛；WF-SCENE 升至 1.1：区分通过／停靠，要求区域、车道、循环与暂停检查。</p>
+<p>下一轮重点：取得港威酒店站牌当日正面／侧背照片，校准版式字体与精确摆位；改善默认视距下小字的像素可读性；补车身曲面／轮拱／内饰和像素纹理，观光巴士增乘客；处理巴士经过时短暂完全遮住主角的可读性（先同机位验证，再选轮廓提示或其他方法）。这些是当前差距，不是已通过的美术项。三色的士涂装与经典车型参考已有依据，但尺寸仍为估计。</p></article><nav class="pager" aria-label="章节翻页"><a href="../07-validation/index.html">上一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
 function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
 window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));

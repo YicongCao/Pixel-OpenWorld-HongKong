@@ -8,6 +8,7 @@ namespace HongKong.Walk
     {
         public string content;
         public string fallback;
+        public Material depthMaterial;
         static Font shared;
         public static Font ReadableFont
         {
@@ -20,11 +21,12 @@ namespace HongKong.Walk
                 return shared=Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             }
         }
+        void LateUpdate(){if(depthMaterial)depthMaterial.mainTexture=ReadableFont.material.mainTexture;}
         void Awake()
         {
             var mesh=GetComponent<TextMesh>();mesh.font=ReadableFont;
             mesh.text=ReadableFont.HasCharacter('香')?content:fallback;
-            GetComponent<Renderer>().sharedMaterial=ReadableFont.material;
+            GetComponent<Renderer>().sharedMaterial=depthMaterial?depthMaterial:ReadableFont.material;
         }
     }
 }
