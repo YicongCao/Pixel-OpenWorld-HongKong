@@ -43,7 +43,8 @@
       "engine-selection.md",
       "runtime-architecture.md",
       "local-development.md",
-      "hd2d-camera-lighting.md"
+      "hd2d-camera-lighting.md",
+      "github-hd2d-reuse.md"
     ]
   },
   {

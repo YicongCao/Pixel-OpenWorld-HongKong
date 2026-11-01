@@ -31,6 +31,8 @@
 - HD-2D 生产入口：[素材建模与拼装 SOP](docs/06-production/hd2d-production-workflow.md) 统筹资产链路；[角色制作](docs/03-hd2d/character-production.md) 负责转面与动作；[镜头／灯光／景深](docs/04-engineering/hd2d-camera-lighting.md) 负责运行时画面；[专业资料与源码核查](docs/06-production/hd2d-production-sources.md) 标明依据和未证实参数。
 - [.gitignore](.gitignore)：临时／敏感文件和引擎缓存边界；`.local/`／`.private/` 是按需使用的忽略目录。`../game-research` 是只读上游，不是本项目运行时依赖。
 
+复用候选见 [GitHub HD-2D 组件筛选](docs/04-engineering/github-hd2d-reuse.md)。开始新增通用渲染或行为底层前先查该清单；其中均为研究候选，未安装或实机验收，采用时核对固定版本／许可并单独验证，不整体替换主工程。
+
 ## 街区还原工作流：主 Agent 必须落实
 
 用户要求还原街区时，先完整读取 [详细工作流](docs/06-production/街区还原工作流.md)；以下为执行摘要，具体提示词和验收条件在该文档维护。仅规划或局部修改时按请求范围执行。

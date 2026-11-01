@@ -1,0 +1,108 @@
+{
+  "checked_on": "2026-11-01",
+  "project": {
+    "editor": "6000.3.27f1",
+    "urp": "17.3.0"
+  },
+  "method": "GitHub connector source reads plus web discovery. No candidate imported, compiled, or benchmarked.",
+  "repositories": [
+    {
+      "repository": "bababuyyy/unity-isometric-pixel-pipeline",
+      "url": "https://github.com/bababuyyy/unity-isometric-pixel-pipeline",
+      "head": "f08bc6bf34b81c265171972610b23a8ef7c8d019",
+      "commit_date": "2026-05-16T21:32:37Z",
+      "license": "MIT",
+      "editor": "6000.3.5f2",
+      "urp": "17.3.0",
+      "review": "README, license, manifests, PixelRendererFeature.cs, IsometricCameraController.cs",
+      "decision": "First render experiment; exclude orthographic controller"
+    },
+    {
+      "repository": "floatingsnowflake/Unity-simple-HD2D",
+      "url": "https://github.com/floatingsnowflake/Unity-simple-HD2D",
+      "head": "81459467442741f96f39e8fbecb2a1099572727c",
+      "commit_date": "2023-09-08T15:09:39Z",
+      "license": "MIT",
+      "editor": "2021.3.29f1c1",
+      "urp": "12.1.12",
+      "review": "Manifests, license, SpriteQuad, SpriteShadow, SpriteSorting, HD2DCharacter",
+      "decision": "Partial reference; no global Z sorting or Transform movement controller"
+    },
+    {
+      "repository": "Natteens/retropsx-urp",
+      "url": "https://github.com/Natteens/retropsx-urp",
+      "head": "7102c2558d8addec2584d22e48ee50fa2bc217bd",
+      "commit_date": "2026-09-05T23:11:47Z",
+      "license": "MIT",
+      "package": "1.1.7",
+      "minimumEditor": "6000.0",
+      "minimumUrp": "17.0.3",
+      "review": "README, package, license and Runtime directory; no line-by-line source review",
+      "decision": "Secondary modular render candidate, no PSX effects by default"
+    },
+    {
+      "repository": "cannoli-cat/stylized-rendering",
+      "url": "https://github.com/cannoli-cat/stylized-rendering",
+      "head": "22edcfdae269b8f06e51886be560ab39349f8798",
+      "commit_date": "2026-10-06T22:50:07Z",
+      "license": "CC-BY-4.0",
+      "package": "1.1.0",
+      "minimumEditor": "6000.5",
+      "minimumUrp": "17.5.0",
+      "review": "README, package, license",
+      "decision": "Defer; higher than locked project"
+    },
+    {
+      "repository": "Chishikii/URP-Render-Features",
+      "url": "https://github.com/Chishikii/URP-Render-Features",
+      "head": "2590abe28229110fefef58e2a0e03b6f5b53a2fb",
+      "commit_date": "2025-12-01T20:52:42Z",
+      "license": "MIT",
+      "readmeUrp": "17.0.3",
+      "review": "README, license and directory; not shader implementation",
+      "decision": "Outline reference; blur/desaturation not RenderGraph updated per author"
+    },
+    {
+      "repository": "Jiaquarium/unity-URP-2.5D-lit-shader",
+      "url": "https://github.com/Jiaquarium/unity-URP-2.5D-lit-shader",
+      "head": "f0cb34f340634e7a66a595c696e5a65dc33edbf4",
+      "commit_date": "2024-07-21T07:57:15Z",
+      "license": "No explicit license found in inspected root",
+      "readmeUrp": "10.2.1+",
+      "review": "README and root directory only",
+      "decision": "Conceptual reference, do not copy code"
+    },
+    {
+      "repository": "NullTale/DitherFx",
+      "url": "https://github.com/NullTale/DitherFx",
+      "head": "ca182e968870d9907ebbd50d5b7e61e9c520d220",
+      "commit_date": "2025-06-09T12:06:14Z",
+      "license": "Custom non-commercial with redistribution limits",
+      "review": "LICENSE.md, README and root directory",
+      "decision": "Exclude as free commercial dependency"
+    }
+  ],
+  "other_candidates": [
+    {
+      "repository": "Inspiaaa/UnityHFSM",
+      "branch": "upm",
+      "package": "2.3.0",
+      "license": "MIT",
+      "review": "README, LICENSE.md and upm package.json",
+      "decision": "First behaviour framework candidate; lock immutable revision before installing",
+      "commit": null
+    },
+    {
+      "repository": "yintony96/hd2d-rpg",
+      "license": "GitHub API null; no root license found",
+      "review": "Repository metadata and directory only",
+      "decision": "Not selected"
+    },
+    {
+      "repository": "Smurillopng/TCC-HD2D-Valquiria",
+      "license": "GitHub API no license; README contains third-party assets",
+      "review": "Repository metadata and README only",
+      "decision": "Do not transplant project"
+    }
+  ]
+}
