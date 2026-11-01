@@ -1,0 +1,10 @@
+{
+    "unityVersion": "6000.3.27f1",
+    "graphicsDevice": "Apple M5",
+    "graphicsApi": "Metal",
+    "renderPipeline": "UniversalRenderPipelineAsset",
+    "frames": 120,
+    "width": 1280,
+    "height": 720,
+    "keyboardDetected": true
+}

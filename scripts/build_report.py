@@ -229,8 +229,8 @@ for index, chapter in enumerate(catalog):
         if 0<=n<len(catalog):
             c=catalog[n];pager.append(f'<a href="../{c["id"]}/index.html">{label}：{html.escape(c["title"])}</a>')
     scripts=(MAP_JS if chapter['id']=='02-geography' else '')+ANCHOR_JS
-    page=f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{chapter['number']} · {html.escape(chapter['title'])} — 白帽漫游</title><style>{CSS}</style></head><body>
-<header><small>白帽漫游 / 香港 HD-2D 研究 / {chapter['number']} OF 08</small><h1>{html.escape(chapter['title'])}</h1><p>{html.escape(chapter['description'])}</p></header>
+    page=f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{chapter['number']} · {html.escape(chapter['title'])} — 香港像素漫游</title><style>{CSS}</style></head><body>
+<header><small>香港像素漫游 / 香港 HD-2D 研究 / {chapter['number']} OF 08</small><h1>{html.escape(chapter['title'])}</h1><p>{html.escape(chapter['description'])}</p></header>
 <div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节">{global_nav}</nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong>{''.join(local)}</nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
 <main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div>{''.join(articles)}<nav class="pager" aria-label="章节翻页">{''.join(pager)}</nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>{scripts}</script></body></html>'''
     current_page.write_text(page,encoding='utf-8')

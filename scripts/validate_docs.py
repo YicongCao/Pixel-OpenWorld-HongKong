@@ -73,7 +73,7 @@ def validate_link(source, url):
     if parsed.fragment and target in pages:
         check(unquote(parsed.fragment) in pages[target].ids, f'broken HTML anchor: {source.relative_to(ROOT)} -> {url}')
 
-md_files = sorted({p for folder in ('docs', 'assets', 'data') for p in (ROOT / folder).rglob('*.md')} | {ROOT / 'README.md', ROOT / 'AGENTS.md'})
+md_files = sorted({p for folder in ('docs', 'assets', 'data') for p in (ROOT / folder).rglob('*.md')} | {ROOT / 'README.md', ROOT / 'AGENTS.md', ROOT / 'unity/README.md'})
 for path in md_files:
     text = re.sub(r'```.*?```', '', path.read_text(), flags=re.S)
     for url in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', text):

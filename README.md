@@ -1,7 +1,8 @@
-# 白帽漫游：像素九龙
+# 香港像素漫游
 
-香港 HD-2D 像素步行开放世界：像素角色＋立体街景＋街道生活。当前只有研究、地图资料与概念图，没有可玩版本。
+香港 HD-2D 像素步行开放世界：像素角色＋立体街景＋街道生活。当前有研究、地图资料、概念图与 Unity 环境验证工程，尚无可玩香港街区。
 
+- [Unity 开发工程](unity/README.md)／[本地环境验证](docs/04-engineering/local-development.md)：锁定版本、插件、操作方法与实际验证边界。
 - [研究总目录](docs/README.md)：八个主题的 Markdown 源文档与独立图文页。
 - [从项目总纲开始阅读图文版](docs/01-vision/index.html)：通过章节导航阅读，不再拼接全部研究成长页。
 - [远期 Roadmap](docs/06-production/roadmap.md)／[首个可玩版本 v0.1 实施规划](docs/06-production/v0.1-implementation.md)：版本范围、任务依赖与验收门槛。

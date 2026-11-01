@@ -40,7 +40,8 @@
     "documents": [
       "README.md",
       "engine-selection.md",
-      "runtime-architecture.md"
+      "runtime-architecture.md",
+      "local-development.md"
     ]
   },
   {

@@ -8,3 +8,5 @@
 
 - [行走、画面、生活与性能验收](acceptance.md)
 - [验证记录及证据边界](evidence.md)
+
+- [2026-11-01 本地 Unity 环境与独立 Player 验证](../04-engineering/local-development.md)

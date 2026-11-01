@@ -1,7 +1,7 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>06 · 资产生产与实施 — 白帽漫游</title><style>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>06 · 资产生产与实施 — 香港像素漫游</title><style>
 :root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
 </style></head><body>
-<header><small>白帽漫游 / 香港 HD-2D 研究 / 06 OF 08</small><h1>资产生产与实施</h1><p>远期 Roadmap、首版实施任务、技术样板与资产生产。</p></header>
+<header><small>香港像素漫游 / 香港 HD-2D 研究 / 06 OF 08</small><h1>资产生产与实施</h1><p>远期 Roadmap、首版实施任务、技术样板与资产生产。</p></header>
 <div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html" aria-current="page">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">06 · 资产生产与实施</a><a href="#doc-roadmap">项目远期 Roadmap</a><a href="#doc-v0.1-implementation">v0.1 实施规划：一条会生活的香港街道</a><a href="#doc-prototype">首个 HD-2D 技术样板</a><a href="#doc-asset-pipeline">资产生产与复用</a><a href="#doc-街区还原工作流">香港 HD-2D 街区还原工作流</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
 <main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">06 · 资产生产与实施</h2>
 <p>远期 Roadmap、首版实施任务、技术样板与资产生产。当前处于规划阶段，尚无可玩版本；游戏版本号与既有策划文档版本号分别管理。</p>
@@ -14,11 +14,11 @@
 <li><a href="#doc-asset-pipeline">资产生产与复用</a>：模块、手工资产保护与第二街段的成本验证。</li>
 <li><a href="#doc-街区还原工作流">街区还原工作流</a>：取证、概念、生产资产、Unity 街道生活与动线验证的完整执行流程。</li>
 </ul></article><article id="doc-roadmap"><h2 id="roadmap-0">项目远期 Roadmap</h2>
-<p>2026-11-01 · 产品路线规划 r1 · 状态：拟定，未开始游戏制作。</p>
+<p>2026-11-01 · 产品路线规划 r1 · 状态：路线拟定；已开始 V1-00 环境验证，街区制作未开始。</p>
 <p><strong>先做一条值得步行和停留的香港街道，再把同样的质量扩展为相连街区，最终形成可持续扩充的九龙 HD-2D 步行世界。</strong> 地图扩大与生活丰富必须一起推进，不以地标数量代替体验。</p>
 <p>本文的 v0.1、v0.2 等是拟定的游戏版本；既有“策划 v0.4”是文档版本，不表示游戏已发布到 v0.4。首版具体任务见 <a href="#doc-v0.1-implementation">v0.1 实施规划</a>。</p>
 <h3 id="roadmap-8">起点与终点</h3>
-<p>已有可复用成果是：香港选区地图与行人／公共交通数据、来源记录、街区与生活目录、五张探索图、引擎复评、章节文档和 Git 工作流。它们尚未构成游戏工程、合格生产资产、已验证步行图或实机性能结论。</p>
+<p>已有可复用成果是：香港选区地图与行人／公共交通数据、来源记录、街区与生活目录、五张探索图、引擎复评、章节文档和 Git 工作流。另已建立 <a href="../04-engineering/index.html#doc-local-development">Unity 环境验证工程</a>；仍无合格街区生产资产、已验证步行图或街区性能结论。</p>
 <p>v1.0 的目标是经过验收的九龙步行路线网络：包含尖沙咀／尖东、西九及向佐敦—油麻地—旺角延伸的代表性街段；明确可走边界与连接，支持随时停留、往返、保存和继续。它不等于研究窗口内每栋建筑、每条巷子都已复刻。最终开放街段清单随生产测速和地图证据确定，不能把背景或未开放地区算成可探索面积。</p>
 <p>主角、HD-2D 表现、真实街区关系和日常生活是持续约束。剧情、战斗、经济系统、联机、玩家驾驶／乘车不进入这份 Roadmap；之后若用户提出，再单独立项。</p>
 <h3 id="roadmap-16">版本路线与完成门槛</h3>
@@ -76,7 +76,7 @@
 <p>v1.0 之后，可以评估更精细的支路、更多公共空间、室内片段或港岛远景之外的新地区。它们属于候选方向；剧情、乘车与大范围城市模拟仍不自动加入。</p>
 <h3 id="roadmap-79">与现有研究的关系</h3>
 <p>本文件替代此前简单的 P0–P5 阶段表，新增版本范围与进入下一阶段的条件；没有宣称技术或画面已经通过。地理证据见 <a href="../02-geography/index.html#doc-readme">02 章</a>，技术候选见 <a href="../04-engineering/index.html#doc-readme">04 章</a>，生活内容见 <a href="../05-street-life/index.html#doc-readme">05 章</a>。实际制作记录进入 <a href="../08-blocks/index.html#doc-readme">08 街区档案</a>，验收证据进入对应街区的 <code>validation/</code>。</p></article><article id="doc-v0.1-implementation"><h2 id="v0.1-implementation-0">v0.1 实施规划：一条会生活的香港街道</h2>
-<p>2026-11-01 · 首个可玩版本计划 r1 · 状态：规划完成，实施尚未开始。</p>
+<p>2026-11-01 · 首个可玩版本计划 r1 · 状态：已进入 V1-00 环境验证；V1-01 选段及后续街区实施尚未开始。</p>
 <p><strong>首版交付是一段可反复行走、可停留观察、有真实香港依据的 HD-2D 小街区，以及能重新构建它的资产与工程。</strong> 玩家可控制白帽小巫师横向走过主街、深入支路、观察站口和公交活动、保存退出再继续。目标是一次约 5–10 分钟的探索与观察体验；这是设计目标，不是靠放慢速度或强制等待拉长内容。</p>
 <p>它同时验证三件事：画面是否达到目标、街道是否自然可走、数据到实机的制作方式是否能复用。技术灰盒是中途检查点，不作为最终 v0.1 发布结果。远期扩展见 <a href="#doc-roadmap">Roadmap</a>。</p>
 <h3 id="v0.1-implementation-8">1. 选段与范围冻结</h3>
@@ -108,7 +108,7 @@
 <p>初始制作量只用于发现成本，不能作为任意修改地理的配额：约 4–6 个可复用立面／转角模块、1–2 个独有识别界面、1 套路面／路缘／标线、约 12 类基础街道道具、1 套主角动画、少量 NPC 外观与行为动作、2 类小车表现、1 辆巴士及所选活动需要的道具。港铁口、巴士站和实际铺面以核实清单为准；新增独有项必须记录成本。</p>
 <p>基础路面和规则墙体先使用 Unity 模块；需要复杂轮廓、阶梯／站口、车辆或专用 UV 时再用 Blender。不要把所有物件都走一次复杂建模链，也不能用一张整街贴图替代可行走的场景。</p>
 <h3 id="v0.1-implementation-46">4. 可逐项执行的任务包</h3>
-<p>全部任务初始状态为“未开始”。每项完成时需附实际文件、验证记录和 commit，不以生成脚本或文字说明存在代替执行结果。</p>
+<p>任务表保留计划内容；当前 V1-00 执行记录见 <a href="../04-engineering/index.html#doc-local-development">本地开发环境</a>，V1-01 至 07 尚未开始。每项完成时需附实际文件、验证记录和 commit，不以生成脚本或文字说明存在代替执行结果。</p>
 <div class="table-scroll"><table>
 <tr><th>ID</th><th>任务与依赖</th><th>主要产出</th><th>完成检查</th></tr>
 <tr><td>V1-00</td><td>工程与工具盘点；无前置</td><td>本机引擎／包／授权清单、工程目录、最小运行与构建过程、组件复用表</td><td>Agent 能修改一个对象／参数，编译、运行、获取日志与截图并导出启动；记录仍需人工的步骤</td></tr>
@@ -169,7 +169,7 @@
 <h3 id="v0.1-implementation-117">9. 排期、收敛与下一步</h3>
 <p>当前不列未经测速的完成日期。先排 V1-00、01、02，分别得到环境闭环、可核实选段和可行走灰盒；在 G2 的首栋商铺与角色完成后，按真实工时、剩余资产数量和集成缺口给出首版的滚动日期估计。已有的 8–17 人日旧估算不沿用。</p>
 <p>如果画面或框架验证受阻，冻结资产扩量，优先修规范和组件；可以删去拍照模式、额外活动或无缝加载等可选项，不能通过删除公交／地铁口／完整生活活动，把“空街步行演示”称为这份 v0.1 的完成品。只有关键范围冲突时才调整功能合同，并记录原因。</p>
-<p><strong>下一次实施从 V1-00 和 V1-01 开始。</strong> 本轮不创建游戏工程、不采购框架、不提前制作未核实街段；实施授权与后续具体任务结合执行。v0.1 通过后进入相邻第二街段，以复用成本验证是否具备扩区条件。</p></article><article id="doc-prototype"><h2 id="prototype-0">首个 HD-2D 技术样板</h2>
+<p><strong>当前先执行 V1-00，下一阶段核实 V1-01 选段。</strong> 环境验证不自动开始未核实街段或采购框架；实施范围沿用用户具体任务。v0.1 通过后进入相邻第二街段，以复用成本验证是否具备扩区条件。</p></article><article id="doc-prototype"><h2 id="prototype-0">首个 HD-2D 技术样板</h2>
 <p>研究基线：2026-11-01 / v0.4。按主题整理；建议与待验证项不等同于已实现功能。</p>
 <p>本文是 <a href="#doc-v0.1-implementation">v0.1 实施规划</a> 中 V1-02／03 的技术验证依据，不是完整首版的交付范围。旧样板尺寸只作候选，最终街段由 V1-01 核实站口、站位与真实通行后确定。</p>
 <h3 id="prototype-6">锁定方案前必须通过的小样</h3>
@@ -183,7 +183,7 @@
 <tr><td>Agent 闭环</td><td>修改场景／材质／参数后可编译、运行、取得日志截图并导出 Mac Player</td><td>记录缺失接口和人工步骤，不以 MCP 握手成功算完成</td></tr>
 <tr><td>生活与性能</td><td>至少一组完整微活动；固定路线、固定分辨率与可见 NPC 数下测试白天／夜晚／景深开关</td><td>先限制阴影灯、透明层和远处更新；不直接扩大地图</td></tr>
 </table></div>
-<p>技术样板不要求全城流式、完整商店室内或全城实时交通。只有这一街角达到主观美术要求、操作舒适和独立 Player 性能目标，才锁定角色像素尺寸、镜头参数、材质与模块规格。当前完成的是研究、地图对照与概念图，尚未建立游戏工程、购买框架或测得性能。</p></article><article id="doc-asset-pipeline"><h2 id="asset-pipeline-0">资产生产与复用</h2>
+<p>技术样板不要求全城流式、完整商店室内或全城实时交通。只有这一街角达到主观美术要求、操作舒适和独立 Player 性能目标，才锁定角色像素尺寸、镜头参数、材质与模块规格。当前已建立 <a href="../04-engineering/index.html#doc-local-development">环境验证工程</a>，但街角样板尚未制作，付费框架尚未采购，也没有街区性能结论。</p></article><article id="doc-asset-pipeline"><h2 id="asset-pipeline-0">资产生产与复用</h2>
 <p>研究基线：2026-11-01 / v0.4。按主题整理；建议与待验证项不等同于已实现功能。</p>
 <p>首版当前资产量与必需活动以 <a href="#doc-v0.1-implementation">v0.1 实施规划</a> 为准；下面的旧静态预算保留用于解释制作方法，不作为首版验收清单。</p>
 <h3 id="asset-pipeline-6">资产生产：让第二个街段更便宜</h3>
