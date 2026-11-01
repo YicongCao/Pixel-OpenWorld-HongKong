@@ -1,7 +1,7 @@
 {
   "date": "2026-11-01",
   "testedScene": "CantonRoadDemo",
-  "baseCommit": "a5eafc81b68b7b12420aba4271858b874eb07f36",
+  "baseCommit": "b00fc30c657dfffe4ab705d34fdeaded547d8c06",
   "files": {
     "day-dof.png": "2bd361dfe6cdce5c630ee0a5ef576f3250738c0dc3f61a0013a7db7d124c0dcb",
     "result.json": "1e38cd84884564e7d5a10c478037cd9cc8ffb6a5245b292d1cf792657ce19385",
