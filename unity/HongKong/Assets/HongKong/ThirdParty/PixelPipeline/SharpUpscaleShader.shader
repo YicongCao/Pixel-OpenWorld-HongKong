@@ -20,19 +20,19 @@ Shader "HongKong/Pixel/SharpUpscale"
             half4 frag(Varyings input) : SV_Target
             {
                 float2 uv = input.texcoord;
-                
+
                 // Apply snap error compensation during texture sampling.
                 // Perspective camera: no orthographic snap compensation applied.
-                
+
                 float2 px = _BlitTexture_TexelSize.xy;
-                
+
                 float2 fw = clamp(fwidth(uv) / px, 1e-5, 1.0);
                 float2 grid = uv / px - 0.5 * fw;
                 float2 blend = smoothstep(1.0 - fw, float2(1.0, 1.0), frac(grid));
                 float2 finalUV = (floor(grid) + 0.5 + blend) * px;
-                
+
                 half4 color = SAMPLE_TEXTURE2D_LOD(_BlitTexture, sampler_LinearClamp, finalUV, 0);
-                
+
                 return color;
             }
             ENDHLSL

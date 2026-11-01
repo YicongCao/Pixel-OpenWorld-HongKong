@@ -28,7 +28,7 @@ public class PixelRendererFeature : ScriptableRendererFeature
         public Color lineTint = new Color(0.05f, 0.05f, 0.08f, 1f);
         public Color creaseTint = new Color(1f, 0.55f, 0.1f, 1f);
         public bool flipPalettes = false;
-        
+
         [Header("Outline - Adaptive Colors")]
         [Range(0, 1)] public float lineDarken = 0.4f;
         [Range(0, 1)] public float creaseBrighten = 0.3f;
@@ -91,7 +91,7 @@ public class PixelRendererFeature : ScriptableRendererFeature
         {
             _settings = settings;
             requiresIntermediateTexture = true;
-            
+
             // Requires color, depth, and normal buffers for 3D reconstruction during the Outline pass.
             ConfigureInput(ScriptableRenderPassInput.Color | ScriptableRenderPassInput.Depth | ScriptableRenderPassInput.Normal);
         }
@@ -113,7 +113,7 @@ public class PixelRendererFeature : ScriptableRendererFeature
             UniversalCameraData cameraData = frameData.Get<UniversalCameraData>();
 
             // Texture and Descriptor Creation
-            
+
             // Backup full resolution color to prevent read/write conflicts.
             TextureDesc colorCopyDesc = renderGraph.GetTextureDesc(cameraTarget);
             colorCopyDesc.name = "_ColorCopy";
@@ -135,7 +135,7 @@ public class PixelRendererFeature : ScriptableRendererFeature
             // Low resolution outline mask. Point filter and R8G8B8A8_UNorm are required for crisp pixel art.
             TextureDesc lowResPointDesc = lowResDesc;
             lowResPointDesc.filterMode = FilterMode.Point;
-            lowResPointDesc.colorFormat = GraphicsFormat.R8G8B8A8_UNorm; 
+            lowResPointDesc.colorFormat = GraphicsFormat.R8G8B8A8_UNorm;
             lowResPointDesc.name = "_LowResOutline";
             TextureHandle lowResOutline = renderGraph.CreateTexture(lowResPointDesc);
 
@@ -163,7 +163,7 @@ public class PixelRendererFeature : ScriptableRendererFeature
             // Pass 1: Downsample color to internal resolution.
             using (var builder = renderGraph.AddRasterRenderPass<PassData>("Downsample_Color", out var passData))
             {
-                passData.source = colorCopy; 
+                passData.source = colorCopy;
                 passData.destination = lowResColor;
 
                 builder.UseTexture(passData.source, AccessFlags.Read);
@@ -182,29 +182,29 @@ public class PixelRendererFeature : ScriptableRendererFeature
                 _settings.outlineMaterial.SetVector("_LineTint", new Vector4(_settings.lineTint.r, _settings.lineTint.g, _settings.lineTint.b, 0));
                 _settings.outlineMaterial.SetVector("_CreaseTint", new Vector4(_settings.creaseTint.r, _settings.creaseTint.g, _settings.creaseTint.b, 0));
                 _settings.outlineMaterial.SetFloat("_FlipPalettes", _settings.flipPalettes ? 1f : 0f);
-                
+
                 // Apply adaptive colors.
                 _settings.outlineMaterial.SetFloat("_LineDarken", _settings.lineDarken);
                 _settings.outlineMaterial.SetFloat("_CreaseBrighten", _settings.creaseBrighten);
-                
+
                 // Apply opacities and overlays.
                 _settings.outlineMaterial.SetFloat("_LineOverlay", _settings.lineOverlay ? 1f : 0f);
                 _settings.outlineMaterial.SetFloat("_LineAlpha", _settings.lineAlpha);
                 _settings.outlineMaterial.SetFloat("_CreaseOverlay", _settings.creaseOverlay ? 1f : 0f);
                 _settings.outlineMaterial.SetFloat("_CreaseAlpha", _settings.creaseAlpha);
-                
+
                 // Apply silhouette and sampling parameters.
                 _settings.outlineMaterial.SetFloat("_KernelRadius", _settings.kernelRadius);
                 _settings.outlineMaterial.SetFloat("_ZDeltaCutoff", _settings.zDeltaCutoff);
                 _settings.outlineMaterial.SetFloat("_AngleZCutoff", _settings.angleZCutoff);
                 _settings.outlineMaterial.SetFloat("_AngleZScale", _settings.angleZScale);
-                
+
                 // Apply legacy parameters for backward compatibility.
                 _settings.outlineMaterial.SetFloat("_ConvexCutoff", _settings.convexCutoff);
                 _settings.outlineMaterial.SetFloat("_CreaseFeather", _settings.creaseFeather);
                 _settings.outlineMaterial.SetFloat("_ConcaveCutoff", _settings.concaveCutoff);
                 _settings.outlineMaterial.SetFloat("_ConcaveZCutoff", _settings.concaveZCutoff);
-                
+
                 // Apply crease detection parameters.
                 _settings.outlineMaterial.SetFloat("_DepthDiffLow", _settings.depthDiffLow);
                 _settings.outlineMaterial.SetFloat("_DepthDiffHigh", _settings.depthDiffHigh);
@@ -213,18 +213,18 @@ public class PixelRendererFeature : ScriptableRendererFeature
 
                 using (var builder = renderGraph.AddRasterRenderPass<PassData>("Outline_LowRes", out var passData))
                 {
-                    passData.source = lowResColor; 
-                    passData.destination = lowResOutline; 
+                    passData.source = lowResColor;
+                    passData.destination = lowResOutline;
                     passData.material = _settings.outlineMaterial;
 
                     builder.UseTexture(passData.source, AccessFlags.Read);
                     builder.UseTexture(resourceData.cameraDepthTexture, AccessFlags.Read);
                     builder.UseTexture(resourceData.cameraNormalsTexture, AccessFlags.Read);
                     builder.SetRenderAttachment(passData.destination, 0, AccessFlags.Write);
-                    
+
                     // Expose the outline texture globally for the Composite shader.
                     builder.SetGlobalTextureAfterPass(passData.destination, Shader.PropertyToID("_OutlineTexture"));
-                    
+
                     // Prevent Unity from culling this pass.
                     builder.AllowPassCulling(false);
 
@@ -233,7 +233,7 @@ public class PixelRendererFeature : ScriptableRendererFeature
                         Blitter.BlitTexture(context.cmd, data.source, new Vector4(1, 1, 0, 0), data.material, 0);
                     });
                 }
-                
+
                 // Local adaptation: declare the outline dependency explicitly, including the global binding.
                 using (var builder = renderGraph.AddRasterRenderPass<PassData>("Composite_Outline", out var passData))
                 {
@@ -266,7 +266,7 @@ public class PixelRendererFeature : ScriptableRendererFeature
             using (var builder = renderGraph.AddRasterRenderPass<PassData>("Upsample_Sharp", out var passData))
             {
                 passData.source = lowResComposite;
-                passData.destination = cameraTarget; 
+                passData.destination = cameraTarget;
                 passData.material = _settings.upscaleMaterial;
 
                 builder.UseTexture(passData.source, AccessFlags.Read);
