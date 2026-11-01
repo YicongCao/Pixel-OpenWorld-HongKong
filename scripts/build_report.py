@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a self-contained HTML report and an SVG from extracted GIS evidence."""
+"""Build topic-scoped standalone HTML chapters and the GIS evidence map."""
 import base64
 import html
 import json
@@ -125,9 +125,8 @@ svg.append(f'<path d="M45,55 L45,25 M39,34 L45,25 L51,34" stroke="#215d50" fill=
 bar=500*scale
 svg.append(f'<path d="M45,{H-20} h{bar:.1f}" stroke="#215d50" stroke-width="3"/><text class="map-label" x="45" y="{H-28}">500 m · 真实坐标；非游戏比例</text></svg>')
 svg=''.join(svg)
-(DOCS / 'research/九龙选区数据图.svg').write_text(svg,encoding='utf-8')
+(DOCS / '02-geography/figures/九龙选区数据图.svg').write_text(svg,encoding='utf-8')
 
-toc=[]
 def inline(text, base):
     tokens=[]
     def token(content):
@@ -141,7 +140,12 @@ def inline(text, base):
     text=re.sub(r'!\[([^]]*)\]\(([^)]+)\)',image,text)
     def link(m):
         href=m.group(2)
-        if not href.startswith(('http:','https:','#')): href=os.path.relpath((base/href).resolve(),DOCS)
+        if not href.startswith(('http:','https:','#')):
+            target=(base/href).resolve()
+            if target in document_targets:
+                page,anchor=document_targets[target]
+                href=('#'+anchor) if page==current_page else os.path.relpath(page,current_page.parent)+'#'+anchor
+            else: href=os.path.relpath(target,current_page.parent)
         return token(f'<a href="{html.escape(href,quote=True)}">{html.escape(m.group(1))}</a>')
     text=re.sub(r'\[([^]]+)\]\(([^)]+)\)',link,text)
     text=re.sub(r'`([^`]+)`',lambda m: token('<code>'+html.escape(m.group(1))+'</code>'),text)
@@ -157,7 +161,6 @@ def markdown(path,prefix):
         if not line.strip(): i+=1;continue
         if line.startswith('#'):
             level=len(line)-len(line.lstrip('#'));title=line[level:].strip();id=f'{prefix}-{i}'
-            if level==2: toc.append((id,title))
             out.append(f'<h{min(level+1,6)} id="{id}">{inline(title,path.parent)}</h{min(level+1,6)}>');i+=1
         elif line.startswith('|'):
             table=[]
@@ -185,34 +188,51 @@ def markdown(path,prefix):
             out.append(rendered if rendered.startswith('<figure>') else '<p>'+rendered+'</p>')
     return '\n'.join(out)
 
-body=markdown(DOCS/'创意与技术策划案.md','plan')
-hd2d=markdown(DOCS/'research/HD-2D空间与技术方案.md','hd2d')
-street_life=markdown(DOCS/'research/香港街道生活与沉浸感设计.md','life')
-engine=markdown(DOCS/'research/引擎调研.md','engine')
-nav=''.join(f'<a href="#{id}">{html.escape(title)}</a>' for id,title in toc)
+MAP_HTML = '<section id="data-map"><h2>先保留城市，再决定怎样画</h2><p>这张图来自实际提取的 OSM 与 CSDI 要素。可开关图层、缩放和拖动；点击地标查看来源。新增可开关的 144 个轨道入口候选与 32 组有地图匹配的街区锚点。它展示研究覆盖，不代表已制作的游戏地图。</p><div class="stats"><div class="stat"><b>6,729</b><span>建筑面</span></div><div class="stat"><b>12,497</b><span>道路要素，含步道</span></div><div class="stat"><b>34,282</b><span>三维行人路径</span></div><div class="stat"><b>16</b><span>港铁参考图 PDF</span></div></div><div class="map-tools">__CONTROLS__</div><div class="map-tools"><button id="zoom-in" aria-label="放大地图">＋ 放大</button><button id="zoom-out" aria-label="缩小地图">－ 缩小</button><button id="zoom-reset">重置</button></div><div id="map-wrap">__MAP__</div><div id="map-info" aria-live="polite">地标面使用内部代表点，不是入口；旺角 / 油麻地 / 佐敦文字为方位示意。行人网有 Z 值，平面重叠不表示可以互通。</div><div class="note">浅色底不是精确陆地面，蓝色仅为已提取局部水面；尚未补齐完整海岸线。资料：© OpenStreetMap contributors / Geofabrik（2026-10-22）、香港地政总署 CSDI、运输署。研究窗口不等于首版开放面积。</div></section>'
+MAP_JS = "\nconst svg=document.getElementById('geo-map'), initial=[0,0,860,1030];let view=[...initial],drag=null;\nconst apply=()=>svg.setAttribute('viewBox',view.join(' '));\nfunction zoom(f){const w=Math.min(860,Math.max(100,view[2]*f)),h=w*1030/860;view=[view[0]+(view[2]-w)/2,view[1]+(view[3]-h)/2,w,h];apply()}\ndocument.querySelectorAll('[data-layer]').forEach(el=>el.addEventListener('change',()=>document.getElementById('layer-'+el.dataset.layer).style.display=el.checked?'':'none'));\ndocument.getElementById('zoom-in').onclick=()=>zoom(.7);document.getElementById('zoom-out').onclick=()=>zoom(1/.7);document.getElementById('zoom-reset').onclick=()=>{view=[...initial];apply()};\nfunction showMarker(el){document.getElementById('map-info').textContent=el.dataset.detail}\ndocument.querySelectorAll('.marker').forEach(el=>{el.addEventListener('click',()=>showMarker(el));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showMarker(el)}})});\nsvg.addEventListener('pointerdown',e=>{if(e.target.closest('.marker'))return;drag={x:e.clientX,y:e.clientY,view:[...view],matrix:svg.getScreenCTM().inverse()};svg.setPointerCapture(e.pointerId);svg.classList.add('dragging')});\nsvg.addEventListener('pointermove',e=>{if(!drag)return;const a=new DOMPoint(drag.x,drag.y).matrixTransform(drag.matrix),b=new DOMPoint(e.clientX,e.clientY).matrixTransform(drag.matrix);view=[drag.view[0]-(b.x-a.x),drag.view[1]-(b.y-a.y),drag.view[2],drag.view[3]];apply()});\n['pointerup','pointercancel','lostpointercapture'].forEach(t=>svg.addEventListener(t,()=>{drag=null;svg.classList.remove('dragging')}));"
 controls=''.join(f'<label><input type="checkbox" data-layer="{key}" {"checked" if checked else ""}> {name}</label>'
     for key,name,checked in [('buildings','建筑',True),('roads','道路',True),('landuse','绿地',True),('water','局部水面',True),('railways','铁路',True),('pedestrian','行人网',False),('bus','巴士站',False),('entrances','轨道入口候选',False),('life-anchors','新增街区锚点',False),('labels','原有地标',True)])
-template='''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>白帽漫游 · 香港像素开放世界策划案</title>
-<style>
-:root{--ink:#183c34;--paper:#f8f5ec;--muted:#64736c;--accent:#bd5838}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif}a{color:#985131;text-underline-offset:4px}header{padding:70px max(6vw,24px) 50px;background:#173d34;color:#f8f5ec}header small{letter-spacing:3px;color:#b6cdb8}header h1{font:600 clamp(36px,6vw,76px)/1.2 Georgia,serif;margin:22px 0}header p{max-width:780px;color:#d4dfd5}.pills{display:flex;flex-wrap:wrap;gap:10px}.pills span{padding:5px 15px;border:1px solid #557366;border-radius:30px;font-size:13px}.layout{display:grid;grid-template-columns:230px minmax(0,1fr);max-width:1440px;margin:auto;gap:45px;padding:40px 32px}aside{position:sticky;top:20px;align-self:start;max-height:92vh;overflow:auto;font-size:13px}aside a{display:block;padding:6px 0;color:#4e665b;text-decoration:none}aside a:hover{color:var(--accent)}main{min-width:0}h2{font-size:32px;line-height:1.4;margin:36px 0 22px}h3{font-size:25px;line-height:1.45;border-top:1px solid #d7dccd;padding-top:34px;margin-top:52px}h4{font-size:20px}p{margin:16px 0}strong{color:#154f40}li{margin:10px 0}figure{margin:24px 0;background:#fff;border:1px solid #deded1;border-radius:10px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{padding:10px 18px;font-size:13px;color:var(--muted)}code{background:#eceee3;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{padding:20px;background:#eceee3;overflow:auto}pre code{white-space:pre}.table-scroll{overflow:auto;margin:25px 0}table{border-collapse:collapse;min-width:620px;width:100%;font-size:14px;line-height:1.7}th{background:#e0e8da;text-align:left}td,th{padding:13px 15px;border-bottom:1px solid #d5dbcf;vertical-align:top}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}.stat{padding:18px;background:#e5eadc;border-radius:10px}.stat b{font:600 26px Georgia;display:block}.stat span{font-size:12px;color:#587064}.note{background:#f0e7d7;border-left:4px solid #b2744b;padding:16px 22px;font-size:14px}.map-tools{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0;font-size:13px}.map-tools label{cursor:pointer;white-space:nowrap}.map-tools button{background:#234e41;color:white;border:0;border-radius:5px;padding:7px 14px;cursor:pointer}#map-wrap{border:1px solid #d2d9ca;border-radius:10px;overflow:hidden;background:#f2efe5;max-width:820px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{min-height:48px;font-size:13px;color:#5a6a60;margin:10px 0;overflow-wrap:anywhere}.footer{font-size:13px;color:#698073;border-top:1px solid #ccd5c6;padding:30px 0}details{margin-top:40px}summary{cursor:pointer;font-weight:600;font-size:24px;padding:18px;background:#e5eadc;border-radius:8px}@media(max-width:900px){.layout{display:block;padding:25px 20px}aside{position:static;max-height:220px;margin-bottom:30px;border-bottom:1px solid #ccd5c6;padding-bottom:15px;columns:2}.stats{grid-template-columns:repeat(2,1fr)}header{padding-top:45px}h2{font-size:28px}h3{font-size:23px}}@media print{aside,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure,table{break-inside:avoid}}
-</style>
-<header><small>PROJECT STUDY / 2026.11.01</small><h1>白帽漫游 · 像素九龙</h1><p>像素人物走进立体香港：横向主街、纵深连接与街道生活。</p><div class="pills"><span>HD-2D WALKING WORLD</span><span>5 张概念图</span><span>空间与技术策划 v0.4</span><span>Unity 3D + 框架 · 待验证</span><span>数据已提取 · 游戏未制作</span></div></header>
-<div class="layout"><aside><a href="#data-map"><b>选区与数据地图</b></a>__NAV__<a href="#engine-details">完整引擎调研</a></aside><main>
-<section id="data-map"><h2>先保留城市，再决定怎样画</h2><p>这张图来自实际提取的 OSM 与 CSDI 要素。可开关图层、缩放和拖动；点击地标查看来源。新增可开关的 144 个轨道入口候选与 32 组有地图匹配的街区锚点。它展示研究覆盖，不代表已制作的游戏地图。</p><div class="stats"><div class="stat"><b>6,729</b><span>建筑面</span></div><div class="stat"><b>12,497</b><span>道路要素，含步道</span></div><div class="stat"><b>34,282</b><span>三维行人路径</span></div><div class="stat"><b>16</b><span>港铁参考图 PDF</span></div></div><div class="map-tools">__CONTROLS__</div><div class="map-tools"><button id="zoom-in" aria-label="放大地图">＋ 放大</button><button id="zoom-out" aria-label="缩小地图">－ 缩小</button><button id="zoom-reset">重置</button></div><div id="map-wrap">__MAP__</div><div id="map-info" aria-live="polite">地标面使用内部代表点，不是入口；旺角 / 油麻地 / 佐敦文字为方位示意。行人网有 Z 值，平面重叠不表示可以互通。</div><div class="note">浅色底不是精确陆地面，蓝色仅为已提取局部水面；尚未补齐完整海岸线。资料：© OpenStreetMap contributors / Geofabrik（2026-10-22）、香港地政总署 CSDI、运输署。研究窗口不等于首版开放面积。</div></section>
-<article>__BODY__</article><article id="hd2d">__HD2D__</article><article id="street-life">__STREET_LIFE__</article><details id="engine-details"><summary>完整引擎调研与官方依据</summary>__ENGINE__</details><div class="footer">本页图片与地图全部内嵌，可离线单独打开。官方来源链接需联网；源数据与 Markdown 链接需保留项目文件夹。概念图由内置 imagegen 生成，非实机截图。当前未做游戏性能测试。</div></main></div>
-<script>
-const svg=document.getElementById('geo-map'), initial=[0,0,860,1030];let view=[...initial],drag=null;
-const apply=()=>svg.setAttribute('viewBox',view.join(' '));
-function zoom(f){const w=Math.min(860,Math.max(100,view[2]*f)),h=w*1030/860;view=[view[0]+(view[2]-w)/2,view[1]+(view[3]-h)/2,w,h];apply()}
-document.querySelectorAll('aside a[href^="#engine-"]').forEach(el=>el.addEventListener('click',()=>{document.getElementById('engine-details').open=true}));
-document.querySelectorAll('[data-layer]').forEach(el=>el.addEventListener('change',()=>document.getElementById('layer-'+el.dataset.layer).style.display=el.checked?'':'none'));
-document.getElementById('zoom-in').onclick=()=>zoom(.7);document.getElementById('zoom-out').onclick=()=>zoom(1/.7);document.getElementById('zoom-reset').onclick=()=>{view=[...initial];apply()};
-function showMarker(el){document.getElementById('map-info').textContent=el.dataset.detail}
-document.querySelectorAll('.marker').forEach(el=>{el.addEventListener('click',()=>showMarker(el));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showMarker(el)}})});
-svg.addEventListener('pointerdown',e=>{if(e.target.closest('.marker'))return;drag={x:e.clientX,y:e.clientY,view:[...view],matrix:svg.getScreenCTM().inverse()};svg.setPointerCapture(e.pointerId);svg.classList.add('dragging')});
-svg.addEventListener('pointermove',e=>{if(!drag)return;const a=new DOMPoint(drag.x,drag.y).matrixTransform(drag.matrix),b=new DOMPoint(e.clientX,e.clientY).matrixTransform(drag.matrix);view=[drag.view[0]-(b.x-a.x),drag.view[1]-(b.y-a.y),drag.view[2],drag.view[3]];apply()});
-['pointerup','pointercancel','lostpointercapture'].forEach(t=>svg.addEventListener(t,()=>{drag=null;svg.classList.remove('dragging')}));
-</script></html>'''
-for key,value in [('NAV',nav),('CONTROLS',controls),('MAP',svg),('BODY',body),('HD2D',hd2d),('STREET_LIFE',street_life),('ENGINE',engine)]:template=template.replace('__'+key+'__',value)
-target=DOCS/'香港像素漫游策划案.html';target.write_text(template,encoding='utf-8')
-print(json.dumps({'html':str(target),'bytes':target.stat().st_size,'map_features':len(paths),'concept_images_embedded':5,'gis_diagrams_embedded':1},ensure_ascii=False))
+catalog = json.loads((ROOT/'scripts/docs_catalog.json').read_text())
+document_targets = {}
+for chapter in catalog:
+    page = DOCS/chapter['id']/'index.html'
+    for name in chapter['documents']:
+        document_targets[(page.parent/name).resolve()] = (page, 'doc-'+Path(name).stem.lower())
+
+CSS = r"""
+:root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
+"""
+ANCHOR_JS = r"""
+function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
+window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));
+"""
+results=[]
+for index, chapter in enumerate(catalog):
+    current_page = DOCS/chapter['id']/'index.html'
+    articles=[]
+    local=[]
+    for name in chapter['documents']:
+        path=current_page.parent/name
+        anchor='doc-'+path.stem.lower()
+        title=path.read_text().splitlines()[0].lstrip('# ')
+        local.append(f'<a href="#{anchor}">{html.escape(title)}</a>')
+        rendered=f'<article id="{anchor}">{markdown(path,path.stem.lower())}</article>'
+        if name=='concept-gallery.md': rendered='<details><summary>旧版四张概念图 · 历史研究</summary>'+rendered+'</details>'
+        articles.append(rendered)
+        if chapter['id']=='02-geography' and name=='README.md':
+            articles.append(MAP_HTML.replace('__CONTROLS__',controls).replace('__MAP__',svg))
+    global_nav=''.join(f'<a href="../{c["id"]}/index.html"'+(' aria-current="page"' if c['id']==chapter['id'] else '')+f'>{c["number"]} · {html.escape(c["title"])}</a>' for c in catalog)
+    pager=[]
+    for offset,label in [(-1,'上一章'),(1,'下一章')]:
+        n=index+offset
+        if 0<=n<len(catalog):
+            c=catalog[n];pager.append(f'<a href="../{c["id"]}/index.html">{label}：{html.escape(c["title"])}</a>')
+    scripts=(MAP_JS if chapter['id']=='02-geography' else '')+ANCHOR_JS
+    page=f'''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{chapter['number']} · {html.escape(chapter['title'])} — 白帽漫游</title><style>{CSS}</style></head><body>
+<header><small>白帽漫游 / 香港 HD-2D 研究 / {chapter['number']} OF 08</small><h1>{html.escape(chapter['title'])}</h1><p>{html.escape(chapter['description'])}</p></header>
+<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节">{global_nav}</nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong>{''.join(local)}</nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
+<main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div>{''.join(articles)}<nav class="pager" aria-label="章节翻页">{''.join(pager)}</nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>{scripts}</script></body></html>'''
+    current_page.write_text(page,encoding='utf-8')
+    results.append({'path':str(current_page.relative_to(ROOT)),'bytes':current_page.stat().st_size})
+print(json.dumps({'chapters':results,'map_paths':len(paths)},ensure_ascii=False))

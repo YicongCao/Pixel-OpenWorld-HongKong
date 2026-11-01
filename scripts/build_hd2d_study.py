@@ -11,7 +11,7 @@ from shapely.geometry import shape,box,mapping
 from shapely.ops import transform,unary_union
 from pyproj import Transformer
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'docs/research/hd2d'; OUT.mkdir(exist_ok=True)
+OUT=ROOT/'docs/03-hd2d/figures'; OUT.mkdir(parents=True,exist_ok=True)
 DATA=ROOT/'data/hong-kong'
 proj=Transformer.from_crs('OGC:CRS84','EPSG:2326',always_xy=True)
 bounds=[114.164,22.294,114.175,22.310]
@@ -78,7 +78,7 @@ for name in colors:
 outputs=ROOT/'data/hong-kong/hd2d-study'
 (outputs/'corridor-evidence.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n')
 (outputs/'corridor-roads.geojson').write_text(json.dumps({'type':'FeatureCollection','features':[f for f,g in selected]},ensure_ascii=False)+'\n')
-hashfiles=['docs/research/hd2d/corridor-projection.png','docs/research/hd2d/corridor-projection.svg','data/hong-kong/hd2d-study/corridor-evidence.json','data/hong-kong/hd2d-study/corridor-roads.geojson']
+hashfiles=['docs/03-hd2d/figures/corridor-projection.png','docs/03-hd2d/figures/corridor-projection.svg','data/hong-kong/hd2d-study/corridor-evidence.json','data/hong-kong/hd2d-study/corridor-roads.geojson']
 manifest={'created':'2026-11-01','source_sha256':evidence['source_sha256'],'outputs':{p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in hashfiles},'font':font.get_file(),'matplotlib_version':matplotlib.__version__}
 (outputs/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({n:v['feature_count_in_study'] for n,v in evidence['road_groups'].items()},ensure_ascii=False))

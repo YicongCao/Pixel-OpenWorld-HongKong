@@ -1,0 +1,104 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>05 · 街道生活 — 白帽漫游</title><style>
+:root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
+</style></head><body>
+<header><small>白帽漫游 / 香港 HD-2D 研究 / 05 OF 08</small><h1>街道生活</h1><p>设施资产、人群、劳动、交通活动、声景与天气。</p></header>
+<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html" aria-current="page">05 · 街道生活</a><a href="../06-production/index.html">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">05 · 街道生活</a><a href="#doc-street-life">香港街道生活与沉浸感</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
+<main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">05 · 街道生活</h2>
+<p>设施资产、人群、劳动、交通活动、声景与天气。</p>
+<p><a href="../README.md">研究总目录</a> · <a href="index.html">本章图文版</a></p>
+<h3 id="readme-6">本章资料</h3>
+<ul>
+<li><a href="#doc-street-life">香港街道生活与沉浸感</a></li>
+</ul></article><article id="doc-street-life"><h2 id="street-life-0">香港街道生活与沉浸感</h2>
+<p>研究基线：2026-11-01 / v0.4。按主题整理；建议与待验证项不等同于已实现功能。</p>
+<h3 id="street-life-4">体验目标：让玩家感觉香港正在生活</h3>
+<p>终极目标是可自由漫游、可停留观察、具有地域与时间差异的香港。地标提供方向，普通建筑与铺面形成连续界面，交通与劳动活动解释城市怎样运作，人际活动与声景让空间有生活。无剧情、无任务仍然可以有丰富的环境叙事。</p>
+<p>上一版把生活内容压缩成“少量循环行人”，对沉浸感目标不足。本版将街道生活列为核心系统；范围控制靠逐街段完成有因果关系的场景，而不是长期只保留空建筑和随机走动的人。</p>
+<p>同一种细节不应全城等密度铺设。广东道的旗舰商业、弥敦道的密集入口、尖东的开放空间、油麻地的市场后勤、西九的场馆与绿地，需要不同组合。香港感也包含树荫、明亮商场、安静休憩处和整洁路段，不能全城只剩破旧招牌与霓虹。</p>
+<h3 id="street-life-12">普通街道资产库：按用途成套制作</h3>
+<p>表中是制作类型，不是所有街段必放清单。标准构件可查旧库路政署图纸；真实安装位置、磨损和临时布置仍需照片核对。<a href="https://www.hyd.gov.hk/en/technical_references/standard_drawings/hyd_standard_drawings/index.html">路政署标准详图</a></p>
+<div class="table-scroll"><table>
+<tr><th>资产族</th><th>应包含的具体内容</th><th>与人/环境的关系</th><th>优先级</th></tr>
+<tr><td>港铁出入口</td><td>标志柱、站名/出口号、梯口、扶梯口、玻璃升降机、扶手、雨盖/通风口</td><td>分别组织出站、进站、会合；不是一个通用洞口贴图</td><td>样板核心</td></tr>
+<tr><td>巴士/小巴站</td><td>按营办者区分站柱、路线板、站名、候车棚、排队区、路缘停靠位置</td><td>排队、车辆靠站、前门上车/下车位置按车型资料核对</td><td>样板核心</td></tr>
+<tr><td>过街设施</td><td>行人灯、提示音装置、信号杆、路缘坡道、触觉铺装、护栏开口、安全岛</td><td>人流随信号聚集与释放，轮椅/婴儿车走合适路径</td><td>样板核心</td></tr>
+<tr><td>路面与街道家具</td><td>双语路牌、黄线/路口标线、井盖、排水口、栏杆、柱桩、消防栓、街灯</td><td>导向、遮挡、可走宽度与材质脚步声</td><td>样板核心</td></tr>
+<tr><td>普通大楼界面</td><td>窄入口、楼层目录、住宅门禁、旧瓷砖/石米、窗格、铁闸、平台、商业裙房</td><td>楼上铺入口与首层铺面分开，NPC 有合理进出目的地</td><td>样板核心</td></tr>
+<tr><td>商铺生活界面</td><td>茶餐厅菜单/卡座窗口、烧味橱窗、饼店托盘、药房、报摊候选、兑换店、当铺招牌</td><td>营业/关门、等位、取餐、补货；具体分店另核实</td><td>样板核心</td></tr>
+<tr><td>后勤与劳动</td><td>货车尾板、手推车、笼车、纸箱、塑料筐、货盘、服务门、临时锥桶</td><td>货物从车到店门，有装卸结束和撤离状态</td><td>样板核心</td></tr>
+<tr><td>停留设施</td><td>长椅、矮墙、花槽边、公园亭、树池、饮水机、邮筒、公厕指示</td><td>坐下、会合、整理行李、短时休息</td><td>首街段扩充</td></tr>
+<tr><td>富豪雪糕车</td><td>车身、售卖窗、菜单牌、雪糕道具、少量排队位置</td><td>到场、开窗、售卖、队列消散、离开；营业地点需验证</td><td>高辨识活动</td></tr>
+<tr><td>气候与设备</td><td>冷气机、排水管、雨篷、招牌背架、卷闸、地面局部水迹</td><td>滴水、避雨、通风机声、开关门；不是全部长期漏水</td><td>首街段扩充</td></tr>
+<tr><td>保洁与维护</td><td>垃圾桶、回收容器、清洁车、扫帚、收拢纸皮、维修围挡</td><td>清扫/清运有前后状态；不以满地垃圾代表香港</td><td>后续活动</td></tr>
+<tr><td>施工界面</td><td>按选定年代与现场核实的棚架、保护网、围板、绕行提示</td><td>行人路径随围挡调整；竹棚/金属棚不凭旧印象统一决定</td><td>有证据再放</td></tr>
+<tr><td>市场专用</td><td>果筐、鱼袋/鱼缸、花桶、挂衣架、帆布顶、灯串、收摊推车</td><td>对应果栏、金鱼街、花墟、夜市等不同生产流程</td><td>对应街区</td></tr>
+<tr><td>海滨/公园</td><td>海滨栏杆、救生设施、码头系泊物、树荫、长椅、草地与落叶</td><td>摄影、跑步、坐看海、渡轮人流；鸟类等少量环境动作</td><td>对应街区</td></tr>
+<tr><td>酒店/商场界面</td><td>门廊、雨棚、行李车、落客位、保安/礼宾活动、自动门</td><td>的士到达、旅客卸行李、服务人员引导</td><td>对应街区</td></tr>
+</table></div>
+<p>同一资产族保留现代/旧式、营业/收起、干/湿等必要变体，并控制重复频率。城市视觉的年代感先选参考时期，再处理旧设施留存，不能默认所有历史照片元素仍在现场。</p>
+<h3 id="street-life-36">人群与微活动：让动作有起点和终点</h3>
+<p>将“行人”拆为通勤者、居民、学生、游客、店员、送货/清洁工作人员、休息日朋友群体等行为角色。角色不是按外貌绑定职业；同一人物也可在不同场景购物、等车、聊天或休息。动作、道具、速度、目的地和同行关系，比增加随机衣服颜色更有价值。</p>
+<p>以下时间条件是设计方案，不是由 GIS 导出的真实日程。具体点位和时段需要街段调查，首版用可切换场景预设验证，之后再接入一致的城市时钟。</p>
+<div class="table-scroll"><table>
+<tr><th>活动</th><th>有因果关系的动作链</th><th>空间/条件</th><th>完成标准</th></tr>
+<tr><td>出站与换乘</td><td>从真实入口出现 → 找方向 → 过街/走向站牌</td><td>站口与人行网；通勤/休闲预设不同</td><td>不从墙里出现，不在出口中心永久站住</td></tr>
+<tr><td>等灯与过街</td><td>到路缘 → 等待 → 信号允许后成组通过</td><td>crossing 与信号控制区</td><td>车流、人流、提示音使用同一状态</td></tr>
+<tr><td>候车与上下车</td><td>入队 → 车辆停稳 → 下客/上客 → 队列缩短</td><td>站牌、停车锚点、车门锚点</td><td>站牌不漂在车道上，车辆不穿过候车者</td></tr>
+<tr><td>雪糕售卖</td><td>看菜单/排队 → 窗口停留 → 拿雪糕 → 离开</td><td>核实的候选驻点；非全天同位营业</td><td>车、人、道具同步，队伍有消散状态</td></tr>
+<tr><td>货车卸货</td><td>停靠 → 开尾板/取货 → 推车到服务门 → 空车返回 → 收车离开</td><td>后勤口、可走路线、可用装卸空间</td><td>不是一个人永远原地举箱子</td></tr>
+<tr><td>商铺补货</td><td>接货 → 搬入门内/摆到货架 → 收空箱</td><td>合适商铺与时段</td><td>货物数量/位置有简化但一致的变化</td></tr>
+<tr><td>开门/收铺</td><td>升卷闸 → 摆牌/货架；收回 → 落闸/熄灯</td><td>商铺营业预设</td><td>关门后不再持续生成顾客</td></tr>
+<tr><td>餐饮等位/外卖</td><td>看菜单 → 排队/等候 → 店员递袋 → 离开</td><td>店外凹位，不封死通道</td><td>等待长度会变化，动作有错峰</td></tr>
+<tr><td>休息日朋友聚会</td><td>相约到达 → 铺坐垫/整理食物 → 交谈、分享食物、看手机 → 收拾离开</td><td>合适公共空间；休息日、天气允许</td><td>小群体关系可辨，坐姿/动作错开，留通道</td></tr>
+<tr><td>游客与行李</td><td>拖行李 → 查地图/停看 → 同行者会合 → 继续走</td><td>码头、酒店、车站、商业街</td><td>停留点与快速通行区分开</td></tr>
+<tr><td>拍照与观景</td><td>找视角 → 举手机/同伴站位 → 查看照片 → 离开</td><td>海滨和地标前</td><td>有方向与目标，不朝墙统一拍照</td></tr>
+<tr><td>居民日常</td><td>购物袋/买菜车、接送小孩、长椅休息、遛狗候选</td><td>住宅/公园/街市相应区域</td><td>速度和路径不同，不全按游客逻辑行动</td></tr>
+<tr><td>清洁维护</td><td>推车到位 → 扫/收/更换 → 收好工具 → 移往下一点</td><td>真实服务可达区域，活动结束后环境变化</td><td>与营业人流相容，不永久表演</td></tr>
+<tr><td>市场收放摊</td><td>运入货物 → 展开摊面 → 交易 → 折叠/搬离</td><td>对应市场与营业预设</td><td>白天/夜晚不是只改天空颜色</td></tr>
+<tr><td>雨天应对</td><td>取伞 → 路线向雨篷偏移 → 门口收伞 → 恢复行走</td><td>可达遮雨点、可通行宽度</td><td>不全员同时变装；雨停后行为逐步恢复</td></tr>
+<tr><td>码头到站人流</td><td>船靠岸/开口 → 一批下船人流 → 分散到站口/海滨 → 平静</td><td>码头外围，不要求首版可乘船</td><td>形成有间隔的人流波，而非永远满场</td></tr>
+</table></div>
+<p>你举的“聚集的菲佣”应具体化为<strong>菲律宾籍家务工作者等休息日朋友群体的生活场景</strong>：聊天、分享食物、看手机、拍照、整理物品，也包括抵达与散去。香港浸会大学的实地报道记录了这类周日活动，并提到尖沙咀、旺角及海旁；但主要照片/采访在中环，不能把报道中的中环点位搬到尖沙咀，也不能据此指定当前某个出口周周都有固定人群。<a href="https://lionrocktales.hkbu.edu.hk/index.php/2022/01/19/we-should-be-seen-as-citizens-not-as-slaves/">实地报道</a></p>
+<p>富豪雪糕是高辨识度流动活动。旅发局资料提及天星码头、尖沙咀海滨等常见区域；这足以支持候选场景，不能把它当作固定营业坐标或全城随处必遇的密度。<a href="https://www.discoverhongkong.com/eng/food-and-drink/hong-kongs-essential-desserts-to-beat-the-heat.html">旅发局雪糕车介绍</a></p>
+<p>果栏则更适合突出搬运、货筐和夜间/清晨工作的节奏。旅发局资料支持其凌晨经营特点；具体货车到达时间、车辆数量与工人路线仍属待调查内容。<a href="https://www.discoverhongkong.com/eng/place-to-go/travel.guide-yau-ma-tei-fruit-market.html">果栏资料</a></p>
+<h3 id="street-life-67">声音、时间和天气也是内容</h3>
+<p>声音必须来自画面中合理的声源，并随距离、遮挡和活动状态变化。不要用一条大声“香港街头混音”覆盖全部街区。</p>
+<div class="table-scroll"><table>
+<tr><th>声音层</th><th>内容候选</th><th>对应变化</th></tr>
+<tr><td>交通近声</td><td>行人过街提示、巴士靠站/开门、推车轮、行李轮、的士车门</td><td>与信号、车辆和动作同步</td></tr>
+<tr><td>商业近声</td><td>卷闸、装卸箱筐、外卖递袋、门口碎片化交谈、厨房/通风声</td><td>营业时出现，绕到后巷发生变化</td></tr>
+<tr><td>活动声</td><td>雪糕车提示旋律、朋友聊天、摄影倒数、孩子嬉闹</td><td>有实际声源、合适音量与间隔；不全街重复同一录音</td></tr>
+<tr><td>空间底声</td><td>主路车流、公园叶响与鸟声、海风、远处船声、空调设备</td><td>街角/公园门/海滨之间可听到过渡</td></tr>
+<tr><td>天气声</td><td>伞面雨声、雨篷滴水、车辆经过湿路</td><td>随雨量和表面类型变化，雨后逐渐减弱</td></tr>
+</table></div>
+<p>过街提示音不是任意节拍：运输署资料说明其与信号状态相关，且已有分代更新。样板应先保证视听状态一致，再按选定街口核实设备年代。<a href="https://www.td.gov.hk/en/transport_in_hong_kong/pedestrians/pedestrian_crossing_facilities/electronic_audible_traffic_signal/index.html">运输署电子行人过路发声装置</a></p>
+<p>现有库没有可直接投入游戏的录音包。官方网页用于理解现象，最终声效另行制作/取得可用素材；文字招牌、旋律、方言声景各有独立制作工作量。</p>
+<p>首批建议提供工作日下午、休息日下午、傍晚营业、雨天四个调试预设。用户实际游玩可以先固定一个时段；多预设用于验证差异，后续才发展连续时钟。季节/天气不能只靠调色：人流、伞、反光、雨篷下停留和远景能见度需相互一致。</p>
+<h3 id="street-life-85">用街段场景组合控制制作规模</h3>
+<div class="table-scroll"><table>
+<tr><th>场景组合</th><th>核心组合</th><th>应给玩家的体验</th></tr>
+<tr><td>站口商业街</td><td>真实站口 + 过街点 + 餐饮/便利店 + 出站/等灯/取餐</td><td>玩家停一会儿能看懂人从哪里来、往哪里去</td></tr>
+<tr><td>广东道商铺与后勤侧街</td><td>商业立面 + 服务门 + 装卸位置 + 推车/收货</td><td>正面消费界面与侧面劳动活动相连</td></tr>
+<tr><td>天星码头/海滨</td><td>码头 + 站牌 + 波状人流 + 观景 + 雪糕车候选</td><td>交通抵达、休闲停留和海港方向成立</td></tr>
+<tr><td>公园边缘/休息日</td><td>树荫 + 长椅/可坐边缘 + 会合 + 小群体聚餐</td><td>从主路快节奏进入可停留的公共空间</td></tr>
+<tr><td>佐敦餐饮生活街</td><td>密集铺面 + 住宅门口 + 等位/外卖 + 收铺</td><td>商业营业与居民回家并行</td></tr>
+<tr><td>油麻地市场后勤</td><td>低层街屋 + 货筐/推车 + 装卸 + 整理摊位</td><td>货品、劳动动作与场所一致</td></tr>
+<tr><td>旺角专门店街</td><td>不同货品模块 + 看货/交易 + 补货/收摊</td><td>金鱼街、花墟和服装摊不只靠标题区别</td></tr>
+<tr><td>西九文化休闲</td><td>场馆前场 + 绿地 + 观展散场/跑步/坐看海</td><td>开放空间与密集商业街形成反差</td></tr>
+</table></div>
+<p>这些是可复用场景规则，不是将不同真实地点拼成同一街角。当前广东道—海防道候选街角未必恰好包含 Apple、站口、雪糕车和卸货位；要根据真实邻接选择首段，必要时分别验证两个小场景。内容覆盖不靠搬动地标实现。</p>
+<h3 id="street-life-100">让这些内容可制作、可维护</h3>
+<p>静态资产继续分层，新增一层“活动配置”：位置锚点、可走路径、停留区、道具、角色槽位、时间条件、天气条件、声源和退出条件。一个卸货事件是一组同步对象，而不是几段独立循环动画。</p>
+<p>每个活动实例记录 <code>place_id、source_ids、evidence_status、anchor_ids、level_id、time_profile、weather_profile、participants、props、state、audio_zones</code>。证据状态分为地图快照、照片/视频观察、官方文字、设计编排、待核实；设计数据不反写地理来源。</p>
+<p>技术建议：近景用少量可观察的状态机与路径，远景简化，离开区域保存必要活动阶段或按确定种子重建。队列/坐席/卸货位有占用管理，留通道；人物、货车、车门和道具的转换由同一活动状态驱动。地铁/码头不进入的内部可作为明确的生成/退出边界。首版不需要每人常驻全城、复杂经济系统或联网大模型对话。</p>
+<p>城市生活是核心内容，但不意味着一次实现全部行为。第一阶段先完成“有目的地的步行、等灯/候车、卸货”中的相邻可行组合，并制作一种停留行为；第二阶段加入休息日群体与雪糕车；之后随对应街区扩展市场、海滨、酒店等活动。框架能提供的移动/触发等继续复用，活动协调、证据管理和香港特定资产由项目实现。</p>
+<h3 id="street-life-110">街道生活在纵深里发生</h3>
+<p>原有 15 类资产族、16 类活动和街区差异继续生效。HD-2D 应让活动拥有可观察的空间过程：工人从近景货车搬箱跨到远处服务门；站口人流从下层出现后加入过街队列；巴士驶过时暂时遮挡行人，再露出变化后的候车队。休息日聚会、树下休息和雪糕售卖占用适当的停留空间，不能堵死主通路。</p>
+<p>活动使用世界坐标、楼层、角色与道具绑定、开始／结束状态及声源位置。卸货声随距离和建筑遮挡衰减；远处人群用低成本表现，近处保留完整行为。玩家即使不移动，也能观察生活节奏；景深不能把所有生活活动都糊成背景。</p>
+<p>地标和所有日常元素不同时挤进一个样板。先以真实街段中可核实的一组活动验证生产方法，再按区域扩大。详见 <a href="#doc-street-life">香港街道生活设计</a>。</p>
+<h3 id="street-life-118">验收入口</h3>
+<p>本章活动的完成标准见 <a href="../07-validation/index.html#doc-acceptance">街道生活与实机验收</a>。地图节点盘点与地标候选已归入 <a href="../02-geography/index.html#doc-readme">地理与交通</a>，不把设施数量当作已制作内容量。</p></article><nav class="pager" aria-label="章节翻页"><a href="../04-engineering/index.html">上一章：引擎与运行架构</a><a href="../06-production/index.html">下一章：资产生产与实施</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
+window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));
+</script></body></html>

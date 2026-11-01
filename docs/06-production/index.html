@@ -1,0 +1,58 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>06 · 资产生产与实施 — 白帽漫游</title><style>
+:root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
+</style></head><body>
+<header><small>白帽漫游 / 香港 HD-2D 研究 / 06 OF 08</small><h1>资产生产与实施</h1><p>生产规范、阶段计划与首个样板。</p></header>
+<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html" aria-current="page">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">06 · 资产生产与实施</a><a href="#doc-asset-pipeline">资产生产与复用</a><a href="#doc-roadmap">阶段计划与下一步</a><a href="#doc-prototype">首个 HD-2D 街角样板</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
+<main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">06 · 资产生产与实施</h2>
+<p>生产规范、阶段计划与首个样板。</p>
+<p><a href="../README.md">研究总目录</a> · <a href="index.html">本章图文版</a></p>
+<h3 id="readme-6">本章资料</h3>
+<ul>
+<li><a href="#doc-asset-pipeline">资产生产与复用</a></li>
+<li><a href="#doc-roadmap">阶段计划与下一步</a></li>
+<li><a href="#doc-prototype">首个 HD-2D 街角样板</a></li>
+</ul></article><article id="doc-asset-pipeline"><h2 id="asset-pipeline-0">资产生产与复用</h2>
+<p>研究基线：2026-11-01 / v0.4。按主题整理；建议与待验证项不等同于已实现功能。</p>
+<h3 id="asset-pipeline-4">资产生产：让第二个街段更便宜</h3>
+<p>旧版静态样板预算仅作内容量参考，需按新镜头重估：1 个地面图集、6 个普通立面模块、3 类品牌招牌 / 橱窗模块、12 类街道道具、1 名主角的四向动作研究、1 辆出租车和 1 辆巴士、4 种路人配色变体。这只是静态起步预算，不是终极内容上限；人群需要追加站立、坐下、等候、携物、推车等动作，不能靠四种配色替代行为差异。按首街段选定的活动增加站口/站牌、货车/手推车、箱筐和声音等成套资产，再实测制作成本。</p>
+<p>普通资产包括交通设施、道路家具、大楼/商铺界面、后勤设备、停留设施、气候设备、保洁维护、市场货品、海滨和酒店界面等 15 个资产族。完整目录与 16 类活动见 <a href="../05-street-life/index.html#doc-street-life">街道生活设计</a>。模块复用同时保留街区和年代差异。</p>
+<p>建筑生产资产拆为具有体积的底座、立面、转角、屋顶／雨篷，配独立像素贴图、招牌与发光遮罩；共享世界尺寸与基准点。法线与阴影代理按效果需要制作，真实几何承担基本深度。先验收一栋商铺的分层包，再批量生产。</p>
+<p>生成式工具用于概念、色调和局部方案探索。进入生产需要像素编辑、统一调色板、模块建模与 UV、足底锚点、深度／阴影检查和遮挡分件。不要把整幅 AI 街景按屏幕平铺：这样会失去转角、碰撞、通行与邻接一致性。</p>
+<p>生成输出与手工修订分别放 <code>generated/</code> 和 <code>authored/</code>；构建脚本只刷新 generated。已精修图块通过清单选择，重跑脚本不能覆盖 authored。这个约定直接针对旧项目程序化生成覆盖手工精修的风险。</p>
+<p>首街段通过后，用同一套素材做第二条相邻街段。若主要时间仍用于逐栋重画、几乎没有模块复用，就暂停扩区，先修改资产颗粒度与镜头。此时新增更多自动化工具通常不能解决问题。</p>
+<h3 id="asset-pipeline-18">执行工作流</h3>
+<p>完整采集、真实街景图生图、贴图、按需 Blender 建模及 Unity 导入步骤由根目录 <a href="../../agent.md">agent.md</a> 维护；本章记录制作建议，不复制一份易分叉的执行规则。</p></article><article id="doc-roadmap"><h2 id="roadmap-0">阶段计划与下一步</h2>
+<p>研究基线：2026-11-01 / v0.4。按主题整理；建议与待验证项不等同于已实现功能。</p>
+<h3 id="roadmap-4">实施阶段与验收</h3>
+<p>以下是工作量估算，用于约束范围，不是 Agent 完成时长承诺；没有以当前素材做过生产测速。按一名熟悉引擎的制作人员、有像素美术修订参与估计，实际耗时主要取决于美术接受与街段资料质量。</p>
+<div class="table-scroll"><table>
+<tr><th>阶段</th><th>内容</th><th>工作量初估</th><th>通过条件</th></tr>
+<tr><td>P0 本轮</td><td>源数据提取、概念图、引擎调研、策划案</td><td>已完成本轮文档交付</td><td>数据可复现；概念图明确标注边界</td></tr>
+<tr><td>P1 框架与渲染验证</td><td>横向街角＋纵深支路＋高差测试件、3D 框架接入、Agent 闭环、日夜与真实景深</td><td>框架/渲染组合实测后估算</td><td>移动稳定、组件可复用、Agent 可运行诊断；分层灯光与遮挡成立</td></tr>
+<tr><td>P2 首个生活街段</td><td>真实商铺/设施关系、统一像素资产、至少一组完整微活动与停留行为</td><td>待 P1 活动样板实测后重估</td><td>可走可停，能观察活动始末；空间、声音和动作一致</td></tr>
+<tr><td>P3 相邻街段</td><td>第二段、模块复用、镜头区／区域切换与保存</td><td>待 HD-2D 样板测速后重估</td><td>可往返、读档正确；淡入淡出可接受，复用降低新增制作量</td></tr>
+<tr><td>P4 尖沙咀核心</td><td>向海港城 / 海滨 / K11 与西九龙方向分批扩展</td><td>在 P3 后按街段实测重估</td><td>每批 2–3 街段验收后再扩大，不提前承诺整片九龙工期</td></tr>
+<tr><td>P5 北向扩展</td><td>佐敦—油麻地—旺角</td><td>未估算</td><td>核心区的稳定性、密度和美术标准已成立</td></tr>
+</table></div>
+<p>建议首个里程碑仍是 P1–P3；此前纯 2D 的相邻街段 3–6 人日估计也不沿用。此前 <strong>8–17 人日</strong> 的总估算随框架/渲染验证范围变化而撤回，完成 P1 后重估，不承诺一次完成整个开放世界。若连续两次美术复核仍不能接受同一镜头，先修改镜头或像素密度，不继续添地标。</p>
+<h3 id="roadmap-21">下一步具体工作单</h3>
+<p>首选广东道—海防道附近的真实街角，先核对双侧沿街立面、人行过街与连接位置；确认参考年代和地标街侧，再做可往返的灰盒。比较弱透视／正交镜头、横向步行与纵深支路可读性；用独立高差测试件检查楼梯、桥上桥下和保存恢复，不为技术展示修改真实街网。</p>
+<p>随后接入白帽像素人物、一栋分件商铺和一组有依据的街道活动，测试白天／夜晚／景深开关、角色受光与遮挡，并完成 Agent 改场景—编译—运行诊断—导出闭环。框架与渲染结果成立后，才锁定像素尺寸、模块规格和正式版本。</p>
+<p>这一步验证：<strong>街道层叠是否像香港、走入纵深是否自然、停下来是否有生活可看、组件与 Agent 工作流是否省工、第二条街是否能沿用生产方式。</strong> 当前地图、五张探索图与文档为研究交付；尚未得到用户美术验收、可玩版本或性能结论。</p></article><article id="doc-prototype"><h2 id="prototype-0">首个 HD-2D 街角样板</h2>
+<p>研究基线：2026-11-01 / v0.4。按主题整理；建议与待验证项不等同于已实现功能。</p>
+<h3 id="prototype-4">锁定方案前必须通过的小样</h3>
+<p>首个样板改为广东道—海防道交界附近的一个可核实街角：约 80–150 米主街界面＋约 30–60 米纵深连接作为选段范围，最终边界随人行连通性确定。无需一开始做完整海防道或把 Apple、站口、雪糕车强行放在一起。另设不计入真实地图的阶梯／天桥测试件。</p>
+<div class="table-scroll"><table>
+<tr><th>验证项</th><th>通过条件</th><th>失败时如何处理</th></tr>
+<tr><td>空间与镜头</td><td>横向步行、深入支路、返回主街均能判断方向；双侧商铺有合理呈现；镜头区切换不反转输入</td><td>调角度／视距／切镜位置，再决定弱透视或正交</td></tr>
+<tr><td>像素与深度</td><td>角色有清楚脚底、受光与稳定阴影；帽尖和树叶无明显深度毛边；移动纹理不持续闪烁</td><td>简化材质与后处理；先解决图像稳定再加细节</td></tr>
+<tr><td>垂直通行</td><td>楼梯、坡面、桥下、桥上与停留层正确；读档恢复到同一层</td><td>修控制器、连接与碰撞，不靠渲染排序掩盖问题</td></tr>
+<tr><td>框架省工</td><td>移动、暂停、镜头接入、场景切换可复用；新增代码集中在像素表现和街道逻辑</td><td>若需要重写控制器核心，重新评估框架与 Unreal 候选</td></tr>
+<tr><td>Agent 闭环</td><td>修改场景／材质／参数后可编译、运行、取得日志截图并导出 Mac Player</td><td>记录缺失接口和人工步骤，不以 MCP 握手成功算完成</td></tr>
+<tr><td>生活与性能</td><td>至少一组完整微活动；固定路线、固定分辨率与可见 NPC 数下测试白天／夜晚／景深开关</td><td>先限制阴影灯、透明层和远处更新；不直接扩大地图</td></tr>
+</table></div>
+<p>P1 不要求全城流式、完整商店室内或全城实时交通。只有这一街角达到主观美术要求、操作舒适和独立 Player 性能目标，才锁定角色像素尺寸、镜头参数、材质与模块规格。当前完成的是研究、地图对照与概念图，尚未建立游戏工程、购买框架或测得性能。</p></article><nav class="pager" aria-label="章节翻页"><a href="../05-street-life/index.html">上一章：街道生活</a><a href="../07-validation/index.html">下一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
+window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));
+</script></body></html>

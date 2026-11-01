@@ -1,0 +1,240 @@
+{
+  "date": "2026-11-01",
+  "source_commit": "40576b729cc76c548d5f8029a4e1f8a8cb47db21",
+  "source_documents": {
+    "docs/创意与技术策划案.md": "b6dd364ee0fbcf8aa704114a4604dba16b6359a02e10467febbf6777173495e5",
+    "docs/research/HD-2D空间与技术方案.md": "2e41857d638deba5279525d0fb1e76aa240af946af06ef131b9f13f4db433800",
+    "docs/research/引擎调研.md": "ccfe855c7388f4b09ffac2fcc7e5c1efc58cb69fab96ad71a27d9830cd4a6d45",
+    "docs/research/香港街道生活与沉浸感设计.md": "84c26a7a8e2f44b3020ce71db9aaeda3ff70200846b32cf799b24095d6438e6d"
+  },
+  "sections": [
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 1. 玩家要得到什么",
+      "target": "docs/01-vision/vision.md"
+    },
+    {
+      "source": "docs/research/HD-2D空间与技术方案.md",
+      "heading": "## 1. 方向已经改变，范围仍按街段推进",
+      "target": "docs/01-vision/vision.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "文档开篇与当前建议",
+      "target": "docs/01-vision/vision.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 2. 地理范围与地标清单",
+      "target": "docs/02-geography/scope-landmarks.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 3. 扩展地标与街区锚点",
+      "target": "docs/02-geography/scope-landmarks.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 6. 已提取的资料与边界",
+      "target": "docs/02-geography/data-inventory.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 2. 这次从旧数据里真正补出了什么",
+      "target": "docs/02-geography/data-inventory.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 3. 世界空间：横向主街与纵深连接",
+      "target": "docs/03-hd2d/street-camera.md"
+    },
+    {
+      "source": "docs/research/HD-2D空间与技术方案.md",
+      "heading": "## 2. 真实街网怎样成为横向开放世界",
+      "target": "docs/03-hd2d/street-camera.md"
+    },
+    {
+      "source": "docs/research/HD-2D空间与技术方案.md",
+      "heading": "## 3. 新概念图与美术规范",
+      "target": "docs/03-hd2d/art-direction.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 4. 美术规范与镜头",
+      "target": "docs/03-hd2d/art-direction.md",
+      "treatment": "Overlapping parameter guidance consolidated into the detailed HD-2D art section; unique palette and split-building rules retained below."
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 5. 概念图如何使用：新方向与历史研究",
+      "target": "docs/03-hd2d/concept-gallery.md"
+    },
+    {
+      "source": "docs/research/引擎调研.md",
+      "heading": "全部引擎复评（含官方来源）",
+      "target": "docs/04-engineering/engine-selection.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 7. 引擎选择",
+      "target": "docs/04-engineering/engine-selection.md",
+      "treatment": "Summary consolidated into full engine assessment; no new selection or runtime validation."
+    },
+    {
+      "source": "docs/research/HD-2D空间与技术方案.md",
+      "heading": "## 4. 渲染与通行的具体方案",
+      "target": "docs/04-engineering/runtime-architecture.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 8. 最小技术结构",
+      "target": "docs/04-engineering/runtime-architecture.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 1. 体验目标：让玩家感觉香港正在生活",
+      "target": "docs/05-street-life/street-life.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 4. 普通街道资产库：按用途成套制作",
+      "target": "docs/05-street-life/street-life.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 5. 人群与微活动：让动作有起点和终点",
+      "target": "docs/05-street-life/street-life.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 6. 声音、时间和天气也是内容",
+      "target": "docs/05-street-life/street-life.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 7. 用街段场景组合控制制作规模",
+      "target": "docs/05-street-life/street-life.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 8. 让这些内容可制作、可维护",
+      "target": "docs/05-street-life/street-life.md"
+    },
+    {
+      "source": "docs/research/HD-2D空间与技术方案.md",
+      "heading": "## 5. 街道生活在纵深里发生",
+      "target": "docs/05-street-life/street-life.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 9. 资产生产：让第二个街段更便宜",
+      "target": "docs/06-production/asset-pipeline.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 10. 实施阶段与验收",
+      "target": "docs/06-production/roadmap.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "## 11. 下一步具体工作单",
+      "target": "docs/06-production/roadmap.md"
+    },
+    {
+      "source": "docs/research/HD-2D空间与技术方案.md",
+      "heading": "## 6. 锁定方案前必须通过的小样",
+      "target": "docs/06-production/prototype.md"
+    },
+    {
+      "source": "docs/research/香港街道生活与沉浸感设计.md",
+      "heading": "## 9. 验收标准改成沉浸感，而非地标数量",
+      "target": "docs/07-validation/acceptance.md"
+    },
+    {
+      "source": "docs/创意与技术策划案.md",
+      "heading": "10. 实施阶段与验收／固定验收路线",
+      "target": "docs/07-validation/acceptance.md"
+    }
+  ],
+  "moved_files": [
+    {
+      "from": "docs/research/九龙选区数据图.svg",
+      "to": "docs/02-geography/figures/九龙选区数据图.svg",
+      "sha256": "cc8cbdb518f24b54e68516293e0b936ca59b454974a428b7ba48aa9f31e5b32b"
+    },
+    {
+      "from": "docs/research/hd2d/mtr-tst-map.png",
+      "to": "docs/02-geography/figures/mtr-tst-map.png",
+      "sha256": "4af9fed80916d501d1d85bc7f54e5c0d8a53ea337599e1f9c75895936c6030c8"
+    },
+    {
+      "from": "docs/research/hd2d/mtr-jor-map.png",
+      "to": "docs/02-geography/figures/mtr-jor-map.png",
+      "sha256": "0d1032ffa2294825f1e2dcaf5f318a1ce531eac2e440891416d81358a9a235a5"
+    },
+    {
+      "from": "docs/research/hd2d/corridor-projection.png",
+      "to": "docs/03-hd2d/figures/corridor-projection.png",
+      "sha256": "625a7378024f82af6216cda8ef15e0871572b4479dc26f6791c688d24891433f"
+    },
+    {
+      "from": "docs/research/hd2d/corridor-projection.svg",
+      "to": "docs/03-hd2d/figures/corridor-projection.svg",
+      "sha256": "355a0cbb0d4715e5a6f1be07c84d8b816f7e52186a0a6e8235cdc775601fbe4f"
+    },
+    {
+      "from": "docs/research/delivery-validation.json",
+      "to": "docs/07-validation/history/delivery-validation.json",
+      "sha256": "1ba0387e592fed2eb51d99456c6c24f676580748020e5af7846db2b373c4a658"
+    },
+    {
+      "from": "docs/research/street-life-validation.json",
+      "to": "docs/07-validation/history/street-life-validation.json",
+      "sha256": "de0a5d89023baef534f606c3e29eacb2630296989a3fd4d8330fea28a4556351"
+    },
+    {
+      "from": "docs/research/hd2d/validation.json",
+      "to": "docs/07-validation/history/hd2d-validation.json",
+      "sha256": "22fc54046606f95e21bc55502c3fd31edf147d78d9ab4b7f855ec69595c9ba94"
+    }
+  ],
+  "note": "Content reorganized by topic. Earlier combined report and originals remain in Git history; old validation records are not claims about the new report.",
+  "external_source_urls": [
+    "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python",
+    "https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor",
+    "https://docs.godotengine.org/en/stable/classes/class_cameraattributespractical.html",
+    "https://docs.godotengine.org/en/stable/classes/class_spritebase3d.html",
+    "https://docs.godotengine.org/en/stable/tutorials/editor/command_line_tutorial.html",
+    "https://docs.unity.com/en-us/engine/6000.0/manual/post-processing-and-full-screen-effects/urp/effect-list/depth-of-field-urp",
+    "https://docs.unity.com/en-us/unity-cli/replace-mcp-server-unity-cli",
+    "https://docs.unity3d.com/6000.0/Documentation/Manual/urp/lit-shader.html",
+    "https://docs.unity3d.com/Packages/com.unity.cinemachine@3.1/manual/CinemachineBlending.html",
+    "https://github.com/Redseb/rpgmaker-mz-mcp",
+    "https://github.com/YoYoGames/gm-cli",
+    "https://github.com/signalcompose/godot-mcp",
+    "https://lionrocktales.hkbu.edu.hk/index.php/2022/01/19/we-should-be-seen-as-citizens-not-as-slaves/",
+    "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Drawing/Surfaces/Surfaces.htm",
+    "https://topdown-engine-docs.moremountains.com/cameras.html",
+    "https://topdown-engine-docs.moremountains.com/character-classes.html",
+    "https://topdown-engine.moremountains.com/",
+    "https://webmedia.westkowloon.hk/documents/Xiqu-Centre-Access-Guide-20260209-EN-tagged.pdf",
+    "https://www.amo.gov.hk/en/historic-buildings/monuments/kowloon/index.html",
+    "https://www.amo.gov.hk/en/historic-buildings/monuments/kowloon/monuments_45/index.html",
+    "https://www.apple.com/hk/retail/cantonroad/",
+    "https://www.bochk.com/m/en/aboutus/corpprofile/boctower.html",
+    "https://www.discoverhongkong.com/eng/attractions/top-things-to-see-and-do-around-tsim-sha-tsui-promenade.html",
+    "https://www.discoverhongkong.com/eng/food-and-drink/hong-kongs-essential-desserts-to-beat-the-heat.html",
+    "https://www.discoverhongkong.com/eng/neighbourhoods/west-kowloon/where-modern-architecture-meet-history.html",
+    "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-chungking-mansions.html",
+    "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-goldfish-market.html",
+    "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-yau-ma-tei-fruit-market.html",
+    "https://www.hyd.gov.hk/en/technical_references/standard_drawings/hyd_standard_drawings/index.html",
+    "https://www.k11musea.com/en",
+    "https://www.kmb.hk/storage/files/W4%20leaflet%20v1.pdf",
+    "https://www.mtr.com.hk/archive/ch/services/maps/jor.pdf",
+    "https://www.mtr.com.hk/archive/en/services/maps/tst.pdf",
+    "https://www.rpgmakerweb.com/products/rpg-maker-mz",
+    "https://www.td.gov.hk/en/transport_in_hong_kong/pedestrians/pedestrian_crossing_facilities/electronic_audible_traffic_signal/index.html",
+    "https://www.unrealengine.com/developer-interviews/octopath-traveler-ii-builds-a-bigger-bolder-world-in-its-stunning-hd-2d-style?lang=en-US"
+  ]
+}

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "01-vision",
+    "number": "01",
+    "title": "项目总纲",
+    "description": "体验目标、首版边界与当前决策。",
+    "documents": [
+      "README.md",
+      "vision.md"
+    ]
+  },
+  {
+    "id": "02-geography",
+    "number": "02",
+    "title": "地理与交通",
+    "description": "真实地图、地标、数据来源与公共交通证据。",
+    "documents": [
+      "README.md",
+      "scope-landmarks.md",
+      "data-inventory.md"
+    ]
+  },
+  {
+    "id": "03-hd2d",
+    "number": "03",
+    "title": "HD-2D 空间与美术",
+    "description": "主街与纵深、镜头区、像素规范和概念研究。",
+    "documents": [
+      "README.md",
+      "street-camera.md",
+      "art-direction.md",
+      "concept-gallery.md"
+    ]
+  },
+  {
+    "id": "04-engineering",
+    "number": "04",
+    "title": "引擎与运行架构",
+    "description": "五引擎复评、Agent 集成、3D 渲染与运行结构。",
+    "documents": [
+      "README.md",
+      "engine-selection.md",
+      "runtime-architecture.md"
+    ]
+  },
+  {
+    "id": "05-street-life",
+    "number": "05",
+    "title": "街道生活",
+    "description": "设施资产、人群、劳动、交通活动、声景与天气。",
+    "documents": [
+      "README.md",
+      "street-life.md"
+    ]
+  },
+  {
+    "id": "06-production",
+    "number": "06",
+    "title": "资产生产与实施",
+    "description": "生产规范、阶段计划与首个样板。",
+    "documents": [
+      "README.md",
+      "asset-pipeline.md",
+      "roadmap.md",
+      "prototype.md"
+    ]
+  },
+  {
+    "id": "07-validation",
+    "number": "07",
+    "title": "验证与证据",
+    "description": "验收标准、历史记录、文档迁移与当前检查。",
+    "documents": [
+      "README.md",
+      "acceptance.md",
+      "evidence.md"
+    ]
+  },
+  {
+    "id": "08-blocks",
+    "number": "08",
+    "title": "街区档案",
+    "description": "每个实际制作街区的计划、证据、资产与实机结果。",
+    "documents": [
+      "README.md"
+    ]
+  }
+]

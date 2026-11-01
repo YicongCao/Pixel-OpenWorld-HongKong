@@ -1,0 +1,29 @@
+{
+  "checked": "2026-11-01",
+  "scope": "Chapter HTML on localhost in desktop browser; not game runtime",
+  "status": "passed",
+  "checks": {
+    "chapter_01_visual_layout": "inspected",
+    "chapter_navigation": "01 -> 02 -> 03 -> 04 passed",
+    "geography_entrance_markers": 144,
+    "geography_landmark_markers": 32,
+    "geography_layer_toggle": "passed",
+    "zoom_viewbox": "129 154.5 602 721",
+    "reset_viewbox": "0 0 860 1030",
+    "art_chapter_historical_gallery": "collapsed by default; document link opens it",
+    "art_chapter_concept_layout": "visually inspected",
+    "engine_chapter_documents": [
+      "doc-readme",
+      "doc-engine-selection",
+      "doc-runtime-architecture"
+    ],
+    "horizontal_overflow_on_checked_pages": false,
+    "browser_console_errors": []
+  },
+  "not_tested": [
+    "mobile viewport",
+    "direct file URL navigation in in-app browser",
+    "game runtime",
+    "Unity export or performance"
+  ]
+}

@@ -76,4 +76,4 @@ GameMaker 的 surfaces／shaders 和 MZ 插件可以实现额外效果，但本�
 
 记录直接复用、适配和新增代码各是什么；记录已安装引擎、渲染器、框架与包版本、人工干预步骤、帧时和显存／内存指标。通过后才锁定组合并批量制作资产；当前没有任何实测证明某引擎帧率更高、MCP 零故障或框架已经适配。
 
-空间、像素密度、遮挡和具体样板验收见 [HD-2D 空间与技术方案](HD-2D空间与技术方案.md)。
+空间见 [街网与镜头](../03-hd2d/street-camera.md)，像素规范见 [美术研究](../03-hd2d/art-direction.md)，遮挡见 [运行架构](runtime-architecture.md)，样板见 [实施验证](../06-production/prototype.md)。

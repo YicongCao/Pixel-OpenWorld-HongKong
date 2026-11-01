@@ -1,0 +1,24 @@
+{
+  "scope": "documentation structure, offline references and preserved data; not gameplay",
+  "passed": true,
+  "checks": {
+    "chapters": 8,
+    "markdown_files": 30,
+    "local_links": 336,
+    "embedded_images": 6,
+    "original_data_hashes": 36,
+    "migrated_files": 8,
+    "external_sources_preserved": 36
+  },
+  "errors": [],
+  "html_sha256": {
+    "docs/01-vision/index.html": "b60fa672136196b99fb6bf028290edd4af97e4803dba5cf1b11df94c64a956a0",
+    "docs/02-geography/index.html": "acb033df819b4fef7498fe800456cd478fc8005d577ef410c7aa66a4232d660b",
+    "docs/03-hd2d/index.html": "75b28a1de1f422092517041ae1b6f5e2d4f8b8192bb277306affa5fa9b33c37a",
+    "docs/04-engineering/index.html": "d115dc628cfa27ae535d9b2dc3dbbb045bfed3de82bb6b86c818f8d96c166d8e",
+    "docs/05-street-life/index.html": "fabaf909805e6db0773604af51ffa1df3bb197d82128529f997482277707e88b",
+    "docs/06-production/index.html": "6049035e9ae8fbdd6d9f1a2d08060969eca2fdd90f472a9552ffb20914f241d9",
+    "docs/07-validation/index.html": "f0655272d721b9aa5c56da380c906ca2619ba53287aa9acfe0fa9a01e0327916",
+    "docs/08-blocks/index.html": "1425ac70c8a0b08fccfb09692f3eaa6de7256e1351c35d1477b0fbcd4d19ac54"
+  }
+}

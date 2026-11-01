@@ -1,0 +1,59 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>07 · 验证与证据 — 白帽漫游</title><style>
+:root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
+</style></head><body>
+<header><small>白帽漫游 / 香港 HD-2D 研究 / 07 OF 08</small><h1>验证与证据</h1><p>验收标准、历史记录、文档迁移与当前检查。</p></header>
+<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html">06 · 资产生产与实施</a><a href="../07-validation/index.html" aria-current="page">07 · 验证与证据</a><a href="../08-blocks/index.html">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">07 · 验证与证据</a><a href="#doc-acceptance">行走、画面、生活与性能验收</a><a href="#doc-evidence">验证记录及证据边界</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
+<main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">07 · 验证与证据</h2>
+<p>验收标准、历史记录、文档迁移与当前检查。</p>
+<p><a href="../README.md">研究总目录</a> · <a href="index.html">本章图文版</a></p>
+<h3 id="readme-6">本章资料</h3>
+<ul>
+<li><a href="#doc-acceptance">行走、画面、生活与性能验收</a></li>
+<li><a href="#doc-evidence">验证记录及证据边界</a></li>
+</ul></article><article id="doc-acceptance"><h2 id="acceptance-0">行走、画面、生活与性能验收</h2>
+<p>研究基线：2026-11-01 / v0.4。按主题整理；建议与待验证项不等同于已实现功能。</p>
+<h3 id="acceptance-4">固定实机路线</h3>
+<ol>
+<li>从店门走到街角，再走回；墙角、栏杆、树池不穿透、不粘住。</li>
+<li>主角走到建筑前、后及天桥下；脚底方向、真实深度、楼层与阴影始终清楚；另测楼梯及坡面。</li>
+<li>来回穿过镜头区与街段边界 20 次，停留后保存并读档；没有漏块、重复道具、镜头反复切换、输入突然反向或存档出现在错误楼层。</li>
+<li>在 720p、1080p、1440p 与非整数窗口尺寸检查像素边缘、文字和镜头抖动。</li>
+<li>在用户 Mac 导出的独立 Player 运行至少 10 分钟；帧率目标 60 fps，暖机后帧时 P95 ≤16.7 ms、P99 ≤25 ms，常态移动不出现 &gt;50 ms 的明显停顿；若采用淡入淡出转场，另记录完整转场耗时。它们是目标，不是本轮已测结果。</li>
+<li>比较第 2–5 分钟与第 7–10 分钟相同路线的内存；目标为进入稳定平台，不能只看启动瞬间。记录引擎版本、渲染器、分辨率、可见角色数和区块数。</li>
+<li>美术盲测隐藏地名 UI，确认是否仍能辨识香港；由地形、铺面、交通、人群与声音改善，不靠额外文字解释。</li>
+<li>原地观察两分钟，至少看见一组完整微活动；卸货有去向，队列有变化，人物有合理进出，玩家不被堵住。</li>
+<li>比较工作日/休息日和晴/雨预设，活动与空间使用确实不同；熟悉香港的体验者指出不真实或缺失之处，并据此修正。</li>
+</ol>
+<h3 id="acceptance-16">验收标准改成沉浸感，而非地标数量</h3>
+<ol>
+<li>隐去地名和品牌文字，仍可从站口、道路家具、铺面尺度、车辆、人流与声景辨认香港；再检查能否区分海滨、商业主街、生活内街等区域。</li>
+<li>在同一街角停留两分钟，至少能观察一组完整活动的开始、过程与结束；数字是样板设计目标，不是现实频率指标。</li>
+<li>行人有明确入口、出口与停留点；出站、等灯、候车的人不是同一批无目的随机巡游者。</li>
+<li>装卸时可追踪货物从车到店门；收货后角色、车辆和道具状态一致，玩家能顺畅绕行。</li>
+<li>工作日与休息日、干燥与下雨至少有行为或空间使用差异，不能仅替换人物颜色、背景音乐与天空色。</li>
+<li>群体行为存在成员间联系、错开的动作与抵达/散去；不以民族外貌替代行为设计，不把所有人群都画成同一个聚集模板。</li>
+<li>街区内容能追溯到证据或标为设计编排；流动商贩没有假装固定门牌，历史活动没有伪装为当前实测日程。</li>
+<li>视觉细节不遮住主角脚底和出口；活动占用不会堵死通道；画面模糊、灯光与音效不会掩盖玩法信息。</li>
+<li>在独立 Player 比较空街、正常活动和繁忙预设的帧时/内存；超预算优先简化远处行为，不把全部生活内容删除。</li>
+<li>请熟悉香港的人走一段并指出“哪里不像、缺了什么、哪里过度”；修改空间与行为，而不只继续追加地标。</li>
+</ol>
+<p>最终验收句：<strong>“就算没有任务，我也愿意沿街走下去，或者站在路边看一会儿。”</strong></p></article><article id="doc-evidence"><h2 id="evidence-0">验证记录及证据边界</h2>
+<h3 id="evidence-2">已有历史记录</h3>
+<p>下列 JSON 按原字节迁移，属于旧版研究交付的记录，不是当前分章 HTML 或可玩游戏的新测试结果。旧 HTML 的哈希、文件数和路径应结合原提交读取，不能改成新结果。</p>
+<ul>
+<li><a href="history/delivery-validation.json">初版数据与报告交付</a>：旧四张图报告与数据检查。</li>
+<li><a href="history/street-life-validation.json">街道生活补充</a>：入口候选、锚点、历史地图交互检查。</li>
+<li><a href="history/hd2d-validation.json">HD-2D 报告检查</a>：旧五张概念图＋地图对照报告。</li>
+<li><a href="../../data/hong-kong/validation.json">源数据包校验</a>：数据提取的校验；没有证明实机功能。</li>
+</ul>
+<h3 id="evidence-11">本次文档整理</h3>
+<ul>
+<li><a href="migration-map.json">迁移映射</a>：原提交、章节去向、图件和历史记录的原始哈希。</li>
+<li><a href="docs-validation.json">当前文档结构校验</a>：分章目录、内部链接、图片、来源与派生文件哈希；由 <code>scripts/validate_docs.py</code> 生成。</li>
+<li><a href="browser-review.json">浏览器检查</a>：仅记录这次真实执行的页面和交互检查。</li>
+</ul>
+<p>当前仍无可玩街区、Unity Player 性能或用户主观画面验收记录。后续每个街区结果应存入 <a href="../08-blocks/index.html#doc-readme">街区档案</a> 的独立目录，不能以本页检查替代实机验证。</p></article><nav class="pager" aria-label="章节翻页"><a href="../06-production/index.html">上一章：资产生产与实施</a><a href="../08-blocks/index.html">下一章：街区档案</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
+window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));
+</script></body></html>
