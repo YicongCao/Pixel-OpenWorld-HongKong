@@ -1,0 +1,3 @@
+[BakedLighting] lightmaps=1 probes=294
+[AppleBayValidation] viewpoints=4 reflection=True
+[StreetValidation] PASS reached=12 distance=242.3333

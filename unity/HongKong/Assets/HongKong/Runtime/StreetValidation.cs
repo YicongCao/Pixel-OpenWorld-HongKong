@@ -17,9 +17,12 @@ namespace HongKong.Walk
         readonly List<string> errors = new();
         float begin;
         float observationSeconds;
+        bool inspectAppleBay, appleReflectionLoaded;
+        int appleInspectionPoints;
         void Start()
         {
             var args=Environment.GetCommandLineArgs();
+            inspectAppleBay=Array.IndexOf(args,"-streetAppleBay")>=0;
             int index=Array.IndexOf(args,"-streetOutput");
             int observe=Array.IndexOf(args,"-streetObserveSeconds");
             if(observe>=0 && observe+1<args.Length && float.TryParse(args[observe+1],System.Globalization.NumberStyles.Float,System.Globalization.CultureInfo.InvariantCulture,out var seconds))
@@ -92,6 +95,34 @@ namespace HongKong.Walk
                 }
                 if(failed)break;
             }
+            if(inspectAppleBay && !failed)
+            {
+                var bay=GameObject.Find("Apple 5.8m bay v1");
+                var reflection=bay?bay.GetComponentInChildren<UnityEngine.ReflectionProbe>():null;
+                appleReflectionLoaded=reflection && reflection.bakedTexture;
+                if(!bay || !appleReflectionLoaded)errors.Add("Apple bay or baked reflection missing in Player");
+                if(bay)
+                {
+                    float[] xs={-17,-13,-9,-13};
+                    for(int i=0;i<xs.Length;i++)
+                    {
+                        walker.automaticTarget=new Vector3(xs[i],.22f,2);
+                        float deadline=Time.realtimeSinceStartup+20;
+                        while(Vector3.ProjectOnPlane(walker.transform.position-walker.automaticTarget,Vector3.up).magnitude>.17f)
+                        {
+                            if(Time.realtimeSinceStartup>deadline){failed=true;errors.Add("Apple inspection route stalled at "+i);break;}
+                            yield return null;
+                        }
+                        if(failed)break;
+                        appleInspectionPoints++;
+                        yield return new WaitForSeconds(.8f);
+                        yield return Capture("apple-bay-"+i+".png");
+                    }
+                    if(atmosphere){atmosphere.dofEnabled=true;atmosphere.Apply();yield return new WaitForSeconds(.8f);yield return Capture("apple-bay-dof.png");atmosphere.dofEnabled=false;atmosphere.Apply();}
+                }
+                if(appleInspectionPoints!=4)errors.Add("Apple inspection did not reach all four viewpoints");
+                Debug.Log("[AppleBayValidation] viewpoints="+appleInspectionPoints+" reflection="+appleReflectionLoaded);
+            }
             walker.automatic=false;
             var bus=FindFirstObjectByType<CantonBus>();
             if(bus){float until=Time.realtimeSinceStartup+50;while(bus.cycles<3 && Time.realtimeSinceStartup<until)yield return null;
@@ -122,6 +153,7 @@ namespace HongKong.Walk
                 unityVersion=Application.unityVersion,graphics=SystemInfo.graphicsDeviceName,
                 elapsedSeconds=Time.realtimeSinceStartup-begin, frames=frameMs.Count, waypointsReached=reached,
                 observationSeconds=observationSeconds,
+                appleBayInspectionRequested=inspectAppleBay,appleInspectionPoints=appleInspectionPoints,appleReflectionLoaded=appleReflectionLoaded,
                 waypointsExpected=walker.route.Length*2, distanceM=walker.distanceWalked,
                 p95FrameMs=frameMs[(int)((frameMs.Count-1)*.95f)],p99FrameMs=frameMs[(int)((frameMs.Count-1)*.99f)],
                 width=Screen.width,height=Screen.height,memoryBytes=Profiler.GetTotalAllocatedMemoryLong(),
@@ -143,6 +175,8 @@ namespace HongKong.Walk
         {
             public string stage,unityVersion,graphics,limitations;
             public bool passed;
+            public bool appleBayInspectionRequested,appleReflectionLoaded;
+            public int appleInspectionPoints;
             public int busCycles,boardingViolations,lightmaps,lightProbes,deliveries;
             public int frames,waypointsReached,waypointsExpected,width,height,fallRecoveries;
             public float elapsedSeconds,distanceM,p95FrameMs,p99FrameMs,observationSeconds;

@@ -3,8 +3,8 @@
   "passed": true,
   "checks": {
     "chapters": 8,
-    "markdown_files": 63,
-    "local_links": 861,
+    "markdown_files": 65,
+    "local_links": 891,
     "embedded_images": 10,
     "original_data_hashes": 36,
     "migrated_files": 8,
@@ -19,6 +19,6 @@
     "docs/05-street-life/index.html": "147f0f4eeb6364d92c9c0f9e22c8f7360621136b71357ab0680458633ac41db5",
     "docs/06-production/index.html": "803fbb75574f4ac8fd6b82b22cac2d012f1a3c949016fdf541d0c991c2d8c89f",
     "docs/07-validation/index.html": "a506cf414f7fccd9cff52ef78444d481ffff35dfb053e8d96f18d3a3324c7b07",
-    "docs/08-blocks/index.html": "51b8153904fefcea03729b8405083e3bb94befb04eb8bc30042723f3d4c4d629"
+    "docs/08-blocks/index.html": "4e0e35f66a898d5c1e6951d436037085975f9a666eac44d47f50aef048d3ffa4"
   }
 }

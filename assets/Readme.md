@@ -29,3 +29,5 @@
 广东道品牌：[Apple 生成标识](blocks/tst-canton-demo/generated/brands-v1/manifest.json)与[莎莎官方标识采用稿](blocks/tst-canton-demo/authored/brands-v1/manifest.json)。地址、参考和使用边界见 [品牌实施](../docs/08-blocks/tst-canton-demo/brands-v1.md)，不将品牌原件套用代码或材质图集许可。
 
 当前街段目标：[同机位 HD-2D 概念与输入记录](blocks/tst-canton-demo/generated/concepts/current-target-v1/manifest.json)。以品牌修订 Player 画面和两家店的官方照片作为输入；[对照与偏差](../docs/08-blocks/tst-canton-demo/concept-gap-v1.md)明确其为美术目标，不能当作新实机或测绘事实。
+
+Apple 橱窗样板：[四格像素材质及导入记录](blocks/tst-canton-demo/generated/apple-bay-v1/manifest.json)，用于浅木桌、石材饰面、配件展示与设备屏幕；[实机实施](../docs/08-blocks/tst-canton-demo/apple-bay-v1.md)。

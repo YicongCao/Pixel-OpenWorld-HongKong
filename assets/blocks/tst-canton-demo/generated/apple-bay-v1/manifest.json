@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-01",
+  "tool": "built-in imagegen",
+  "calls": 1,
+  "asset": "material-atlas.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "sha256": "23ac966f9a46d775daf870a77dca09835f9cde13a2dba00624e477192a4dc343",
+  "prompt": "prompt.txt",
+  "reference": {
+    "file": "assets/blocks/tst-canton-demo/generated/concepts/current-target-v1/concept.png",
+    "sha256": "1ccd1905e72242e0b9c3c2e0708dc26510f004a88e105e2d8195edf39e08df6e",
+    "role": "Existing target concept, material palette only; prior official-photo source chain in its manifest"
+  },
+  "usage": "Four flat pixel texture tiles, Unity orthographic quadrant extraction; NOT a whole facade painting",
+  "tiles": [
+    {
+      "file": "unity/HongKong/Assets/HongKong/Generated/AppleBayV1/oak.png",
+      "sha256": "0ead6c97c92194e1b353c7db0f80b1ade18ddb8e2f6afc7fa29ebdaf9a2bc89b",
+      "quadrant": "top left",
+      "maxTextureSize": 128
+    },
+    {
+      "file": "unity/HongKong/Assets/HongKong/Generated/AppleBayV1/limestone.png",
+      "sha256": "87edd6b27d21e17ddaa6a1352559529a6e154f6b3ff77723ac4bcd2e3e92575f",
+      "quadrant": "top right",
+      "maxTextureSize": 128
+    },
+    {
+      "file": "unity/HongKong/Assets/HongKong/Generated/AppleBayV1/accessories.png",
+      "sha256": "ef62fa9a0ae73af05fbc127d1a0e050fef8fdfdf417b0156e395c6dd8ffe059d",
+      "quadrant": "bottom left",
+      "maxTextureSize": 256
+    },
+    {
+      "file": "unity/HongKong/Assets/HongKong/Generated/AppleBayV1/screen.png",
+      "sha256": "7d65745f20697e6bbad1f9ed7e18d15491a0a6d78a5cb55ab17253ef8125a159",
+      "quadrant": "bottom right",
+      "maxTextureSize": 128
+    }
+  ],
+  "knownLimits": [
+    "Generated product cards include shallow shading; used only as small recessed display detail",
+    "Texture tile repeat/seams not approved for full-store expansion",
+    "Actual product arrangement is design interpretation, not a measured Apple store layout"
+  ],
+  "runtimeScene": "Assets/HongKong/Authored/CantonPolish/CantonRoadPolish.unity",
+  "authoredAssets": "Assets/HongKong/Authored/CantonPolish/AppleBayV1",
+  "cameraUnchanged": true,
+  "bayWorldX": [
+    -15.9,
+    -10.1
+  ]
+}

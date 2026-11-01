@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-01",
+  "buildId": "build_60cdd431f0b3",
+  "source": "Independent StandaloneOSX Player; screenshots unedited",
+  "files": [
+    {
+      "file": "apple-bay-0.png",
+      "sha256": "455bf78b55da56512ce0a34a1f428a64f61cfbd912cb9520642fa95e928d391b",
+      "bytes": 1813680
+    },
+    {
+      "file": "apple-bay-1.png",
+      "sha256": "f74c277db1ab60f924a5626492f9e7b113085a27143f5f77c3afc7a9300162f9",
+      "bytes": 1887941
+    },
+    {
+      "file": "apple-bay-2.png",
+      "sha256": "9187c1e5a7581a02045872a1add76eb538e6d0ab0d381771dbc364d711a29ac1",
+      "bytes": 1932447
+    },
+    {
+      "file": "apple-bay-3.png",
+      "sha256": "705a36ab5d2564116dd279e404228c7cc3ece1c0121360d20d2100205c763776",
+      "bytes": 1942466
+    },
+    {
+      "file": "apple-bay-dof.png",
+      "sha256": "40e89acb75dae4fc66a0aeac84e48b1f932e2a14f224bb9038963842519979d4",
+      "bytes": 1943698
+    },
+    {
+      "file": "bake-audit.json",
+      "sha256": "569e84321c17f7e26b58dcecf050e607e3dfea96df216b292eeb02443eabb1a8",
+      "bytes": 245
+    },
+    {
+      "file": "bake-result.json",
+      "sha256": "cc481c300c82e06c819c80e85da7f02cf482664b757f4c8628d47c1a2d21e01c",
+      "bytes": 399
+    },
+    {
+      "file": "build.json",
+      "sha256": "89996985140c89c3b1099fbe22bc3fc66e0e878a1308a547395f588da4d203ee",
+      "bytes": 215
+    },
+    {
+      "file": "pixel-mode-0.png",
+      "sha256": "9c7c1e36ef86a542a4fd2af6cd3ffeace9effd6532cc65116a4758d1808357d4",
+      "bytes": 2024317
+    },
+    {
+      "file": "pixel-mode-2.png",
+      "sha256": "e9d641fc9680f3034cfb0379a03afd2be06145d470dcf17ead7114f9ff2aaecb",
+      "bytes": 852361
+    },
+    {
+      "file": "result.json",
+      "sha256": "688af76b61fcdd09612985a71ebcc9f945864b645e76834e36e0c9633902e830",
+      "bytes": 996
+    },
+    {
+      "file": "runtime-log-summary.txt",
+      "sha256": "b99e241829ef1e47a6225e6b9b619cf73d0b7ee556a8660ee19a6d185331a1b9",
+      "bytes": 142
+    },
+    {
+      "file": "start.png",
+      "sha256": "2bc7dfb1d46278a38ee9369eddb91ed46ee4512d86f5e802b5fdac3f8008ef75",
+      "bytes": 1961340
+    }
+  ]
+}
