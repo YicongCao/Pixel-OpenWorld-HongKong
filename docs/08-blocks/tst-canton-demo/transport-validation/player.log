@@ -3,9 +3,9 @@ Mono config path = '<PROJECT>/.local/builds/HongKong-Canton-Transport.app/Conten
 Found 2 interfaces on host : 0) 192.168.50.48 1) 198.18.0.1
 Player connection [8431599488]  Target information:
 
-Player connection [8431599488]  * "[IP] 192.168.50.48 [Port] 55000 [Flags] 2 [Guid] 4188080003 [EditorId] 3275396414 [Version] 1048832 [Id] OSXPlayer(1,2CongdeMacBook-Air.local) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 香港像素漫游" 
+Player connection [8431599488]  * "[IP] <LOCAL_ADDRESS> [Port] 55000 [Flags] 2 [Guid] 4188080003 [EditorId] 3275396414 [Version] 1048832 [Id] OSXPlayer(1,<LOCAL_HOST>) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 香港像素漫游"
 
-Player connection [8431599488]  * "[IP] 198.18.0.1 [Port] 55000 [Flags] 2 [Guid] 4188080003 [EditorId] 3275396414 [Version] 1048832 [Id] OSXPlayer(1,2CongdeMacBook-Air.local) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 香港像素漫游" 
+Player connection [8431599488]  * "[IP] <LOCAL_ADDRESS> [Port] 55000 [Flags] 2 [Guid] 4188080003 [EditorId] 3275396414 [Version] 1048832 [Id] OSXPlayer(1,<LOCAL_HOST>) [Debug] 0 [PackageName] OSXPlayer [ProjectName] 香港像素漫游"
 
 Player connection [8431599488] Started UDP target info broadcast (1) on [225.0.0.222:54997].
 
