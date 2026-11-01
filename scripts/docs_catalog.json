@@ -57,12 +57,13 @@
     "id": "06-production",
     "number": "06",
     "title": "资产生产与实施",
-    "description": "生产规范、阶段计划与首个样板。",
+    "description": "远期 Roadmap、首版实施任务、技术样板与资产生产。",
     "documents": [
       "README.md",
-      "asset-pipeline.md",
       "roadmap.md",
-      "prototype.md"
+      "v0.1-implementation.md",
+      "prototype.md",
+      "asset-pipeline.md"
     ]
   },
   {

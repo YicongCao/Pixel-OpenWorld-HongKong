@@ -3,8 +3,8 @@
   "passed": true,
   "checks": {
     "chapters": 8,
-    "markdown_files": 30,
-    "local_links": 336,
+    "markdown_files": 31,
+    "local_links": 368,
     "embedded_images": 6,
     "original_data_hashes": 36,
     "migrated_files": 8,
@@ -17,8 +17,8 @@
     "docs/03-hd2d/index.html": "75b28a1de1f422092517041ae1b6f5e2d4f8b8192bb277306affa5fa9b33c37a",
     "docs/04-engineering/index.html": "d115dc628cfa27ae535d9b2dc3dbbb045bfed3de82bb6b86c818f8d96c166d8e",
     "docs/05-street-life/index.html": "fabaf909805e6db0773604af51ffa1df3bb197d82128529f997482277707e88b",
-    "docs/06-production/index.html": "6049035e9ae8fbdd6d9f1a2d08060969eca2fdd90f472a9552ffb20914f241d9",
-    "docs/07-validation/index.html": "f0655272d721b9aa5c56da380c906ca2619ba53287aa9acfe0fa9a01e0327916",
+    "docs/06-production/index.html": "80db4a76eedbc4b12ec9a2fab0e57f12a91d7ccee7cf5d364257310435006535",
+    "docs/07-validation/index.html": "d88d9840a19e803084d7598f4ee1a3c4863d5810a1feff28fe8675e4bba23ad2",
     "docs/08-blocks/index.html": "1425ac70c8a0b08fccfb09692f3eaa6de7256e1351c35d1477b0fbcd4d19ac54"
   }
 }

@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-01",
+  "scope": "Roadmap 与 v0.1 实施规划文档；非游戏验证",
+  "page": "docs/06-production/index.html",
+  "sha256": "80db4a76eedbc4b12ec9a2fab0e57f12a91d7ccee7cf5d364257310435006535",
+  "browser": "Codex in-app browser",
+  "viewport_observed": [
+    1280,
+    720
+  ],
+  "checks": [
+    {
+      "name": "章节目录展示 Roadmap、v0.1、技术样板和资产生产",
+      "passed": true
+    },
+    {
+      "name": "点击 Roadmap 导航到正文，版本表可读、无可见重叠",
+      "passed": true
+    },
+    {
+      "name": "点击 v0.1 导航到对应正文，选段与边界说明可读",
+      "passed": true
+    }
+  ],
+  "not_tested": [
+    "游戏工程、独立 Player、性能与实际行走",
+    "移动端尺寸与其他浏览器"
+  ]
+}

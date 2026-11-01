@@ -12,6 +12,7 @@
 | imagegen／角色／纹理／概念迭代 | [03 美术](03-hd2d/art-direction.md) | [旧概念档案](03-hd2d/concept-gallery.md)、[06 生产](06-production/asset-pipeline.md)、根工作流的参考图和提示词步骤 | 资产目录＋03／08 |
 | 引擎／框架／MCP／光照景深 | [04 引擎复评](04-engineering/engine-selection.md) | [04 架构](04-engineering/runtime-architecture.md)、[06 小样](06-production/prototype.md) | 04，真实测试记 07／08 |
 | 人流／汽车／公交／地铁口／街头活动 | [05 街道生活](05-street-life/street-life.md) | 02 站位与连接、04 运行结构 | 05，具体实例记 08 |
+| 规划首版／拆解实施任务 | [06 首版实施](06-production/v0.1-implementation.md) | [06 Roadmap](06-production/roadmap.md)、[07 验收](07-validation/acceptance.md) | 06 规划，实际进度记 08 |
 | 制作某街区／安排下一阶段 | [根工作流](../agent.md) | [06 路线图](06-production/roadmap.md)、[08 归档](08-blocks/README.md) | 08 计划与实施记录 |
 | 行走验证／性能／结果复核 | [07 验收](07-validation/acceptance.md) | [07 证据说明](07-validation/evidence.md)、目标街区记录 | 07 通用结论，08 实际结果 |
 | 维护报告／移动研究资料 | [Agent.md](Agent.md) | [总目录](README.md)、`scripts/docs_catalog.json` | 对应主题＋必要索引与校验 |

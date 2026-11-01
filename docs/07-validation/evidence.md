@@ -15,4 +15,8 @@
 - [当前文档结构校验](docs-validation.json)：分章目录、内部链接、图片、来源与派生文件哈希；由 `scripts/validate_docs.py` 生成。
 - [浏览器检查](browser-review.json)：仅记录这次真实执行的页面和交互检查。
 
+## Roadmap 与首版规划更新
+
+- [规划图文版浏览检查](roadmap-browser-review.json)：2026-11-01 检查第 06 章的路线图表格、首版计划与目录跳转，仅证明文档可读。
+
 当前仍无可玩街区、Unity Player 性能或用户主观画面验收记录。后续每个街区结果应存入 [街区档案](../08-blocks/README.md) 的独立目录，不能以本页检查替代实机验证。
