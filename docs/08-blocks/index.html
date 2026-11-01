@@ -2,7 +2,7 @@
 :root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
 </style></head><body>
 <header><small>香港像素漫游 / 香港 HD-2D 研究 / 08 OF 08</small><h1>街区档案</h1><p>每个实际制作街区的计划、证据、资产与实机结果。</p></header>
-<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html" aria-current="page">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">08 · 街区档案</a><a href="#doc-tst-nathan-haiphong-plan">第一街区：弥敦道 × 海防道</a><a href="#doc-tst-nathan-haiphong-sources">来源与实际观察</a><a href="#doc-tst-nathan-haiphong-assets">HD-2D 渲染参考与资产拆分</a><a href="#doc-tst-nathan-haiphong-implementation">v0.1 实施批次 01：可走路线与 A1 街角样板</a><a href="#doc-tst-canton-demo-readme">广东道 · 首个可玩复用 demo</a><a href="#doc-tst-canton-demo-polish-plan">从广东道 demo 到精致 HD-2D 小场景</a><a href="#doc-tst-canton-demo-polish-v1">广东道 30 米精修 · 第 01 批</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
+<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html" aria-current="page">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">08 · 街区档案</a><a href="#doc-tst-nathan-haiphong-plan">第一街区：弥敦道 × 海防道</a><a href="#doc-tst-nathan-haiphong-sources">来源与实际观察</a><a href="#doc-tst-nathan-haiphong-assets">HD-2D 渲染参考与资产拆分</a><a href="#doc-tst-nathan-haiphong-implementation">v0.1 实施批次 01：可走路线与 A1 街角样板</a><a href="#doc-tst-canton-demo-readme">广东道 · 首个可玩复用 demo</a><a href="#doc-tst-canton-demo-polish-plan">从广东道 demo 到精致 HD-2D 小场景</a><a href="#doc-tst-canton-demo-polish-v1">广东道 30 米精修 · 第 01 批</a><a href="#doc-tst-canton-demo-brands-v1">广东道品牌店招 · 第 01 批</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
 <main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">08 · 街区档案</h2>
 <p>每个实际制作街区的计划、证据、资产与实机结果。</p>
 <p><a href="../README.md">研究总目录</a> · <a href="index.html">本章图文版</a></p>
@@ -142,7 +142,7 @@ unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file A
 <p>11 项输入／配置检查通过，包括暂停禁止移动、恢复、侧边碰撞、图集矩形和重载后 DOF 配置存在。Bokeh 已进入保存／加载与独立程序对照，当前虚化较弱，仍待和目标画风比较。编辑器离屏截图阶段出现两条 Metal memoryless depth load/store 警告；本次 Player 日志未发现同类警告或异常。系统字体的 IMGUI 重复警告通过 HUD 暂用内置英文字体消除，世界双语标识保留。</p>
 <p>已停止本 Agent 的 Play 会话，关闭自动 tick 与临时后台覆盖，保留工程原本 runInBackground=true。未安装新包、未修改 game-research。独立构建不进入 Git，采用源资产、场景／meta 和选定证据进入 Git。</p></article><article id="doc-tst-canton-demo-readme"><h2 id="tst-canton-demo-readme-0">广东道 · 首个可玩复用 demo</h2>
 <p>2026-11-01。用户本轮指定广东道；此前弥敦道／海防道 A1 保留为独立制作小样。当前目标是快速验证 HD-2D 组件在可走场景中的组合，不是完整 v0.1 或最终街区美术。</p>
-<p>最新进展：<a href="#doc-tst-canton-demo-polish-v1">30 米精修与光照烘焙</a>。新场景 <code>Authored/CantonPolish/CantonRoadPolish.unity</code>，本机 <code>.local/builds/HongKong-Canton-Polish.app</code>；固定午后、F 景深、P 像素密度。以下描述保留原快速 demo，避免混淆两版。</p>
+<p>最新进展：<a href="#doc-tst-canton-demo-brands-v1">品牌店招修订</a>，在 <a href="#doc-tst-canton-demo-polish-v1">30 米精修与光照烘焙</a> 上加入 Apple 与莎莎标识。新场景 <code>Authored/CantonPolish/CantonRoadPolish.unity</code>，本机 <code>.local/builds/HongKong-Canton-Polish.app</code>；固定午后、F 景深、P 像素密度。以下描述保留原快速 demo，避免混淆两版。</p>
 <h3 id="tst-canton-demo-readme-6">打开与操作</h3>
 <p>Unity 场景：<code>Assets/HongKong/Generated/CantonDemo/CantonRoadDemo.unity</code>。</p>
 <p>独立 macOS app：仓库本机 <code>.local/builds/HongKong-Canton-Demo.app</code>。WASD／方向键移动，Shift 快走，Esc 暂停／返回起点／退出，N 昼夜，F 景深，P 在原生／1280／960／640 宽度像素处理间切换。UI 保持原生分辨率。</p>
@@ -255,35 +255,36 @@ unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file A
 <h3 id="tst-canton-demo-polish-plan-99">下一批最值得执行的交付</h3>
 <p>先完成 <strong>空间密度重排＋一个精修立面包＋白帽动作修订＋同机位对照</strong>。其余街段、更多品牌与交通路线延后扩展。判断是否前进的标准是这个小片段有没有可信的香港密度、清楚的探索方向和一致的像素美术，而不是增加了多少 prefab。</p>
 <p>专业流程依据沿用 <a href="../06-production/index.html#doc-hd2d-production-workflow">生产 SOP</a>、<a href="../03-hd2d/index.html#doc-character-production">角色制作</a>、<a href="../04-engineering/index.html#doc-hd2d-camera-lighting">镜头／灯光</a> 与 <a href="../03-hd2d/index.html#doc-octopath2-composition-study">原作对照研究</a>。以上工作量与先后是本项目判断；没有据此承诺达到原作团队制作质量的时间或自动化比例。</p></article><article id="doc-tst-canton-demo-polish-v1"><h2 id="tst-canton-demo-polish-v1-0">广东道 30 米精修 · 第 01 批</h2>
+<p>后续修订：<a href="#doc-tst-canton-demo-brands-v1">品牌店招第 01 批</a> 已替换本页所述泛称招牌；本页保留当批实现与测试记录。</p>
 <p>2026-11-01。按用户要求继续精修一个 20–30 米小场景，并实际执行光照烘焙。美术工作集中在设计坐标 X=-20…10 的 30 米临街片段；保留原 68.1 米可走空间与海防道连接作为回归路线。不是新增一段精确测绘街道，也没有把 Apple 与真实旧铺的邻接关系认定为事实。</p>
-<h3 id="tst-canton-demo-polish-v1-4">本次产物与入口</h3>
+<h3 id="tst-canton-demo-polish-v1-6">本次产物与入口</h3>
 <ul>
 <li>Unity：<code>Assets/HongKong/Authored/CantonPolish/CantonRoadPolish.unity</code>。原 <code>Generated/CantonDemo/CantonRoadDemo.unity</code> 保留。</li>
 <li>本机独立 app：<code>.local/builds/HongKong-Canton-Polish.app</code>。WASD／方向键行走，Shift 快走，Esc 暂停／重置／退出，F 景深，P 像素密度。本场景固定午后烘焙，N 不切夜景。</li>
 <li><a href="../../assets/blocks/tst-canton-demo/generated/polish-v1/manifest.json">生成源／提示词／哈希</a>；Unity 导入副本 <code>Generated/CantonPolish/Textures</code>；采用的场景、材质、UV2 网格、光照数据放 <code>Authored/CantonPolish</code>。</li>
 <li><a href="#doc-tst-canton-demo-polish-plan">原始待办</a> 保留完整质量门槛；本批只关闭有证据的子项，不把整张清单标完成。</li>
 </ul>
-<h3 id="tst-canton-demo-polish-v1-11">改了什么</h3>
+<h3 id="tst-canton-demo-polish-v1-13">改了什么</h3>
 <p>Apple 从不透明色块改成前玻璃、两层浅室内、独立细柱、夹层、桌面／设备、灯带、楼梯轮廓和侧返。只做稳定探索镜头及路线需要的可见体积；没有制作可进入商店、完整真实楼梯或精确商标。参考 <a href="https://www.apple.com/hk/en/retail/cantonroad/">Apple 官方广东道店照片</a>；原始官方照片仅本地临时参考，不再分发。</p>
 <p>相邻三组通用商铺增加橱窗纹理、凹凸窗跨、窗台／空调、雨篷、独立繁中招牌、植栽、货箱与暖光。店名“日常百貨／茶·食／九龍商行”为设计占位，不能解释成实际在此经营的商户。墙材与街面风格参考海防道 2024 照片，而非把该照片的整条街搬到广东道。</p>
 <p>路缘、栏杆、排水槽、树池形成中小尺度层次；保留候车／过街开口，不用全场缩窄道路代替密度。方块树冠换成 alpha-clipped 交叉叶簇卡片；近处仍有树干和三维遮挡。前景植栽给画面深度，但风动、反射和近距离卡片侧视仍待精修。</p>
 <p>新增四类像素行人、每类四帧侧向步行，按位移推进动画并使用透明轮廓切片和脚底锚点。第一稿带非对称肩包，已经弃用；第二稿移除包带后才允许左右镜像。不是四向 NPC 动画，未将这套侧向素材用作向纵深上车的人。白帽四向原图集沿用；自然承重、抬脚及角色像素颗粒仍需手工精修。</p>
 <p>搬运者采用取货停顿 → 携箱走到店边 → 交付停顿 → 空手返回的有限循环，暂停时停止；这是生活活动编排，不是真实卸货调查。巴士保留 UnityHFSM 开门／上客／离站逻辑，增加圆轮胎、轮毂、腰线、车窗分层及车灯。候车乘客仍是几何占位，车身、司机与车门还不是最终车辆资产。</p>
-<h3 id="tst-canton-demo-polish-v1-23">镜头与材质合同</h3>
+<h3 id="tst-canton-demo-polish-v1-25">镜头与材质合同</h3>
 <p>保持透视、25° 俯角、Y 方位 0°、24° FOV；跟随距离由 55 缩至 49 米，构图偏移 Y=3。主角在 1920×1080 起点画面约 80 px 高；左右沿街、前后深入连接，3D 碰撞与深度不变。默认像素管线宽 1280，保留原生／960／640 对照；DOF 默认关闭，F 可切换。</p>
 <p>材质 atlas 拆成四块：地砖、墙面、橱窗、窗户／空调。Unity 按 128 px 小图导入，Point + mipmaps；原始生成图完整保存。道具与 NPC 使用 URP Lit alpha clipping（0.5），真实 3D 阴影与受光；玻璃使用透明混合，透明深度与景深边缘仍需专项检查。镜头固定让我们能够集中制作立面与侧返，不需要为每件远景物体做全向精细模型；也不能据此省掉可走转角和投影体积。</p>
-<h3 id="tst-canton-demo-polish-v1-29">实际烘焙</h3>
+<h3 id="tst-canton-demo-polish-v1-31">实际烘焙</h3>
 <p>采用 Progressive GPU（Apple M5）、Mixed Baked Indirect 主光、Baked 店内灯；静态网格生成 UV2，动态角色／公交／搬运道具不设 Contribute GI。参数：8 texels/m、1024 atlas、4 px padding、32/128/64 samples、3 bounces，静态 scaleInLightmap 0.55、远景 0.15。配置和 <code>.exr</code>／方向 PNG／LightingData 与场景一并入库。</p>
 <p>本批产出 1 组光照贴图、258 个 Light Probes；380 个渲染对象接入 lightmap，动态对象接入静态 lightmap 数为 0，参与 GI 的网格缺 UV2 数为 0。一次预烘检查后增加店内补光并重烘。实时主光仍负责动态直射和阴影；不声称烘焙后无灯光成本。</p>
 <p>原日夜切换组件增加 opt-in <code>bakedAfternoon</code>：仅本精修场景锁定光照，避免日景间接光配夜景太阳。原实时 demo 行为保持。规范与官方依据见 <a href="../04-engineering/hd2d-camera-lighting.md#7-小场景光照烘焙与交付">烘焙规则</a>。</p>
-<h3 id="tst-canton-demo-polish-v1-37">验证证据</h3>
+<h3 id="tst-canton-demo-polish-v1-39">验证证据</h3>
 <p><a href="tst-canton-demo/polish-validation/README.md">本批证据目录</a> 保存起点／景深／支路／像素档位截图、输入、构建与烘焙结果。第一轮烘焙前图与最终图还包含灯光和素材迭代，不能归因成单变量烘焙 A/B。</p>
 <p>实测：独立 Player 运行 180.26 秒，含 120 秒起点静止观察；12/12 路线点、216.60 米累计行走、公交 12 轮、交付 8 次，0 运行错误、0 上车违规、0 掉落恢复。1 组 lightmap 与 258 个探针在 Player 加载成功。输入 17 项通过。最终构建 7.45 秒、0 错误／警告。帧时 P95=17.29 ms、P99=17.65 ms，Unity allocated memory 148.13 MiB（非进程 RSS）；仍未达到 P95≤16.7 ms，也不是十分钟性能验收。</p>
 <p><a href="tst-canton-demo/polish-validation/result.json">机器可读结果</a> · <a href="tst-canton-demo/polish-validation/observation-end.png">两分钟观察末画面</a> · <a href="tst-canton-demo/polish-validation/manifest.json">证据哈希</a>。</p>
-<h3 id="tst-canton-demo-polish-v1-45">重现与修改边界</h3>
+<h3 id="tst-canton-demo-polish-v1-47">重现与修改边界</h3>
 <p><code>PolishCanton.Create</code> 从原 demo 另存；目标精修场景存在即拒绝覆盖。<code>FinishCantonPolish.Apply</code> 是一次性修订，已有标记即拒绝再次应用。<code>RefreshCitizenAtlas</code> 只重导入 NPC 图集并更新对应切片。<code>PolishCanton.Bake</code> 明确启动烘焙，<code>BakeStatus</code> 保存实际产物路径；<code>FinishCantonPolish.Audit</code> 检查静态／动态分工与 UV2。全部通过 Unity Editor API 创建序列化资产，未手写场景 YAML 或 <code>.meta</code>。</p>
 <p>沿用 URP／Cinemachine／Input System、MIT PixelPipeline、UnityHFSM，无新增外部插件。阅读并使用了 Pipeline 的 <code>commands/scripts.md</code>、<code>commands/build-and-compilation.md</code> 及已有 capture 工作流。工具成本记录：本批 imagegen 共 4 次，含 NPC 去除非对称配件的局部修订 1 次；素材只导入采用稿，原稿保留来源记录。没有可靠 Token 计量，不报告节省比例。</p>
-<h3 id="tst-canton-demo-polish-v1-51">距离精致小场景仍缺的工序</h3>
+<h3 id="tst-canton-demo-polish-v1-53">距离精致小场景仍缺的工序</h3>
 <ol>
 <li>同段连续实景与准确商户／尺度核对；当前邻接与店名仍是设计占位，不能把贴图密度等同地理准确。</li>
 <li>白帽和 NPC 动作逐帧整理、独立站姿／搬箱动作、正背向候车人物；人流避让、停留和目的地容量，减少重叠与机械往返。</li>
@@ -292,7 +293,30 @@ unity command script run --project-path &quot;$PWD/unity/HongKong&quot; --file A
 <li>脚步、车门、搬运与街道声景；来源许可、距离衰减与状态同步。</li>
 <li>夜景需要独立烘焙与完整切换；提高最终 lightmap 密度后检查噪声、接缝和探针过渡；完成十分钟性能／录像与用户主观美术验收。</li>
 </ol>
-<p>本批证明了可走场景的美术替换、浅室内、活动及烘焙管线可以一起运行，不代表已达到《八方旅人 II》的精致程度，也不代表完整 v0.1。</p></article><nav class="pager" aria-label="章节翻页"><a href="../07-validation/index.html">上一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+<p>本批证明了可走场景的美术替换、浅室内、活动及烘焙管线可以一起运行，不代表已达到《八方旅人 II》的精致程度，也不代表完整 v0.1。</p></article><article id="doc-tst-canton-demo-brands-v1"><h2 id="tst-canton-demo-brands-v1-0">广东道品牌店招 · 第 01 批</h2>
+<p>2026-11-01。用户要求以真实商标增强熟悉感。本批将精修场景的泛称店招替换为两组经过官方门店资料核对的品牌识别，保留原镜头、行走范围和交通逻辑。</p>
+<h3 id="tst-canton-demo-brands-v1-4">实际落地</h3>
+<ul>
+<li><strong>Apple 广东道店</strong>：官方地址为广东道 100 号。以官方店面照片为图生图参考，制作透明底白色缺口苹果与独立叶片，替换原先的普通“Apple”文字，悬挂在两层玻璃店面中部。这是游戏化图形版本，不是官方矢量母版。</li>
+<li><strong>莎莎广东道店</strong>：官网实时门店列表“九龙 → 油尖旺区”显示地址为 <strong>广东道 86–98 号文利大厦地下 4–5 号铺</strong>。采用官网洋红色 SaSa 标准字，参考该店官方照片的浅银蓝门楣、深色边框和明亮化妆品陈列，替换“日常百貨／茶·食”两组占位店名。</li>
+<li>原第三组虚构“九龍商行”文字换成已核实的大厦名称“文利大廈”，作为入口标识。入口位置和外形仍是设计，不声称已核实真实大堂。</li>
+<li>第一轮实机发现树冠遮住莎莎标志左侧；将独立标志向同一门楣右侧移动到 X=4.8，不移动街树或改变通行空间。</li>
+</ul>
+<p>两店门牌得到核实，但没有测绘连续立面：当前 30 米片段中的邻接、宽度、入口与树木位置仍是压缩编排。官网照片没有明确拍摄日期，不能据此声称整个街面在当日完全相同。历史资料中的莎莎 68–80 号店不混入当前 86–98 号记录。</p>
+<h3 id="tst-canton-demo-brands-v1-13">来源与资产</h3>
+<ul>
+<li><a href="https://www.apple.com/hk/en/retail/cantonroad/">Apple 官方店页</a>及其<a href="https://rtlimages.apple.com/cmc/dieter/store/16_9/R499.png?interpolation=progressive-bicubic&amp;output-format=jpg&amp;output-quality=85&amp;resize=2880%3A1612">官方外观照片</a>。照片只作本地参考，不随仓库再分发。</li>
+<li><a href="https://www.sasa.com.hk/v2/Shop/StoreList/17">莎莎官方门店目录</a>：通过实际加载的可见门店列表核对，静态网页抓取只有空壳，不能当作不存在门店的证据。</li>
+<li><a href="https://img2.cdn.91app.hk/o2o/image/593ffec4-f070-4cdf-a397-6f553f5dc974.jpg">莎莎该店实景照片</a>与<a href="https://cms-static.cdn.91app.hk/images/original/17/77cbf5b3-54bb-4710-a383-4e4f36302618-1765160784-uecg2dclbo_d.png">官网标识原件</a>。照片只作参考；标识原件保存 SHA256。</li>
+<li><a href="../../assets/blocks/tst-canton-demo/generated/brands-v1/manifest.json">Apple 生成源与提示词</a>；<a href="../../assets/blocks/tst-canton-demo/authored/brands-v1/manifest.json">莎莎采用原件与来源</a>。品牌标识不适用本项目代码 MIT 或此前材质图集的 CC BY-SA 声明，归属说明随 Player 一并提供。</li>
+</ul>
+<h3 id="tst-canton-demo-brands-v1-20">制作方法</h3>
+<p>店招作为独立面片／门楣组件，不画死进建筑大贴图。Apple 使用一次 imagegen 参考生成；莎莎直接采用官方图形，避免生成模型改坏标准字。Unity UV 只选择洋红标志区域，排除原图下方灰色标语，保留原 PNG 像素。</p>
+<p>纹理 Point + mipmaps、最大 256、alpha clip 0.5；招牌低强度 emission 保持辨识度，招牌面片不烘焙 GI、不投影。静态门楣和柜台参与 GI，重新烘焙；小商品与动态角色不加入静态 lightmap。不能靠高 Bloom 把轮廓照成一团。品牌尺寸和颜色在实机截图检查，后续仍需整理像素边缘和店内陈列。</p>
+<p><code>AgentScripts/BrandCanton.cs</code> 的 <code>Apply</code> 为一次性修订，检测已有根节点后拒绝覆盖；<code>AdjustVisibility</code> 仅移动招牌并更新位置记录。使用 Unity CLI / Pipeline 的 <code>commands/scripts.md</code>、<code>commands/build-and-compilation.md</code> 和 <code>commands/capture.md</code> 工作流，无新增插件。采用资产、材质、场景、烘焙数据一起保存。</p>
+<h3 id="tst-canton-demo-brands-v1-28">验证与下一步</h3>
+<p>本批独立 Player、截图、构建和烘焙证据见 <a href="tst-canton-demo/brand-validation/README.md">验证目录</a>，保留上一批结果不覆盖。当前只落实 Apple 与莎莎；7-Eleven、麦当劳、银行等在未来所处街段核实后再加入，不能为“像香港”随机挂在未确认铺位。</p>
+<p>后续补连续街景、准确铺位边界、招牌厚度与侧招、开关门状态、店内品类陈列和橱窗反射；地图事实与设计编排继续分开。商标辨识度是场景验收项，不能以普通店名文字或生成图里的错字代替。</p></article><nav class="pager" aria-label="章节翻页"><a href="../07-validation/index.html">上一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
 function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
 window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));

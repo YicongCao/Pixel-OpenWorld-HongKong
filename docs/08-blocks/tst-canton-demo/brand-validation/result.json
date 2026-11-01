@@ -1,0 +1,30 @@
+{
+    "stage": "CantonRoadPolish",
+    "unityVersion": "6000.3.27f1",
+    "graphics": "Apple M5",
+    "limitations": "Automated world-space intents use the same CharacterController as keyboard input. Short traversal, not v0.1 10-minute performance or art acceptance.",
+    "passed": true,
+    "busCycles": 4,
+    "boardingViolations": 0,
+    "lightmaps": 1,
+    "lightProbes": 258,
+    "deliveries": 3,
+    "frames": 3477,
+    "waypointsReached": 12,
+    "waypointsExpected": 12,
+    "width": 1920,
+    "height": 1080,
+    "fallRecoveries": 0,
+    "elapsedSeconds": 59.03412628173828,
+    "distanceM": 216.59735107421876,
+    "p95FrameMs": 17.513124465942384,
+    "p99FrameMs": 17.735416412353517,
+    "observationSeconds": 0.0,
+    "memoryBytes": 155298395,
+    "finalPosition": {
+        "x": -30.932340621948243,
+        "y": 0.19499990344047547,
+        "z": 2.000002861022949
+    },
+    "errors": []
+}

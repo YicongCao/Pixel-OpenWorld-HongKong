@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-01",
+  "asset": "sasa-official.png",
+  "origin": "Official Sa Sa website header image, unmodified downloaded file",
+  "source": "https://cms-static.cdn.91app.hk/images/original/17/77cbf5b3-54bb-4710-a383-4e4f36302618-1765160784-uecg2dclbo_d.png",
+  "locator": "https://www.sasa.com.hk/v2/Shop/StoreList/17",
+  "store": "尖沙咀廣東道",
+  "address": "九龍油尖旺區尖沙咀廣東道86-98號文利大廈地下4-5號舖",
+  "verification": "Official visible store list: 九龍 > 油尖旺區; exact Canton Road entry viewed 2026-11-01",
+  "streetPhoto": "https://img2.cdn.91app.hk/o2o/image/593ffec4-f070-4cdf-a397-6f553f5dc974.jpg",
+  "sha256": "4b091da8d8dd1a89e4e86559500585703940cb0062c1b6ae87fba8d32a2f644e",
+  "adaptation": "Unity UV region isolates magenta wordmark from separate grey slogan; raw pixels preserved",
+  "brandRights": "Sa Sa mark remains its owner's mark; no implied endorsement or MIT/CC license for this brand asset",
+  "placement": "Two compressed prototype bays; street address verified, exact facade width and adjacency not surveyed"
+}

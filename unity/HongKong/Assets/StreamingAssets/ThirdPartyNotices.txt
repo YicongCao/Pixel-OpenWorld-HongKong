@@ -50,3 +50,14 @@ https://commons.wikimedia.org/wiki/File:Haiphong_Road_13-04-2024.jpg
 CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
 Changes: AI material/style adaptation, atlas extraction and pixel-scale import.
 Adapted material atlas and derived tile art are provided under CC BY-SA 4.0.
+
+Canton Road brand signs (2026-11-01)
+Apple sign: generated game interpretation, referenced from Apple's Canton Road
+store photo: https://www.apple.com/hk/en/retail/cantonroad/
+Sa Sa wordmark: official website header artwork; original pixels preserved,
+Unity UV region selects the magenta mark without the separate grey slogan.
+Source and SHA256: assets/blocks/tst-canton-demo/authored/brands-v1/manifest.json
+Store verification: https://www.sasa.com.hk/v2/Shop/StoreList/17
+Apple and Sa Sa marks remain their owners' marks. The software MIT license and
+the material-atlas CC BY-SA license above do not license these brand assets.
+No affiliation or endorsement is implied.

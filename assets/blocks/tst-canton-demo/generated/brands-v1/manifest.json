@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-01",
+  "asset": "apple-sign.png",
+  "generator": "imagegen built-in",
+  "prompt": "apple-prompt.txt",
+  "reference": "https://www.apple.com/hk/en/retail/cantonroad/",
+  "referenceImage": "https://rtlimages.apple.com/cmc/dieter/store/16_9/R499.png",
+  "sha256": "cdddaa74af1d2c8c8813ea381bb064d8d0c99ab0d2db176f755999765fc86c0a",
+  "usage": "Independent alpha-clipped emissive sign, 2.7m game height, 256 texture limit; generated interpretation, not official master art",
+  "brandRights": "Apple mark remains its owner's trademark; no implied endorsement or open-source licensing of marks"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "result": "Succeeded",
+  "buildId": "build_fe18a55ae0f8",
+  "platform": "StandaloneOSX",
+  "totalSizeBytes": 362006262,
+  "buildTimeMs": 5082,
+  "totalWarnings": 0,
+  "totalErrors": 0
+}

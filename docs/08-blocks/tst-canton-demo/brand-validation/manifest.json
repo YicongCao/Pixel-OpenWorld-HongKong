@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-01",
+  "buildId": "build_fe18a55ae0f8",
+  "source": ".local/canton-branding/player; independent StandaloneOSX Player",
+  "files": [
+    {
+      "file": "bake-audit.json",
+      "sha256": "a860ae8aa567dbe9ad85bfc7285071d6a783b1a1d8909a4752e67b33353a49da",
+      "bytes": 245
+    },
+    {
+      "file": "bake-result.json",
+      "sha256": "740b616891ddff55216473202efd2e0eadd488b7ee6f9a1e56cb1336c48f7850",
+      "bytes": 399
+    },
+    {
+      "file": "build.json",
+      "sha256": "4b651853a1b8d79e8d195ea307e308d719e3ec0834d140f4baa6bd390333a458",
+      "bytes": 215
+    },
+    {
+      "file": "day-dof.png",
+      "sha256": "db8a9c29d3e638e94bacd7755e35fcbee3634f27d12a0c7c1fbfab86148c603d",
+      "bytes": 1864971
+    },
+    {
+      "file": "pixel-mode-0.png",
+      "sha256": "7e89896b47ec39d0f48af56ea203b3133590f96019a3416298779e8582a904a6",
+      "bytes": 1988613
+    },
+    {
+      "file": "pixel-mode-2.png",
+      "sha256": "dabbad51c6660ab7b966f7f296ab312b718447b9f6256a9f53eb454abe2880d6",
+      "bytes": 836920
+    },
+    {
+      "file": "result.json",
+      "sha256": "0906b38b512e39733ba4f81e7b34752991b9f006093030e98ecb82129e8c9a6f",
+      "bytes": 906
+    },
+    {
+      "file": "returned.png",
+      "sha256": "bf5dc37cd513dc1255968fe51b90f1fbce7da87181566407712793d24f470689",
+      "bytes": 1357283
+    },
+    {
+      "file": "route-3.png",
+      "sha256": "15f8bee36b9909be9f8236bee82c2678d16320949708d13e23caac3e6802eedf",
+      "bytes": 1860165
+    },
+    {
+      "file": "runtime-log-summary.txt",
+      "sha256": "c7ea252854479a96a0b09552c79e0f60731086bd35cea4a7f796c35b20036a40",
+      "bytes": 92
+    },
+    {
+      "file": "start.png",
+      "sha256": "78320a3ffc21b24dc81a08ec647c9c3f76690aef9fee24d22c4495338666d8d2",
+      "bytes": 1913281
+    }
+  ]
+}
