@@ -73,7 +73,7 @@ def validate_link(source, url):
     if parsed.fragment and target in pages:
         check(unquote(parsed.fragment) in pages[target].ids, f'broken HTML anchor: {source.relative_to(ROOT)} -> {url}')
 
-md_files = sorted({p for folder in ('docs', 'assets', 'data', 'references') for p in (ROOT / folder).rglob('*.md')} | {ROOT / 'README.md', ROOT / 'AGENTS.md', ROOT / 'unity/README.md'})
+md_files = sorted({p for folder in ('docs', 'workflows', 'assets', 'data', 'references') for p in (ROOT / folder).rglob('*.md')} | {ROOT / 'README.md', ROOT / 'AGENTS.md', ROOT / 'unity/README.md'})
 for path in md_files:
     text = re.sub(r'```.*?```', '', path.read_text(), flags=re.S)
     for url in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', text):
@@ -95,13 +95,34 @@ for sub in ('street-life', 'hd2d-study'):
         check(path.is_file() and digest(path) == expected, f'derived output hash: {path}')
 migration = json.loads((DOCS / '07-validation/migration-map.json').read_text())
 source_urls = set(migration['external_source_urls'])
-current_urls = set(re.findall(r'\]\((https?://[^)]+)\)', '\n'.join(p.read_text() for p in DOCS.rglob('*.md'))))
+current_urls = set(re.findall(r'\]\((https?://[^)]+)\)', '\n'.join(p.read_text() for p in md_files)))
 check(source_urls <= current_urls, 'original external source URLs were lost')
 for item in migration['moved_files']:
     path = ROOT / item['to']
     check(path.is_file() and digest(path) == item['sha256'], f'migrated evidence bytes changed: {path}')
+workflow_migration = json.loads((DOCS / '07-validation/workflow-migration.json').read_text())
+workflow_moves = {item['from']: item['to'] for item in workflow_migration['moves']}
 for item in migration['sections']:
-    check((ROOT / item['target']).exists(), f'migration destination absent: {item["target"]}')
+    check((ROOT / workflow_moves.get(item['target'], item['target'])).exists(), f'migration destination absent: {item["target"]}')
+for old, new in workflow_moves.items():
+    check(not (ROOT / old).exists() and (ROOT / new).is_file(), f'workflow migration incomplete: {old} -> {new}')
+
+# Each executable workflow has one stable ID, a version, and a complete handoff contract.
+workflow_ids = {}
+workflow_index = (ROOT / 'workflows/README.md').read_text()
+for path in sorted((ROOT / 'workflows').glob('*/*.md')):
+    text = path.read_text()
+    match = re.search(r'工作流 ID：`(WF-[A-Z0-9]+)`', text)
+    check(bool(match), f'workflow ID missing: {path.relative_to(ROOT)}')
+    if match:
+        wid = match.group(1)
+        check(wid not in workflow_ids, f'duplicate workflow ID: {wid}')
+        workflow_ids[wid] = path
+        check(wid in workflow_index, f'workflow not catalogued: {wid}')
+    check(bool(re.search(r'版本：\d+\.\d+', text)), f'workflow version missing: {path}')
+    for heading in ('## 输入', '## 步骤', '## 输出', '## 验收与回退'):
+        check(heading in text, f'workflow contract missing {heading}: {path}')
+check(set(workflow_ids) == {'WF-BLOCK', 'WF-MAINTAIN', 'WF-HD2D', 'WF-LIGHT', 'WF-SCENE', 'WF-ITERATE', 'WF-CHAR', 'WF-BUILDING', 'WF-PROPS'}, 'workflow routing IDs mismatch')
 
 expected_images = {digest(p) for p in (ROOT / 'assets/concepts').rglob('*.png')}
 expected_images.add(digest(DOCS / '03-hd2d/figures/corridor-projection.png'))
@@ -121,7 +142,7 @@ for name in ('build_report.py', 'build_hd2d_study.py'):
     text = (ROOT / 'scripts' / name).read_text()
     check('docs/research' not in text and '香港像素漫游策划案.html' not in text, f'obsolete output path: {name}')
 
-checks.update(chapters=len(catalog), markdown_files=len(md_files), local_links=link_count,
+checks.update(chapters=len(catalog), workflows=len(workflow_ids), workflow_migrations=len(workflow_moves), markdown_files=len(md_files), local_links=link_count,
               embedded_images=len(actual_images), original_data_hashes=len(original['outputs']),
               migrated_files=len(migration['moved_files']), external_sources_preserved=len(source_urls))
 result = {'scope': 'documentation structure, offline references and preserved data; not gameplay',

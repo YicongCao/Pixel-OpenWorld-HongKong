@@ -3,8 +3,10 @@
   "passed": true,
   "checks": {
     "chapters": 8,
-    "markdown_files": 65,
-    "local_links": 894,
+    "workflows": 9,
+    "workflow_migrations": 4,
+    "markdown_files": 75,
+    "local_links": 980,
     "embedded_images": 10,
     "original_data_hashes": 36,
     "migrated_files": 8,
@@ -12,13 +14,13 @@
   },
   "errors": [],
   "html_sha256": {
-    "docs/01-vision/index.html": "ccc5c868c2d11a9585d32da6a907ab283c18bbb2fb1877af559a90733448c561",
-    "docs/02-geography/index.html": "99f4b80c9ca79920175ebfbe3aa1f57281fbe561bc87620af11ccb7ce4c62424",
-    "docs/03-hd2d/index.html": "ffe451dc762ee38258d9deaa9a4c6cc927c7a6ab1a0e0027eb279a121154185a",
-    "docs/04-engineering/index.html": "529a7caa46182d1fdba04e75ed21a2d46e6a4f6b6915249d564c129e1d5cc8ee",
-    "docs/05-street-life/index.html": "147f0f4eeb6364d92c9c0f9e22c8f7360621136b71357ab0680458633ac41db5",
-    "docs/06-production/index.html": "5e9093cd2e0394c75854d2f9846241d3c3095efb31d56f84e64e720e1c1dcccc",
-    "docs/07-validation/index.html": "a506cf414f7fccd9cff52ef78444d481ffff35dfb053e8d96f18d3a3324c7b07",
-    "docs/08-blocks/index.html": "4e0e35f66a898d5c1e6951d436037085975f9a666eac44d47f50aef048d3ffa4"
+    "docs/01-vision/index.html": "bc98acba45f51705ff934c9f83842247b502d066a05cf3a4d1459ec0504cae4e",
+    "docs/02-geography/index.html": "8d5e66ed3b8c557fa89883a56dbd5a77b457715bf5f32c544c1b9161c94a10c6",
+    "docs/03-hd2d/index.html": "fbbd3689cd8d69facb4f4526e8c7dca8abf9b570ea28733ea42325278e97a1c6",
+    "docs/04-engineering/index.html": "5f1444c62cf0bac36b30898d61130479aa44ad34235897116e952778adf70b78",
+    "docs/05-street-life/index.html": "988521b906115007756d663687e7290ac4d1a8b59b5af0f8380b82118493e964",
+    "docs/06-production/index.html": "444c9a3ed8572d6533827373932619a945ac35791560ce0d95ae56b0aeda7709",
+    "docs/07-validation/index.html": "ff64dc260304beb2de152d03542aab6c3c64f6b6abe5f92f97dd69a5473471c9",
+    "docs/08-blocks/index.html": "b227266cf822bce612c464adc95c2d6b6ef5913a2fa7f54f5a7896a65019cf62"
   }
 }

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-01",
+  "source_commit": "7733aa26e92654bcc28fa598590843228143fe00",
+  "note": "Historical evidence remains unchanged. source_sha256 describes pre-migration documents; destinations are maintained workflows, not immutable byte copies.",
+  "moves": [
+    {
+      "from": "docs/06-production/街区还原工作流.md",
+      "to": "workflows/00-project/街区还原工作流.md",
+      "source_sha256": "52ae48fa672b25848f74228d7fc8d6035e67d7585266197e6db9ce1727cddfcb"
+    },
+    {
+      "from": "docs/06-production/hd2d-production-workflow.md",
+      "to": "workflows/10-hd2d/hd2d-production-workflow.md",
+      "source_sha256": "9e7e669891aaa195d178c10aef90d1ece5e4e71474467b9b53e98e0f38c6cd23"
+    },
+    {
+      "from": "docs/04-engineering/hd2d-camera-lighting.md",
+      "to": "workflows/10-hd2d/camera-lighting.md",
+      "source_sha256": "deed0d9db35ffd44d2ac554c7c6b66bb8c758f77c3cb77ba90ad171c6a27c22e"
+    },
+    {
+      "from": "docs/03-hd2d/character-production.md",
+      "to": "workflows/20-assets/character-production.md",
+      "source_sha256": "05490fd83b1f911f633081a63c6b095e357c9ff7597f0ada086b0f34a782db2a"
+    }
+  ]
+}

@@ -18,7 +18,7 @@
 
 真实照片与参考索引归 `references/blocks/<block_id>/`；地理数据归 [data](../data/Readme.md)；实机截图、录像和验收归 [街区档案](../docs/08-blocks/README.md)。本目录不是 Unity 工程 `Assets/`，导入时不混淆两者。
 
-完整生产顺序见 [街区还原工作流](../docs/06-production/街区还原工作流.md)，首版范围见 [v0.1 规划](../docs/06-production/v0.1-implementation.md)。新增资产后更新对应 manifest 和本目录索引，按根约定验证、提交并推送。
+完整生产顺序见 [街区还原工作流](../workflows/00-project/街区还原工作流.md)，首版范围见 [v0.1 规划](../docs/06-production/v0.1-implementation.md)。新增资产后更新对应 manifest 和本目录索引，按根约定验证、提交并推送。
 
 首批：[弥敦道 × 海防道概念与输入记录](blocks/tst-nathan-haiphong/generated/concepts/manifest.json)，用途与偏差见 [检查记录](../docs/08-blocks/tst-nathan-haiphong/assets.md)。该街区 `authored/` 尚未创建。
 

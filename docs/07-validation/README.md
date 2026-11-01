@@ -10,3 +10,5 @@
 - [验证记录及证据边界](evidence.md)
 
 - [2026-11-01 本地 Unity 环境与独立 Player 验证](../04-engineering/local-development.md)
+
+- [工作流拆分与反馈闭环记录](workflow-reorganization.md)：目录迁移、流程合同和本次文档验证。

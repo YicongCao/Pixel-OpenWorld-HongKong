@@ -30,8 +30,8 @@
       "street-camera.md",
       "art-direction.md",
       "concept-gallery.md",
-      "character-production.md",
-      "octopath2-composition-study.md"
+      "octopath2-composition-study.md",
+      "octopath2-interview-lessons.md"
     ]
   },
   {
@@ -44,7 +44,6 @@
       "engine-selection.md",
       "runtime-architecture.md",
       "local-development.md",
-      "hd2d-camera-lighting.md",
       "github-hd2d-reuse.md"
     ]
   },
@@ -55,22 +54,21 @@
     "description": "设施资产、人群、劳动、交通活动、声景与天气。",
     "documents": [
       "README.md",
-      "street-life.md"
+      "street-life.md",
+      "hong-kong-signage-reference.md"
     ]
   },
   {
     "id": "06-production",
     "number": "06",
-    "title": "资产生产与实施",
-    "description": "远期 Roadmap、首版实施任务、技术样板与资产生产。",
+    "title": "生产研究与实施规划",
+    "description": "Roadmap、实施计划、资产复用研究与专业来源；执行步骤见 workflows。",
     "documents": [
       "README.md",
       "roadmap.md",
       "v0.1-implementation.md",
       "prototype.md",
       "asset-pipeline.md",
-      "街区还原工作流.md",
-      "hd2d-production-workflow.md",
       "hd2d-production-sources.md"
     ]
   },
@@ -82,7 +80,8 @@
     "documents": [
       "README.md",
       "acceptance.md",
-      "evidence.md"
+      "evidence.md",
+      "workflow-reorganization.md"
     ]
   },
   {
@@ -101,7 +100,8 @@
       "tst-canton-demo/polish-v1.md",
       "tst-canton-demo/brands-v1.md",
       "tst-canton-demo/concept-gap-v1.md",
-      "tst-canton-demo/apple-bay-v1.md"
+      "tst-canton-demo/apple-bay-v1.md",
+      "tst-canton-demo/scene-inventory.md"
     ]
   }
 ]

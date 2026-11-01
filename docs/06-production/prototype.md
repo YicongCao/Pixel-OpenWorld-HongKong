@@ -8,7 +8,7 @@
 
 最新选段建议见 [弥敦道—海防道／A1 档案](../08-blocks/tst-nathan-haiphong/plan.md)，取代早期广东道街角优先方案。先做 20—30 米小样，再扩主街与支路，最终边界随人行连通性确定。无需一开始做完整海防道或把 Apple、站口、雪糕车强行放在一起。另设不计入真实地图的阶梯／天桥测试件。
 
-生产顺序与交接物按 [HD-2D 制作 SOP](hd2d-production-workflow.md) 执行。当前 URP 17.3 源码核查发现正交景深风险，因此先验证弱透视＋原生 DOF；正交比较需另列深度／景深验证，不作为等成本替换。详见 [镜头与渲染实施](../04-engineering/hd2d-camera-lighting.md)。
+生产顺序与交接物按 [HD-2D 制作 SOP](../../workflows/10-hd2d/hd2d-production-workflow.md) 执行。当前 URP 17.3 源码核查发现正交景深风险，因此先验证弱透视＋原生 DOF；正交比较需另列深度／景深验证，不作为等成本替换。详见 [镜头与渲染实施](../../workflows/10-hd2d/camera-lighting.md)。
 
 | 验证项 | 通过条件 | 失败时如何处理 |
 | --- | --- | --- |

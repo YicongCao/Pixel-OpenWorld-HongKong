@@ -1,10 +1,10 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>06 · 资产生产与实施 — 香港像素漫游</title><style>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>06 · 生产研究与实施规划 — 香港像素漫游</title><style>
 :root{--ink:#183c34;--muted:#63756c;--paper:#f8f5ec;--line:#d6dfd2;--accent:#a94e32}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}a{color:var(--accent);text-underline-offset:4px}header{background:#173d34;color:#fff8e9;padding:42px max(5vw,24px)}header small{color:#b7cebb;letter-spacing:2px}header h1{font-size:clamp(29px,4vw,48px);line-height:1.3;margin:12px 0}header p{margin:8px 0;max-width:800px;color:#d6e2d5}.layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:42px;max-width:1440px;margin:auto;padding:30px 32px}.sidebar{position:sticky;top:20px;align-self:start;max-height:94vh;overflow:auto}.sidebar a{display:block;text-decoration:none;padding:8px 12px;color:var(--ink);border-radius:6px}.sidebar a[aria-current=page]{background:#dce7d6;font-weight:650}.sidebar strong{display:block;font-size:12px;color:var(--muted);letter-spacing:1px;margin:16px 12px 7px}.sidebar .local a{font-size:13px;line-height:1.6;padding:6px 12px}.sidebar .source{border-top:1px solid var(--line);margin-top:18px;padding-top:10px;font-size:12px}main{min-width:0}article{margin-bottom:42px}h2{font-size:27px;line-height:1.45;margin:30px 0 16px}h3{font-size:22px;line-height:1.5;margin-top:38px;padding-top:22px;border-top:1px solid var(--line)}h4{font-size:18px}h2,h3,h4,article,section{scroll-margin-top:24px}p{margin:14px 0}li{margin:9px 0}strong{color:#16503f}code{background:#e9eddf;border-radius:4px;padding:2px 5px;font-size:.87em;overflow-wrap:anywhere}pre{background:#e9eddf;border-radius:8px;padding:20px;overflow:auto}pre code{white-space:pre}figure{margin:24px 0;background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden}figure img{display:block;width:100%;height:auto}figcaption{font-size:13px;color:var(--muted);padding:10px 16px}.table-scroll{overflow:auto;margin:22px 0}table{border-collapse:collapse;width:100%;min-width:610px;font-size:14px;line-height:1.7}td,th{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:#e1e9da}.status,.note{font-size:14px;padding:14px 18px;border-left:4px solid #ad7147;background:#f0e8d8;margin:18px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}.stat{background:#e1e9da;padding:14px;border-radius:8px}.stat b{display:block;font-size:24px}.stat span{font-size:12px}.map-tools{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0;font-size:13px}.map-tools label{white-space:nowrap;cursor:pointer}.map-tools button{border:0;border-radius:5px;background:#245443;color:white;padding:8px 14px;cursor:pointer}#map-wrap{border:1px solid var(--line);overflow:hidden;border-radius:8px}#geo-map{display:block;width:100%;max-height:760px;touch-action:none;cursor:grab}#geo-map.dragging{cursor:grabbing}#map-info{font-size:13px;color:var(--muted);min-height:48px;overflow-wrap:anywhere}.pager{display:flex;gap:20px;justify-content:space-between;border-top:1px solid var(--line);padding:24px 0}.footer{font-size:12px;color:var(--muted);padding:14px 0}details{border:1px solid var(--line);border-radius:8px;padding:0 18px;margin:25px 0}summary{cursor:pointer;font-size:18px;font-weight:600;padding:16px 0}@media(max-width:900px){.layout{display:block;padding:22px 18px}.sidebar{position:static;max-height:none;margin-bottom:26px}.sidebar .chapters{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));font-size:13px}.sidebar .local{display:none}.sidebar .source{display:flex;flex-wrap:wrap}.stats{grid-template-columns:repeat(2,1fr)}header{padding:28px 20px}h2{font-size:24px}}@media print{.sidebar,.pager,.map-tools{display:none}.layout{display:block}header{background:white;color:#173d34}header p{color:#173d34}figure{break-inside:avoid}}
 </style></head><body>
-<header><small>香港像素漫游 / 香港 HD-2D 研究 / 06 OF 08</small><h1>资产生产与实施</h1><p>远期 Roadmap、首版实施任务、技术样板与资产生产。</p></header>
-<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html" aria-current="page">06 · 资产生产与实施</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">06 · 资产生产与实施</a><a href="#doc-roadmap">项目远期 Roadmap</a><a href="#doc-v0.1-implementation">v0.1 实施规划：一条会生活的香港街道</a><a href="#doc-prototype">首个 HD-2D 技术样板</a><a href="#doc-asset-pipeline">资产生产与复用</a><a href="#doc-街区还原工作流">香港 HD-2D 街区还原工作流</a><a href="#doc-hd2d-production-workflow">HD-2D 素材建模与拼装工作流</a><a href="#doc-hd2d-production-sources">HD-2D 制作：专业来源与核查记录</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
-<main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">06 · 资产生产与实施</h2>
-<p>远期 Roadmap、首版实施任务、技术样板与资产生产。当前已进入 <a href="../08-blocks/index.html#doc-tst-nathan-haiphong-implementation">v0.1 首批实施</a>，有可走路线与街角样板，尚无完整首版；游戏版本号与既有策划文档版本号分别管理。</p>
+<header><small>香港像素漫游 / 香港 HD-2D 研究 / 06 OF 08</small><h1>生产研究与实施规划</h1><p>Roadmap、实施计划、资产复用研究与专业来源；执行步骤见 workflows。</p></header>
+<div class="layout"><aside class="sidebar"><strong>主章节</strong><nav class="chapters" aria-label="主章节"><a href="../01-vision/index.html">01 · 项目总纲</a><a href="../02-geography/index.html">02 · 地理与交通</a><a href="../03-hd2d/index.html">03 · HD-2D 空间与美术</a><a href="../04-engineering/index.html">04 · 引擎与运行架构</a><a href="../05-street-life/index.html">05 · 街道生活</a><a href="../06-production/index.html" aria-current="page">06 · 生产研究与实施规划</a><a href="../07-validation/index.html">07 · 验证与证据</a><a href="../08-blocks/index.html">08 · 街区档案</a></nav><nav class="local" aria-label="本章资料"><strong>本章资料</strong><a href="#doc-readme">06 · 生产研究与实施规划</a><a href="#doc-roadmap">项目远期 Roadmap</a><a href="#doc-v0.1-implementation">v0.1 实施规划：一条会生活的香港街道</a><a href="#doc-prototype">首个 HD-2D 技术样板</a><a href="#doc-asset-pipeline">资产生产与复用</a><a href="#doc-hd2d-production-sources">HD-2D 制作：专业来源与核查记录</a></nav><div class="source"><a href="../README.md">研究总目录 · Markdown</a><a href="../Agent.md">Agent 阅读约定</a><a href="../Skill.md">按任务读取研究</a></div></aside>
+<main><div class="status">研究基线 2026-11-01 · 当前没有已验收的可玩街区；概念、候选方案与历史检查分别标记。</div><article id="doc-readme"><h2 id="readme-0">06 · 生产研究与实施规划</h2>
+<p>远期 Roadmap、首版实施任务、技术样板与专业生产来源。执行方法统一在 <a href="../../workflows/README.md">workflows</a>。当前已进入 <a href="../08-blocks/index.html#doc-tst-nathan-haiphong-implementation">v0.1 首批实施</a>，有可走路线与街角样板，尚无完整首版；游戏版本号与既有策划文档版本号分别管理。</p>
 <p><a href="../README.md">研究总目录</a> · <a href="index.html">本章图文版</a></p>
 <h3 id="readme-6">本章资料</h3>
 <ul>
@@ -12,9 +12,12 @@
 <li><a href="#doc-v0.1-implementation">v0.1 实施规划</a>：首版功能合同、8 个任务包、依赖、验证动线、性能目标与交付物。</li>
 <li><a href="#doc-prototype">首个 HD-2D 技术样板</a>：首版制作中途的镜头、材质、控制器和工具验证。</li>
 <li><a href="#doc-asset-pipeline">资产生产与复用</a>：模块、手工资产保护与第二街段的成本验证。</li>
-<li><a href="#doc-街区还原工作流">街区还原工作流</a>：取证、概念、生产资产、Unity 街道生活与动线验证的完整执行流程。</li>
-<li><a href="#doc-hd2d-production-workflow">HD-2D 素材建模与拼装 SOP</a>：镜头合同、角色小样、模块建模／UV／贴图、Unity 拼装及扩产门槛。</li>
 <li><a href="#doc-hd2d-production-sources">专业资料与源码核查</a>：开发团队访谈、官方制作说明、当前包源码及未证实参数。</li>
+</ul>
+<h3 id="readme-14">相关执行流程（存放于 workflows）</h3>
+<ul>
+<li><a href="../../workflows/00-project/街区还原工作流.md">街区还原工作流</a>：取证、概念、生产资产、Unity 街道生活与动线验证的完整执行流程。</li>
+<li><a href="../../workflows/10-hd2d/hd2d-production-workflow.md">HD-2D 素材建模与拼装 SOP</a>：镜头合同、角色小样、模块建模／UV／贴图、Unity 拼装及扩产门槛。</li>
 </ul></article><article id="doc-roadmap"><h2 id="roadmap-0">项目远期 Roadmap</h2>
 <p>2026-11-01 · 产品路线规划 r1 · 状态：路线拟定；V1-00 环境验证完成，V1-01 选段／实景及概念研究已推进，街区实机制作未开始。</p>
 <p><strong>先做一条值得步行和停留的香港街道，再把同样的质量扩展为相连街区，最终形成可持续扩充的九龙 HD-2D 步行世界。</strong> 地图扩大与生活丰富必须一起推进，不以地标数量代替体验。</p>
@@ -177,7 +180,7 @@
 <p>本文是 <a href="#doc-v0.1-implementation">v0.1 实施规划</a> 中 V1-02／03 的技术验证依据，不是完整首版的交付范围。旧样板尺寸只作候选，最终街段由 V1-01 核实站口、站位与真实通行后确定。</p>
 <h3 id="prototype-6">锁定方案前必须通过的小样</h3>
 <p>最新选段建议见 <a href="../08-blocks/index.html#doc-tst-nathan-haiphong-plan">弥敦道—海防道／A1 档案</a>，取代早期广东道街角优先方案。先做 20—30 米小样，再扩主街与支路，最终边界随人行连通性确定。无需一开始做完整海防道或把 Apple、站口、雪糕车强行放在一起。另设不计入真实地图的阶梯／天桥测试件。</p>
-<p>生产顺序与交接物按 <a href="#doc-hd2d-production-workflow">HD-2D 制作 SOP</a> 执行。当前 URP 17.3 源码核查发现正交景深风险，因此先验证弱透视＋原生 DOF；正交比较需另列深度／景深验证，不作为等成本替换。详见 <a href="../04-engineering/index.html#doc-hd2d-camera-lighting">镜头与渲染实施</a>。</p>
+<p>生产顺序与交接物按 <a href="../../workflows/10-hd2d/hd2d-production-workflow.md">HD-2D 制作 SOP</a> 执行。当前 URP 17.3 源码核查发现正交景深风险，因此先验证弱透视＋原生 DOF；正交比较需另列深度／景深验证，不作为等成本替换。详见 <a href="../../workflows/10-hd2d/camera-lighting.md">镜头与渲染实施</a>。</p>
 <div class="table-scroll"><table>
 <tr><th>验证项</th><th>通过条件</th><th>失败时如何处理</th></tr>
 <tr><td>空间与镜头</td><td>横向步行、深入支路、返回主街均能判断方向；双侧商铺有合理呈现；镜头区切换不反转输入</td><td>调角度／视距／切镜位置，再决定弱透视或正交</td></tr>
@@ -198,197 +201,8 @@
 <p>生成输出与手工修订分别放 <code>generated/</code> 和 <code>authored/</code>；构建脚本只刷新 generated。已精修图块通过清单选择，重跑脚本不能覆盖 authored。这个约定直接针对旧项目程序化生成覆盖手工精修的风险。</p>
 <p>首街段通过后，用同一套素材做第二条相邻街段。若主要时间仍用于逐栋重画、几乎没有模块复用，就暂停扩区，先修改资产颗粒度与镜头。此时新增更多自动化工具通常不能解决问题。</p>
 <h3 id="asset-pipeline-20">执行工作流</h3>
-<p>完整采集、真实街景图生图、贴图、按需 Blender 建模及 Unity 导入步骤由 <a href="#doc-街区还原工作流">街区还原工作流</a> 维护；本章记录制作建议，不复制一份易分叉的执行规则。</p>
-<p>专业资料支持的具体制作方法见 <a href="#doc-hd2d-production-workflow">HD-2D 素材建模与拼装 SOP</a>：镜头合同、角色小样、模块接口／UV／贴图、模型导出、预制体拼装和实机门槛。<a href="../03-hd2d/index.html#doc-character-production">角色方向与动作</a> 和 <a href="../04-engineering/index.html#doc-hd2d-camera-lighting">镜头／受光／景深</a> 分别维护细则；旧预算里的四向与配色数量不是最终制作标准。</p></article><article id="doc-街区还原工作流"><h2 id="街区还原工作流-0">香港 HD-2D 街区还原工作流</h2>
-<p>本文件维护街区制作流程，由根目录 <a href="../../AGENTS.md">AGENTS.md</a> 引用；常驻项目约定与提交／推送规则统一在该入口维护。用户要求还原一个香港街区时，执行下面的完整链路；仅研究、仅修图或局部修复的请求按指定范围执行。沿用已有授权，例行可逆操作不反复确认。不要把本文件理解为现在就开始制作未指定的街区。</p>
-<p>文中的代码路径均相对于仓库根目录；<code>../game-research</code> 指仓库的同级工程，不相对于本文件所在目录。</p>
-<h3 id="街区还原工作流-6">项目目标与固定边界</h3>
-<ul>
-<li>制作以《八方旅人》为参照的 HD-2D 香港步行世界：像素角色、像素纹理的立体街景、横向主街、纵深巷道、真实遮挡、克制的景深与光照。主角是三角白帽、白衣小巫师。</li>
-<li>核心体验是沉浸式香港街道生活。地标、普通建筑、交通设施、人群、劳动活动、声景、时间与天气共同验收；不以空建筑和随机行人替代城市生活。</li>
-<li>首版无剧情、战斗或玩家可乘交通。汽车行驶、公交靠站、NPC 上下车和站口进出属于环境模拟，不自动扩展为玩家驾驶、乘车或完整站内空间。</li>
-<li>当前实现目标为 Unity 3D 空间与 URP 3D 渲染路径；框架、包版本及性能仍须验证。参考 <code>docs/01-vision/vision.md</code>、<code>docs/03-hd2d/street-camera.md</code> 和 <code>docs/05-street-life/street-life.md</code>。</li>
-<li>保留真实街道方位、路口顺序、建筑街侧、海陆关系和通行楼层。镜头方向与地理方向分开；不可为了构图搬动真实地标或虚构连接，不把整个尖沙咀夸张成山坡。</li>
-</ul>
-<h3 id="街区还原工作流-14">0. 开始任务与确定交付范围</h3>
-<ol>
-<li>读取本文件、<code>AGENTS.md</code>、<code>docs/README.md</code>、<code>docs/Agent.md</code> 与 <code>docs/Skill.md</code>，涉及数据先读 <a href="../../data/Readme.md">data/Readme.md</a> 与 <a href="../../data/Agent.md">data/Agent.md</a>，涉及资产先读 <a href="../../assets/Readme.md">assets/Readme.md</a> 与 <a href="../../assets/Agent.md">assets/Agent.md</a>；再按任务读取对应主题、目标街区已有资料与未完成记录，检查 Git 状态和远程。复用现有工作，不从零重复采集。</li>
-<li>将用户地名落成稳定 <code>block_id</code>、地理边界、目标街段、出入口和一条玩家验证路线。区分本次可走区、仅可见背景、后续扩展区；边界未指定时先选择可独立验证的小街段并说明假设。</li>
-<li>明确视角、主要街道方向、参考年代、时段／天气和本次必须出现的生活活动。只有缺失信息会改变关键地理或交付范围时才询问；其余取可撤回的初值推进。</li>
-<li>在 <code>docs/08-blocks/&lt;block_id&gt;/plan.md</code> 记录本次范围、步骤、依赖、验收与缺口。后续每阶段更新实际状态，不能把计划标为完成。</li>
-</ol>
-<h3 id="街区还原工作流-21">1. 从 game-research 建立逻辑骨架</h3>
-<ol>
-<li>只读检查相邻 <code>../game-research</code> 的香港数据目录、目录索引、README 和 manifest；本项目先读 <code>data/hong-kong/README.md</code>。优先复用本仓库已有对应快照，仅追加所需缺项与更新。</li>
-<li>按选区和必要缓冲提取道路、建筑脚印、POI、地形／高程依据、三维行人路径、公交／小巴站点与线路、港铁站点／出入口／街道图／布局图，以及相关城建设施资料。拷贝所需原件或可追溯派生数据到 <code>data/blocks/&lt;block_id&gt;/</code>，不让运行时依赖相邻仓库。</li>
-<li>每个来源记录来源仓库相对路径、发布者／原始 URL、快照及采集日期、SHA-256、许可／署名说明、CRS／单位／高程基准、筛选规则及覆盖缺口；派生结果另有输出哈希与复现命令。现有公共数据可按源 ID 引用，不为每街区重复复制完整大包。</li>
-<li>公交使用完整表，不把增量表当全量；保留营办者、线路方向、站序和站位。区内截取站序不等于完整线路，也不是车辆实际行驶轨迹。必要时保留区外相邻站作上下文，明确截断位置。</li>
-<li>经纬度、EPSG:2326 米制与 HKPD 高程分开；三维行人路径不是地形 DEM。楼梯、扶梯、桥、隧道、升降机保留 <code>level_id</code> 和有证据的连接；不能因平面相交或距离近就自动互通。</li>
-<li>生成带北箭头、比例与来源的逻辑骨架图：可走区域、建筑脚印、道路／车道候选、路口、交通站位、跨层通道、地标及服务门候选。人工核对真正可通行关系后，另存游戏布局与压缩说明。</li>
-</ol>
-<p>完成条件：数据能追溯，逻辑骨架能够解释主角从哪里走到哪里、车辆在哪里运行、人群从哪里出现或离开；未知位置明确标为待核实，不用生成图补地理事实。</p>
-<h3 id="街区还原工作流-32">2. 在线采集与核对真实街景</h3>
-<ol>
-<li>查询目标街区的实际街景、官方设施／运营商图片、公开可访问的街道照片及必要的历史资料。地图和运营商官网核对身份、地址、出口和站位，照片核对立面、街道家具、视线与生活细节。</li>
-<li>参考至少覆盖本次关键位置：主街双侧立面、连接巷口、街角转折、重要高差，以及涉及的公交站／地铁口；有资料缺口就缩小或标记该部分，不拿其他街区图片冒充现场。</li>
-<li>实际查看图片，记录可确定的位置、朝向、拍摄／发布年代和可信度。区分同名地点、同一建筑不同立面、历史照片与当前状态；不将搜索缩略图标题当成位置证明。</li>
-<li>在 <code>references/blocks/&lt;block_id&gt;/index.json</code> 记录原网页 URL、原图 URL（可得时）、作者／发布者、日期、位置／方向、用途、许可或再分发状态、文件哈希及对应 <code>source_id/place_id</code>。</li>
-<li>可保存且可入库的参考原件放同目录。仅能查看或不宜再分发的图片保留链接和观察记录，不将受限原件提交远程；临时文件放被忽略的 <code>.local/</code>。遵守来源访问条件，不绕过登录／下载限制。</li>
-<li>用照片修正“待核实”的资产与活动候选，注明证据；不以主观印象覆盖原地图。人群身份、日程、卸货频率和雪糕车驻点不是 GIS 自动提供的数据。</li>
-</ol>
-<p>完成条件：每个关键视觉锚点能对应实际街景；参考图与逻辑骨架之间的冲突、年代差异和遮挡缺口有记录。</p>
-<h3 id="街区还原工作流-43">3. 用实际参考图生成 HD-2D 概念图</h3>
-<ol>
-<li>制作一张简化布局／镜头引导图，标注主街、支路、建筑街侧、高差、相机方向、近中远景和主角路线。必要时先用简单灰盒检查视线，避免要求图像模型从复杂地图自行推理全部几何。</li>
-<li>调用 imagegen 前读取其技能和当前工具说明，实际查看准备输入的参考图片。使用工具支持的参考图参数传入真实街景及布局图；不能只写“参考某街景”就声称完成图生图。无法传入必要参考时，记录缺口，不把纯文生图标成基于照片的还原。</li>
-<li>明确哪些输入负责地理布局，哪些负责建筑外观，哪些负责风格；构图只在已核对骨架内调整。先生成与目标日常游戏镜头一致的一幅，再按需要探索同机位昼夜／天气变体。</li>
-<li>提示词必须包含下面的要素，按实际街区替换，不把所有香港元素硬塞进一图：</li>
-</ol>
-<pre><code>任务：把参考图中的 [真实街区/街段] 转化为用于 Unity 制作的 HD-2D 游戏场景概念。
-依据：布局图控制道路、建筑街侧、路口顺序与高差；街景图 A/B/C 控制指定立面、店铺与交通设施。保留这些约束，不移动或新增地标来改善构图。
-视角：接近《八方旅人》的日常探索镜头；固定低斜俯视、弱透视，俯角以约 25–35°为起点；非垂直 TopDown，非街景人眼摄影。镜头从 [方向] 看向 [方向]，主街在屏幕中主要横向延伸。
-空间：主街有可走宽度；[实际巷道/连接路] 向纵深延伸；呈现可读的街角、侧墙、雨篷、前后建筑重叠和有依据的台阶／平台。前景遮挡、中景可走区、远景天际线层次清楚。
-美术：清晰的像素人物，像素纹理的简化立体建筑与道具，统一颗粒和材质语言；不做写实背景贴几个像素人物，不用整幅模糊掩盖细节。
-光照与景深：真实体积受光、接触阴影、克制的光晕；主角及主要行走区清楚，近远景适度虚化，纵深通路仍可辨认。
-角色与生活：三角白帽白衣小巫师，脚底与尺度清晰；按街段证据布置 [候车/卸货/站口出入/停留等]，留出主角路线。车辆按香港道路方向运行。
-标识：使用已核实的商铺、港铁出口和站牌位置；重要繁体中文／英文标识预留独立排字区域，生成文字不是最终生产文字。
-用途：构图、模块拆分和灯光参考；不是实机截图，不据此推导隐藏几何或真实坐标。</code></pre>
-<ol>
-<li>生成图保存到 <code>assets/blocks/&lt;block_id&gt;/generated/concepts/</code>，附完整提示词、输入参考清单／哈希、工具、输出哈希和已知偏差。先检查镜头是否像 HD-2D、道路是否正确、前后层次是否可走、材质是否过度写实。</li>
-<li>若模型改变路口或楼层，修正引导图／提示词并迭代，不反过来修改真实骨架迁就错误图。概念未达到空间要求时，不进入批量贴图制作。</li>
-</ol>
-<h3 id="街区还原工作流-65">4. 将概念拆成可实现的资产包</h3>
-<p>本步至第 5 步必须结合 <a href="#doc-hd2d-production-workflow">HD-2D 素材建模与拼装 SOP</a> 执行。概念探索后，先确定灰盒镜头合同，再做 <a href="../03-hd2d/index.html#doc-character-production">角色方向与动作</a> 和一个商铺模块包；专业依据见 <a href="#doc-hd2d-production-sources">资料索引</a>，不要把试作帧数或像素尺寸当作行业标准。</p>
-<ol>
-<li>建立资产清单，区分复用模块与街区独有物件：地面、路缘、标线、墙面、窗格、建筑转角、雨篷、招牌、公交／汽车、站牌、地铁口、栏杆、树木、道具及人物。</li>
-<li>根据逻辑尺寸、目标镜头和概念生成纹理／图集／精灵；明确像素密度、物理尺寸、正交展开、可平铺边界、透明背景、留边与图集布局。贴图避免烘入不一致的镜头透视；动态受光资产避免画死与场景矛盾的强阴影。</li>
-<li>颜色、发光、透明裁切等需要的通道分别制作和验证；法线、深度、粗糙度不是从一张概念图自动得到的可靠真值。先验收一个商铺与一种地面，再扩展同类资产。</li>
-<li>店名、街名、出口号和路线文字单独排版，替换生成伪字。角色和 NPC 动画检查朝向、足底锚点、帧间体积；车辆检查尺度、朝向及车门位置。</li>
-<li>生成资产放 <code>generated/</code>，手工修订放 <code>authored/</code>，通过资产清单明确最终采用版本。重建脚本不得覆盖 <code>authored/</code>，不得把整幅概念图切层当作完整可行走世界。</li>
-</ol>
-<p>完成条件：资产能按清单对应地面、立面、遮挡、灯光和碰撞职责；纹理导入预览正确，不宣称概念图已经是游戏资源。</p>
-<h3 id="街区还原工作流-77">5. 按需建模并导入 Unity</h3>
-<p>运行时按 <a href="../04-engineering/index.html#doc-hd2d-camera-lighting">镜头、灯光与景深实施</a> 检查：先无后处理的深度／受光／遮挡，再加景深。Gaussian 只做远景虚化，Bokeh 才是前后景同时虚化的候选；当前 URP 17.3 正交 DOF 存在源码层面的兼容风险，不能默认可用。</p>
-<ol>
-<li>先用 Unity 基础几何和现有模块搭建逻辑骨架；规则路面、简单墙体和碰撞不必绕行 Blender。需要独特地标轮廓、复杂转角、台阶、站口、桥体、车辆或 UV／烘焙时使用 Blender。</li>
-<li>Blender 产物保持明确米制尺寸、局部原点、轴向与枢轴；建筑分拆底座、立面、侧面、屋顶／雨篷、招牌和灯具。隐藏侧面按镜头需求补齐，不逐栋恢复不可见的完整内部。</li>
-<li>保存可编辑源文件，并导出当前 Unity 工程实际支持的格式，记录导出设置；不要假设任意模型格式无需导入器即可使用。核对比例、朝向、UV、法线、材质和碰撞，避免原始巨大 GIS 坐标直接进入引擎。</li>
-<li>Unity 工程目录未确定时只建立一套明确的工程结构；锁定 Editor／URP／框架／包版本，保留 <code>Assets</code>、<code>.meta</code>、<code>Packages</code>、<code>ProjectSettings</code>，不提交 Library 等缓存。使用现有兼容组件，不并行堆叠输入／角色／镜头控制器。</li>
-<li>游戏世界采用 X=东、Z=北、Y=高度的明确映射，来源数据不变；真实高度与艺术压缩分别记录。使用 3D 碰撞与有证据的跨层连接，不用全局 Y-sort 代替楼层。</li>
-<li>配置区内稳定镜头、纵深跟随与必要镜头区过渡；像素角色使用逻辑根节点＋直立视觉子节点，验证受光、深度写入、裁切和稳定阴影。近景屋檐／树冠采用局部遮挡处理，景深保持主角与可走区清楚。</li>
-</ol>
-<p>完成条件：场景在 Unity 内能运行，导入无关键错误，主角可沿骨架行走；仅模型导入成功不算街区完成。</p>
-<h3 id="街区还原工作流-90">6. 添加香港街道活动</h3>
-<ul>
-<li>行人：有目的地的行走、等灯、候车、排队与停留；按世界位置和楼层寻路，入口／出口有合理边界，不能从墙里生成。近处完整行为，远处简化。</li>
-<li>汽车：按核实的道路方向、车道、信号和停靠空间运行，转弯不穿建筑、过街不撞人；真实车道资料不足时采用明确标注的局部编排路线，不伪称完整交通还原。</li>
-<li>公交与站点：按已核对车型／站位组织驶入、减速停靠、开门、下客／上客、队列变化、关门离站。站牌、车辆、车门和人流共用活动状态；不得用两站直线连线代替驾驶路线。</li>
-<li>地铁口：人流沿真实可用梯口／入口进出，与人行道和过街点相连；不制作的站内区域作为明确退出／生成边界。站口编号、楼层与运营条件单独核实，不能所有出口套同一通行模板。</li>
-<li>生活：按街区加入卸货收货、外卖取餐、雪糕售卖、朋友聚会、清洁或观景等，人物、道具、车辆与空间声源同步；活动有开始、过程、结束，不永久重复单一动作。</li>
-<li>声景与时间：视听使用一致的信号和活动状态；昼夜／晴雨影响照明与行为，不能只换滤镜。没有证据的日程标为设计编排，不冒充真实运营时刻表。</li>
-</ul>
-<p>完成条件：本街段至少一组完整微活动可观察，交通设施确实运作；只摆站牌、停一辆巴士或放随机巡游者不算完成相应功能。</p>
-<h3 id="街区还原工作流-101">7. 用主角执行动线并打磨</h3>
-<ol>
-<li>固定一条可重复路线及初始状态，实际控制白帽主角执行：主街双向走 → 转入纵深街巷 → 经过设施／人群 → 有开放高差时上下层 → 返回。路线不得只在无障碍空地里绕圈。</li>
-<li>在实际运行场景中检查脚底、碰撞、路缘、墙角、台阶／坡面、桥下遮挡、转角视野与景深；镜头区边界往返，确认输入不反向、镜头不反复跳变。检查暂停、区域切换及位置／楼层读档。</li>
-<li>原地观察至少两分钟，验证本次活动的开始与结束，公交靠站与站口人流不穿模、不堵死主角路线。按本次范围比较昼夜／天气预设；复杂活动未实现则明确列缺口。</li>
-<li>先跑编辑器，再导出本机可运行的独立 Player。记录机器、引擎／包版本、分辨率、可见角色／车辆、灯光、景深设置、帧时与内存；性能目标以当前策划案为准，禁止把编辑器观感称为独立 Player 结果。</li>
-<li>保存关键机位截图、必要的路线录像、运行日志和问题记录到 <code>docs/08-blocks/&lt;block_id&gt;/validation/</code>。有自动化能力就复用脚本／测试路线，但脚本文件存在或测试启动不算通过，必须检查实际返回与画面。</li>
-<li>按证据修复影响空间真实性、行走、遮挡和生活节奏的问题，重跑受影响路线；未涉及的检查无需全量重复。静态好看但无法自然走动时，优先修场景与镜头，不继续堆地标。</li>
-<li>工具、素材或硬件阻塞时保存当前成果、失败证据与可继续的下一步；不得声称已完成尚未执行的行走、截图、导出或性能验证。</li>
-</ol>
-<h3 id="街区还原工作流-111">8. 最终光照烘焙与复验</h3>
-<p>先完成空间、贴图、灯位及无景深试走，再做交付用烘焙。提前的小分辨率试烘可以排查 UV、漏光和探针问题，不能代替最终场景的重烘与验收。</p>
-<ol>
-<li>分离静态建筑／地面与动态人物／车辆；为静态网格生成不重叠的 UV2，选择光照贴图密度，小物件按需使用探针。</li>
-<li>配置固定预设：Mixed 主光保留动态直射和阴影，烘焙间接光；固定店内灯可使用 Baked。探针覆盖主街、支路、阴影边界及人物活动高度。</li>
-<li>实际运行烘焙，确认完成且产出 Lightmap、LightingData、探针；保存场景、配置与资产，不把“启动成功”当完成。</li>
-<li>导出独立 Player，核对烘焙数据存在、人物／公交不被烘进静态场景、关闭 DOF 也无明显漏光或接缝，再重跑主角路线和活动。</li>
-<li>日夜各自维护匹配的光照数据；只完成一个预设时锁定该预设。几何、静态材质和灯位改动后重新烘焙。依据与本机结果见 <a href="../04-engineering/hd2d-camera-lighting.md#7-小场景光照烘焙与交付">镜头／光照规范</a>。</li>
-</ol>
-<h3 id="街区还原工作流-121">9. 街区交付与版本记录</h3>
-<p>每个街区至少有：范围／路线说明、来源 manifest、逻辑骨架、街景参考索引、imagegen 提示词与概念图、资产清单、需要时的 Blender 源与导出、Unity 场景及依赖、验证记录和未解决项。资料／概念／生产资产／实机证据分别标识；分析用项目内 Markdown、独立 HTML 或标准图表。</p>
-<p>每次收尾简要报告：完成内容、运行与视觉验证、未完成项、可点击文件路径、commit 与推送状态。概念验收和实机验收分开，用户未认可的画面不能记录为已通过主观美术验收。</p>
-<p>所有文件修改完成并验证后，按根目录 <a href="../../AGENTS.md">AGENTS.md</a> 的规则提交、推送并核对远程。</p></article><article id="doc-hd2d-production-workflow"><h2 id="hd2d-production-workflow-0">HD-2D 素材建模与拼装工作流</h2>
-<p>调研日期：2026-11-01。适用于本项目像素人物＋立体香港街景的生产，补足 <a href="#doc-街区还原工作流">街区还原工作流</a> 第 3–5 步。<strong>本文是经资料支持的项目 SOP，尚未通过完整资产样板验证。</strong> 原始开发实践、工具能力和我们的取舍见 <a href="#doc-hd2d-production-sources">专业来源与核查记录</a>，角色细节见 <a href="../03-hd2d/index.html#doc-character-production">多方向与动作生产</a>，镜头与效果见 <a href="../04-engineering/index.html#doc-hd2d-camera-lighting">渲染实施</a>。</p>
-<h3 id="hd2d-production-workflow-4">1. 制作顺序与停止条件</h3>
-<p>完整链路：真实骨架／街景取证 → 灰盒与镜头合同 → 概念与资产拆解 → 角色小样＋一个商铺模块包 → Unity 拼装和无后处理试走 → 灯光／景深 → 生活活动 → 独立 Player 验证 → 批量扩展。</p>
-<p>概念探索可以先做，但批量角色出帧和建筑精修必须等镜头合同确定。镜头改变后，先复查既有资产，不自动重建覆盖精修源。Gemdrops 的场景制作案例包含先调整镜头／布局、早期复用模块、精修入口小区域后再提升全场景的做法；本项目采用这个“小样先闭环”的生产原则，不照搬其写实背景或世界尺度。<a href="https://cgworld.jp/article/202404-so2r-2.html">CGWORLD 对开发团队的背景制作访谈</a></p>
-<p>每阶段都有可检查产物；失败就回到影响它的上游：脚底错先查角色锚点，建筑转角缺失先补几何，地理错回查来源，模糊问题先检查深度。不能继续堆细节来掩盖根因。</p>
-<h3 id="hd2d-production-workflow-12">2. 阶段 A：建立镜头与资产合同</h3>
-<p><strong>输入</strong>：街区数据包、实景照片方向与年代、选定主街／连接口、已知地理缺口。</p>
-<p>先在约 20–30 米试作范围建立道路、铺面体块和连接巷口，配一个明确身高的白帽占位体。至少检查主街两端和巷道深处，确定主要可见立面、必要侧面、能否读出通道。几何尺寸来自逻辑骨架；构图压缩另存设计变换，不修改原始坐标或无依据加坡。</p>
-<p>把以下字段写进该街区资产清单或制作说明：</p>
-<ul>
-<li><code>camera_contract</code>：投影、俯角／方位、FOV／距离、跟随范围、目标分辨率、主角屏幕高度、允许出现的镜头区。</li>
-<li><code>scale_contract</code>：设计米与 Unity 单位、模块尺寸、原点、坐标轴转换、贴图像素密度测试档位。地面、立面、角色分别记录，不强求一种 PPU 适用于全部对象。</li>
-<li><code>asset_contract</code>：来源与许可、源文件、导出格式、材质通道、碰撞／投影／遮挡职责、方向／动作、生成及精修位置。</li>
-<li><code>validation_contract</code>：固定机位、试走路线、昼夜条件、必查错误和留存证据。</li>
-</ul>
-<p><strong>通过条件</strong>：灰盒里能横向往返、深入连接巷道，主角和路缘可读，近远关系成立。输出镜头配置与灰盒截图；仅概念图好看不算通过。</p>
-<h3 id="hd2d-production-workflow-27">3. 阶段 B：角色小样先跑通</h3>
-<p>按 <a href="../03-hd2d/index.html#doc-character-production">角色生产</a> 完成设定转面图 → 游戏俯角方向表 → 站姿 → 步行关键姿势 → 完整循环 → PNG＋JSON → 足底锚点与受光预制体。</p>
-<p>先四向试作，斜走和切镜需要时补八向；不把 4／8 向、48–64 像素或 6 帧写成行业硬标准。主角与 NPC 使用同一尺寸和导入合同，但 NPC 的携物、推车、候车等按活动拆动作，不以换色代替动作制作。</p>
-<p><strong>通过条件</strong>：同一小样中完成横走、纵深进出、停步、转向、墙边遮挡；没有帧间漂移和严重滑步。此时才允许复制到更多 NPC。</p>
-<h3 id="hd2d-production-workflow-35">4. 阶段 C：建筑与景物怎么建</h3>
-<h4 id="hd2d-production-workflow-37">4.1 按空间职责选形态</h4>
-<p>扩产前先按 <a href="../03-hd2d/octopath2-composition-study.md#街道两侧与纵深支路的制作取舍">街道两侧与纵深支路的制作取舍</a> 逐栋建立可见面清单：主要展示、转角可见、前景遮挡、仅投影／反射代理、无需制作。记录建筑 ID、镜头区和全路线检查机位，再决定精修范围。固定朝向不会因玩家过街而展示另一侧正脸；纵深支路中的斜侧视店面仍须保留入口与识别元素。镜头区或通行范围改变时重审清单。</p>
-<ul>
-<li><strong>近处可绕行物件</strong>：商铺转角、站口台阶、雨篷、路缘、巴士／货车等使用真实体积与必要侧面。规则几何可直接在 Unity 制作；复杂轮廓、车辆、独特站口、UV 和烘焙按需 Blender。</li>
-<li><strong>平面信息</strong>：店名、出口编号、线路牌、广告和窗贴可用独立薄面／贴花，但挂靠实际建筑，不承担整栋楼的碰撞。字形单独排版校对，保留商业和交通信息的真实性。</li>
-<li><strong>有限观察的景物</strong>：树叶等可试裁切面片，树干保留体积；固定远景可用简化几何或受约束背景卡。必须记录允许机位，镜头接近或转向后露馅就升级资产。</li>
-<li><strong>活动道具</strong>：手推车、箱筐、雪糕车、站牌、巴士车门等同时考虑人物站位和动作；有开合／转动需求的部分单独分件并设置功能枢轴。</li>
-</ul>
-<h4 id="hd2d-production-workflow-46">4.2 一个商铺模块包的实际步骤</h4>
-<ol>
-<li><strong>参照定尺</strong>：从核实的立面宽度、道路／人行道和照片量测关系建立体块；高度无证据时写估计范围。锁定底部基准和转角位置，不用生成图的窗格数当测绘结果。</li>
-<li><strong>按结构拆件</strong>：底座／首层立面、墙段／转角、窗格、屋顶／雨篷、橱窗、招牌、灯具。必须共同遮挡或共同活动的部分再合并；不要为了“分层”把每扇固定窗都变成独立高开销对象。</li>
-<li><strong>统一接口</strong>：模块端点、楼层基线、墙厚与拼接网格一致；转角有专用件，允许为真实不规则地块制作独有件。模型原点放在约定地面基准；车门、轮子等在关节处另设 pivot。</li>
-<li><strong>模型检查</strong>：应用并记录需要的变换，检查法线方向、负缩放、退化面和可见背面；用棋盘贴图检查拉伸。低面数服务轮廓，不以“越少越好”牺牲港式雨篷、栏杆与站口识别特征。</li>
-<li><strong>UV 展开</strong>：按立面／转角等可编辑区域展开，统一主要可见面的像素密度，给 UV 岛留边；路面／砖墙可平铺，独有店面和招牌另图。Blender 官方提供 UV 缩放、拼岛和布局导出，用导出的 UV 线稿给像素绘制或图生图作位置约束。<a href="https://docs.blender.org/UATEST/manual/en/4.5/modeling/meshes/uv/editing.html">UV 编辑</a> · <a href="https://docs.blender.org/manual/en/5.0/addons/import_export/mesh_uv_layout.html">UV Layout</a></li>
-<li><strong>贴图生产</strong>：按目标 UV 画色块和材质纹理，回到模型看接缝／窗格对齐。颜色、alpha、emission 分开验证；法线／粗糙度按需求增加，不把生成图的“深度图”当真值。可平铺贴图检查四边拼接；可见像素应形成有意组织的形状，不能只有照片缩小后的噪点。</li>
-<li><strong>灯光边界</strong>：动态受光颜色图避免固定强高光／投影，文字独立校正。若烘焙光照，需要独立、符合烘焙要求的 UV，而不是直接复用有重叠的平铺 UV。</li>
-<li><strong>导出验证</strong>：保存 <code>.blend</code> 等可编辑源，输出显式 FBX＋贴图并在 Unity 重建所需材质；不要假定 Blender 节点材质会无损迁移。记录导出／导入轴向、单位和缩放，先用 1 米测试物与带箭头的不对称件验证尺寸和朝向；不能机械照抄网上某组 Forward／Up 参数。<a href="https://docs.blender.org/UATEST/manual/en/4.5/addons/import_export/scene_fbx.html">Blender FBX 官方文档</a></li>
-</ol>
-<p><strong>交付</strong>：模型源、导出模型、UV 布局、贴图与材质通道说明、尺寸／枢轴、碰撞方案、正面／转角预览。图生图出的立面只能作为制作输入；需要透视修正、UV 对齐、补侧面和人工文字校正后才能进入生产。</p>
-<h3 id="hd2d-production-workflow-59">5. 阶段 D：怎么拼成 Unity 场景</h3>
-<p>导入当前唯一工程 <code>unity/HongKong/</code>，不新开第二套示例工程。生产源在 <code>assets/blocks/&lt;block_id&gt;/generated/</code> 或 <code>authored/</code>；选用的运行时副本进入 Unity Assets 并记录源路径／哈希、<code>.meta</code> 和 importer 设置。构建只刷新明确的生成目录，手工 prefab 调整另存变体或手工目录，避免重导出覆盖。</p>
-<p>建议预制体职责如下；名称是本项目约定，不声称已经实现：</p>
-<pre><code>ShopRoot（地面基准、asset_id）
-  Structure（墙体／转角／屋顶）
-  Canopy（雨篷与遮挡分组）
-  SignsAndLights（招牌／发光／实际灯光）
-  Collision（简化碰撞，明确可走／不可走）
-  ActivityAnchors（店门、交货、队列或停留位置）
-
-CharacterRoot（3D 移动／碰撞／世界朝向）
-  VisualPivot（脚底锚点、方向帧、受光面片）
-  ShadowProxy（只有经验证需要时启用）</code></pre>
-<p>拼装顺序：</p>
-<ol>
-<li><strong>地面与通行</strong>：先路面、人行道、路缘、台阶、碰撞、跨层连接；依据数据骨架摆放。道路绘制层与通行楼层分开。</li>
-<li><strong>建筑体块与接口</strong>：替换灰盒为商铺／转角模块；检查接缝、店门宽度、雨篷高度和巷道净空。远景只在已确定的可见范围补足。</li>
-<li><strong>设施与活动空间</strong>：港铁口、站牌、栏杆、垃圾桶、货物等按核实位置／明确编排放置；保留排队、卸货和过街空间，再添加装饰密度。</li>
-<li><strong>角色／车辆</strong>：导入已通过小样的角色，车辆按世界路线移动并验证转弯可见面。公交服务门、站位、人流锚点共用状态；素材存在不代表运营逻辑存在。</li>
-<li><strong>无后处理试走</strong>：先看遮挡、脚底、材质、尺度和拼接，再调光照；若基本画面不成立，不进入批量细化。</li>
-<li><strong>灯光与景深</strong>：按 <a href="../04-engineering/index.html#doc-hd2d-camera-lighting">镜头与渲染实施</a> 添加昼夜光照、受控 Bloom、DOF 和镜头区。前中远景是空间职责，不是三张覆盖全场景的 PNG。</li>
-<li><strong>生活闭环</strong>：最后加入该街段选定的完整行为和声景，执行主角路线及原地观察；功能验收沿用街区工作流第 6–7 步。</li>
-</ol>
-<h3 id="hd2d-production-workflow-88">6. 资产交接与 Agent 可复现要求</h3>
-<p>每个采用的资产至少关联：<code>asset_id、source_ids、source_file、source_hash、generator_or_tool_version、export_settings、runtime_path、dimensions_m、pivot、material_channels、collision_role、occlusion_role、validation_status</code>。角色再附方向／帧／锚点；场景实例另用 <code>instance_id</code> 与现实 <code>place_id</code>。这是应补入资产清单的字段合同，尚无宣称可直接执行的自动化 schema。</p>
-<p>Agent 每次只推进一个可验收小包：输入引用 → 可编辑产物 → 导出／导入 → 可视检查 → 记录结果 → commit／push。Aseprite CLI、Blender Python、Unity CLI／Pipeline 可以承接相应自动化，但每次先核实当前安装与接口；有命令模板不等于已安装工具。自动检查尺寸、缺帧、引用与导入错误；人工／Agent 视觉检查负责轮廓、滑步、真实街景和画面质量，两者不能互相替代。</p>
-<h3 id="hd2d-production-workflow-94">7. 当前首块的闭环门槛</h3>
-<p>针对弥敦道 × 海防道／A1，下一次进入制作时先完成：<strong>一名白帽主角＋一个商铺转角包＋一段主街／巷道连接＋一件近景遮挡物＋站口占位／核实外形</strong>。这不是削减 v0.1 范围，而是其前置生产样板。</p>
-<p>通过以下检查后再扩成正式街段：</p>
-<ul>
-<li>正／背／侧及所需斜向一致，步行和停步不漂；昼夜下白帽可读。</li>
-<li>转角、雨篷、路缘、站口具备真实深度，遮挡和碰撞正确；从两个机位都成立。</li>
-<li>景深关闭时画面仍成立，开启后主角、通道与重要标识仍清楚；镜头边界往返无跳变。</li>
-<li>独立 Player 跑完固定路线，保存截图／录像、配置、日志和可获取的性能数据；美术未获认可就记录为待评审。</li>
-<li>重导出生成资产不覆盖手工修订，重进工程能恢复同一画面。</li>
-</ul>
-<p>这次调研补上的是制作方法与证据链。像素审美一致性、动画质量、镜头遮挡和整段运行成本仍须以上样板实测，不能宣称“流程写清楚以后只剩机械拼装”。</p></article><article id="doc-hd2d-production-sources"><h2 id="hd2d-production-sources-0">HD-2D 制作：专业来源与核查记录</h2>
+<p>完整采集、真实街景图生图、贴图、按需 Blender 建模及 Unity 导入步骤由 <a href="../../workflows/00-project/街区还原工作流.md">街区还原工作流</a> 维护；本章记录制作建议，不复制一份易分叉的执行规则。</p>
+<p>专业资料支持的具体制作方法见 <a href="../../workflows/10-hd2d/hd2d-production-workflow.md">HD-2D 素材建模与拼装 SOP</a>：镜头合同、角色小样、模块接口／UV／贴图、模型导出、预制体拼装和实机门槛。<a href="../../workflows/20-assets/character-production.md">角色方向与动作</a> 和 <a href="../../workflows/10-hd2d/camera-lighting.md">镜头／受光／景深</a> 分别维护细则；旧预算里的四向与配色数量不是最终制作标准。</p></article><article id="doc-hd2d-production-sources"><h2 id="hd2d-production-sources-0">HD-2D 制作：专业来源与核查记录</h2>
 <p>查阅日期：2026-11-01。只将实际读到的开发者访谈、教学正文、软件官方说明及本地源码用于结论；未观看的视频不标为已研究，不以搜索摘要推断未公开的内部参数。本文不归档或再分发访谈图片、视频与整篇原文。</p>
 <h3 id="hd2d-production-sources-4">开发团队与专业动画教学</h3>
 <ol>
@@ -436,7 +250,7 @@ CharacterRoot（3D 移动／碰撞／世界朝向）
 <li>3D 绑定后渲染多方向再像素修订是可评估的项目备选，不是已核实的八方旅人通用生产方法。</li>
 <li>本次没有安装 Aseprite／Blender 插件，没有交付新角色／模型／Unity 场景，也没有完成 HD-2D 游戏画面或整街性能验收。</li>
 </ul>
-<p>资料结论落在 <a href="../03-hd2d/index.html#doc-character-production">角色生产</a>、<a href="../04-engineering/index.html#doc-hd2d-camera-lighting">镜头与渲染</a> 和 <a href="#doc-hd2d-production-workflow">总生产 SOP</a>；根目录只维护执行要求与入口，避免复制整篇研究造成分叉。</p></article><nav class="pager" aria-label="章节翻页"><a href="../05-street-life/index.html">上一章：街道生活</a><a href="../07-validation/index.html">下一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
+<p>资料结论落在 <a href="../../workflows/20-assets/character-production.md">角色生产</a>、<a href="../../workflows/10-hd2d/camera-lighting.md">镜头与渲染</a> 和 <a href="../../workflows/10-hd2d/hd2d-production-workflow.md">总生产 SOP</a>；根目录只维护执行要求与入口，避免复制整篇研究造成分叉。</p></article><nav class="pager" aria-label="章节翻页"><a href="../05-street-life/index.html">上一章：街道生活</a><a href="../07-validation/index.html">下一章：验证与证据</a></nav><footer class="footer">本页按主题生成，图片与地图内嵌。跨章及源文件跳转需保留目录；外部来源需要联网。请修改 Markdown 后运行 scripts/build_report.py 重建。</footer></main></div><script>
 function revealHash(){const id=decodeURIComponent(location.hash.slice(1)),target=document.getElementById(id);if(!target)return;let parent=target.closest('details');if(parent)parent.open=true;target.scrollIntoView()}
 window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{const target=document.getElementById(decodeURIComponent(a.hash.slice(1)));if(target?.closest('details'))target.closest('details').open=true}));

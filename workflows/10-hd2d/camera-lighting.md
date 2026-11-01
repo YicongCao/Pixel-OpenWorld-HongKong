@@ -1,6 +1,18 @@
 # HD-2D 镜头、受光、遮挡与景深实施
 
-调研日期：2026-11-01。对应本仓库 Unity 6000.3.27f1、URP 17.3.0、Cinemachine 3.1.7。公开资料及本地包源码核对见 [来源索引](../06-production/hd2d-production-sources.md)。以下为实施与验证方案；本次没有创建或运行新的渲染样板。
+工作流 ID：`WF-LIGHT`；版本：2.0；状态：从 docs 迁入并整理，完整美术／全街区验收仍待完成。
+
+## 输入
+
+灰盒／采用资产、镜头合同、固定测试路线、当前锁定的渲染包与时段。
+
+## 输出
+
+镜头／材质／Volume／灯光配置、烘焙与反射资产、同机位及 Player 验证证据。
+
+## 步骤
+
+调研日期：2026-11-01。对应本仓库 Unity 6000.3.27f1、URP 17.3.0、Cinemachine 3.1.7。公开资料及本地包源码核对见 [来源索引](../../docs/06-production/hd2d-production-sources.md)。以下为实施与验证方案；本次没有创建或运行新的渲染样板。
 
 ## 1. 镜头先于正式资产
 
@@ -53,7 +65,7 @@ URP 官方文档区分：**Gaussian 只做远景虚化**，较快且半径受限
 5. 留出可玩的清晰区域，验证主角、路缘、站口编号、转弯入口都可读；必要时减弱模糊而不是只对着人物拉极薄焦平面。UI 独立检查，提供关闭景深选项。
 6. 比较同机位 DOF 关闭／Gaussian／Bokeh 的截图、行走录像和独立 Player 帧时。特别检查白帽边缘漏色、玻璃、树叶、车窗、斜向像素闪烁和切镜拉焦；不能只验收静态截图。
 
-**正交限制须优先处理**：本地 URP 17.3.0 的两种 DOF shader 使用 `LinearEyeDepth(depth, _ZBufferParams)`；对应 Core 函数注明不适用于正交投影。这是当前源码层面的明确风险，不是一次实机失败报告。因此先以弱透视做原生 DOF 样板；保留正交方案时，必须另验正交深度重建／替代效果与维护成本，不能承诺原生景深直接正确。源码路径与哈希见 [本地证据](../06-production/hd2d-production-sources.md)。
+**正交限制须优先处理**：本地 URP 17.3.0 的两种 DOF shader 使用 `LinearEyeDepth(depth, _ZBufferParams)`；对应 Core 函数注明不适用于正交投影。这是当前源码层面的明确风险，不是一次实机失败报告。因此先以弱透视做原生 DOF 样板；保留正交方案时，必须另验正交深度重建／替代效果与维护成本，不能承诺原生景深直接正确。源码路径与哈希见 [本地证据](../../docs/06-production/hd2d-production-sources.md)。
 
 所谓“微缩／移轴感”在这里是美术目标；URP 的标准景深并不等于物理倾斜镜头的焦平面。不要把屏幕渐变模糊当作真实深度证据，也不要据此改变尖沙咀的实际坡度。
 
@@ -61,7 +73,7 @@ URP 官方文档区分：**Gaussian 只做远景虚化**，较快且半径受限
 
 角色先通过无景深的深度／受光检查，建筑先通过无景深的轮廓／像素密度检查；再合并最终光照与 DOF。出现问题时依次关 DOF、Bloom、半透明和自定义受光，定位到具体环节，不用更强模糊遮掩错误。
 
-交付 Camera／Volume 配置、角色材质与投影策略、截图机位、路线、日志及版本。性能记录必须包含实际分辨率、灯光和人数、CPU／GPU 帧时是否可获取；未测值写缺失，不填推测数字。此门槛不替代 [首版整体验收](../07-validation/acceptance.md)。
+交付 Camera／Volume 配置、角色材质与投影策略、截图机位、路线、日志及版本。性能记录必须包含实际分辨率、灯光和人数、CPU／GPU 帧时是否可获取；未测值写缺失，不填推测数字。此门槛不替代 [首版整体验收](../../docs/07-validation/acceptance.md)。
 
 ## 7. 小场景光照烘焙与交付
 
@@ -71,8 +83,13 @@ Unity 的 Mixed 模式可以把间接光预计算，并保留实时直射；Ligh
 
 本机是 Apple Silicon：Unity 6000.3 官方说明该编辑器不支持 CPU Progressive Lightmapper，使用 Progressive GPU；这不是对其他平台的统一要求。[后端支持说明](https://docs.unity.com/en-us/engine/6000.3/manual/lighting-overview/direct-and-indirect-lighting/lightmapping/baking-before-runtime/configure/progressive-lightmapper)
 
-本次广东道小样采用：Mixed / Baked Indirect 主光，Baked 店内点光，Directional lightmap，8 texels/m 基准密度、1024 atlas、4 px padding、32 direct / 128 indirect / 64 environment samples、最多 3 次反弹。大部分静态物体 scaleInLightmap=0.55，高层远景=0.15；这些是小样成本参数，尚非最终画质标准。380 个静态渲染对象接入一组颜色／方向贴图，258 个探针覆盖主街与支路，动态角色与车体不参与静态烘焙。实际产物及独立运行验证见 [精修记录](../08-blocks/tst-canton-demo/polish-v1.md)。
+当前广东道烘焙参数与历史数量以 [精修记录](../../docs/08-blocks/tst-canton-demo/polish-v1.md) 和 [最新资产／验证盘点](../../docs/08-blocks/tst-canton-demo/scene-inventory.md) 为准，不将某次样板密度、采样数或对象数固化为通用标准。
 
 执行条件：静态网格需要 UV2、Contribute GI、正确的接收模式；小装饰可使用探针减轻 lightmap 成本。保存 `.lighting`、场景、LightingData、贴图和 `.meta`；不能只保存截图或 Library 缓存。`Lightmapping.BakeAsync()` 只表示启动，必须检查 `isRunning` 结束、产物数量／路径、动态对象排除与 Player 中的数据加载。[场景设置](https://docs.unity.com/en-us/engine/6000.3/manual/lighting-overview/direct-and-indirect-lighting/lightmapping/baking-before-runtime/lightmapping) · [BakeAsync API](https://docs.unity.com/en-us/engine/6000.3/script-reference/unityeditor/lightmapping/bakeasync)
 
 最终步骤是烘焙后复验：同机位对照、无 DOF 的近处接缝／漏光检查、主角和车辆进出阴影、路径往返及帧时。第一轮低分辨率试烘不算最终交付。改灯、静态物体或影响反弹的材质后重烘；一个日景 lightmap 不能搭配夜间太阳当作已完成夜景。当前精修场景锁定午后，原 demo 的实时昼夜独立保留。
+
+
+## 验收与回退
+
+关后处理时深度和受光成立，开效果后角色、路缘与标识仍可读；允许镜头／全路线无缺面，烘焙数据在独立 Player 正确加载。人物与建筑要同机位联合检查，不能只验单个材质球。新增昼夜预设时同步活动／声景及匹配光照数据；未交付夜景时保持午后锁定。失败按第 6 节隔离效果，再回到对应步骤；最终烘焙后改变静态场景必须重烘复验。

@@ -101,4 +101,4 @@
 
 先完成 **空间密度重排＋一个精修立面包＋白帽动作修订＋同机位对照**。其余街段、更多品牌与交通路线延后扩展。判断是否前进的标准是这个小片段有没有可信的香港密度、清楚的探索方向和一致的像素美术，而不是增加了多少 prefab。
 
-专业流程依据沿用 [生产 SOP](../../06-production/hd2d-production-workflow.md)、[角色制作](../../03-hd2d/character-production.md)、[镜头／灯光](../../04-engineering/hd2d-camera-lighting.md) 与 [原作对照研究](../../03-hd2d/octopath2-composition-study.md)。以上工作量与先后是本项目判断；没有据此承诺达到原作团队制作质量的时间或自动化比例。
+专业流程依据沿用 [生产 SOP](../../../workflows/10-hd2d/hd2d-production-workflow.md)、[角色制作](../../../workflows/20-assets/character-production.md)、[镜头／灯光](../../../workflows/10-hd2d/camera-lighting.md) 与 [原作对照研究](../../03-hd2d/octopath2-composition-study.md)。以上工作量与先后是本项目判断；没有据此承诺达到原作团队制作质量的时间或自动化比例。

@@ -45,3 +45,5 @@ Unity 场景：`Assets/HongKong/Generated/CantonDemo/CantonRoadDemo.unity`。
 ## 后续精修待办
 
 用户指出的街面拥挤度不足、建筑稀疏及未制作贴图已纳入 [精修工序与待办](polish-plan.md)。下一批先做小范围密度与一个完整立面，不扩张街区。
+
+- [30 米资产目录、待补景物与剩余工序](scene-inventory.md)

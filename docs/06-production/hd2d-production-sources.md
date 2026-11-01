@@ -51,4 +51,4 @@
 - 3D 绑定后渲染多方向再像素修订是可评估的项目备选，不是已核实的八方旅人通用生产方法。
 - 本次没有安装 Aseprite／Blender 插件，没有交付新角色／模型／Unity 场景，也没有完成 HD-2D 游戏画面或整街性能验收。
 
-资料结论落在 [角色生产](../03-hd2d/character-production.md)、[镜头与渲染](../04-engineering/hd2d-camera-lighting.md) 和 [总生产 SOP](hd2d-production-workflow.md)；根目录只维护执行要求与入口，避免复制整篇研究造成分叉。
+资料结论落在 [角色生产](../../workflows/20-assets/character-production.md)、[镜头与渲染](../../workflows/10-hd2d/camera-lighting.md) 和 [总生产 SOP](../../workflows/10-hd2d/hd2d-production-workflow.md)；根目录只维护执行要求与入口，避免复制整篇研究造成分叉。

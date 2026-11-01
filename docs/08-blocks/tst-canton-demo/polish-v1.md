@@ -35,7 +35,7 @@ Apple 从不透明色块改成前玻璃、两层浅室内、独立细柱、夹�
 
 本批产出 1 组光照贴图、258 个 Light Probes；380 个渲染对象接入 lightmap，动态对象接入静态 lightmap 数为 0，参与 GI 的网格缺 UV2 数为 0。一次预烘检查后增加店内补光并重烘。实时主光仍负责动态直射和阴影；不声称烘焙后无灯光成本。
 
-原日夜切换组件增加 opt-in `bakedAfternoon`：仅本精修场景锁定光照，避免日景间接光配夜景太阳。原实时 demo 行为保持。规范与官方依据见 [烘焙规则](../../04-engineering/hd2d-camera-lighting.md#7-小场景光照烘焙与交付)。
+原日夜切换组件增加 opt-in `bakedAfternoon`：仅本精修场景锁定光照，避免日景间接光配夜景太阳。原实时 demo 行为保持。规范与官方依据见 [烘焙规则](../../../workflows/10-hd2d/camera-lighting.md#7-小场景光照烘焙与交付)。
 
 ## 验证证据
 

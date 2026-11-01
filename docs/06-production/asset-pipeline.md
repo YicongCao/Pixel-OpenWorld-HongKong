@@ -20,6 +20,6 @@
 
 ## 执行工作流
 
-完整采集、真实街景图生图、贴图、按需 Blender 建模及 Unity 导入步骤由 [街区还原工作流](街区还原工作流.md) 维护；本章记录制作建议，不复制一份易分叉的执行规则。
+完整采集、真实街景图生图、贴图、按需 Blender 建模及 Unity 导入步骤由 [街区还原工作流](../../workflows/00-project/街区还原工作流.md) 维护；本章记录制作建议，不复制一份易分叉的执行规则。
 
-专业资料支持的具体制作方法见 [HD-2D 素材建模与拼装 SOP](hd2d-production-workflow.md)：镜头合同、角色小样、模块接口／UV／贴图、模型导出、预制体拼装和实机门槛。[角色方向与动作](../03-hd2d/character-production.md) 和 [镜头／受光／景深](../04-engineering/hd2d-camera-lighting.md) 分别维护细则；旧预算里的四向与配色数量不是最终制作标准。
+专业资料支持的具体制作方法见 [HD-2D 素材建模与拼装 SOP](../../workflows/10-hd2d/hd2d-production-workflow.md)：镜头合同、角色小样、模块接口／UV／贴图、模型导出、预制体拼装和实机门槛。[角色方向与动作](../../workflows/20-assets/character-production.md) 和 [镜头／受光／景深](../../workflows/10-hd2d/camera-lighting.md) 分别维护细则；旧预算里的四向与配色数量不是最终制作标准。

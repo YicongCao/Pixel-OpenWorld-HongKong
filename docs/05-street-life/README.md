@@ -7,3 +7,5 @@
 ## 本章资料
 
 - [香港街道生活与沉浸感](street-life.md)
+
+- [香港街道标识与设施来源](hong-kong-signage-reference.md)
