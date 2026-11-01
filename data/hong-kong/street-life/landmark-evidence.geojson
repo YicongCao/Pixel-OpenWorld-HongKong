@@ -1,0 +1,2581 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1695378,
+          22.2935926
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-001",
+        "label": "钟楼",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:37664321",
+        "name": "尖沙咀鐘樓 Tsim Sha Tsui Clock Tower",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.1695378,
+          22.2935926
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1695378,
+          22.2935926
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-001",
+        "label": "钟楼",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:37664321",
+        "name": "尖沙咀鐘樓 Tsim Sha Tsui Clock Tower",
+        "fclass": "tower",
+        "representative_point_crs84": [
+          114.1695378,
+          22.2935926
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17045937406948,
+          22.2937215
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-002",
+        "label": "香港文化中心",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:37664345",
+        "name": "香港文化中心 Hong Kong Cultural Centre",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17045937406948,
+          22.2937215
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17045937406948,
+          22.2937215
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-002",
+        "label": "香港文化中心",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:37664345",
+        "name": "香港文化中心 Hong Kong Cultural Centre",
+        "fclass": "arts_centre",
+        "representative_point_crs84": [
+          114.17045937406948,
+          22.2937215
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1712537,
+          22.2945183
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-002",
+        "label": "香港文化中心",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:1949213215",
+        "name": "香港文化中心 Hong Kong Cultural Centre",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1712537,
+          22.2945183
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1712678,
+          22.2945191
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-002",
+        "label": "香港文化中心",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:7054435546",
+        "name": "香港文化中心 Hong Kong Cultural Centre",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1712678,
+          22.2945191
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1718689007007,
+          22.2941686
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-003",
+        "label": "香港太空馆",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:184731574",
+        "name": "香港太空館 Hong Kong Space Museum",
+        "fclass": "museum",
+        "representative_point_crs84": [
+          114.1718689007007,
+          22.2941686
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1720306,
+          22.2935305
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-004",
+        "label": "香港艺术馆",
+        "source_file": "data/hong-kong/osm/pois.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_free:10578103641",
+        "name": "香港藝術館 Hong Kong Museum of Art",
+        "fclass": "museum",
+        "representative_point_crs84": [
+          114.1720306,
+          22.2935305
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1679924226593,
+          22.2935508
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:14941145",
+        "name": "尖沙咀天星碼頭 Tsim Sha Tsui Star Ferry Pier",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.1679924226593,
+          22.2935508
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1689652,
+          22.2941372
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:245090969",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_station",
+        "representative_point_crs84": [
+          114.1689652,
+          22.2941372
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1686799,
+          22.2939451
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:3999281457",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1686799,
+          22.2939451
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1687718,
+          22.2938392
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:3999281458",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1687718,
+          22.2938392
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.168803,
+          22.2938063
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:8226569227",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.168803,
+          22.2938063
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1691382,
+          22.2943265
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9877790168",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1691382,
+          22.2943265
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1688291,
+          22.2942605
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9878952165",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1688291,
+          22.2942605
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.169061,
+          22.29431
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9883486206",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.169061,
+          22.29431
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1691486,
+          22.2944394
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10047008884",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1691486,
+          22.2944394
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1690234,
+          22.2936557
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10569735226",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1690234,
+          22.2936557
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1694018,
+          22.2944958
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10572457514",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1694018,
+          22.2944958
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1689063,
+          22.294277
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10792428140",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1689063,
+          22.294277
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1689836,
+          22.2942935
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:11146564995",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1689836,
+          22.2942935
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1692152,
+          22.2943427
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:11146564996",
+        "name": "尖沙咀碼頭 Star Ferry",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1692152,
+          22.2943427
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16798699713556,
+          22.29354125
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-005",
+        "label": "天星码头",
+        "source_file": "data/hong-kong/osm/transport_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_a_free:14941144",
+        "name": "尖沙咀天星碼頭 Tsim Sha Tsui Star Ferry Pier",
+        "fclass": "ferry_terminal",
+        "representative_point_crs84": [
+          114.16798699713556,
+          22.29354125
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1717888443089,
+          22.29506595
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-006",
+        "label": "半岛酒店",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:709674355",
+        "name": "香港半島酒店 The Peninsula Hong Kong",
+        "fclass": "hotel",
+        "representative_point_crs84": [
+          114.1717888443089,
+          22.29506595
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1717888443089,
+          22.29506595
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-006",
+        "label": "半岛酒店",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:709674355",
+        "name": "香港半島酒店 The Peninsula Hong Kong",
+        "fclass": "commercial",
+        "representative_point_crs84": [
+          114.1717888443089,
+          22.29506595
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16987555000722,
+          22.295510299999997
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-007",
+        "label": "1881 Heritage",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:184553177",
+        "name": "1881 Heritage",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.16987555000722,
+          22.295510299999997
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17010535939559,
+          22.29559665
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-007",
+        "label": "1881 Heritage",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:2460795",
+        "name": "富衛1881公館 FWD House 1881",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17010535939559,
+          22.29559665
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16987555000722,
+          22.295510299999997
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-007",
+        "label": "1881 Heritage",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:184553177",
+        "name": "1881 Heritage",
+        "fclass": "mall",
+        "representative_point_crs84": [
+          114.16987555000722,
+          22.295510299999997
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16994757551142,
+          22.2953504
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-007",
+        "label": "1881 Heritage",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:184553178",
+        "name": "1881 Heritage",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.16994757551142,
+          22.2953504
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17010535939559,
+          22.29559665
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-007",
+        "label": "1881 Heritage",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:2460795",
+        "name": "富衛1881公館 FWD House 1881",
+        "fclass": "hotel",
+        "representative_point_crs84": [
+          114.17010535939559,
+          22.29559665
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17284466216643,
+          22.29637405
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-008",
+        "label": "重慶大厦",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:39315991",
+        "name": "重慶大廈 Chungking Mansions",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17284466216643,
+          22.29637405
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17284466216643,
+          22.29637405
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-008",
+        "label": "重慶大厦",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:39315991",
+        "name": "重慶大廈 Chungking Mansions",
+        "fclass": "commercial",
+        "representative_point_crs84": [
+          114.17284466216643,
+          22.29637405
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17263803849269,
+          22.297293850000003
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-009",
+        "label": "美丽都大厦",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:15622416",
+        "name": "美麗都大廈 Mirador Mansion",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17263803849269,
+          22.297293850000003
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17263803849269,
+          22.297293850000003
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-009",
+        "label": "美丽都大厦",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:15622416",
+        "name": "美麗都大廈 Mirador Mansion",
+        "fclass": "residential",
+        "representative_point_crs84": [
+          114.17263803849269,
+          22.297293850000003
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17011520656365,
+          22.300533299999998
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-010",
+        "label": "九龙公园",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:4977404",
+        "name": "九龍公園 Kowloon Park",
+        "fclass": "park",
+        "representative_point_crs84": [
+          114.17011520656365,
+          22.300533299999998
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1720163,
+          22.2984026
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-010",
+        "label": "九龙公园",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:11049570681",
+        "name": "九龍公園 Kowloon Park",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1720163,
+          22.2984026
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1719845,
+          22.2988914
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-010",
+        "label": "九龙公园",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:11049570685",
+        "name": "九龍公園 Kowloon Park",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1719845,
+          22.2988914
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17011520656365,
+          22.300533299999998
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-010",
+        "label": "九龙公园",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:4977404",
+        "name": "九龍公園 Kowloon Park",
+        "fclass": "park",
+        "representative_point_crs84": [
+          114.17011520656365,
+          22.300533299999998
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1717237757266,
+          22.2986638
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-011",
+        "label": "九龙清真寺",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:149352980",
+        "name": "九龍清真寺及伊斯蘭中心 Kowloon Mosque and Islamic Centre",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.1717237757266,
+          22.2986638
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.172513136976,
+          22.302131950000003
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-012",
+        "label": "圣安德烈堂",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:692802846",
+        "name": "聖安德烈堂 St. Andrew's Church",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.172513136976,
+          22.302131950000003
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1719818,
+          22.3016843
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-012",
+        "label": "圣安德烈堂",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:3912040158",
+        "name": "聖安德烈堂 St. Andrew's Church",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1719818,
+          22.3016843
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16984345182014,
+          22.299322699999998
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-013",
+        "label": "香港文物探知馆",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:99150699",
+        "name": "香港文物探知館 Hong Kong Heritage Discovery Centre",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.16984345182014,
+          22.299322699999998
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16984345182014,
+          22.299322699999998
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-013",
+        "label": "香港文物探知馆",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:99150699",
+        "name": "香港文物探知館 Hong Kong Heritage Discovery Centre",
+        "fclass": "museum",
+        "representative_point_crs84": [
+          114.16984345182014,
+          22.299322699999998
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17268795589794,
+          22.299860199999998
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-015",
+        "label": "The ONE",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:21003835",
+        "name": "The One",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17268795589794,
+          22.299860199999998
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17268795589794,
+          22.299860199999998
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-015",
+        "label": "The ONE",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:1530819048",
+        "name": "The One",
+        "fclass": "mall",
+        "representative_point_crs84": [
+          114.17268795589794,
+          22.299860199999998
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17268795589794,
+          22.299860199999998
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-015",
+        "label": "The ONE",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:1530819048",
+        "name": "The One",
+        "fclass": "retail",
+        "representative_point_crs84": [
+          114.17268795589794,
+          22.299860199999998
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17258378629029,
+          22.3008808
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-016",
+        "label": "美丽华广场",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:51256967",
+        "name": "美麗華廣場一期 Mira Place 1",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17258378629029,
+          22.3008808
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17244654725398,
+          22.3001341
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-016",
+        "label": "美丽华广场",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:335583391",
+        "name": "美麗華廣場二期 Mira Place 2",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17244654725398,
+          22.3001341
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17258378629029,
+          22.3008808
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-016",
+        "label": "美丽华广场",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:51256967",
+        "name": "美麗華廣場一期 Mira Place 1",
+        "fclass": "mall",
+        "representative_point_crs84": [
+          114.17258378629029,
+          22.3008808
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17258378629029,
+          22.3008808
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-016",
+        "label": "美丽华广场",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:4745167",
+        "name": "美麗華廣場 Mira Place",
+        "fclass": "mall",
+        "representative_point_crs84": [
+          114.17258378629029,
+          22.3008808
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17258378629029,
+          22.3008808
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-016",
+        "label": "美丽华广场",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:4745167",
+        "name": "美麗華廣場 Mira Place",
+        "fclass": "commercial",
+        "representative_point_crs84": [
+          114.17258378629029,
+          22.3008808
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17472764150065,
+          22.29627005
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-017",
+        "label": "讯号山与讯号塔",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:642477553",
+        "name": "訊號塔 Signal Tower",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17472764150065,
+          22.29627005
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17472764150065,
+          22.29627005
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-017",
+        "label": "讯号山与讯号塔",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:642477553",
+        "name": "訊號塔 Signal Tower",
+        "fclass": "tower",
+        "representative_point_crs84": [
+          114.17472764150065,
+          22.29627005
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17752112434975,
+          22.3009308
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-018",
+        "label": "香港科学馆",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:56752303",
+        "name": "香港科學館 Hong Kong Science Museum",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17752112434975,
+          22.3009308
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17752112434975,
+          22.3009308
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-018",
+        "label": "香港科学馆",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:56752303",
+        "name": "香港科學館 Hong Kong Science Museum",
+        "fclass": "museum",
+        "representative_point_crs84": [
+          114.17752112434975,
+          22.3009308
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1765088,
+          22.3010257
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-018",
+        "label": "香港科学馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:4402847939",
+        "name": "香港科學館 Hong Kong Science Museum",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1765088,
+          22.3010257
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1765212,
+          22.3018332
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-018",
+        "label": "香港科学馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10291747448",
+        "name": "香港科學館 Hong Kong Science Museum",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1765212,
+          22.3018332
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1763826,
+          22.3014313
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-018",
+        "label": "香港科学馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10291747451",
+        "name": "香港科學館 Hong Kong Science Museum",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1763826,
+          22.3014313
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1763605,
+          22.301367
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-018",
+        "label": "香港科学馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10291747452",
+        "name": "香港科學館 Hong Kong Science Museum",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1763605,
+          22.301367
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.176508,
+          22.3010236
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-018",
+        "label": "香港科学馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10786630469",
+        "name": "香港科學館 Hong Kong Science Museum",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.176508,
+          22.3010236
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1765097,
+          22.3010281
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-018",
+        "label": "香港科学馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10786630472",
+        "name": "香港科學館 Hong Kong Science Museum",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1765097,
+          22.3010281
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17725119053841,
+          22.3019345
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-019",
+        "label": "香港历史博物馆",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:10331794",
+        "name": "香港歷史博物館 Hong Kong Museum of History",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.17725119053841,
+          22.3019345
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17741296400301,
+          22.3019395
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-019",
+        "label": "香港历史博物馆",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:99148524",
+        "name": "香港歷史博物館 Hong Kong Museum of History",
+        "fclass": "museum",
+        "representative_point_crs84": [
+          114.17741296400301,
+          22.3019395
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.177531,
+          22.3026781
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-019",
+        "label": "香港历史博物馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:4402847938",
+        "name": "香港歷史博物館 Hong Kong Museum of History",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.177531,
+          22.3026781
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1775219,
+          22.3026818
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-019",
+        "label": "香港历史博物馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:11248334149",
+        "name": "香港歷史博物館 Hong Kong Museum of History",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1775219,
+          22.3026818
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17783520683454,
+          22.29774595
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-020",
+        "label": "尖沙咀中心",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:29403981",
+        "name": "尖沙咀中心 Tsim Sha Tsui Centre",
+        "fclass": "commercial",
+        "representative_point_crs84": [
+          114.17783520683454,
+          22.29774595
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17846494754389,
+          22.2983375
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-021",
+        "label": "帝国中心",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:29403982",
+        "name": "帝國中心 Empire Centre",
+        "fclass": "commercial",
+        "representative_point_crs84": [
+          114.17846494754389,
+          22.2983375
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1697182,
+          22.3041789
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-023",
+        "label": "庙街",
+        "source_file": "data/hong-kong/osm/pois.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_free:4780310523",
+        "name": "廟街 Temple Street",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.1697182,
+          22.3041789
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1702731,
+          22.3110785
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-023",
+        "label": "庙街",
+        "source_file": "data/hong-kong/osm/pois.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_free:5881488985",
+        "name": "廟街夜市 Temple Street Night Market",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.1702731,
+          22.3110785
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16973753232689,
+          22.30552035
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-023",
+        "label": "庙街",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:880775624",
+        "name": "廟街牌樓",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.16973753232689,
+          22.30552035
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16996499788902,
+          22.30639685
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-023",
+        "label": "庙街",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:880775625",
+        "name": "廟街夜市 Temple Street Night Market",
+        "fclass": "marketplace",
+        "representative_point_crs84": [
+          114.16996499788902,
+          22.30639685
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16996499788902,
+          22.30639685
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-023",
+        "label": "庙街",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:880775625",
+        "name": "廟街夜市 Temple Street Night Market",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.16996499788902,
+          22.30639685
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.169956,
+          22.3054189
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-023",
+        "label": "庙街",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:3912037745",
+        "name": "佐敦廟街 Temple Street Jordan",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.169956,
+          22.3054189
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1699088,
+          22.3054292
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-023",
+        "label": "庙街",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:3912037746",
+        "name": "佐敦廟街 Temple Street Jordan",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1699088,
+          22.3054292
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1699753,
+          22.3051808
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-023",
+        "label": "庙街",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:7104352602",
+        "name": "廟街 Temple Street",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1699753,
+          22.3051808
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16994704372078,
+          22.309130500000002
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-025",
+        "label": "玉器市场",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:930598311",
+        "name": "油蔴地玉器小販市場 Yau Ma Tei Jade Hawker Bazaar",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.16994704372078,
+          22.309130500000002
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16994704372078,
+          22.309130500000002
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-025",
+        "label": "玉器市场",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:930598311",
+        "name": "油蔴地玉器小販市場 Yau Ma Tei Jade Hawker Bazaar",
+        "fclass": "marketplace",
+        "representative_point_crs84": [
+          114.16994704372078,
+          22.309130500000002
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16830310920807,
+          22.3121981
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-026",
+        "label": "油麻地果栏",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:423575201",
+        "name": "油麻地果欄 Yau Ma Tei Wholesale Fruit Market",
+        "fclass": "marketplace",
+        "representative_point_crs84": [
+          114.16830310920807,
+          22.3121981
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16830310920807,
+          22.3121981
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-026",
+        "label": "油麻地果栏",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:423575201",
+        "name": "油麻地果欄 Yau Ma Tei Wholesale Fruit Market",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.16830310920807,
+          22.3121981
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16830310920807,
+          22.3121981
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-026",
+        "label": "油麻地果栏",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:423575201",
+        "name": "油麻地果欄 Yau Ma Tei Wholesale Fruit Market",
+        "fclass": "retail",
+        "representative_point_crs84": [
+          114.16830310920807,
+          22.3121981
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16917833083437,
+          22.31248185
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-027",
+        "label": "油麻地戏院",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:446811353",
+        "name": "油麻地戲院 Yau Ma Tei Theatre",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.16917833083437,
+          22.31248185
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16917833083437,
+          22.31248185
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-027",
+        "label": "油麻地戏院",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:446811353",
+        "name": "油麻地戲院 Yau Ma Tei Theatre",
+        "fclass": "theatre",
+        "representative_point_crs84": [
+          114.16917833083437,
+          22.31248185
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16964577819101,
+          22.3123179
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-028",
+        "label": "红砖屋",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:694530940",
+        "name": "紅磚屋 Red Brick Building",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.16964577819101,
+          22.3123179
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.168476,
+          22.3178521
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-029",
+        "label": "朗豪坊",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10870333690",
+        "name": "朗豪坊 Langham Place",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.168476,
+          22.3178521
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16860837904906,
+          22.31825375
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-029",
+        "label": "朗豪坊",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:185564130",
+        "name": "朗豪坊 Langham Place",
+        "fclass": "commercial",
+        "representative_point_crs84": [
+          114.16860837904906,
+          22.31825375
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17092917404025,
+          22.31765255
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-030",
+        "label": "女人街",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:880780511",
+        "name": "女人街 Ladies Market",
+        "fclass": "marketplace",
+        "representative_point_crs84": [
+          114.17092917404025,
+          22.31765255
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17092917404025,
+          22.31765255
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-030",
+        "label": "女人街",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:880780511",
+        "name": "女人街 Ladies Market",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.17092917404025,
+          22.31765255
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1709338647587,
+          22.31752205
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-030",
+        "label": "女人街",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:906154980",
+        "name": "女人街 Ladies Market",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.1709338647587,
+          22.31752205
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16983038344709,
+          22.3228843
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-031",
+        "label": "金鱼街",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:906154982",
+        "name": "金魚街 Goldfish Street",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.16983038344709,
+          22.3228843
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1719386,
+          22.3247803
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/pois.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_free:10776203681",
+        "name": "興發鮮花市場 Hing Fat Flower Market",
+        "fclass": "florist",
+        "representative_point_crs84": [
+          114.1719386,
+          22.3247803
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17430721397682,
+          22.32792005
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:204880275",
+        "name": "花墟公園 Fa Hui Park",
+        "fclass": "park",
+        "representative_point_crs84": [
+          114.17430721397682,
+          22.32792005
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17272221176233,
+          22.325193900000002
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:906154984",
+        "name": "旺角花墟 Mong Kok Flower Market",
+        "fclass": "marketplace",
+        "representative_point_crs84": [
+          114.17272221176233,
+          22.325193900000002
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17272221176233,
+          22.325193900000002
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:906154984",
+        "name": "旺角花墟 Mong Kok Flower Market",
+        "fclass": "attraction",
+        "representative_point_crs84": [
+          114.17272221176233,
+          22.325193900000002
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1731275,
+          22.3268345
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:4440451584",
+        "name": "花墟公園 Fa Hui Park",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1731275,
+          22.3268345
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1729948,
+          22.3268273
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9923741154",
+        "name": "花墟公園 Fa Hui Park",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1729948,
+          22.3268273
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17324,
+          22.3268358
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9923741155",
+        "name": "花墟公園 Fa Hui Park",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.17324,
+          22.3268358
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1731372,
+          22.3268346
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9923741156",
+        "name": "花墟公園 Fa Hui Park",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1731372,
+          22.3268346
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17430721397682,
+          22.32792005
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-032",
+        "label": "花墟",
+        "source_file": "data/hong-kong/osm/landuse.geojson",
+        "source_id": "osm-snapshot:gis_osm_landuse_a_free:204880275",
+        "name": "花墟公園 Fa Hui Park",
+        "fclass": "park",
+        "representative_point_crs84": [
+          114.17430721397682,
+          22.32792005
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15914724666975,
+          22.30105365
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-033",
+        "label": "M+",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:549702815",
+        "name": "M+",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.15914724666975,
+          22.30105365
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.15914724666975,
+          22.30105365
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-033",
+        "label": "M+",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:549702815",
+        "name": "M+",
+        "fclass": "museum",
+        "representative_point_crs84": [
+          114.15914724666975,
+          22.30105365
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1589016,
+          22.3019243
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-033",
+        "label": "M+",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9978884008",
+        "name": "M+",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1589016,
+          22.3019243
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.158897,
+          22.3019217
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-033",
+        "label": "M+",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9978884009",
+        "name": "M+",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.158897,
+          22.3019217
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1586509,
+          22.3013522
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-033",
+        "label": "M+",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:11276779937",
+        "name": "M+",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1586509,
+          22.3013522
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1553983750184,
+          22.30164905
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-034",
+        "label": "香港故宫文化博物馆",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:640750810",
+        "name": "香港故宮文化博物館 Hong Kong Palace Museum",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.1553983750184,
+          22.30164905
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1553983750184,
+          22.30164905
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-034",
+        "label": "香港故宫文化博物馆",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:640750810",
+        "name": "香港故宮文化博物館 Hong Kong Palace Museum",
+        "fclass": "museum",
+        "representative_point_crs84": [
+          114.1553983750184,
+          22.30164905
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1562226,
+          22.3015774
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-034",
+        "label": "香港故宫文化博物馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9978884006",
+        "name": "香港故宮文化博物館 Hong Kong Palace Museum",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1562226,
+          22.3015774
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1561984,
+          22.3015389
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-034",
+        "label": "香港故宫文化博物馆",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:9978884007",
+        "name": "香港故宮文化博物館 Hong Kong Palace Museum",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1561984,
+          22.3015389
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16022559557032,
+          22.303379200000002
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-035",
+        "label": "环球贸易广场与圆方",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:25590249",
+        "name": "環球貿易廣場 International Commerce Centre",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.16022559557032,
+          22.303379200000002
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16198978137871,
+          22.3049245
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-035",
+        "label": "环球贸易广场与圆方",
+        "source_file": "data/hong-kong/osm/buildings.geojson",
+        "source_id": "osm-snapshot:gis_osm_buildings_a_free:1415166820",
+        "name": "圓方 Elements",
+        "fclass": "building",
+        "representative_point_crs84": [
+          114.16198978137871,
+          22.3049245
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.16198978137871,
+          22.3049245
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-035",
+        "label": "环球贸易广场与圆方",
+        "source_file": "data/hong-kong/osm/poi_areas.geojson",
+        "source_id": "osm-snapshot:gis_osm_pois_a_free:1415166820",
+        "name": "圓方 Elements",
+        "fclass": "mall",
+        "representative_point_crs84": [
+          114.16198978137871,
+          22.3049245
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1627391,
+          22.3037469
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-035",
+        "label": "环球贸易广场与圆方",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:6423682885",
+        "name": "圓方 Elements",
+        "fclass": "bus_station",
+        "representative_point_crs84": [
+          114.1627391,
+          22.3037469
+        ],
+        "point_is_entrance": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1598751,
+          22.3036997
+        ]
+      },
+      "properties": {
+        "anchor_id": "HKL-035",
+        "label": "环球贸易广场与圆方",
+        "source_file": "data/hong-kong/osm/transport.geojson",
+        "source_id": "osm-snapshot:gis_osm_transport_free:10797146188",
+        "name": "雅翔道（環球貿易廣場） Nga Cheung Road (International Commerce Centre)",
+        "fclass": "bus_stop",
+        "representative_point_crs84": [
+          114.1598751,
+          22.3036997
+        ],
+        "point_is_entrance": false
+      }
+    }
+  ]
+}

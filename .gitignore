@@ -1,0 +1,49 @@
+# OS and editor caches
+.DS_Store
+Thumbs.db
+.idea/
+.vs/
+*.swp
+*.swo
+
+# Python / local tooling
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+
+# Local-only secrets, temporary reference originals and scratch work
+.env
+.env.*
+!.env.example
+.local/
+.private/
+
+# Unity generated directories (at any project depth)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Bb]uild/
+[Bb]uilds/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+*.csproj
+*.sln
+*.slnx
+*.unityproj
+*.pidb
+*.suo
+*.user
+*.userprefs
+*.booproj
+
+# Blender autosave backups; editable .blend sources remain tracked
+*.blend1
+*.blend2
+*.blend@

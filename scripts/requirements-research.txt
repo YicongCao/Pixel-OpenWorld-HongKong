@@ -1,0 +1,10 @@
+# Versions used in the neighboring read-only data environment on 2026-11-01.
+# Required only to rebuild / validate research artifacts, not for the game runtime.
+numpy==2.5.4
+pyogrio==0.13.0
+pyproj==3.8.0
+shapely==2.2.0
+pypdf==6.21.2
+pillow==13.0.0
+osmium  # Optional for scripts/extract_street_life.py; records PBF node tags.
+matplotlib  # Optional for scripts/build_hd2d_study.py; needs a CJK font.

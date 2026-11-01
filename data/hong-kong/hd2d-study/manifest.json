@@ -1,0 +1,12 @@
+{
+  "created": "2026-11-01",
+  "source_sha256": "907d4846546debe80b8fe7463b02cd59c8f6b0d2c410e25f1bfbb912799d27c4",
+  "outputs": {
+    "docs/research/hd2d/corridor-projection.png": "625a7378024f82af6216cda8ef15e0871572b4479dc26f6791c688d24891433f",
+    "docs/research/hd2d/corridor-projection.svg": "355a0cbb0d4715e5a6f1be07c84d8b816f7e52186a0a6e8235cdc775601fbe4f",
+    "data/hong-kong/hd2d-study/corridor-evidence.json": "7e565f3281075ca964f88edb54f5bc2d5bba504bc8698c673f2d2ba7dbd4360e",
+    "data/hong-kong/hd2d-study/corridor-roads.geojson": "3220944d29a968566f73ca23a0945d7aedd365acf9bc49f07d3a8f4ae1580445"
+  },
+  "font": "/Library/Fonts/Arial Unicode.ttf",
+  "matplotlib_version": "3.11.2"
+}

@@ -1,0 +1,11 @@
+{
+  "checked": "2026-11-01",
+  "check": "full source scan without spatial-index filtering",
+  "full_source_count": 465892,
+  "expected_count": 34282,
+  "actual_count": 34282,
+  "missing_ids": [],
+  "extra_ids": [],
+  "passed": true,
+  "note": "Independent check for the GDAL FGDB spatial index warning during extraction."
+}

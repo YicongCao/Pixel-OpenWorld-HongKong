@@ -1,0 +1,23 @@
+{
+  "checked": "2026-11-01",
+  "passed": true,
+  "errors": [],
+  "embedded_images": 4,
+  "embedded_image_hashes_match": true,
+  "html_bytes": 14890776,
+  "links_checked": 48,
+  "pedestrian_xyz_vertices_checked": 89028,
+  "browser_checks": {
+    "desktop_layout": "passed",
+    "horizontal_overflow": false,
+    "all_four_images_loaded": true,
+    "pedestrian_layer_toggle": "passed",
+    "zoom_and_reset": "passed",
+    "engine_navigation_expands_details": "passed"
+  },
+  "not_tested": [
+    "mobile viewport",
+    "game runtime",
+    "direct file URL navigation in the embedded browser (protocol not supported)"
+  ]
+}

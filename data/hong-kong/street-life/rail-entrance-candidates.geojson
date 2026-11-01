@@ -1,0 +1,3566 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.166699,
+          22.3034734
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:474219840",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "level": "0",
+          "railway": "subway_entrance",
+          "ref": "D2",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1726039,
+          22.2942873
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:515688776",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "J3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1754008,
+          22.2971488
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:515696992",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "P3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1762229,
+          22.2973066
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1189559651",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "P2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1703632,
+          22.2962118
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1268358716",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "L5",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1706378,
+          22.2951015
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1268358723",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "L6"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1696731,
+          22.3203941
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848661",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1695494,
+          22.3194348
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848665",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1686505,
+          22.3201894
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848668",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1700803,
+          22.3191447
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848672",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1686758,
+          22.3189982
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848674",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "-1",
+          "railway": "subway_entrance",
+          "ref": "C3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1693592,
+          22.3203356
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848676",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1697125,
+          22.3205221
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848677",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1688279,
+          22.3191127
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848678",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "C4"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1698389,
+          22.31836
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848683",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "E2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.168861,
+          22.31929
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848689",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "C2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1698266,
+          22.3194812
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848691",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1689752,
+          22.3202353
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848692",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1691704,
+          22.3193442
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848700",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "C1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1693237,
+          22.3182653
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1277848701",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "E1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1702379,
+          22.3138159
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1279026536",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1701134,
+          22.3130003
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1279026544",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1707603,
+          22.3139072
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1279026546",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name:zh": "A2出口",
+          "railway": "subway_entrance",
+          "ref": "A2",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1704365,
+          22.3130606
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1279026553",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.170922,
+          22.3129306
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1279026559",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1707101,
+          22.3117934
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1279026568",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "文明里 Man Ming Lane",
+          "name:en": "Man Ming Lane",
+          "name:zh": "文明里",
+          "railway": "subway_entrance",
+          "ref": "C"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1601228,
+          22.3184881
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1295864438",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "滙豐中心二及三座 HSBC Center Towers 2 & 3",
+          "name:en": "HSBC Center Towers 2 & 3",
+          "name:zh": "滙豐中心二及三座",
+          "railway": "subway_entrance",
+          "ref": "B"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.174343,
+          22.2972731
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1387112133",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "N3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1737076,
+          22.2971701
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1387112134",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "N4"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1598281,
+          22.3183829
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1640472762",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1609513,
+          22.3179216
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1737253258",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "海桃灣 Florient Rise",
+          "name:en": "Florient Rise",
+          "name:zh": "海桃灣",
+          "railway": "subway_entrance",
+          "ref": "C5"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1719412,
+          22.2983158
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:1952510747",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "九龍公園 Kowloon Park",
+          "name:en": "Kowloon Park",
+          "name:zh": "九龍公園",
+          "railway": "subway_entrance",
+          "ref": "A1",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.153593,
+          22.327799
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2251286250",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1526711,
+          22.3262365
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2251292845",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.155216,
+          22.3256549
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2251292851",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1543017,
+          22.3249965
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2251292856",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "C",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1761727,
+          22.2969652
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2441044910",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "P1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1724603,
+          22.2981844
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2604586672",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "堪富利士道 Humphreys Avenue",
+          "name:en": "Humphreys Avenue",
+          "name:zh": "堪富利士道",
+          "railway": "subway_entrance",
+          "ref": "A2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1722759,
+          22.2987444
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2604586673",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "金馬倫道 Cameron Road",
+          "name:en": "Cameron Road",
+          "name:zh": "金馬倫道",
+          "railway": "subway_entrance",
+          "ref": "B1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1723403,
+          22.2976378
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2604586675",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "加拿分道 Carnarvon Road",
+          "name:en": "Carnarvon Road",
+          "name:zh": "加拿分道",
+          "railway": "subway_entrance",
+          "ref": "D1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1727238,
+          22.2976626
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2604586676",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "加拿分道 Carnarvon Road",
+          "name:en": "Carnarvon Road",
+          "name:zh": "加拿分道",
+          "railway": "subway_entrance",
+          "ref": "D2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1725914,
+          22.2970419
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2604586677",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "G"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1745217,
+          22.2972881
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2604586687",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "N1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1740651,
+          22.2976794
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2604586688",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "N2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1727035,
+          22.2970617
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2604586689",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "N5"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1657878,
+          22.3058984
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:2754770536",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "1",
+          "railway": "subway_entrance",
+          "ref": "B5"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1613451,
+          22.3171217
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3230266823",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "櫻桃街 Cherry Street",
+          "name:en": "Cherry Street",
+          "name:zh": "櫻桃街",
+          "railway": "subway_entrance",
+          "ref": "D1",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1610245,
+          22.3180412
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3230266824",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "櫻桃街 Cherry Street",
+          "name:en": "Cherry Street",
+          "name:zh": "櫻桃街",
+          "railway": "subway_entrance",
+          "ref": "C2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1610319,
+          22.318189
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3230266841",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "name": "滙豐中心一座 HSBC Center Tower 1",
+          "name:en": "HSBC Center Tower 1",
+          "name:zh": "滙豐中心一座",
+          "note": "office entrance",
+          "railway": "subway_entrance",
+          "ref": "C4"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1606939,
+          22.3183909
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3230266842",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "滙豐中心二及三座 HSBC Center Towers 2 & 3",
+          "name:en": "HSBC Center Towers 2 & 3",
+          "name:zh": "滙豐中心二及三座",
+          "railway": "subway_entrance",
+          "ref": "C3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1611467,
+          22.3166901
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3230266847",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "連翔道 Lin Cheung Road",
+          "name:en": "Lin Cheung Road",
+          "name:zh": "連翔道",
+          "railway": "subway_entrance",
+          "ref": "D2",
+          "wheelchair": "limited"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1610689,
+          22.3169601
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3230273785",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "奧海城2、3期 Olympic City 2 & 3",
+          "name:en": "Olympic City 2 & 3",
+          "name:zh": "奧海城2、3期",
+          "railway": "subway_entrance",
+          "ref": "D3",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1606786,
+          22.3183775
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3230273804",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "深旺道 Sham Mong Road",
+          "name:en": "Sham Mong Road",
+          "name:zh": "深旺道",
+          "railway": "subway_entrance",
+          "ref": "C1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1676324,
+          22.303162
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3230273821",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "-1",
+          "railway": "subway_entrance",
+          "ref": "F"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1679901,
+          22.3240356
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3607107694",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "conveying": "no",
+          "elevator": "no",
+          "highway": "steps",
+          "railway": "subway_entrance",
+          "ramp": "no",
+          "ref": "C2",
+          "steps": "only",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1676565,
+          22.3250731
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3607107706",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1680012,
+          22.3251375
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3607107707",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "E",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1683454,
+          22.3250576
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3607107708",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1682361,
+          22.3240834
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3607107709",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "conveying": "no",
+          "elevator": "no",
+          "highway": "steps",
+          "railway": "subway_entrance",
+          "ramp": "no",
+          "ref": "C1",
+          "steps": "only",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.168584,
+          22.3241543
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3607107711",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B1",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1690286,
+          22.3238531
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3607107712",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B2",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1722798,
+          22.3057169
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3924716007",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "addr:street": "佐敦道 Jordan Road",
+          "addr:street:en": "Jordan Road",
+          "addr:street:zh": "佐敦道",
+          "entrance": "yes",
+          "exit": "yes",
+          "name": "伊利沙伯醫院 Queen Elizabeth Hospital",
+          "name:en": "Queen Elizabeth Hospital",
+          "name:zh": "伊利沙伯醫院",
+          "railway": "subway_entrance",
+          "ref": "B2",
+          "steps": "only",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1719032,
+          22.3043298
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3924716008",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "addr:housename": "恆豐中心 Prudential Centre",
+          "addr:housename:en": "Prudential Centre",
+          "addr:housename:zh": "恆豐中心",
+          "entrance": "yes",
+          "exit": "yes",
+          "layer": "-1",
+          "level:forward": "-4",
+          "level:ref:backward": "C",
+          "level:ref:forward": "2B",
+          "location": "underground",
+          "name": "恆豐中心 Prudential Centre",
+          "name:en": "Prudential Centre",
+          "name:zh": "恆豐中心",
+          "railway": "subway_entrance",
+          "ref": "E"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.171209,
+          22.3042792
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3924716010",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "addr:street": "庇利金街 Pilkem Street",
+          "addr:street:en": "Pilkem Street",
+          "addr:street:zh": "庇利金街",
+          "name": "寶靈街 Bowring Street",
+          "name:en": "Bowring Street",
+          "name:zh": "寶靈街",
+          "railway": "subway_entrance",
+          "ref": "C2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1719493,
+          22.3038862
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:3924716011",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "addr:street": "彌敦道 Nathan Road",
+          "addr:street:en": "Nathan Road",
+          "addr:street:zh": "彌敦道",
+          "name": "四海大廈 Fourseas Building",
+          "name:en": "Fourseas Building",
+          "name:zh": "四海大廈",
+          "railway": "subway_entrance",
+          "ref": "D"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1725686,
+          22.3217312
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4102394732",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "政府合署停車場 Government Offices Car Park",
+          "name:en": "Government Offices Car Park",
+          "name:zh": "政府合署停車場",
+          "railway": "subway_entrance",
+          "ref": "A"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1724953,
+          22.3225649
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4102394733",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "C"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1726344,
+          22.3232827
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4102394734",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1724851,
+          22.3217556
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4102394735",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "旺角政府合署 Mong Kok Government Offices",
+          "name:en": "Mong Kok Government Offices",
+          "name:zh": "旺角政府合署",
+          "railway": "subway_entrance",
+          "ref": "B"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1721625,
+          22.2962034
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4159230886",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "半島酒店 The Peninsula",
+          "name:en": "The Peninsula",
+          "name:zh": "半島酒店",
+          "railway": "subway_entrance",
+          "ref": "E",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1713153,
+          22.3054144
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4276009216",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "addr:street": "佐敦道 Jordan Road",
+          "addr:street:en": "Jordan Road",
+          "addr:street:zh": "佐敦道",
+          "entrance": "yes",
+          "exit": "yes",
+          "name": "裕華國貨 Yue Wha Emporium",
+          "name:en": "Yue Wha Emporium",
+          "name:zh": "裕華國貨",
+          "railway": "subway_entrance",
+          "ref": "A"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1719658,
+          22.3055666
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4276009223",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "addr:street": "佐敦道 Jordan Road",
+          "addr:street:en": "Jordan Road",
+          "addr:street:zh": "佐敦道",
+          "entrance": "yes",
+          "exit": "yes",
+          "name": "香港逸東酒店 Eaton, Hong Kong",
+          "name:en": "Eaton, Hong Kong",
+          "name:zh": "香港逸東酒店",
+          "railway": "subway_entrance",
+          "ref": "B1",
+          "steps": "only",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.171944,
+          22.3055446
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4276009224",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance",
+          "highway:elevator"
+        ],
+        "tags": {
+          "access:conditional": "designated @ (wheelchair)",
+          "addr:street": "佐敦道 Jordan Road",
+          "addr:street:en": "Jordan Road",
+          "addr:street:zh": "佐敦道",
+          "elevator": "only",
+          "entrance": "yes",
+          "exit": "yes",
+          "highway": "elevator",
+          "name": "香港逸東酒店 Eaton, Hong Kong",
+          "name:en": "Eaton, Hong Kong",
+          "name:zh": "香港逸東酒店",
+          "railway": "subway_entrance",
+          "ref": "B1",
+          "wheelchair": "designated"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1714978,
+          22.3042917
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4276009233",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "addr:street": "寶靈街 Bowring Street",
+          "addr:street:en": "Bowring Street",
+          "addr:street:zh": "寶靈街",
+          "name": "莊士倫敦廣場 Chuang's London Plaza",
+          "name:en": "Chuang's London Plaza",
+          "name:zh": "莊士倫敦廣場",
+          "railway": "subway_entrance",
+          "ref": "C1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1739278,
+          22.2946721
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4402756982",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "barrier": "kerb",
+          "railway": "subway_entrance",
+          "ref": "J2",
+          "tactile_paving": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1834589,
+          22.3102693
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4423210028",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A1",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1822884,
+          22.3089754
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4423210030",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "railway": "subway_entrance",
+          "ref": "B2",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1828588,
+          22.3092898
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4423210031",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "railway": "subway_entrance",
+          "ref": "B1",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.182107,
+          22.3103752
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:4462785948",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "door": "no",
+          "elevator": "only",
+          "entrance": "yes",
+          "layer": "1",
+          "location": "overhead",
+          "railway": "subway_entrance",
+          "ref": "A3",
+          "steps": "partial"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1660935,
+          22.3038193
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5276887508",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "door": "yes",
+          "entrance": "yes",
+          "entrance:use": "station",
+          "exit": "yes",
+          "level": "0",
+          "level:ref": "G",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "J",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1659776,
+          22.3043402
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5276887509",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "entrance:use": "station",
+          "exit": "yes",
+          "level": "-1",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "A",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1658333,
+          22.3054273
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5276888138",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "1",
+          "railway": "subway_entrance",
+          "ref": "B4"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1666749,
+          22.3038401
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5276888139",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "level": "1",
+          "railway": "subway_entrance",
+          "ref": "D4",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1660664,
+          22.3039758
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5276888141",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "entrance:use": "station",
+          "exit": "yes",
+          "level": "1",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "N",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1656867,
+          22.3049443
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5870086827",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "door": "yes",
+          "entrance": "yes",
+          "entrance:use": "station",
+          "exit": "yes",
+          "level": "0",
+          "level:ref": "G",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "B",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1642242,
+          22.3034371
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5889966299",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "entrance:use": "station",
+          "exit": "yes",
+          "level": "1",
+          "level:ref": "L1",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "M",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1654837,
+          22.3053812
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890242541",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "level": "1",
+          "railway": "subway_entrance",
+          "ref": "K2",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1655382,
+          22.3053544
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890242542",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "level": "1",
+          "railway": "subway_entrance",
+          "ref": "K1",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1659558,
+          22.303287
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890242543",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "entrance:use": "station",
+          "exit": "yes",
+          "level": "0",
+          "level:ref": "G",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "H",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1647361,
+          22.30364
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890242544",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "entrance:use": "station",
+          "exit": "yes",
+          "level": "0",
+          "level:ref": "G",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "F",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1642821,
+          22.3033697
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890242545",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "entrance:use": "station",
+          "exit": "yes",
+          "level": "0",
+          "level:ref": "G",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "D",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.166682,
+          22.3037636
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890284960",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "0",
+          "railway": "subway_entrance",
+          "ref": "D1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1663429,
+          22.3052203
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890284961",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "access": "private",
+          "entrance": "yes",
+          "exit": "yes",
+          "level": "0",
+          "railway": "subway_entrance",
+          "ref": "B3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1660464,
+          22.3050281
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890284962",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "0",
+          "railway": "subway_entrance",
+          "ref": "B2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1658083,
+          22.3054742
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5890284963",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "0",
+          "railway": "subway_entrance",
+          "ref": "B1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1663362,
+          22.3044712
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5917702058",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "railway": "subway_entrance",
+          "ref": "C",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1635567,
+          22.3039238
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5917702060",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance",
+          "highway:elevator"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "highway": "elevator",
+          "railway": "subway_entrance",
+          "ref": "C",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1653299,
+          22.304989
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:5922657228",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "level": "1",
+          "railway": "subway_entrance",
+          "ref": "K4",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1670778,
+          22.3036501
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:6283089243",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "access": "private",
+          "entrance": "yes",
+          "exit": "yes",
+          "level": "0",
+          "railway": "subway_entrance",
+          "ref": "D3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1720724,
+          22.2967793
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:6309071633",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "access": "yes",
+          "barrier": "gate",
+          "door": "no",
+          "entrance": "yes",
+          "gate:material": "metal",
+          "gate:type": "sliding",
+          "layer": "-1",
+          "location": "underground",
+          "name": "iSquare",
+          "railway": "subway_entrance",
+          "ref": "H"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1720366,
+          22.2973076
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:6309071634",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "addr:housename": "國際廣場 iSQUARE",
+          "addr:housename:en": "iSQUARE",
+          "addr:housename:zh": "國際廣場",
+          "addr:housenumber": "63",
+          "addr:street": "彌敦道 Nathan Road",
+          "addr:street:en": "Nathan Road",
+          "addr:street:wikidata": "Q2188138",
+          "addr:street:zh": "彌敦道",
+          "entrance": "yes",
+          "indoor": "yes",
+          "level": "-2",
+          "level:ref": "MTR",
+          "loc_name": "iSQUARE",
+          "loc_name:en": "iSQUARE",
+          "name": "iSQUARE",
+          "name:en": "iSQUARE",
+          "name:ko": "아이스퀘어",
+          "name:zh": "國際廣場",
+          "official_name": "國際廣場 iSQUARE",
+          "railway": "subway_entrance",
+          "ref": "R"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1730943,
+          22.2977299
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:6309071635",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "K11 Art Mall",
+          "railway": "subway_entrance",
+          "ref": "D3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1809481,
+          22.3020574
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:7015935406",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1721233,
+          22.296851
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:7077478907",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "door": "no",
+          "entrance": "yes",
+          "gate": "yes",
+          "railway": "subway_entrance",
+          "ref": "C1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1720981,
+          22.2972239
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:7077478908",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "door": "no",
+          "entrance": "yes",
+          "gate": "yes",
+          "railway": "subway_entrance",
+          "ref": "C2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1822236,
+          22.3103895
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:7083795022",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "door": "no",
+          "elevator": "only",
+          "entrance": "yes",
+          "layer": "0",
+          "location": "surface",
+          "railway": "subway_entrance",
+          "ref": "A3",
+          "steps": "partial"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1835322,
+          22.31132
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:7083795026",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "door": "no",
+          "entrance": "yes",
+          "layer": "0",
+          "location": "surface",
+          "railway": "subway_entrance",
+          "ref": "A2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1662981,
+          22.3058909
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:7559804954",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "-1",
+          "railway": "subway_entrance",
+          "ref": "A"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.172117,
+          22.2956385
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:8711408515",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "door": "no",
+          "entrance": "yes",
+          "gate": "yes",
+          "railway": "subway_entrance",
+          "ref": "L3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1814923,
+          22.3041226
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:8893847489",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A3",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.182204,
+          22.3035573
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:8893847505",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1814892,
+          22.3038258
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:8895250772",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A2",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1717716,
+          22.2957139
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:8974729471",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "-2",
+          "level:ref": "B2",
+          "railway": "subway_entrance",
+          "ref": "L4"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1731635,
+          22.2957514
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:8974745435",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "L1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.17259,
+          22.2949088
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:8974745438",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "J4"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1661062,
+          22.302355
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:9350653717",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance",
+          "highway:elevator"
+        ],
+        "tags": {
+          "elevator": "only",
+          "highway": "elevator",
+          "railway": "subway_entrance",
+          "ref": "G"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1725613,
+          22.2987628
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:9609113919",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "name": "金馬倫道 Cameron Road",
+          "name:en": "Cameron Road",
+          "name:zh": "金馬倫道",
+          "railway": "subway_entrance",
+          "ref": "B2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1591785,
+          22.3181959
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:9705067986",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1810501,
+          22.3013941
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10091243583",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D3"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1813403,
+          22.3021592
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10110489374",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "2",
+          "railway": "subway_entrance",
+          "ref": "D6",
+          "wheelchair": "no"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1821256,
+          22.3019068
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10110489377",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1809251,
+          22.3007428
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10117786612",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D5"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1809739,
+          22.300791
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10117786613",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D4"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1736748,
+          22.2954873
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10125880851",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "0",
+          "railway": "subway_entrance",
+          "ref": "K"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1620627,
+          22.3047485
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10164505894",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "indoor": "yes",
+          "level": "1",
+          "level:ref": "U3",
+          "railway": "subway_entrance",
+          "ref": "C1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1536256,
+          22.3277181
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10213765479",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1543502,
+          22.3263815
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10213765480",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "2",
+          "railway": "subway_entrance",
+          "ref": "D2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1610913,
+          22.3048867
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10703682000",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "automated": "yes",
+          "automatic_door": "yes",
+          "door": "sliding",
+          "entrance": "yes",
+          "exit": "yes",
+          "level": "0",
+          "level:ref": "G",
+          "railway": "subway_entrance",
+          "ref": "E4",
+          "tunnel": "building_passage"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.173697,
+          22.2951854
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:10740506419",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "0",
+          "railway": "subway_entrance",
+          "ref": "J1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1722357,
+          22.2951919
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:11264962675",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "J5"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1673793,
+          22.3028399
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:11384842235",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "level": "-1",
+          "railway": "subway_entrance",
+          "ref": "E"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1695071,
+          22.3204081
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:12046189249",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "B4"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.161654,
+          22.3049007
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:12946984639",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "covered": "yes",
+          "entrance": "yes",
+          "exit": "yes",
+          "level:ref": "U5",
+          "location": "podium",
+          "podium": "bulk",
+          "railway": "subway_entrance",
+          "ref": "C2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1612739,
+          22.305305
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:12946984676",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "automated": "yes",
+          "automatic_door": "yes",
+          "door": "sliding",
+          "entrance": "yes",
+          "exit": "yes",
+          "level": "0",
+          "level:ref": "G",
+          "railway": "subway_entrance",
+          "ref": "E5",
+          "tunnel": "building_passage"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.161497,
+          22.3049502
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:12946984698",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "covered": "yes",
+          "entrance": "yes",
+          "exit": "yes",
+          "level:ref": "U5",
+          "location": "podium",
+          "podium": "bulk",
+          "railway": "subway_entrance",
+          "ref": "D2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1611346,
+          22.3050687
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:12946994706",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "indoor": "yes",
+          "level": "1",
+          "level:ref": "U3",
+          "railway": "subway_entrance",
+          "ref": "D1"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1828012,
+          22.3093771
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:13138042138",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "entrance": "yes",
+          "railway": "subway_entrance",
+          "ref": "B",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.160691,
+          22.3172091
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:14029097703",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "C"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1607165,
+          22.3171478
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:14029097704",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "D"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1604937,
+          22.3171977
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:14029097707",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "noname": "yes",
+          "noref": "yes",
+          "railway": "subway_entrance",
+          "wheelchair": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1603474,
+          22.3170826
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:14030999390",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "E"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.159999,
+          22.3183692
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:14041077225",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "noname": "yes",
+          "noref": "yes",
+          "railway": "subway_entrance"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1591036,
+          22.3181307
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:14041077227",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "railway": "subway_entrance",
+          "ref": "A2"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.1645239,
+          22.303742
+        ]
+      },
+      "properties": {
+        "source_id": "osm:node:14077001999",
+        "snapshot": "2026-10-22",
+        "categories": [
+          "railway:subway_entrance"
+        ],
+        "tags": {
+          "abutters": "railway;retail",
+          "access": "yes",
+          "entrance": "main",
+          "entrance:use": "station;retail",
+          "exit": "main",
+          "indoor": "yes",
+          "level": "1;1",
+          "level:ref": "L1;1",
+          "name": "環球匯 International Gateway Centre",
+          "name:en": "International Gateway Centre",
+          "name:zh": "環球匯",
+          "public_transport": "entrance",
+          "railway": "subway_entrance",
+          "ref": "L",
+          "subway": "no",
+          "train": "yes"
+        },
+        "evidence_status": "snapshot_node_not_field_verified"
+      }
+    }
+  ]
+}

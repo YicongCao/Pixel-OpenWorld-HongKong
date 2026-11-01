@@ -1,0 +1,20 @@
+{
+  "created": "2026-11-01",
+  "markdown_local_links": "pass",
+  "derived_hashes_checked": 4,
+  "original_data_output_hashes_unchanged": 36,
+  "embedded_images": 6,
+  "concepts": 5,
+  "gis_diagrams": 1,
+  "unique_html_ids": 68,
+  "runtime_validation": "not performed",
+  "html_image_dimensions": "all 6 specified",
+  "concept_sha256": "pass",
+  "html_sha256": "bf24b24868cb04ce2216a11dfb991710fcff6dec3389a8844ad2f4a4ce9b3c49",
+  "browser_review": {
+    "concept_layout": "visually inspected at desktop viewport",
+    "engine_navigation": "opens collapsed engine section",
+    "captions": "5 imagegen concepts and 1 GIS diagram distinguished",
+    "temporary_local_server": "stopped"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "checked": "2026-11-01",
+  "passed": true,
+  "errors": [],
+  "source_hashes": 9,
+  "output_hashes": 5,
+  "unique_nodes": 3257,
+  "rail_entrances": 144,
+  "map_layers": [
+    "buildings",
+    "roads",
+    "landuse",
+    "water",
+    "railways",
+    "pedestrian",
+    "bus",
+    "entrances",
+    "life-anchors",
+    "labels"
+  ],
+  "html_links_and_unique_ids": "passed",
+  "not_verified": [
+    "current site conditions",
+    "MTR entrance station assignments",
+    "NPC schedules",
+    "gameplay",
+    "game performance"
+  ],
+  "browser_checks": {
+    "local_report_loaded": true,
+    "entrance_toggle_shows_144_markers": true,
+    "anchor_toggle_shows_32_markers": true,
+    "chungking_marker_shows_source_id": true,
+    "map_visual_review": "passed"
+  }
+}

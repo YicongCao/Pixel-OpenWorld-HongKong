@@ -1,0 +1,13 @@
+{
+  "created": "2026-11-01",
+  "tool": "built-in image_gen",
+  "status": "HD-2D composition study; not surveyed geography or runtime assets",
+  "file": "05-canton-road-hd2d.png",
+  "sha256": "0a36a4ba39506be2fb735d9ecec40de72384a36acbc1675204e51a4f1f75779e",
+  "limitations": [
+    "Harbour City, MTR entrance and convenience store adjacency is invented",
+    "background texture is smoother/more realistic than the intended final pixel-art environment",
+    "street gradient, signs and sea sightline are not verified",
+    "no depth, normal, animation or separated production layers"
+  ]
+}

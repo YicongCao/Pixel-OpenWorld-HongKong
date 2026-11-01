@@ -1,0 +1,36 @@
+{
+  "created": "2026-11-01",
+  "tool": "built-in image_gen",
+  "status": "art direction concepts; not runtime assets",
+  "prompts": "prompts.json",
+  "images": [
+    {
+      "file": "01-canton-road-day.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "926765218c68d0cbfce46ea7f9a3585af04cf7952626c0a5d1732be5d7aa3599"
+    },
+    {
+      "file": "02-victoria-harbour-vista.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "d351db0fb1fb2d2c60d5f84db7fe64ce4431e2baedaef8069cab5251a7314666"
+    },
+    {
+      "file": "03-white-wizard-study.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "sha256": "00744169444d8a7cdc4dd1f5af1c917a705cab2cf10f838c88963de60efb8906"
+    },
+    {
+      "file": "04-xiqu-gameplay-study.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "1a20a340c614a3e6a8a397fd96aa23330dd6e2fe6ee8650f9c6a4bc5fd36fac1"
+    }
+  ]
+}
