@@ -18,7 +18,7 @@
 
 路灯和橱窗的实际灯光负责照亮路面、白帽和人物；发光贴图负责招牌自身亮度，bloom 只提供光晕，三者分别调试。静态环境可比较烘焙光照／光照探针与有限动态灯；记录日夜切换时的兼容方式，避免仅改变太阳却保留明显错误的静态夜景阴影。不把光追、实时全局光照或体积雾列为 HD-2D 成立的先决条件。
 
-URP 的相机景深使用真实距离作为基础。焦点追随主角附近的可走平面并平滑变化，近处行走区域、主要招牌和 UI 保持可辨；远景适当模糊，树叶／雨篷可做较明显前景虚化。透明边缘光晕、帽尖裁切、焦点抖动必须分别检查，提供关闭景深选项。[URP 景深](https://docs.unity.com/en-us/engine/6000.0/manual/post-processing-and-full-screen-effects/urp/effect-list/depth-of-field-urp)
+URP 景深先验证深度输入，再平滑追随主角附近稳定目标的相机前向深度；可走区、重要标识和 UI 保持可辨。Gaussian 只能做远景虚化，树叶／雨篷等前景也要虚化时验证 Bokeh。本地 URP 17.3 的 DOF 深度转换存在正交限制，优先弱透视样板；这项源码判断尚非实机结果。透明边缘、白帽漏色、焦点抖动与性能分别检查，并提供关闭景深选项。具体步骤和证据见 [HD-2D 镜头与渲染实施](hd2d-camera-lighting.md)。[Unity 6.3 官方模式说明](https://docs.unity.com/en-us/engine/6000.3/manual/post-processing-and-full-screen-effects/urp/effect-list/depth-of-field-urp/volume-override)
 
 ### 坐标与移动
 

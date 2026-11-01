@@ -23,6 +23,12 @@
 - [首街区：弥敦道 × 海防道／A1](08-blocks/tst-nathan-haiphong/plan.md)：选段、扩展路线和真实参考；[三张 HD-2D 概念](08-blocks/tst-nathan-haiphong/assets.md)。
 - [首个可玩版本 v0.1](06-production/v0.1-implementation.md)：选段、灰盒、美术、街道生活、存档与实机交付的实施顺序。
 
+## HD-2D 制作方法补充
+
+- [素材建模与拼装流程](06-production/hd2d-production-workflow.md)：从镜头合同到可行走小样，先验收再扩产。
+- [角色多方向与动作](03-hd2d/character-production.md)、[镜头／灯光／景深](04-engineering/hd2d-camera-lighting.md)：分别维护生产细则。
+- [专业来源与本地源码证据](06-production/hd2d-production-sources.md)：查阅于 2026-11-01；流程研究不等于已完成资产或实机验收。
+
 ## 给 Codex 的阅读入口
 
 - [Agent.md](Agent.md)：研究资料的读取顺序、证据等级和维护规则。

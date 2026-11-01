@@ -10,7 +10,9 @@
 | 选择街区／提取地图／查站口线路 | [02 数据盘点](02-geography/data-inventory.md) | [02 地标](02-geography/scope-landmarks.md)、[数据 README](../data/hong-kong/README.md) 与 manifest | 数据包＋02，具体选段记 08 |
 | 设计横向主街／纵深／高差 | [03 街网与镜头](03-hd2d/street-camera.md) | 02 地理来源、[04 架构](04-engineering/runtime-architecture.md) | 03，具体镜头区记 08 |
 | imagegen／角色／纹理／概念迭代 | [03 美术](03-hd2d/art-direction.md) | [旧概念档案](03-hd2d/concept-gallery.md)、[06 生产](06-production/asset-pipeline.md)、街区还原工作流的参考图和提示词步骤 | 资产目录＋03／08 |
-| 引擎／框架／MCP／光照景深 | [04 引擎复评](04-engineering/engine-selection.md) | [04 架构](04-engineering/runtime-architecture.md)、[06 小样](06-production/prototype.md) | 04，真实测试记 07／08 |
+| 制作角色多视角／站姿／步行图集 | [03 角色制作](03-hd2d/character-production.md) | [06 生产 SOP](06-production/hd2d-production-workflow.md)、[专业资料](06-production/hd2d-production-sources.md) | 资产源与导出＋08 验证 |
+| 建模／UV／贴图／Unity 拼装 | [06 生产 SOP](06-production/hd2d-production-workflow.md) | [04 镜头与渲染](04-engineering/hd2d-camera-lighting.md)、[专业资料](06-production/hd2d-production-sources.md) | 资产／Unity＋08 验证 |
+| 引擎／框架／MCP／光照景深 | [04 引擎复评](04-engineering/engine-selection.md) | [04 镜头与渲染](04-engineering/hd2d-camera-lighting.md)、[04 架构](04-engineering/runtime-architecture.md)、[06 小样](06-production/prototype.md) | 04，真实测试记 07／08 |
 | 人流／汽车／公交／地铁口／街头活动 | [05 街道生活](05-street-life/street-life.md) | 02 站位与连接、04 运行结构 | 05，具体实例记 08 |
 | 规划首版／拆解实施任务 | [06 首版实施](06-production/v0.1-implementation.md) | [06 Roadmap](06-production/roadmap.md)、[07 验收](07-validation/acceptance.md) | 06 规划，实际进度记 08 |
 | 制作某街区／安排下一阶段 | [街区还原工作流](06-production/街区还原工作流.md) | [06 路线图](06-production/roadmap.md)、[08 归档](08-blocks/README.md) | 08 计划与实施记录 |

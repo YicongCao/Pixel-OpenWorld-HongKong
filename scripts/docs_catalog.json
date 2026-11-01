@@ -29,7 +29,8 @@
       "README.md",
       "street-camera.md",
       "art-direction.md",
-      "concept-gallery.md"
+      "concept-gallery.md",
+      "character-production.md"
     ]
   },
   {
@@ -41,7 +42,8 @@
       "README.md",
       "engine-selection.md",
       "runtime-architecture.md",
-      "local-development.md"
+      "local-development.md",
+      "hd2d-camera-lighting.md"
     ]
   },
   {
@@ -65,7 +67,9 @@
       "v0.1-implementation.md",
       "prototype.md",
       "asset-pipeline.md",
-      "街区还原工作流.md"
+      "街区还原工作流.md",
+      "hd2d-production-workflow.md",
+      "hd2d-production-sources.md"
     ]
   },
   {
