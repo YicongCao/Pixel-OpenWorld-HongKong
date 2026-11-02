@@ -6,7 +6,7 @@
     "workflows": 9,
     "workflow_migrations": 4,
     "markdown_files": 82,
-    "local_links": 1028,
+    "local_links": 1036,
     "embedded_images": 10,
     "original_data_hashes": 36,
     "migrated_files": 8,
@@ -19,7 +19,7 @@
     "docs/03-hd2d/index.html": "fbbd3689cd8d69facb4f4526e8c7dca8abf9b570ea28733ea42325278e97a1c6",
     "docs/04-engineering/index.html": "5f1444c62cf0bac36b30898d61130479aa44ad34235897116e952778adf70b78",
     "docs/05-street-life/index.html": "988521b906115007756d663687e7290ac4d1a8b59b5af0f8380b82118493e964",
-    "docs/06-production/index.html": "8e4c719dbe63aac6d68acb42dca395a46585c86d75d5d6c74f31cb60afb37ff6",
+    "docs/06-production/index.html": "14ae52589ccf505c699730f07618152f46fc6a78da8057bc1979cc0912d55b30",
     "docs/07-validation/index.html": "ff64dc260304beb2de152d03542aab6c3c64f6b6abe5f92f97dd69a5473471c9",
     "docs/08-blocks/index.html": "0a22d7218c01b3b1aee4fa9c112eaf758b27b1ef8798f2f5fdf4cb92486f5d73"
   }

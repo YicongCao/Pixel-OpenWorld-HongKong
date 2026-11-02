@@ -33,3 +33,5 @@
 Apple 橱窗样板：[四格像素材质及导入记录](blocks/tst-canton-demo/generated/apple-bay-v1/manifest.json)，用于浅木桌、石材饰面、配件展示与设备屏幕；[实机实施](../docs/08-blocks/tst-canton-demo/apple-bay-v1.md)。
 
 广东道交通：[站牌、观光巴士与三色的士资产合同](blocks/tst-canton-demo/authored/transport-v1/manifest.json)，可编辑源与 Unity 预制体路径、尺寸、地区限制及状态均在其中。
+
+Tripo 图生建模试验：[双店面建筑参考 PNG](blocks/tst-canton-demo/generated/tripo-pilot-v1/building-reference.png)与[提示词／哈希记录](blocks/tst-canton-demo/generated/tripo-pilot-v1/manifest.json)，为概念输入，尚无 Tripo 模型验收。

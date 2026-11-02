@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-02",
+  "tool": "built-in imagegen",
+  "mode": "generate",
+  "input_images": [],
+  "purpose": "Tripo image-to-3D single building pilot; no generated 3D model yet",
+  "status": "concept reference, not surveyed Canton Road facade or accepted production asset",
+  "image": {
+    "path": "building-reference.png",
+    "sha256": "c56c604a526c2a4d9f16306722c49244bc3595b9f4d0ff6dc0139cba6b54dd2b"
+  },
+  "prompt": {
+    "path": "prompt.txt",
+    "sha256": "6208f51366abbe71d2308a7b21ee375c9b39a45a50050ec48b0266aa6c855ca8"
+  },
+  "review": {
+    "accepted_for": "single front-right view; whole building; four storeys; two shops; neutral background; blank signs; clear projecting awnings and recessed windows",
+    "limitations": [
+      "Rendered stylized material is not a final pixel texture atlas",
+      "Visible weathering and contact shading may be baked into reconstructed color",
+      "Dimensions and topology still require calibration after reconstruction",
+      "No confirmation yet that small pipes and brackets reconstruct cleanly"
+    ]
+  }
+}

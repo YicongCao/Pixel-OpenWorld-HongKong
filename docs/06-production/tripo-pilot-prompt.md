@@ -1,6 +1,14 @@
 # Tripo3D 香港街景模块试验提示词
 
-日期：2026-11-02；起始 Git：5122a71。用户反馈：Agent 手工／程序建模成本高，先用 Tripo3D 验证替代路径。执行 WF-PROPS 1.1 的表现形式／交接范围，调用 WF-BUILDING 1.0 的建筑模块约束；本批只交付提示词与检查方法，尚未生成／下载／导入 Tripo 模型。
+日期：2026-11-02；起始 Git：5122a71。用户反馈：Agent 手工／程序建模成本高，先用 Tripo3D 验证替代路径。执行 WF-PROPS 1.1 的表现形式／交接范围，调用 WF-BUILDING 1.0 的建筑模块约束；初次交付提示词与检查方法，随后按用户反馈补交 imagegen 参考图；尚未生成／下载／导入 Tripo 模型。
+
+## 当前采用：图生模型参考图
+
+用户改为在 Tripo 中使用图生模型，本次已用内置 imagegen 生成 [建筑参考原图](../../assets/blocks/tst-canton-demo/generated/tripo-pilot-v1/building-reference.png)，上传此 PNG 到图生 3D 入口即可。对应 [imagegen 提示词](../../assets/blocks/tst-canton-demo/generated/tripo-pilot-v1/prompt.txt) 和 [生成记录／哈希](../../assets/blocks/tst-canton-demo/generated/tripo-pilot-v1/manifest.json) 已保留。下方文本提示词保留作设计说明，不要求将它输入图生模型界面。
+
+图为单一正面偏右的三分之四视角，完整四层双店面建筑、浅灰背景、清楚的门窗／雨篷体积，无车辆行人和景深。检查通过的是图生建模输入构图；未生成或验收 3D 模型。纹理偏精细旧化渲染，不能视作最终像素图集；重建后仍需检查暗部烘进颜色、细杆融化、尺度与侧面。不是某栋真实广东道建筑，不替换现有场景。
+
+本次延续 WF-PROPS 1.1／WF-BUILDING 1.1 的局部小样；调用 imagegen 技能。用户反馈“需要图片而非文字输入”已落实为先提供单体参考图，并在建筑工作流明确按实际输入模式交付。
 
 ## 第一件：双店面临街建筑模块
 
