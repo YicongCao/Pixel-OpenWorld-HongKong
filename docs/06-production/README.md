@@ -16,3 +16,5 @@
 
 - [街区还原工作流](../../workflows/00-project/街区还原工作流.md)：取证、概念、生产资产、Unity 街道生活与动线验证的完整执行流程。
 - [HD-2D 素材建模与拼装 SOP](../../workflows/10-hd2d/hd2d-production-workflow.md)：镜头合同、角色小样、模块建模／UV／贴图、Unity 拼装及扩产门槛。
+
+- [Tripo3D 街景模块试验提示词](tripo-pilot-prompt.md)：双店面建筑小样、导入检查及成本记录，尚未生成验证。

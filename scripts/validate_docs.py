@@ -22,7 +22,7 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 catalog = json.loads((ROOT / 'scripts/docs_catalog.json').read_text())
-check({p.name for p in DOCS.iterdir() if p.is_file()} == {'README.md', 'Agent.md', 'Skill.md'}, 'docs root must contain only the three reading entry files')
+check({p.name for p in DOCS.iterdir() if p.is_file() and p.name != '.DS_Store'} == {'README.md', 'Agent.md', 'Skill.md'}, 'docs root must contain only the three reading entry files')
 check({p.name for p in DOCS.iterdir() if p.is_dir()} == {c['id'] for c in catalog}, 'chapter directory/catalog mismatch')
 check(len(catalog) == 8 and len({c['id'] for c in catalog}) == 8, 'expected eight unique chapters')
 for c in catalog:
